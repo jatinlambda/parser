@@ -1,0 +1,3930 @@
+extracting text from pdf:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/rajneeshbarnwal.pdf
+extracting text from pdf:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/iimjobs_BHARAT_BORANA.pdf
+extracting text from pdf:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/avikhazra93@gmail.com.pdf
+parsing file:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/rajneeshbarnwal.pdf
+--line  Address: --main line  ['address']
+--num_words  1 --cost  0 --prob 1
+
+-----token   Address NOUN NN Xxxxx
+-----token   : PUNCT : :
+
+
+--line  G-Block, Greenwood City --main line  ['g', 'block', 'greenwood', 'city']
+--num_words  4 --cost  271.8281828459045 --prob 0.1353352832366127
+
+-----token   G PROPN NNP X
+-----token   - PUNCT HYPH -
+-----token   Block PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Greenwood PROPN NNP Xxxxx
+-----token   City PROPN NNP Xxxx
+
+
+--line  Sector-40, Gurgaon --main line  ['sector-40', 'gurgaon']
+--num_words  2 --cost  0 --prob 1
+
+-----token   Sector-40 NOUN NNS Xxxxx-dd
+-----token   , PUNCT , ,
+-----token   Gurgaon PROPN NNP Xxxxx
+
+
+--line  Haryana - 122003 --main line  ['haryana', '122003']
+--num_words  2 --cost  0 --prob 1
+
+-----token   Haryana PROPN NNP Xxxxx
+-----token   - PUNCT HYPH -
+-----token   122003 NUM CD dddd
+
+
+--line  RAJNEESH KUMAR BARNWAL --main line  ['rajneesh', 'kumar', 'barnwal']
+--num_words  3 --cost  0 --prob 1
+
+-----token   RAJNEESH PROPN NNP XXXX
+-----token   KUMAR PROPN NNP XXXX
+-----token   BARNWAL NOUN NN XXXX
+
+
+--line  Contact No: 07042488448 / 07503075418 --main line  ['contact', '07042488448', '07503075418']
+--num_words  3 --cost  0 --prob 1
+
+-----token   Contact NOUN NN Xxxxx
+-----token   No NOUN NN Xx
+-----token   : PUNCT : :
+-----token   07042488448 NUM CD dddd
+-----token   / SYM SYM /
+-----token   07503075418 NUM CD dddd
+
+
+--line  E-mail: rajneeshbarnwal@gmail.com --main line  ['e', 'mail', 'rajneeshbarnwal@gmail.com']
+--num_words  3 --cost  0 --prob 1
+
+-----token   E NOUN NN X
+-----token   - NOUN NN -
+-----token   mail NOUN NN xxxx
+-----token   : PUNCT : :
+-----token   rajneeshbarnwal@gmail.com X ADD xxxx@xxxx.xxx
+
+
+--line  OBJECTIVE --main line  ['objective']
+--num_words  1 --cost  0 --prob 1
+
+-----token   OBJECTIVE PROPN NNP XXXX
+
+
+--line  To associate with the reputed industry and work for the organization’s and personal growth and progress with my whole energy, --main line  ['associate', 'reputed', 'industry', 'work', 'organization', 'personal', 'growth', 'progress', 'energy']
+--num_words  9 --cost  40342.87934927351 --prob 6.14421235332821e-06
+
+-----token   To PART TO Xx
+-----token   associate VERB VB xxxx
+-----token   with ADP IN xxxx
+-----token   the DET DT xxx
+-----token   reputed ADJ JJ xxxx
+-----token   industry NOUN NN xxxx
+-----token   and CCONJ CC xxx
+-----token   work NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   the DET DT xxx
+-----token   organization NOUN NN xxxx
+-----token   ’s PUNCT , ’x
+-----token   and CCONJ CC xxx
+-----token   personal ADJ JJ xxxx
+-----token   growth NOUN NN xxxx
+-----token   and CCONJ CC xxx
+-----token   progress VERB VB xxxx
+-----token   with ADP IN xxxx
+-----token   my DET PRP$ xx
+-----token   whole ADJ JJ xxxx
+-----token   energy NOUN NN xxxx
+-----token   , PUNCT , ,
+
+
+--line  knowledge, dedication and sincere efforts. --main line  ['knowledge', 'dedication', 'sincere', 'effort']
+--num_words  4 --cost  2271.8281828459044 --prob 0.0013533528323661271
+
+-----token   knowledge NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   dedication NOUN NN xxxx
+-----token   and CCONJ CC xxx
+-----token   sincere ADJ JJ xxxx
+-----token   efforts NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  PROFESSIONAL EXPERIENCE --main line  ['professional', 'experience']
+--num_words  2 --cost  0 --prob 1
+
+-----token   PROFESSIONAL PROPN NNP XXXX
+-----token   EXPERIENCE NOUN NNS XXXX
+
+
+--line  ●  Working as Software Engineer with Aricent Technologies, Gurgaon since June 2016. --main line  ['●', ' ', 'work', 'software', 'engineer', 'aricent', 'technology', 'gurgaon', 'june', '2016']
+--num_words  10 --cost  110663.31584284586 --prob 8.31528719103568e-08
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Working VERB VBG Xxxxx
+-----token   as SCONJ IN xx
+-----token   Software PROPN NNP Xxxxx
+-----token   Engineer PROPN NNP Xxxxx
+-----token   with ADP IN xxxx
+-----token   Aricent PROPN NNP Xxxxx
+-----token   Technologies PROPN NNPS Xxxxx
+-----token   , PUNCT , ,
+-----token   Gurgaon PROPN NNP Xxxxx
+-----token   since SCONJ IN xxxx
+-----token   June PROPN NNP Xxxx
+-----token   2016 NUM CD dddd
+-----token   . PUNCT . .
+
+
+--line  ●  Did Internship from Aricent Technologies, Gurgaon from Jan 2015 to June 2015. --main line  ['●', ' ', 'internship', 'aricent', 'technology', 'gurgaon', 'jan', '2015', 'june', '2015']
+--num_words  10 --cost  110663.31584284586 --prob 8.31528719103568e-08
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Did AUX VBD Xxx
+-----token   Internship PROPN NNP Xxxxx
+-----token   from ADP IN xxxx
+-----token   Aricent PROPN NNP Xxxxx
+-----token   Technologies PROPN NNPS Xxxxx
+-----token   , PUNCT , ,
+-----token   Gurgaon PROPN NNP Xxxxx
+-----token   from ADP IN xxxx
+-----token   Jan PROPN NNP Xxx
+-----token   2015 NUM CD dddd
+-----token   to ADP IN xx
+-----token   June PROPN NNP Xxxx
+-----token   2015 NUM CD dddd
+-----token   . PUNCT . .
+
+
+--line  PROJECTS UNDERTAKEN --main line  ['project', 'undertaken']
+--num_words  2 --cost  0 --prob 1
+
+-----token   PROJECTS PROPN NNP XXXX
+-----token   UNDERTAKEN PROPN NNP XXXX
+
+
+--line  1.  GUI based Network Monitoring System, Since Jan 2017 --main line  ['1', ' ', 'gui', 'base', 'network', 'monitoring', 'system', 'jan', '2017']
+--num_words  9 --cost  40342.87934927351 --prob 6.14421235332821e-06
+
+-----token   1 X LS d
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   GUI PROPN NNP XXX
+-----token   based VERB VBD xxxx
+-----token   Network PROPN NNP Xxxxx
+-----token   Monitoring PROPN NNP Xxxxx
+-----token   System PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Since SCONJ IN Xxxxx
+-----token   Jan PROPN NNP Xxx
+-----token   2017 NUM CD dddd
+
+
+--line  ●  Working as UI developer for this project --main line  ['●', ' ', 'work', 'ui', 'developer', 'project']
+--num_words  6 --cost  2008.5536923187667 --prob 0.0024787521766663585
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Working VERB VBG Xxxxx
+-----token   as SCONJ IN xx
+-----token   UI PROPN NNP XX
+-----token   developer NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   this DET DT xxxx
+-----token   project NOUN NN xxxx
+
+
+--line  ●  Coding is being done in AngularJS with Bootstrap, HTML and less/css. --main line  ['●', ' ', 'coding', 'angularjs', 'bootstrap', 'html', 'css']
+--num_words  7 --cost  6459.815003314424 --prob 3.354626279025119e-05
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Coding NOUN NN Xxxxx
+-----token   is AUX VBZ xx
+-----token   being AUX VBG xxxx
+-----token   done VERB VBN xxxx
+-----token   in ADP IN xx
+-----token   AngularJS PROPN NNP XxxxxXX
+-----token   with ADP IN xxxx
+-----token   Bootstrap PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   HTML PROPN NNP XXXX
+-----token   and CCONJ CC xxx
+-----token   less ADJ JJR xxxx
+-----token   / PUNCT HYPH /
+-----token   css NOUN NN xxx
+-----token   . PUNCT . .
+
+
+--line  ● --main line  ['●']
+--num_words  1 --cost  10000 --prob 0
+
+-----token   ● PUNCT NFP ●
+
+
+--line  ● --main line  ['●']
+--num_words  1 --cost  10000 --prob 0
+
+-----token   ● PUNCT NFP ●
+
+
+--line  Implemented graphical representation of Networking devices using Cytoscape JS. --main line  ['implement', 'graphical', 'representation', 'networking', 'device', 'cytoscape', 'js']
+--num_words  7 --cost  6459.815003314424 --prob 3.354626279025119e-05
+
+-----token   Implemented VERB VBN Xxxxx
+-----token   graphical ADJ JJ xxxx
+-----token   representation NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   Networking PROPN NNP Xxxxx
+-----token   devices NOUN NNS xxxx
+-----token   using VERB VBG xxxx
+-----token   Cytoscape PROPN NNP Xxxxx
+-----token   JS PROPN NNP XX
+-----token   . PUNCT . .
+
+
+--line  Involved from planning phase till development code. --main line  ['involve', 'planning', 'phase', 'till', 'development', 'code']
+--num_words  6 --cost  3008.5536923187665 --prob 0.00024787521766663585
+
+-----token   Involved VERB VBN Xxxxx
+-----token   from ADP IN xxxx
+-----token   planning NOUN NN xxxx
+-----token   phase NOUN NN xxxx
+-----token   till SCONJ IN xxxx
+-----token   development NOUN NN xxxx
+-----token   code NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  2.  GUI based Network Monitoring System, June 2016 – Dec 2017 --main line  ['2', ' ', 'gui', 'base', 'network', 'monitoring', 'system', 'june', '2016', 'dec', '2017']
+--num_words  11 --cost  298095.79870417283 --prob 1.1253517471925912e-07
+
+-----token   2 X LS d
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   GUI PROPN NNP XXX
+-----token   based VERB VBD xxxx
+-----token   Network PROPN NNP Xxxxx
+-----token   Monitoring PROPN NNP Xxxxx
+-----token   System PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   June PROPN NNP Xxxx
+-----token   2016 NUM CD dddd
+-----token   – PUNCT : –
+-----token   Dec PROPN NNP Xxx
+-----token   2017 NUM CD dddd
+
+
+--line  ●  Worked as a UI developer for this project. --main line  ['●', ' ', 'work', 'ui', 'developer', 'project']
+--num_words  6 --cost  3008.5536923187665 --prob 0.00024787521766663585
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Worked PROPN NNP Xxxxx
+-----token   as SCONJ IN xx
+-----token   a DET DT x
+-----token   UI PROPN NNP XX
+-----token   developer NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   this DET DT xxxx
+-----token   project NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ●  Coding was done in AngularJS with Material Design, HTML and less/css. --main line  ['●', ' ', 'coding', 'angularjs', 'material', 'design', 'html', 'css']
+--num_words  8 --cost  15841.31591025766 --prob 4.539992976248485e-06
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Coding PROPN NNP Xxxxx
+-----token   was AUX VBD xxx
+-----token   done VERB VBN xxxx
+-----token   in ADP IN xx
+-----token   AngularJS PROPN NNP XxxxxXX
+-----token   with ADP IN xxxx
+-----token   Material PROPN NNP Xxxxx
+-----token   Design PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   HTML PROPN NNP XXXX
+-----token   and CCONJ CC xxx
+-----token   less ADJ JJR xxxx
+-----token   / PUNCT HYPH /
+-----token   css NOUN NN xxx
+-----token   . PUNCT . .
+
+
+--line  ● --main line  ['●']
+--num_words  1 --cost  10000 --prob 0
+
+-----token   ● PUNCT NFP ●
+
+
+--line  ●  Did coding, unit testing, and automation testing with AngularJS, karma, and selenium frameworks. --main line  ['●', ' ', 'coding', 'unit', 'testing', 'automation', 'testing', 'angularjs', 'karma', 'selenium', 'framework']
+--num_words  11 --cost  299095.79870417283 --prob 1.1253517471925913e-08
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Did AUX VBD Xxx
+-----token   coding NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   unit NOUN NN xxxx
+-----token   testing NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   and CCONJ CC xxx
+-----token   automation NOUN NN xxxx
+-----token   testing NOUN NN xxxx
+-----token   with ADP IN xxxx
+-----token   AngularJS PROPN NNP XxxxxXX
+-----token   , PUNCT , ,
+-----token   karma PROPN NNP xxxx
+-----token   , PUNCT , ,
+-----token   and CCONJ CC xxx
+-----token   selenium NOUN NN xxxx
+-----token   frameworks NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  Implemented various widgets using Ui-Grid, Cytoscape JS. --main line  ['implement', 'widget', 'ui', 'grid', 'cytoscape', 'js']
+--num_words  6 --cost  3008.5536923187665 --prob 0.00024787521766663585
+
+-----token   Implemented VERB VBN Xxxxx
+-----token   various ADJ JJ xxxx
+-----token   widgets NOUN NNS xxxx
+-----token   using VERB VBG xxxx
+-----token   Ui PROPN NNP Xx
+-----token   - PUNCT HYPH -
+-----token   Grid PROPN NNP Xxxx
+-----token   , PUNCT , ,
+-----token   Cytoscape PROPN NNP Xxxxx
+-----token   JS PROPN NNP XX
+-----token   . PUNCT . .
+
+
+--line  3.  Industrial Automation --main line  ['3', ' ', 'industrial', 'automation']
+--num_words  4 --cost  271.8281828459045 --prob 0.1353352832366127
+
+-----token   3 X LS d
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   Industrial PROPN NNP Xxxxx
+-----token   Automation PROPN NNP Xxxxx
+
+
+--line  ●  Worked on this project on behalf of my internship training at Aricent Technologies, Gurgaon. --main line  ['●', ' ', 'work', 'project', 'behalf', 'internship', 'training', 'aricent', 'technology', 'gurgaon']
+--num_words  10 --cost  110663.31584284586 --prob 8.31528719103568e-08
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Worked VERB VBD Xxxxx
+-----token   on ADP IN xx
+-----token   this DET DT xxxx
+-----token   project NOUN NN xxxx
+-----token   on ADP IN xx
+-----token   behalf NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   my DET PRP$ xx
+-----token   internship NOUN NN xxxx
+-----token   training NOUN NN xxxx
+-----token   at ADP IN xx
+-----token   Aricent PROPN NNP Xxxxx
+-----token   Technologies PROPN NNPS Xxxxx
+-----token   , PUNCT , ,
+-----token   Gurgaon PROPN NNP Xxxxx
+-----token   . PUNCT . .
+
+
+--line  ●  Worked on module implementation of Modbus Protocol. --main line  ['●', ' ', 'work', 'module', 'implementation', 'modbus', 'protocol']
+--num_words  7 --cost  6459.815003314424 --prob 3.354626279025119e-05
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Worked VERB VBD Xxxxx
+-----token   on ADP IN xx
+-----token   module NOUN NN xxxx
+-----token   implementation NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   Modbus PROPN NNP Xxxxx
+-----token   Protocol PROPN NNP Xxxxx
+-----token   . PUNCT . .
+
+
+--line  ●  Also worked with BeagleBone Device and RPM Sensors. --main line  ['●', ' ', 'work', 'beaglebone', 'device', 'rpm', 'sensor']
+--num_words  7 --cost  6459.815003314424 --prob 3.354626279025119e-05
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Also ADV RB Xxxx
+-----token   worked VERB VBD xxxx
+-----token   with ADP IN xxxx
+-----token   BeagleBone PROPN NNP XxxxxXxxx
+-----token   Device PROPN NNP Xxxxx
+-----token   and CCONJ CC xxx
+-----token   RPM PROPN NNP XXX
+-----token   Sensors NOUN NNS Xxxxx
+-----token   . PUNCT . .
+
+
+--line  ●  Used Core Java and JNI implementation with C/C++. --main line  ['●', ' ', 'core', 'java', 'jni', 'implementation', 'c', 'c++']
+--num_words  8 --cost  15841.31591025766 --prob 4.539992976248485e-06
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Used VERB VBD Xxxx
+-----token   Core PROPN NNP Xxxx
+-----token   Java PROPN NNP Xxxx
+-----token   and CCONJ CC xxx
+-----token   JNI PROPN NNP XXX
+-----token   implementation NOUN NN xxxx
+-----token   with ADP IN xxxx
+-----token   C PROPN NNP X
+-----token   / SYM SYM /
+-----token   C++ PROPN NNP X++
+-----token   . PUNCT . .
+
+
+--line  4.  RB MAP, 2013 --main line  ['4', ' ', 'rb', 'map', '2013']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   4 X LS d
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   RB PROPN NNP XX
+-----token   MAP PROPN NNP XXX
+-----token   , PUNCT , ,
+-----token   2013 NUM CD dddd
+
+
+--line  ●  The application provides solutions for shortest routes and finding all routes between two cities. --main line  ['●', ' ', 'application', 'provide', 'solution', 'short', 'route', 'find', 'route', 'city']
+--num_words  10 --cost  110663.31584284586 --prob 8.31528719103568e-08
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   The DET DT Xxx
+-----token   application NOUN NN xxxx
+-----token   provides VERB VBZ xxxx
+-----token   solutions NOUN NNS xxxx
+-----token   for ADP IN xxx
+-----token   shortest ADJ JJS xxxx
+-----token   routes NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   finding VERB VBG xxxx
+-----token   all DET DT xxx
+-----token   routes NOUN NNS xxxx
+-----token   between ADP IN xxxx
+-----token   two NUM CD xxx
+-----token   cities NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  ●  Developed  to  learn  the  concepts  of  Dijkstra’s  and  Warshall’s  algorithms  and  basics  of  data  structures  and --main line  ['●', ' ', 'develop', ' ', ' ', 'learn', ' ', ' ', 'concept', ' ', ' ', 'dijkstra', ' ', ' ', 'warshall', ' ', 'algorithm', ' ', ' ', 'basic', ' ', ' ', 'datum', ' ', 'structure', ' ']
+--num_words  26 --cost  974480344624.8904 --prob 1.0530617357553812e-20
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Developed VERB VBD Xxxxx
+-----token     SPACE _SP  
+-----token   to PART TO xx
+-----token     SPACE _SP  
+-----token   learn VERB VB xxxx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   concepts NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   of ADP IN xx
+-----token     SPACE _SP  
+-----token   Dijkstra PROPN NNP Xxxxx
+-----token   ’s PROPN NNP ’x
+-----token     SPACE _SP  
+-----token   and CCONJ CC xxx
+-----token     SPACE _SP  
+-----token   Warshall PROPN NNP Xxxxx
+-----token   ’s PART POS ’x
+-----token     SPACE _SP  
+-----token   algorithms NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   and CCONJ CC xxx
+-----token     SPACE _SP  
+-----token   basics NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   of ADP IN xx
+-----token     SPACE _SP  
+-----token   data NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   structures NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   and CCONJ CC xxx
+
+
+--line  OOPs. --main line  ['oops']
+--num_words  1 --cost  1000 --prob 0.1
+
+-----token   OOPs INTJ UH XXXx
+-----token   . PUNCT . .
+
+
+--line  ●  The application, coded in C++ using the Visual Studio 2012 platform. --main line  ['●', ' ', 'application', 'code', 'c++', 'visual', 'studio', '2012', 'platform']
+--num_words  9 --cost  41342.87934927351 --prob 6.14421235332821e-07
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   The DET DT Xxx
+-----token   application NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   coded VERB VBN xxxx
+-----token   in ADP IN xx
+-----token   C++ PROPN NNP X++
+-----token   using VERB VBG xxxx
+-----token   the DET DT xxx
+-----token   Visual ADJ JJ Xxxxx
+-----token   Studio PROPN NNP Xxxxx
+-----token   2012 NUM CD dddd
+-----token   platform NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ●  Submitted as a summer project during MCA. --main line  ['●', ' ', 'submit', 'summer', 'project', 'mca']
+--num_words  6 --cost  3008.5536923187665 --prob 0.00024787521766663585
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Submitted VERB VBN Xxxxx
+-----token   as SCONJ IN xx
+-----token   a DET DT x
+-----token   summer NOUN NN xxxx
+-----token   project NOUN NN xxxx
+-----token   during ADP IN xxxx
+-----token   MCA PROPN NNP XXX
+-----token   . PUNCT . .
+
+
+--line  AREAS OF EXPERTISE --main line  ['area', 'expertise']
+--num_words  2 --cost  0 --prob 1
+
+-----token   AREAS PROPN NNP XXXX
+-----token   OF ADP IN XX
+-----token   EXPERTISE PROPN NNP XXXX
+
+
+--line  ●  Knowledge of Web development framework AngularJS, Angular 2, Angular 5. --main line  ['●', ' ', 'knowledge', 'web', 'development', 'framework', 'angularjs', 'angular', '2', 'angular', '5']
+--num_words  11 --cost  299095.79870417283 --prob 1.1253517471925913e-08
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Knowledge NOUN NN Xxxxx
+-----token   of ADP IN xx
+-----token   Web PROPN NNP Xxx
+-----token   development NOUN NN xxxx
+-----token   framework NOUN NN xxxx
+-----token   AngularJS PROPN NNP XxxxxXX
+-----token   , PUNCT , ,
+-----token   Angular PROPN NNP Xxxxx
+-----token   2 NUM CD d
+-----token   , PUNCT , ,
+-----token   Angular PROPN NNP Xxxxx
+-----token   5 NUM CD d
+-----token   . PUNCT . .
+
+
+--line  ●  Knowledge of web technologies like HTML, JavaScript, ES6, TypeScript, LESS/CSS, Material Design, Bootstrap --main line  ['●', ' ', 'knowledge', 'web', 'technology', 'like', 'html', 'javascript', 'es6', 'typescript', 'css', 'material', 'design', 'bootstrap']
+--num_words  14 --cost  5987414.171519781 --prob 2.7894680928689246e-10
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Knowledge NOUN NN Xxxxx
+-----token   of ADP IN xx
+-----token   web NOUN NN xxx
+-----token   technologies NOUN NNS xxxx
+-----token   like SCONJ IN xxxx
+-----token   HTML PROPN NNP XXXX
+-----token   , PUNCT , ,
+-----token   JavaScript PROPN NNP XxxxXxxxx
+-----token   , PUNCT , ,
+-----token   ES6 PROPN NNP XXd
+-----token   , PUNCT , ,
+-----token   TypeScript PROPN NNP XxxxXxxxx
+-----token   , PUNCT , ,
+-----token   LESS PROPN NNP XXXX
+-----token   / SYM SYM /
+-----token   CSS PROPN NNP XXX
+-----token   , PUNCT , ,
+-----token   Material NOUN NN Xxxxx
+-----token   Design PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Bootstrap PROPN NNP Xxxxx
+
+
+--line  ●  Knowledge of GitHub and GIT version control system. --main line  ['●', ' ', 'knowledge', 'github', 'git', 'version', 'control', 'system']
+--num_words  8 --cost  15841.31591025766 --prob 4.539992976248485e-06
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Knowledge NOUN NN Xxxxx
+-----token   of ADP IN xx
+-----token   GitHub PROPN NNP XxxXxx
+-----token   and CCONJ CC xxx
+-----token   GIT PROPN NNP XXX
+-----token   version NOUN NN xxxx
+-----token   control NOUN NN xxxx
+-----token   system NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ●  Working Knowledge of Agile software development methodologies. --main line  ['●', ' ', 'work', 'knowledge', 'agile', 'software', 'development', 'methodology']
+--num_words  8 --cost  15841.31591025766 --prob 4.539992976248485e-06
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Working PROPN NNP Xxxxx
+-----token   Knowledge PROPN NNP Xxxxx
+-----token   of ADP IN xx
+-----token   Agile ADJ JJ Xxxxx
+-----token   software NOUN NN xxxx
+-----token   development NOUN NN xxxx
+-----token   methodologies NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  ●  Strong organizational and preparation skills. --main line  ['●', ' ', 'strong', 'organizational', 'preparation', 'skill']
+--num_words  6 --cost  3008.5536923187665 --prob 0.00024787521766663585
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Strong ADJ JJ Xxxxx
+-----token   organizational ADJ JJ xxxx
+-----token   and CCONJ CC xxx
+-----token   preparation NOUN NN xxxx
+-----token   skills NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  EDUCATION --main line  ['education']
+--num_words  1 --cost  0 --prob 1
+
+-----token   EDUCATION PROPN NNP XXXX
+
+
+--line  Institute --main line  ['institute']
+--num_words  1 --cost  0 --prob 1
+
+-----token   Institute PROPN NNP Xxxxx
+
+
+--line  GGSIPU, New Delhi --main line  ['ggsipu', 'new', 'delhi']
+--num_words  3 --cost  0 --prob 1
+
+-----token   GGSIPU PROPN NNP XXXX
+-----token   , PUNCT , ,
+-----token   New PROPN NNP Xxx
+-----token   Delhi PROPN NNP Xxxxx
+
+
+--line  Integral University, Lucknow (U.P.) --main line  ['integral', 'university', 'lucknow', 'u.p']
+--num_words  4 --cost  271.8281828459045 --prob 0.1353352832366127
+
+-----token   Integral PROPN NNP Xxxxx
+-----token   University PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Lucknow PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   U.P. PROPN NNP X.X.
+-----token   ) PUNCT -RRB- )
+
+
+--line  Course --main line  ['course']
+--num_words  1 --cost  0 --prob 1
+
+-----token   Course NOUN NN Xxxxx
+
+
+--line  MCA --main line  ['mca']
+--num_words  1 --cost  0 --prob 1
+
+-----token   MCA PROPN NNP XXX
+
+
+--line  BCA --main line  ['bca']
+--num_words  1 --cost  0 --prob 1
+
+-----token   BCA PROPN NNP XXX
+
+
+--line  Jawahar Navodaya Vidyalaya, Azamgarh (U.P.) --main line  ['jawahar', 'navodaya', 'vidyalaya', 'azamgarh', 'u.p']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   Jawahar PROPN NNP Xxxxx
+-----token   Navodaya PROPN NNP Xxxxx
+-----token   Vidyalaya PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Azamgarh PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   U.P. PROPN NNP X.X.
+-----token   ) PUNCT -RRB- )
+
+
+--line  Class XII (CBSE) (Comp Sci.) --main line  ['class', 'xii', 'cbse', 'comp', 'sci']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   Class NOUN NN Xxxxx
+-----token   XII PROPN NNP XXX
+-----token   ( PUNCT -LRB- (
+-----token   CBSE PROPN NNP XXXX
+-----token   ) PUNCT -RRB- )
+-----token   ( PUNCT -LRB- (
+-----token   Comp PROPN NNP Xxxx
+-----token   Sci PROPN NNP Xxx
+-----token   . PUNCT . .
+-----token   ) PUNCT -RRB- )
+
+
+--line  66% --main line  ['66']
+--num_words  1 --cost  0 --prob 1
+
+-----token   66 NUM CD dd
+-----token   % NOUN NN %
+
+
+--line  Jawahar Navodaya Vidyalaya, Azamgarh (U.P.) --main line  ['jawahar', 'navodaya', 'vidyalaya', 'azamgarh', 'u.p']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   Jawahar PROPN NNP Xxxxx
+-----token   Navodaya PROPN NNP Xxxxx
+-----token   Vidyalaya PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Azamgarh PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   U.P. PROPN NNP X.X.
+-----token   ) PUNCT -RRB- )
+
+
+--line  Class X (CBSE) --main line  ['class', 'x', 'cbse']
+--num_words  3 --cost  0 --prob 1
+
+-----token   Class NOUN NN Xxxxx
+-----token   X PROPN NNP X
+-----token   ( PUNCT -LRB- (
+-----token   CBSE PROPN NNP XXXX
+-----token   ) PUNCT -RRB- )
+
+
+--line  82% --main line  ['82']
+--num_words  1 --cost  0 --prob 1
+
+-----token   82 NUM CD dd
+-----token   % NOUN NN %
+
+
+--line  Marks --main line  ['marks']
+--num_words  1 --cost  0 --prob 1
+
+-----token   Marks PROPN NNP Xxxxx
+
+
+--line  Year of Passing --main line  ['year', 'pass']
+--num_words  2 --cost  0 --prob 1
+
+-----token   Year NOUN NN Xxxx
+-----token   of ADP IN xx
+-----token   Passing VERB VBG Xxxxx
+
+
+--line  81% --main line  ['81']
+--num_words  1 --cost  0 --prob 1
+
+-----token   81 NUM CD dd
+-----token   % NOUN NN %
+
+
+--line  70% --main line  ['70']
+--num_words  1 --cost  0 --prob 1
+
+-----token   70 NUM CD dd
+-----token   % NOUN NN %
+
+
+--line  2015 --main line  ['2015']
+--num_words  1 --cost  0 --prob 1
+
+-----token   2015 NUM CD dddd
+
+
+--line  2011 --main line  ['2011']
+--num_words  1 --cost  0 --prob 1
+
+-----token   2011 NUM CD dddd
+
+
+--line  2008 --main line  ['2008']
+--num_words  1 --cost  0 --prob 1
+
+-----token   2008 NUM CD dddd
+
+
+--line  2006 --main line  ['2006']
+--num_words  1 --cost  0 --prob 1
+
+-----token   2006 NUM CD dddd
+
+
+--line  EXTRA-CURRICULAR --main line  ['extra', 'curricular']
+--num_words  2 --cost  0 --prob 1
+
+-----token   EXTRA PROPN NNP XXXX
+-----token   - PUNCT HYPH -
+-----token   CURRICULAR PROPN NNP XXXX
+
+
+--line  ●  Updated website for NSC 2014 and INDIACOM 2014 during MCA. --main line  ['●', ' ', 'updated', 'website', 'nsc', '2014', 'indiacom', '2014', 'mca']
+--num_words  9 --cost  41342.87934927351 --prob 6.14421235332821e-07
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Updated ADJ JJ Xxxxx
+-----token   website NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   NSC PROPN NNP XXX
+-----token   2014 NUM CD dddd
+-----token   and CCONJ CC xxx
+-----token   INDIACOM ADJ JJ XXXX
+-----token   2014 NUM CD dddd
+-----token   during ADP IN xxxx
+-----token   MCA PROPN NNP XXX
+-----token   . PUNCT . .
+
+
+--line  ●  Perform updates and testing on LAN solution of INDIACOM Desktop Registration system during MCA. --main line  ['●', ' ', 'perform', 'update', 'test', 'lan', 'solution', 'indiacom', 'desktop', 'registration', 'system', 'mca']
+--num_words  12 --cost  811308.3927575385 --prob 1.522997974471263e-09
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Perform VERB VB Xxxxx
+-----token   updates NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   testing VERB VBG xxxx
+-----token   on ADP IN xx
+-----token   LAN PROPN NNP XXX
+-----token   solution NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   INDIACOM PROPN NNP XXXX
+-----token   Desktop PROPN NNP Xxxxx
+-----token   Registration PROPN NNP Xxxxx
+-----token   system NOUN NN xxxx
+-----token   during ADP IN xxxx
+-----token   MCA PROPN NNP XXX
+-----token   . PUNCT . .
+
+
+--line  ●  Actively participated in technical and non-technical activities in college during MCA. --main line  ['●', ' ', 'actively', 'participate', 'technical', 'non', 'technical', 'activity', 'college', 'mca']
+--num_words  10 --cost  110663.31584284586 --prob 8.31528719103568e-08
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Actively ADV RB Xxxxx
+-----token   participated VERB VBD xxxx
+-----token   in ADP IN xx
+-----token   technical ADJ JJ xxxx
+-----token   and CCONJ CC xxx
+-----token   non ADJ JJ xxx
+-----token   - ADJ JJ -
+-----token   technical ADJ JJ xxxx
+-----token   activities NOUN NNS xxxx
+-----token   in ADP IN xx
+-----token   college NOUN NN xxxx
+-----token   during ADP IN xxxx
+-----token   MCA PROPN NNP XXX
+-----token   . PUNCT . .
+
+
+--line  ACHIEVEMENTS --main line  ['achievement']
+--num_words  1 --cost  0 --prob 1
+
+-----token   ACHIEVEMENTS NOUN NNS XXXX
+
+
+--line  ●  Awarded for Technical Support Excellence in Batch by BVICAM (2015) --main line  ['●', ' ', 'award', 'technical', 'support', 'excellence', 'batch', 'bvicam', '2015']
+--num_words  9 --cost  40342.87934927351 --prob 6.14421235332821e-06
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Awarded VERB VBN Xxxxx
+-----token   for ADP IN xxx
+-----token   Technical PROPN NNP Xxxxx
+-----token   Support PROPN NNP Xxxxx
+-----token   Excellence PROPN NNP Xxxxx
+-----token   in ADP IN xx
+-----token   Batch PROPN NNP Xxxxx
+-----token   by ADP IN xx
+-----token   BVICAM PROPN NNP XXXX
+-----token   ( PUNCT -LRB- (
+-----token   2015 NUM CD dddd
+-----token   ) PUNCT -RRB- )
+
+
+--line  ●  Secured 2nd position in IT Quiz organized by BVICAM (2013). --main line  ['●', ' ', 'secured', '2nd', 'position', 'quiz', 'organize', 'bvicam', '2013']
+--num_words  9 --cost  41342.87934927351 --prob 6.14421235332821e-07
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Secured ADJ JJ Xxxxx
+-----token   2nd ADJ JJ dxx
+-----token   position NOUN NN xxxx
+-----token   in ADP IN xx
+-----token   IT PROPN NNP XX
+-----token   Quiz PROPN NNP Xxxx
+-----token   organized VERB VBN xxxx
+-----token   by ADP IN xx
+-----token   BVICAM PROPN NNP XXXX
+-----token   ( PUNCT -LRB- (
+-----token   2013 NUM CD dddd
+-----token   ) PUNCT -RRB- )
+-----token   . PUNCT . .
+
+
+--line  ●  Secured 2nd position in Structure Formation organized by UPTEC Computer Consultancy Limited (2009). --main line  ['●', ' ', 'secured', '2nd', 'position', 'structure', 'formation', 'organize', 'uptec', 'computer', 'consultancy', 'limit', '2009']
+--num_words  13 --cost  2203646.579480672 --prob 2.061153622438558e-10
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Secured ADJ JJ Xxxxx
+-----token   2nd ADJ JJ dxx
+-----token   position NOUN NN xxxx
+-----token   in ADP IN xx
+-----token   Structure PROPN NNP Xxxxx
+-----token   Formation PROPN NNP Xxxxx
+-----token   organized VERB VBN xxxx
+-----token   by ADP IN xx
+-----token   UPTEC PROPN NNP XXXX
+-----token   Computer PROPN NNP Xxxxx
+-----token   Consultancy PROPN NNP Xxxxx
+-----token   Limited PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   2009 NUM CD dddd
+-----token   ) PUNCT -RRB- )
+-----token   . PUNCT . .
+
+
+--line  PERSONAL DETAILS --main line  ['personal', 'detail']
+--num_words  2 --cost  0 --prob 1
+
+-----token   PERSONAL PROPN NNP XXXX
+-----token   DETAILS PROPN NNP XXXX
+
+
+--line  Father’s Name --main line  ['father']
+--num_words  1 --cost  0 --prob 1
+
+-----token   Father PROPN NNP Xxxxx
+-----token   ’s PART POS ’x
+-----token   Name PROPN NNP Xxxx
+
+
+--line  Date of Birth --main line  ['date', 'birth']
+--num_words  2 --cost  0 --prob 1
+
+-----token   Date NOUN NN Xxxx
+-----token   of ADP IN xx
+-----token   Birth PROPN NNP Xxxxx
+
+
+--line  Languages Known --main line  ['language', 'know']
+--num_words  2 --cost  0 --prob 1
+
+-----token   Languages NOUN NNS Xxxxx
+-----token   Known VERB VBN Xxxxx
+
+
+--line  Nationality --main line  ['nationality']
+--num_words  1 --cost  0 --prob 1
+
+-----token   Nationality NOUN NN Xxxxx
+
+
+--line  Alternate E-Mail ID --main line  ['alternate', 'e', 'mail', 'would']
+--num_words  4 --cost  271.8281828459045 --prob 0.1353352832366127
+
+-----token   Alternate PROPN NNP Xxxxx
+-----token   E PROPN NNP X
+-----token   - NOUN NN -
+-----token   Mail NOUN NN Xxxx
+-----token   ID PROPN NNP XX
+
+
+--line  Marital Status --main line  ['marital', 'status']
+--num_words  2 --cost  0 --prob 1
+
+-----token   Marital ADJ JJ Xxxxx
+-----token   Status PROPN NNP Xxxxx
+
+
+--line  Strengths --main line  ['strength']
+--num_words  1 --cost  0 --prob 1
+
+-----token   Strengths NOUN NNS Xxxxx
+
+
+--line  : --main line  []
+--num_words  0 --cost  10004.978706836786 --prob 0.0
+
+-----token   : PUNCT : :
+
+
+--line  : --main line  []
+--num_words  0 --cost  10004.978706836786 --prob 0.0
+
+-----token   : PUNCT : :
+
+
+--line  : --main line  []
+--num_words  0 --cost  10004.978706836786 --prob 0.0
+
+-----token   : PUNCT : :
+
+
+--line  : --main line  []
+--num_words  0 --cost  10004.978706836786 --prob 0.0
+
+-----token   : PUNCT : :
+
+
+--line  : --main line  []
+--num_words  0 --cost  10004.978706836786 --prob 0.0
+
+-----token   : PUNCT : :
+
+
+--line  : --main line  []
+--num_words  0 --cost  10004.978706836786 --prob 0.0
+
+-----token   : PUNCT : :
+
+
+--line  : --main line  []
+--num_words  0 --cost  10004.978706836786 --prob 0.0
+
+-----token   : PUNCT : :
+
+
+--line  Mr. Sushil Kumar Baranwal --main line  ['mr', 'sushil', 'kumar', 'baranwal']
+--num_words  4 --cost  271.8281828459045 --prob 0.1353352832366127
+
+-----token   Mr. PROPN NNP Xx.
+-----token   Sushil PROPN NNP Xxxxx
+-----token   Kumar PROPN NNP Xxxxx
+-----token   Baranwal PROPN NNP Xxxxx
+
+
+--line  10-Sep-1990 --main line  ['10-sep-1990']
+--num_words  1 --cost  0 --prob 1
+
+-----token   10-Sep-1990 NUM CD dd-Xxx-dddd
+
+
+--line  Hindi & English --main line  ['hindi', 'english']
+--num_words  2 --cost  0 --prob 1
+
+-----token   Hindi PROPN NNP Xxxxx
+-----token   & CCONJ CC &
+-----token   English PROPN NNP Xxxxx
+
+
+--line  Indian --main line  ['indian']
+--num_words  1 --cost  0 --prob 1
+
+-----token   Indian PROPN NNP Xxxxx
+
+
+--line  rajneeshbarnwal@rocketmail.com --main line  ['rajneeshbarnwal@rocketmail.com']
+--num_words  1 --cost  0 --prob 1
+
+-----token   rajneeshbarnwal@rocketmail.com X ADD xxxx@xxxx.xxx
+
+
+--line  Married --main line  ['married']
+--num_words  1 --cost  0 --prob 1
+
+-----token   Married ADJ JJ Xxxxx
+
+
+--line  Quick Learner, Adoptable, Commitment Oriented --main line  ['quick', 'learner', 'adoptable', 'commitment', 'orient']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   Quick PROPN NNP Xxxxx
+-----token   Learner PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Adoptable PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Commitment PROPN NNP Xxxxx
+-----token   Oriented VERB VBN Xxxxx
+
+
+G-Block, Greenwood City
+Sector-40, Gurgaon
+Haryana - 122003
+RAJNEESH KUMAR BARNWAL
+Contact No: 07042488448 / 07503075418
+E-mail: rajneeshbarnwal@gmail.com
+To associate with the reputed industry and work for the organization’s and personal growth and progress with my whole energy,
+knowledge, dedication and sincere efforts.
+PROFESSIONAL EXPERIENCE
+●  Working as Software Engineer with Aricent Technologies, Gurgaon since June 2016.
+●  Did Internship from Aricent Technologies, Gurgaon from Jan 2015 to June 2015.
+PROJECTS UNDERTAKEN
+1.  GUI based Network Monitoring System, Since Jan 2017
+●  Working as UI developer for this project
+●  Coding is being done in AngularJS with Bootstrap, HTML and less/css.
+Implemented graphical representation of Networking devices using Cytoscape JS.
+Involved from planning phase till development code.
+2.  GUI based Network Monitoring System, June 2016 – Dec 2017
+●  Worked as a UI developer for this project.
+●  Coding was done in AngularJS with Material Design, HTML and less/css.
+●  Did coding, unit testing, and automation testing with AngularJS, karma, and selenium frameworks.
+Implemented various widgets using Ui-Grid, Cytoscape JS.
+3.  Industrial Automation
+●  Worked on this project on behalf of my internship training at Aricent Technologies, Gurgaon.
+●  Worked on module implementation of Modbus Protocol.
+●  Also worked with BeagleBone Device and RPM Sensors.
+●  Used Core Java and JNI implementation with C/C++.
+4.  RB MAP, 2013
+●  The application provides solutions for shortest routes and finding all routes between two cities.
+●  Developed  to  learn  the  concepts  of  Dijkstra’s  and  Warshall’s  algorithms  and  basics  of  data  structures  and
+●  The application, coded in C++ using the Visual Studio 2012 platform.
+●  Submitted as a summer project during MCA.
+AREAS OF EXPERTISE
+●  Knowledge of Web development framework AngularJS, Angular 2, Angular 5.
+●  Knowledge of web technologies like HTML, JavaScript, ES6, TypeScript, LESS/CSS, Material Design, Bootstrap
+●  Knowledge of GitHub and GIT version control system.
+●  Working Knowledge of Agile software development methodologies.
+●  Strong organizational and preparation skills.
+GGSIPU, New Delhi
+Integral University, Lucknow (U.P.)
+Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)
+Class XII (CBSE) (Comp Sci.)
+Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)
+Class X (CBSE)
+Year of Passing
+EXTRA-CURRICULAR
+●  Updated website for NSC 2014 and INDIACOM 2014 during MCA.
+●  Perform updates and testing on LAN solution of INDIACOM Desktop Registration system during MCA.
+●  Actively participated in technical and non-technical activities in college during MCA.
+ACHIEVEMENTS
+●  Awarded for Technical Support Excellence in Batch by BVICAM (2015)
+●  Secured 2nd position in IT Quiz organized by BVICAM (2013).
+●  Secured 2nd position in Structure Formation organized by UPTEC Computer Consultancy Limited (2009).
+PERSONAL DETAILS
+Father’s Name
+Date of Birth
+Languages Known
+Nationality
+Alternate E-Mail ID
+Marital Status
+Mr. Sushil Kumar Baranwal
+10-Sep-1990
+Hindi & English
+rajneeshbarnwal@rocketmail.com
+Quick Learner, Adoptable, Commitment Oriented
+['Address:', 'G-Block, Greenwood City', 'Sector-40, Gurgaon', 'Haryana - 122003', 'RAJNEESH KUMAR BARNWAL', 'Contact No: 07042488448 / 07503075418', 'E-mail: rajneeshbarnwal@gmail.com', 'OBJECTIVE', 'To associate with the reputed industry and work for the organization’s and personal growth and progress with my whole energy,', 'knowledge, dedication and sincere efforts.', 'PROFESSIONAL EXPERIENCE', '●  Working as Software Engineer with Aricent Technologies, Gurgaon since June 2016.', '●  Did Internship from Aricent Technologies, Gurgaon from Jan 2015 to June 2015.', 'PROJECTS UNDERTAKEN', '1.  GUI based Network Monitoring System, Since Jan 2017', '●  Working as UI developer for this project', '●  Coding is being done in AngularJS with Bootstrap, HTML and less/css.', '●', '●', 'Implemented graphical representation of Networking devices using Cytoscape JS.', 'Involved from planning phase till development code.', '2.  GUI based Network Monitoring System, June 2016 – Dec 2017', '●  Worked as a UI developer for this project.', '●  Coding was done in AngularJS with Material Design, HTML and less/css.', '●', '●  Did coding, unit testing, and automation testing with AngularJS, karma, and selenium frameworks.', 'Implemented various widgets using Ui-Grid, Cytoscape JS.', '3.  Industrial Automation', '●  Worked on this project on behalf of my internship training at Aricent Technologies, Gurgaon.', '●  Worked on module implementation of Modbus Protocol.', '●  Also worked with BeagleBone Device and RPM Sensors.', '●  Used Core Java and JNI implementation with C/C++.', '4.  RB MAP, 2013', '●  The application provides solutions for shortest routes and finding all routes between two cities.', '●  Developed  to  learn  the  concepts  of  Dijkstra’s  and  Warshall’s  algorithms  and  basics  of  data  structures  and', 'OOPs.', '●  The application, coded in C++ using the Visual Studio 2012 platform.', '●  Submitted as a summer project during MCA.', 'AREAS OF EXPERTISE', '●  Knowledge of Web development framework AngularJS, Angular 2, Angular 5.', '●  Knowledge of web technologies like HTML, JavaScript, ES6, TypeScript, LESS/CSS, Material Design, Bootstrap', '●  Knowledge of GitHub and GIT version control system.', '●  Working Knowledge of Agile software development methodologies.', '●  Strong organizational and preparation skills.', 'EDUCATION', 'Institute', 'GGSIPU, New Delhi', 'Integral University, Lucknow (U.P.)', 'Course', 'MCA', 'BCA', 'Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)', 'Class XII (CBSE) (Comp Sci.)', '66%', 'Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)', 'Class X (CBSE)', '82%', 'Marks', 'Year of Passing', '81%', '70%', '2015', '2011', '2008', '2006', 'EXTRA-CURRICULAR', '●  Updated website for NSC 2014 and INDIACOM 2014 during MCA.', '●  Perform updates and testing on LAN solution of INDIACOM Desktop Registration system during MCA.', '●  Actively participated in technical and non-technical activities in college during MCA.', 'ACHIEVEMENTS', '●  Awarded for Technical Support Excellence in Batch by BVICAM (2015)', '●  Secured 2nd position in IT Quiz organized by BVICAM (2013).', '●  Secured 2nd position in Structure Formation organized by UPTEC Computer Consultancy Limited (2009).', 'PERSONAL DETAILS', 'Father’s Name', 'Date of Birth', 'Languages Known', 'Nationality', 'Alternate E-Mail ID', 'Marital Status', 'Strengths', ':', ':', ':', ':', ':', ':', ':', 'Mr. Sushil Kumar Baranwal', '10-Sep-1990', 'Hindi & English', 'Indian', 'rajneeshbarnwal@rocketmail.com', 'Married', 'Quick Learner, Adoptable, Commitment Oriented']
+name: Quick Learner
+email: rajneeshbarnwal@rocketmail.com
+mobile: +07042488448
+expertise: ledge, dedication and sincere efforts.
+expertise: loper for this project
+expertise: lopment code.
+expertise: loper for this project.
+expertise: ed core java and jni implementation with c/c++.
+expertise: loped  to  learn  the  concepts  of  dijkstra’s  and  warshall’s  algorithms  and  basics  of  data  structures  and
+expertise: ledge of web development framework angularjs, angular 2, angular 5.
+expertise: ledge of web technologies like html, javascript, es6, typescript, less/css, material design, bootstrap
+expertise: ledge of github and git version control system.
+expertise: ledge of agile software development methodologies.
+expertise: (u.p.)
+expertise: n
+++++++++++++++++++++++++++++++++++++++++++
+parsing file:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/iimjobs_BHARAT_BORANA.pdf
+--line  WZ-433, Shiv nagar, --main line  ['wz-433', 'shiv', 'nagar']
+--num_words  3 --cost  0 --prob 1
+
+-----token   WZ-433 PROPN NNP XX-ddd
+-----token   , PUNCT , ,
+-----token   Shiv PROPN NNP Xxxx
+-----token   nagar NOUN NN xxxx
+-----token   , PUNCT , ,
+
+
+--line  boranab@rediffmail.com --main line  ['boranab@rediffmail.com']
+--num_words  1 --cost  0 --prob 1
+
+-----token   boranab@rediffmail.com X ADD xxxx@xxxx.xxx
+
+
+--line  (+91) 900-120-2858 --main line  ['+91', '900', '120', '2858']
+--num_words  4 --cost  271.8281828459045 --prob 0.1353352832366127
+
+-----token   ( PUNCT -LRB- (
+-----token   +91 NOUN NN +dd
+-----token   ) PUNCT -RRB- )
+-----token   900 NUM CD ddd
+-----token   - PUNCT HYPH -
+-----token   120 NUM CD ddd
+-----token   - PUNCT HYPH -
+-----token   2858 NUM CD dddd
+
+
+--line  Tihar Jail Road, Delhi, 110058 --main line  ['tihar', 'jail', 'road', 'delhi', '110058']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   Tihar PROPN NNP Xxxxx
+-----token   Jail PROPN NNP Xxxx
+-----token   Road PROPN NNP Xxxx
+-----token   , PUNCT , ,
+-----token   Delhi PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   110058 NUM CD dddd
+
+
+--line  BHARAT BORANA --main line  ['bharat', 'borana']
+--num_words  2 --cost  0 --prob 1
+
+-----token   BHARAT PROPN NNP XXXX
+-----token   BORANA PROPN NNP XXXX
+
+
+--line  Senior Software Engineer, --main line  ['senior', 'software', 'engineer']
+--num_words  3 --cost  0 --prob 1
+
+-----token   Senior PROPN NNP Xxxxx
+-----token   Software PROPN NNP Xxxxx
+-----token   Engineer PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+
+
+--line  Appster LLP, Gurugram, Haryana --main line  ['appster', 'llp', 'gurugram', 'haryana']
+--num_words  4 --cost  271.8281828459045 --prob 0.1353352832366127
+
+-----token   Appster PROPN NNP Xxxxx
+-----token   LLP PROPN NNP XXX
+-----token   , PUNCT , ,
+-----token   Gurugram PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Haryana PROPN NNP Xxxxx
+
+
+--line  Experienced full stack developer with various web development framework expertise. --main line  ['experience', 'stack', 'developer', 'web', 'development', 'framework', 'expertise']
+--num_words  7 --cost  6459.815003314424 --prob 3.354626279025119e-05
+
+-----token   Experienced VERB VBN Xxxxx
+-----token   full ADJ JJ xxxx
+-----token   stack ADJ JJ xxxx
+-----token   developer NOUN NN xxxx
+-----token   with ADP IN xxxx
+-----token   various ADJ JJ xxxx
+-----token   web NOUN NN xxx
+-----token   development NOUN NN xxxx
+-----token   framework NOUN NN xxxx
+-----token   expertise NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢ --main line  ['➢']
+--num_words  1 --cost  0 --prob 1
+
+-----token   ➢ X FW ➢
+
+
+--line  ➢  Over five years of commercial web and restful application development experience. --main line  ['➢', ' ', 'year', 'commercial', 'web', 'restful', 'application', 'development', 'experience']
+--num_words  9 --cost  41342.87934927351 --prob 6.14421235332821e-07
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Over ADP IN Xxxx
+-----token   five NUM CD xxxx
+-----token   years NOUN NNS xxxx
+-----token   of ADP IN xx
+-----token   commercial ADJ JJ xxxx
+-----token   web NOUN NN xxx
+-----token   and CCONJ CC xxx
+-----token   restful ADJ JJ xxxx
+-----token   application NOUN NN xxxx
+-----token   development NOUN NN xxxx
+-----token   experience NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢ --main line  ['➢']
+--num_words  1 --cost  0 --prob 1
+
+-----token   ➢ X FW ➢
+
+
+--line  Experience working in Agile Scrum environment and project management. --main line  ['experience', 'work', 'agile', 'scrum', 'environment', 'project', 'management']
+--num_words  7 --cost  6459.815003314424 --prob 3.354626279025119e-05
+
+-----token   Experience NOUN NN Xxxxx
+-----token   working VERB VBG xxxx
+-----token   in ADP IN xx
+-----token   Agile PROPN NNP Xxxxx
+-----token   Scrum PROPN NNP Xxxxx
+-----token   environment NOUN NN xxxx
+-----token   and CCONJ CC xxx
+-----token   project NOUN NN xxxx
+-----token   management NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢  Web Development Frameworks: Laravel, CakePHP, NodeJs With Express. --main line  ['➢', ' ', 'web', 'development', 'framework', 'laravel', 'cakephp', 'nodejs', 'express']
+--num_words  9 --cost  41342.87934927351 --prob 6.14421235332821e-07
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Web PROPN NNP Xxx
+-----token   Development PROPN NNP Xxxxx
+-----token   Frameworks PROPN NNPS Xxxxx
+-----token   : PUNCT : :
+-----token   Laravel PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   CakePHP NOUN NNS XxxxXXX
+-----token   , PUNCT , ,
+-----token   NodeJs X ADD XxxxXx
+-----token   With ADP IN Xxxx
+-----token   Express PROPN NNP Xxxxx
+-----token   . PUNCT . .
+
+
+--line  ➢  UI Frameworks/Technologies: HTML5, CSS3, jQuery, Angular JS. --main line  ['➢', ' ', 'ui', 'framework', 'technology', 'html5', 'css3', 'jquery', 'angular', 'js']
+--num_words  10 --cost  110663.31584284586 --prob 8.31528719103568e-08
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   UI PROPN NNP XX
+-----token   Frameworks PROPN NNPS Xxxxx
+-----token   / SYM SYM /
+-----token   Technologies PROPN NNPS Xxxxx
+-----token   : PUNCT : :
+-----token   HTML5 NOUN NNS XXXXd
+-----token   , PUNCT , ,
+-----token   CSS3 PROPN NNP XXXd
+-----token   , PUNCT , ,
+-----token   jQuery PROPN NNP xXxxxx
+-----token   , PUNCT , ,
+-----token   Angular PROPN NNP Xxxxx
+-----token   JS PROPN NNP XX
+-----token   . PUNCT . .
+
+
+--line  ➢  Databases: MySQL and MongoDB --main line  ['➢', ' ', 'database', 'mysql', 'mongodb']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Databases NOUN NNS Xxxxx
+-----token   : PUNCT : :
+-----token   MySQL PROPN NNP XxXXX
+-----token   and CCONJ CC xxx
+-----token   MongoDB NOUN NN XxxxxXX
+
+
+--line  ➢  Other  tools:  Bitbucket  for  version  control,  JIRA,  ZOHO,  ASANA  for  task  management,  AWS  EC2  for  hosting --main line  ['➢', ' ', ' ', 'tool', ' ', 'bitbucket', ' ', ' ', 'version', ' ', 'control', ' ', 'jira', ' ', 'zoho', ' ', 'asana', ' ', ' ', 'task', ' ', 'management', ' ', 'aw', ' ', 'ec2', ' ', ' ', 'host']
+--num_words  29 --cost  19572960942883.88 --prob 2.6102790696677047e-23
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Other ADJ JJ Xxxxx
+-----token     SPACE _SP  
+-----token   tools NOUN NNS xxxx
+-----token   : PUNCT : :
+-----token     SPACE _SP  
+-----token   Bitbucket NOUN NN Xxxxx
+-----token     SPACE _SP  
+-----token   for ADP IN xxx
+-----token     SPACE _SP  
+-----token   version NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   control NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token     SPACE _SP  
+-----token   JIRA PROPN NNP XXXX
+-----token   , PUNCT , ,
+-----token     SPACE _SP  
+-----token   ZOHO PROPN NNP XXXX
+-----token   , PUNCT , ,
+-----token     SPACE _SP  
+-----token   ASANA PROPN NNP XXXX
+-----token     SPACE _SP  
+-----token   for ADP IN xxx
+-----token     SPACE _SP  
+-----token   task NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   management NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token     SPACE _SP  
+-----token   AWS PROPN NNP XXX
+-----token     SPACE _SP  
+-----token   EC2 PROPN NNP XXd
+-----token     SPACE _SP  
+-----token   for ADP IN xxx
+-----token     SPACE _SP  
+-----token   hosting VERB VBG xxxx
+
+
+--line  services, AWS S3 for image hosting --main line  ['service', 'aw', 's3', 'image', 'host']
+--num_words  5 --cost  1738.905609893065 --prob 0.001831563888873418
+
+-----token   services NOUN NNS xxxx
+-----token   , PUNCT , ,
+-----token   AWS PROPN NNP XXX
+-----token   S3 PROPN NNP Xd
+-----token   for ADP IN xxx
+-----token   image NOUN NN xxxx
+-----token   hosting VERB VBG xxxx
+
+
+--line  Education: --main line  ['education']
+--num_words  1 --cost  0 --prob 1
+
+-----token   Education NOUN NN Xxxxx
+-----token   : PUNCT : :
+
+
+--line  ●  Rajasthan Technical University,Kota, Rajasthan --main line  ['●', ' ', 'rajasthan', 'technical', 'university', 'kota', 'rajasthan']
+--num_words  7 --cost  5459.815003314424 --prob 0.00033546262790251185
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Rajasthan PROPN NNP Xxxxx
+-----token   Technical PROPN NNP Xxxxx
+-----token   University PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Kota PROPN NNP Xxxx
+-----token   , PUNCT , ,
+-----token   Rajasthan PROPN NNP Xxxxx
+
+
+--line  ●  Government Polytechnic College, Jodhpur, Rajasthan --main line  ['●', ' ', 'government', 'polytechnic', 'college', 'jodhpur', 'rajasthan']
+--num_words  7 --cost  5459.815003314424 --prob 0.00033546262790251185
+
+-----token   ● PUNCT NFP ●
+-----token     SPACE _SP  
+-----token   Government PROPN NNP Xxxxx
+-----token   Polytechnic PROPN NNP Xxxxx
+-----token   College PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Jodhpur PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Rajasthan PROPN NNP Xxxxx
+
+
+--line  3 years Diploma in Computer Science (Agg. 70.8) --main line  ['3', 'year', 'diploma', 'computer', 'science', 'agg', '70.8']
+--num_words  7 --cost  5459.815003314424 --prob 0.00033546262790251185
+
+-----token   3 NUM CD d
+-----token   years NOUN NNS xxxx
+-----token   Diploma PROPN NNP Xxxxx
+-----token   in ADP IN xx
+-----token   Computer PROPN NNP Xxxxx
+-----token   Science PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   Agg PROPN NNP Xxx
+-----token   . PUNCT . .
+-----token   70.8 NUM CD dd.d
+-----token   ) PUNCT -RRB- )
+
+
+--line  Bachelor of Technology, Computer Science and Technology (Agg. 70.3) --main line  ['bachelor', 'technology', 'computer', 'science', 'technology', 'agg', '70.3']
+--num_words  7 --cost  5459.815003314424 --prob 0.00033546262790251185
+
+-----token   Bachelor PROPN NNP Xxxxx
+-----token   of ADP IN xx
+-----token   Technology PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Computer PROPN NNP Xxxxx
+-----token   Science PROPN NNP Xxxxx
+-----token   and CCONJ CC xxx
+-----token   Technology PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   Agg PROPN NNP Xxx
+-----token   . PUNCT . .
+-----token   70.3 NUM CD dd.d
+-----token   ) PUNCT -RRB- )
+
+
+--line  2009/08 - 2012/07 --main line  ['2009/08', '2012/07']
+--num_words  2 --cost  0 --prob 1
+
+-----token   2009/08 NUM CD dddd/dd
+-----token   - PUNCT HYPH -
+-----token   2012/07 NUM CD dddd/dd
+
+
+--line  2006/06 – 2009/07 --main line  ['2006/06', '2009/07']
+--num_words  2 --cost  0 --prob 1
+
+-----token   2006/06 NUM CD dddd/dd
+-----token   – PUNCT : –
+-----token   2009/07 NUM CD dddd/dd
+
+
+--line  2016/12 - Present --main line  ['2016/12', 'present']
+--num_words  2 --cost  0 --prob 1
+
+-----token   2016/12 NUM CD dddd/dd
+-----token   - PUNCT HYPH -
+-----token   Present ADJ JJ Xxxxx
+
+
+--line  Work Experience: --main line  ['work', 'experience']
+--num_words  2 --cost  0 --prob 1
+
+-----token   Work NOUN NN Xxxx
+-----token   Experience NOUN NN Xxxxx
+-----token   : PUNCT : :
+
+
+--line  1.  Senior Software Engineer --main line  ['1', ' ', 'senior', 'software', 'engineer']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   1 X LS d
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   Senior PROPN NNP Xxxxx
+-----token   Software PROPN NNP Xxxxx
+-----token   Engineer PROPN NNP Xxxxx
+
+
+--line  socket and Express. --main line  ['socket', 'express']
+--num_words  2 --cost  2000 --prob 0.010000000000000002
+
+-----token   socket PROPN NNP xxxx
+-----token   and CCONJ CC xxx
+-----token   Express PROPN NNP Xxxxx
+-----token   . PUNCT . .
+
+
+--line  2 certification. --main line  ['2', 'certification']
+--num_words  2 --cost  1000 --prob 0.1
+
+-----token   2 NUM CD d
+-----token   certification NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  2.  Senior Software Engineer --main line  ['2', ' ', 'senior', 'software', 'engineer']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   2 X LS d
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   Senior PROPN NNP Xxxxx
+-----token   Software PROPN NNP Xxxxx
+-----token   Engineer PROPN NNP Xxxxx
+
+
+--line  ➢  Appster LLC, Gurugram --main line  ['➢', ' ', 'appster', 'llc', 'gurugram']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Appster PROPN NNP Xxxxx
+-----token   LLC PROPN NNP XXX
+-----token   , PUNCT , ,
+-----token   Gurugram PROPN NNP Xxxxx
+
+
+--line  ➢  Developing  restful  apis  using  Laravel  framework  for  mobile  team.  Live  chat  implementation  using  NodeJs --main line  ['➢', ' ', 'develop', ' ', 'restful', ' ', 'api', ' ', ' ', 'laravel', ' ', 'framework', ' ', ' ', 'mobile', ' ', 'team', ' ', 'live', ' ', 'chat', ' ', 'implementation', ' ', ' ', 'nodejs']
+--num_words  26 --cost  974480344624.8904 --prob 1.0530617357553812e-20
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Developing VERB VBG Xxxxx
+-----token     SPACE _SP  
+-----token   restful ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   apis NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   using VERB VBG xxxx
+-----token     SPACE _SP  
+-----token   Laravel PROPN NNP Xxxxx
+-----token     SPACE _SP  
+-----token   framework NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   for ADP IN xxx
+-----token     SPACE _SP  
+-----token   mobile ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   team NOUN NN xxxx
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   Live ADJ JJ Xxxx
+-----token     SPACE _SP  
+-----token   chat NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   implementation NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   using VERB VBG xxxx
+-----token     SPACE _SP  
+-----token   NodeJs X ADD XxxxXx
+
+
+--line  ➢  Database design process in sprint-0, Code review process for assigned projects --main line  ['➢', ' ', 'database', 'design', 'process', 'sprint-0', 'code', 'review', 'process', 'assign', 'project']
+--num_words  11 --cost  298095.79870417283 --prob 1.1253517471925912e-07
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Database NOUN NN Xxxxx
+-----token   design NOUN NN xxxx
+-----token   process NOUN NN xxxx
+-----token   in ADP IN xx
+-----token   sprint-0 PROPN NNP xxxx-d
+-----token   , PUNCT , ,
+-----token   Code PROPN NNP Xxxx
+-----token   review NOUN NN xxxx
+-----token   process NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   assigned VERB VBN xxxx
+-----token   projects NOUN NNS xxxx
+
+
+--line  ➢  Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects. --main line  ['➢', ' ', 'design', 'develop', 'template', 'admin', 'panel', 'cms', 'angularjs', '2', 'later', 'reuse', 'project']
+--num_words  13 --cost  2203646.579480672 --prob 2.061153622438558e-10
+
+-----token   ➢ CCONJ CC ➢
+-----token     SPACE _SP  
+-----token   Design NOUN NN Xxxxx
+-----token   and CCONJ CC xxx
+-----token   develop VERB VB xxxx
+-----token   template NOUN NN xxxx
+-----token   admin NOUN NN xxxx
+-----token   panel NOUN NN xxxx
+-----token   CMS PROPN NNP XXX
+-----token   using VERB VBG xxxx
+-----token   AngularJs PROPN NNP XxxxxXx
+-----token   2 NUM CD d
+-----token   which DET WDT xxxx
+-----token   is AUX VBZ xx
+-----token   later ADV RB xxxx
+-----token   on ADV RB xx
+-----token   reused VERB VBN xxxx
+-----token   in ADP IN xx
+-----token   other ADJ JJ xxxx
+-----token   projects NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢  Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI --main line  ['➢', ' ', 'work', 'enterprise', 'client', 'pelican', 'auto', 'finance', 'develop', 'payment', 'gateway', 'pci']
+--num_words  12 --cost  810308.3927575385 --prob 1.522997974471263e-08
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Worked PROPN NNP Xxxxx
+-----token   for ADP IN xxx
+-----token   one NUM CD xxx
+-----token   of ADP IN xx
+-----token   the DET DT xxx
+-----token   enterprise NOUN NN xxxx
+-----token   client NOUN NN xxxx
+-----token   Pelican PROPN NNP Xxxxx
+-----token   Auto PROPN NNP Xxxx
+-----token   Finance PROPN NNP Xxxxx
+-----token   . PUNCT . .
+-----token   We PRON PRP Xx
+-----token   have AUX VBP xxxx
+-----token   developed VERB VBN xxxx
+-----token   Payment NOUN NN Xxxxx
+-----token   gateway NOUN NN xxxx
+-----token   with ADP IN xxxx
+-----token   PCI PROPN NNP XXX
+
+
+--line  ➢  Xicom Technologies, New Delhi --main line  ['➢', ' ', 'xicom', 'technologies', 'new', 'delhi']
+--num_words  6 --cost  2008.5536923187667 --prob 0.0024787521766663585
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Xicom PROPN NNP Xxxxx
+-----token   Technologies PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   New PROPN NNP Xxx
+-----token   Delhi PROPN NNP Xxxxx
+
+
+--line  ➢  Lead a team of two junior developers where my roles are to check if proper coding standard is followed. --main line  ['➢', ' ', 'lead', 'team', 'junior', 'developer', 'role', 'check', 'proper', 'coding', 'standard', 'follow']
+--num_words  12 --cost  811308.3927575385 --prob 1.522997974471263e-09
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Lead VERB VB Xxxx
+-----token   a DET DT x
+-----token   team NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   two NUM CD xxx
+-----token   junior ADJ JJ xxxx
+-----token   developers NOUN NNS xxxx
+-----token   where ADV WRB xxxx
+-----token   my DET PRP$ xx
+-----token   roles NOUN NNS xxxx
+-----token   are AUX VBP xxx
+-----token   to PART TO xx
+-----token   check VERB VB xxxx
+-----token   if SCONJ IN xx
+-----token   proper ADJ JJ xxxx
+-----token   coding NOUN NN xxxx
+-----token   standard NOUN NN xxxx
+-----token   is AUX VBZ xx
+-----token   followed VERB VBN xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢  My roles are developing restful apis, developing web applications with high scalability. --main line  ['➢', ' ', 'role', 'develop', 'restful', 'api', 'develop', 'web', 'application', 'high', 'scalability']
+--num_words  11 --cost  299095.79870417283 --prob 1.1253517471925913e-08
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   My DET PRP$ Xx
+-----token   roles NOUN NNS xxxx
+-----token   are AUX VBP xxx
+-----token   developing VERB VBG xxxx
+-----token   restful ADJ JJ xxxx
+-----token   apis NOUN NNS xxxx
+-----token   , PUNCT , ,
+-----token   developing VERB VBG xxxx
+-----token   web NOUN NN xxx
+-----token   applications NOUN NNS xxxx
+-----token   with ADP IN xxxx
+-----token   high ADJ JJ xxxx
+-----token   scalability NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  3.  Software Engineer - Level I --main line  ['3', ' ', 'software', 'engineer', 'level']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   3 X LS d
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   Software PROPN NNP Xxxxx
+-----token   Engineer PROPN NNP Xxxxx
+-----token   - PUNCT HYPH -
+-----token   Level PROPN NNP Xxxxx
+-----token   I PRON PRP X
+
+
+--line  ➢  C.G.Technosoft, Jodhpur --main line  ['➢', ' ', 'c.g.technosoft', 'jodhpur']
+--num_words  4 --cost  271.8281828459045 --prob 0.1353352832366127
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   C.G.Technosoft PROPN NNP X.X.Xxxxx
+-----token   , PUNCT , ,
+-----token   Jodhpur PROPN NNP Xxxxx
+
+
+--line  ➢  Started  my  career  as  trainee  at  this  organization.  My  roles  is  to  understand  web  application  development --main line  ['➢', ' ', 'start', ' ', ' ', 'career', ' ', ' ', 'trainee', ' ', ' ', ' ', 'organization', ' ', ' ', 'role', ' ', ' ', ' ', 'understand', ' ', 'web', ' ', 'application', ' ', 'development']
+--num_words  26 --cost  974480344624.8904 --prob 1.0530617357553812e-20
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Started VERB VBN Xxxxx
+-----token     SPACE _SP  
+-----token   my DET PRP$ xx
+-----token     SPACE _SP  
+-----token   career NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   as SCONJ IN xx
+-----token     SPACE _SP  
+-----token   trainee NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   at ADP IN xx
+-----token     SPACE _SP  
+-----token   this DET DT xxxx
+-----token     SPACE _SP  
+-----token   organization NOUN NN xxxx
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   My DET PRP$ Xx
+-----token     SPACE _SP  
+-----token   roles NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   is AUX VBZ xx
+-----token     SPACE _SP  
+-----token   to PART TO xx
+-----token     SPACE _SP  
+-----token   understand VERB VB xxxx
+-----token     SPACE _SP  
+-----token   web NOUN NN xxx
+-----token     SPACE _SP  
+-----token   application NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   development NOUN NN xxxx
+
+
+--line  2014/12 - 2016/11 --main line  ['2014/12', '2016/11']
+--num_words  2 --cost  0 --prob 1
+
+-----token   2014/12 NUM CD dddd/dd
+-----token   - PUNCT HYPH -
+-----token   2016/11 NUM CD dddd/dd
+
+
+--line  2012/10 - 2014/11 --main line  ['2012/10', '2014/11']
+--num_words  2 --cost  0 --prob 1
+
+-----token   2012/10 NUM CD dddd/dd
+-----token   - PUNCT HYPH -
+-----token   2014/11 NUM CD dddd/dd
+
+
+--line  using Cakephp 2.0 framework. --main line  ['cakephp', '2.0', 'framework']
+--num_words  3 --cost  2000 --prob 0.010000000000000002
+
+-----token   using VERB VBG xxxx
+-----token   Cakephp PROPN NNP Xxxxx
+-----token   2.0 NUM CD d.d
+-----token   framework NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  Key Projects: --main line  ['key', 'project']
+--num_words  2 --cost  0 --prob 1
+
+-----token   Key ADJ JJ Xxx
+-----token   Projects NOUN NNS Xxxxx
+-----token   : PUNCT : :
+
+
+--line  1.  Pelican Auto Finance Powered by Payix --main line  ['1', ' ', 'pelican', 'auto', 'finance', 'power', 'payix']
+--num_words  7 --cost  5459.815003314424 --prob 0.00033546262790251185
+
+-----token   1 X LS d
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   Pelican PROPN NNP Xxxxx
+-----token   Auto PROPN NNP Xxxx
+-----token   Finance PROPN NNP Xxxxx
+-----token   Powered VERB VBN Xxxxx
+-----token   by ADP IN xx
+-----token   Payix PROPN NNP Xxxxx
+
+
+--line  ➢  Payix provides state-of-the-art collections tools, payment processing resources and business intelligence --main line  ['➢', ' ', 'payix', 'provide', 'state', 'art', 'collection', 'tool', 'payment', 'processing', 'resource', 'business', 'intelligence']
+--num_words  13 --cost  2202646.579480672 --prob 2.061153622438558e-09
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Payix PROPN NNP Xxxxx
+-----token   provides VERB VBZ xxxx
+-----token   state NOUN NN xxxx
+-----token   - PUNCT HYPH -
+-----token   of ADP IN xx
+-----token   - PUNCT HYPH -
+-----token   the DET DT xxx
+-----token   - PUNCT HYPH -
+-----token   art NOUN NN xxx
+-----token   collections NOUN NNS xxxx
+-----token   tools NOUN NNS xxxx
+-----token   , PUNCT , ,
+-----token   payment NOUN NN xxxx
+-----token   processing NOUN NN xxxx
+-----token   resources NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   business NOUN NN xxxx
+-----token   intelligence NOUN NN xxxx
+
+
+--line  solutions to U.S. lenders and auto dealers. Offering real-time loan management system (LMS) integration. --main line  ['solution', 'u.s', 'lender', 'auto', 'dealer', 'offer', 'real', 'time', 'loan', 'management', 'system', 'lms', 'integration']
+--num_words  13 --cost  2204646.579480672 --prob 2.061153622438558e-11
+
+-----token   solutions NOUN NNS xxxx
+-----token   to ADP IN xx
+-----token   U.S. PROPN NNP X.X.
+-----token   lenders NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   auto NOUN NN xxxx
+-----token   dealers NOUN NNS xxxx
+-----token   . PUNCT . .
+-----token   Offering VERB VBG Xxxxx
+-----token   real ADJ JJ xxxx
+-----token   - PUNCT HYPH -
+-----token   time NOUN NN xxxx
+-----token   loan NOUN NN xxxx
+-----token   management NOUN NN xxxx
+-----token   system NOUN NN xxxx
+-----token   ( PUNCT -LRB- (
+-----token   LMS PROPN NNP XXX
+-----token   ) PUNCT -RRB- )
+-----token   integration NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢  Pelican  Auto  Finance,  LLC’s  senior  management  team  has  over  100  years  of  experience  collectively  in --main line  ['➢', ' ', 'pelican', ' ', 'auto', ' ', 'finance', ' ', 'llc', ' ', 'senior', ' ', 'management', ' ', 'team', ' ', ' ', ' ', '100', ' ', 'year', ' ', ' ', 'experience', ' ', 'collectively', ' ']
+--num_words  27 --cost  2648912212984.347 --prob 1.4251640827409352e-21
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Pelican ADJ JJ Xxxxx
+-----token     SPACE _SP  
+-----token   Auto PROPN NNP Xxxx
+-----token     SPACE _SP  
+-----token   Finance PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token     SPACE _SP  
+-----token   LLC PROPN NNP XXX
+-----token   ’s PART POS ’x
+-----token     SPACE _SP  
+-----token   senior ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   management NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   team NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   has AUX VBZ xxx
+-----token     SPACE _SP  
+-----token   over ADP IN xxxx
+-----token     SPACE _SP  
+-----token   100 NUM CD ddd
+-----token     SPACE _SP  
+-----token   years NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   of ADP IN xx
+-----token     SPACE _SP  
+-----token   experience NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   collectively ADV RB xxxx
+-----token     SPACE _SP  
+-----token   in ADP IN xx
+
+
+--line  automotive and consumer lending. --main line  ['automotive', 'consumer', 'lending']
+--num_words  3 --cost  2000 --prob 0.010000000000000002
+
+-----token   automotive ADJ JJ xxxx
+-----token   and CCONJ CC xxx
+-----token   consumer NOUN NN xxxx
+-----token   lending NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢  Technology stack: Laravel 5 framework --main line  ['➢', ' ', 'technology', 'stack', 'laravel', '5', 'framework']
+--num_words  7 --cost  5459.815003314424 --prob 0.00033546262790251185
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Technology NOUN NN Xxxxx
+-----token   stack NOUN NN xxxx
+-----token   : PUNCT : :
+-----token   Laravel PROPN NNP Xxxxx
+-----token   5 NUM CD d
+-----token   framework NOUN NN xxxx
+
+
+--line  2.  BlockPartee --main line  ['2', ' ', 'blockpartee']
+--num_words  3 --cost  0 --prob 1
+
+-----token   2 X LS d
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   BlockPartee PROPN NNP XxxxxXxxxx
+
+
+--line  ➢  Blockpartee is an app that allows you to host a virtual party following your favourite sports teams, centered --main line  ['➢', ' ', 'blockpartee', 'app', 'allow', 'host', 'virtual', 'party', 'follow', 'favourite', 'sport', 'team', 'center']
+--num_words  13 --cost  2202646.579480672 --prob 2.061153622438558e-09
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Blockpartee PROPN NNP Xxxxx
+-----token   is AUX VBZ xx
+-----token   an DET DT xx
+-----token   app NOUN NN xxx
+-----token   that DET WDT xxxx
+-----token   allows VERB VBZ xxxx
+-----token   you PRON PRP xxx
+-----token   to PART TO xx
+-----token   host VERB VB xxxx
+-----token   a DET DT x
+-----token   virtual ADJ JJ xxxx
+-----token   party NOUN NN xxxx
+-----token   following VERB VBG xxxx
+-----token   your DET PRP$ xxxx
+-----token   favourite ADJ JJ xxxx
+-----token   sports NOUN NNS xxxx
+-----token   teams NOUN NNS xxxx
+-----token   , PUNCT , ,
+-----token   centered VERB VBN xxxx
+
+
+--line  around the squares/blocks game played by thousands of fans for years during the Super Bowl. This app makes --main line  ['square', 'block', 'game', 'play', 'thousand', 'fan', 'year', 'super', 'bowl', 'app', 'make']
+--num_words  11 --cost  299095.79870417283 --prob 1.1253517471925913e-08
+
+-----token   around ADP IN xxxx
+-----token   the DET DT xxx
+-----token   squares NOUN NNS xxxx
+-----token   / SYM SYM /
+-----token   blocks NOUN NNS xxxx
+-----token   game NOUN NN xxxx
+-----token   played VERB VBN xxxx
+-----token   by ADP IN xx
+-----token   thousands NOUN NNS xxxx
+-----token   of ADP IN xx
+-----token   fans NOUN NNS xxxx
+-----token   for ADP IN xxx
+-----token   years NOUN NNS xxxx
+-----token   during ADP IN xxxx
+-----token   the DET DT xxx
+-----token   Super PROPN NNP Xxxxx
+-----token   Bowl PROPN NNP Xxxx
+-----token   . PUNCT . .
+-----token   This DET DT Xxxx
+-----token   app NOUN NN xxx
+-----token   makes VERB VBZ xxxx
+
+
+--line  it easier to set-up and play the game, invite friends and fans, and has added features like live chat. --main line  ['easy', 'set', 'play', 'game', 'invite', 'friend', 'fan', 'add', 'feature', 'like', 'live', 'chat']
+--num_words  12 --cost  812308.3927575385 --prob 1.5229979744712631e-10
+
+-----token   it PRON PRP xx
+-----token   easier ADJ JJR xxxx
+-----token   to PART TO xx
+-----token   set VERB VB xxx
+-----token   - PUNCT HYPH -
+-----token   up ADP RP xx
+-----token   and CCONJ CC xxx
+-----token   play VERB VB xxxx
+-----token   the DET DT xxx
+-----token   game NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   invite VERB VB xxxx
+-----token   friends NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   fans NOUN NNS xxxx
+-----token   , PUNCT , ,
+-----token   and CCONJ CC xxx
+-----token   has AUX VBZ xxx
+-----token   added VERB VBN xxxx
+-----token   features NOUN NNS xxxx
+-----token   like SCONJ IN xxxx
+-----token   live ADJ JJ xxxx
+-----token   chat NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢  Technology stack: Laravel 5 framework for API development and NodeJs for Chat Server --main line  ['➢', ' ', 'technology', 'stack', 'laravel', '5', 'framework', 'api', 'development', 'nodejs', 'chat', 'server']
+--num_words  12 --cost  810308.3927575385 --prob 1.522997974471263e-08
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Technology NOUN NN Xxxxx
+-----token   stack NOUN NN xxxx
+-----token   : PUNCT : :
+-----token   Laravel PROPN NNP Xxxxx
+-----token   5 NUM CD d
+-----token   framework NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   API PROPN NNP XXX
+-----token   development NOUN NN xxxx
+-----token   and CCONJ CC xxx
+-----token   NodeJs PROPN NNP XxxxXx
+-----token   for ADP IN xxx
+-----token   Chat PROPN NNP Xxxx
+-----token   Server NOUN NN Xxxxx
+
+
+--line  3.  Fitfix.co.uk --main line  ['3', ' ', 'fitfix.co.uk']
+--num_words  3 --cost  0 --prob 1
+
+-----token   3 X LS d
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   Fitfix.co.uk PROPN NNP Xxxxx.xx.xx
+
+
+--line  ➢  Fitfix is a revolutionary platform for Personal Trainers to help them manage, train and increase their clients. It --main line  ['➢', ' ', 'fitfix', 'revolutionary', 'platform', 'personal', 'trainer', 'help', 'manage', 'train', 'increase', 'client']
+--num_words  12 --cost  810308.3927575385 --prob 1.522997974471263e-08
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Fitfix PROPN NNP Xxxxx
+-----token   is AUX VBZ xx
+-----token   a DET DT x
+-----token   revolutionary ADJ JJ xxxx
+-----token   platform NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   Personal PROPN NNP Xxxxx
+-----token   Trainers PROPN NNPS Xxxxx
+-----token   to PART TO xx
+-----token   help VERB VB xxxx
+-----token   them PRON PRP xxxx
+-----token   manage VERB VB xxxx
+-----token   , PUNCT , ,
+-----token   train VERB VB xxxx
+-----token   and CCONJ CC xxx
+-----token   increase VERB VB xxxx
+-----token   their DET PRP$ xxxx
+-----token   clients NOUN NNS xxxx
+-----token   . PUNCT . .
+-----token   It PRON PRP Xx
+
+
+--line  provides  comprehensive  cloud  based  business  management,  physical  training  and  nutrition  tools  in  a  very --main line  ['provide', ' ', 'comprehensive', ' ', 'cloud', ' ', 'base', ' ', 'business', ' ', 'management', ' ', 'physical', ' ', 'training', ' ', ' ', 'nutrition', ' ', 'tool', ' ', ' ', ' ']
+--num_words  23 --cost  48516520540.97903 --prob 4.248354255291589e-19
+
+-----token   provides VERB VBZ xxxx
+-----token     SPACE _SP  
+-----token   comprehensive ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   cloud NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   based VERB VBN xxxx
+-----token     SPACE _SP  
+-----token   business NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   management NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token     SPACE _SP  
+-----token   physical ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   training NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   and CCONJ CC xxx
+-----token     SPACE _SP  
+-----token   nutrition NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   tools NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   in ADP IN xx
+-----token     SPACE _SP  
+-----token   a DET DT x
+-----token     SPACE _SP  
+-----token   very ADV RB xxxx
+
+
+--line  friendly way. --main line  ['friendly', 'way']
+--num_words  2 --cost  2000 --prob 0.010000000000000002
+
+-----token   friendly ADJ JJ xxxx
+-----token   way NOUN NN xxx
+-----token   . PUNCT . .
+
+
+--line  ➢  Technology stack: Cakephp 3.0 framework --main line  ['➢', ' ', 'technology', 'stack', 'cakephp', '3.0', 'framework']
+--num_words  7 --cost  5459.815003314424 --prob 0.00033546262790251185
+
+-----token   ➢ PROPN NNP ➢
+-----token     SPACE _SP  
+-----token   Technology NOUN NN Xxxxx
+-----token   stack NOUN NN xxxx
+-----token   : PUNCT : :
+-----token   Cakephp NOUN NN Xxxxx
+-----token   3.0 NUM CD d.d
+-----token   framework NOUN NN xxxx
+
+
+WZ-433, Shiv nagar,
+boranab@rediffmail.com
+(+91) 900-120-2858
+Tihar Jail Road, Delhi, 110058
+BHARAT BORANA
+Senior Software Engineer,
+Appster LLP, Gurugram, Haryana
+Experienced full stack developer with various web development framework expertise.
+➢  Over five years of commercial web and restful application development experience.
+Experience working in Agile Scrum environment and project management.
+➢  Web Development Frameworks: Laravel, CakePHP, NodeJs With Express.
+➢  UI Frameworks/Technologies: HTML5, CSS3, jQuery, Angular JS.
+➢  Databases: MySQL and MongoDB
+➢  Other  tools:  Bitbucket  for  version  control,  JIRA,  ZOHO,  ASANA  for  task  management,  AWS  EC2  for  hosting
+services, AWS S3 for image hosting
+●  Rajasthan Technical University,Kota, Rajasthan
+●  Government Polytechnic College, Jodhpur, Rajasthan
+3 years Diploma in Computer Science (Agg. 70.8)
+Bachelor of Technology, Computer Science and Technology (Agg. 70.3)
+2009/08 - 2012/07
+2006/06 – 2009/07
+2016/12 - Present
+Work Experience:
+1.  Senior Software Engineer
+socket and Express.
+2 certification.
+2.  Senior Software Engineer
+➢  Appster LLC, Gurugram
+➢  Developing  restful  apis  using  Laravel  framework  for  mobile  team.  Live  chat  implementation  using  NodeJs
+➢  Database design process in sprint-0, Code review process for assigned projects
+➢  Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.
+➢  Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI
+➢  Xicom Technologies, New Delhi
+➢  Lead a team of two junior developers where my roles are to check if proper coding standard is followed.
+➢  My roles are developing restful apis, developing web applications with high scalability.
+3.  Software Engineer - Level I
+➢  C.G.Technosoft, Jodhpur
+➢  Started  my  career  as  trainee  at  this  organization.  My  roles  is  to  understand  web  application  development
+2014/12 - 2016/11
+2012/10 - 2014/11
+using Cakephp 2.0 framework.
+Key Projects:
+1.  Pelican Auto Finance Powered by Payix
+➢  Payix provides state-of-the-art collections tools, payment processing resources and business intelligence
+solutions to U.S. lenders and auto dealers. Offering real-time loan management system (LMS) integration.
+➢  Pelican  Auto  Finance,  LLC’s  senior  management  team  has  over  100  years  of  experience  collectively  in
+automotive and consumer lending.
+➢  Technology stack: Laravel 5 framework
+2.  BlockPartee
+➢  Blockpartee is an app that allows you to host a virtual party following your favourite sports teams, centered
+around the squares/blocks game played by thousands of fans for years during the Super Bowl. This app makes
+it easier to set-up and play the game, invite friends and fans, and has added features like live chat.
+➢  Technology stack: Laravel 5 framework for API development and NodeJs for Chat Server
+3.  Fitfix.co.uk
+➢  Fitfix is a revolutionary platform for Personal Trainers to help them manage, train and increase their clients. It
+provides  comprehensive  cloud  based  business  management,  physical  training  and  nutrition  tools  in  a  very
+friendly way.
+➢  Technology stack: Cakephp 3.0 framework
+['WZ-433, Shiv nagar,', 'boranab@rediffmail.com', '(+91) 900-120-2858', 'Tihar Jail Road, Delhi, 110058', 'BHARAT BORANA', 'Senior Software Engineer,', 'Appster LLP, Gurugram, Haryana', 'Experienced full stack developer with various web development framework expertise.', '➢', '➢  Over five years of commercial web and restful application development experience.', '➢', 'Experience working in Agile Scrum environment and project management.', '➢  Web Development Frameworks: Laravel, CakePHP, NodeJs With Express.', '➢  UI Frameworks/Technologies: HTML5, CSS3, jQuery, Angular JS.', '➢  Databases: MySQL and MongoDB', '➢  Other  tools:  Bitbucket  for  version  control,  JIRA,  ZOHO,  ASANA  for  task  management,  AWS  EC2  for  hosting', 'services, AWS S3 for image hosting', 'Education:', '●  Rajasthan Technical University,Kota, Rajasthan', '●  Government Polytechnic College, Jodhpur, Rajasthan', '3 years Diploma in Computer Science (Agg. 70.8)', 'Bachelor of Technology, Computer Science and Technology (Agg. 70.3)', '2009/08 - 2012/07', '2006/06 – 2009/07', '2016/12 - Present', 'Work Experience:', '1.  Senior Software Engineer', 'socket and Express.', '2 certification.', '2.  Senior Software Engineer', '➢  Appster LLC, Gurugram', '➢  Developing  restful  apis  using  Laravel  framework  for  mobile  team.  Live  chat  implementation  using  NodeJs', '➢  Database design process in sprint-0, Code review process for assigned projects', '➢  Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.', '➢  Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI', '➢  Xicom Technologies, New Delhi', '➢  Lead a team of two junior developers where my roles are to check if proper coding standard is followed.', '➢  My roles are developing restful apis, developing web applications with high scalability.', '3.  Software Engineer - Level I', '➢  C.G.Technosoft, Jodhpur', '➢  Started  my  career  as  trainee  at  this  organization.  My  roles  is  to  understand  web  application  development', '2014/12 - 2016/11', '2012/10 - 2014/11', 'using Cakephp 2.0 framework.', 'Key Projects:', '1.  Pelican Auto Finance Powered by Payix', '➢  Payix provides state-of-the-art collections tools, payment processing resources and business intelligence', 'solutions to U.S. lenders and auto dealers. Offering real-time loan management system (LMS) integration.', '➢  Pelican  Auto  Finance,  LLC’s  senior  management  team  has  over  100  years  of  experience  collectively  in', 'automotive and consumer lending.', '➢  Technology stack: Laravel 5 framework', '2.  BlockPartee', '➢  Blockpartee is an app that allows you to host a virtual party following your favourite sports teams, centered', 'around the squares/blocks game played by thousands of fans for years during the Super Bowl. This app makes', 'it easier to set-up and play the game, invite friends and fans, and has added features like live chat.', '➢  Technology stack: Laravel 5 framework for API development and NodeJs for Chat Server', '3.  Fitfix.co.uk', '➢  Fitfix is a revolutionary platform for Personal Trainers to help them manage, train and increase their clients. It', 'provides  comprehensive  cloud  based  business  management,  physical  training  and  nutrition  tools  in  a  very', 'friendly way.', '➢  Technology stack: Cakephp 3.0 framework']
+name: Personal Trainers
+email: boranab@rediffmail.com
+experience: collectively
+expertise: loper with various web development framework expertise.
+expertise: lopment experience.
+expertise: lopment frameworks laravel, cakephp, nodejs with express.
+expertise: loping  restful  apis  using  laravel  framework  for  mobile  team.  live  chat  implementation  using  nodejs
+expertise: ed in other projects.
+expertise: loped payment gateway with pci
+expertise: lopers where my roles are to check if proper coding standard is followed.
+expertise: loping restful apis, developing web applications with high scalability.
+expertise: rstand  web  application  development
+expertise: lopment and nodejs for chat server
+++++++++++++++++++++++++++++++++++++++++++
+parsing file:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/avikhazra93@gmail.com.pdf
+--line  Avik Hazra --main line  ['avik', 'hazra']
+--num_words  2 --cost  0 --prob 1
+
+-----token   Avik PROPN NNP Xxxx
+-----token   Hazra PROPN NNP Xxxxx
+
+
+--line  Software Developer, Tracxn Technologies Pvt Ltd --main line  ['software', 'developer', 'tracxn', 'technologies', 'pvt', 'ltd']
+--num_words  6 --cost  2008.5536923187667 --prob 0.0024787521766663585
+
+-----token   Software NOUN NN Xxxxx
+-----token   Developer NOUN NN Xxxxx
+-----token   , PUNCT , ,
+-----token   Tracxn PROPN NNP Xxxxx
+-----token   Technologies PROPN NNPS Xxxxx
+-----token   Pvt PROPN NNP Xxx
+-----token   Ltd PROPN NNP Xxx
+
+
+--line  avikhazra93@gmail.com --main line  ['avikhazra93@gmail.com']
+--num_words  1 --cost  0 --prob 1
+
+-----token   avikhazra93@gmail.com X ADD xxxxdd@xxxx.xxx
+
+
+--line  https://www.linkedin.com/in/avikhazra93 --main line  ['https://www.linkedin.com/in/avikhazra93']
+--num_words  1 --cost  0 --prob 1
+
+-----token   https://www.linkedin.com/in/avikhazra93 PROPN NNP xxxx://xxx.xxxx.xxx/xx/xxxxdd
+
+
+--line  Phone: +91 9874161982 --main line  ['phone', '+91', '9874161982']
+--num_words  3 --cost  0 --prob 1
+
+-----token   Phone NOUN NN Xxxxx
+-----token   : PUNCT : :
+-----token   +91 NUM CD +dd
+-----token   9874161982 NUM CD dddd
+
+
+--line  Personal Summary: --main line  ['personal', 'summary']
+--num_words  2 --cost  0 --prob 1
+
+-----token   Personal ADJ JJ Xxxxx
+-----token   Summary PROPN NNP Xxxxx
+-----token   : PUNCT : :
+
+
+--line  Has  experience  of    full  stack  software  development  in  React  JS  (Front  End)  and  Spring  Boot  using  JAVA --main line  [' ', 'experience', ' ', '   ', ' ', 'stack', ' ', 'software', ' ', 'development', ' ', ' ', 'react', ' ', 'js', ' ', ' ', 'end', ' ', ' ', 'spring', ' ', 'boot', ' ', ' ', 'java']
+--num_words  26 --cost  974480344624.8904 --prob 1.0530617357553812e-20
+
+-----token   Has AUX VBZ Xxx
+-----token     SPACE _SP  
+-----token   experience NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   of ADP IN xx
+-----token       SPACE _SP    
+-----token   full ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   stack NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   software NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   development NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   in ADP IN xx
+-----token     SPACE _SP  
+-----token   React PROPN NNP Xxxxx
+-----token     SPACE _SP  
+-----token   JS PROPN NNP XX
+-----token     SPACE _SP  
+-----token   ( PUNCT -LRB- (
+-----token   Front ADJ JJ Xxxxx
+-----token     SPACE _SP  
+-----token   End NOUN NN Xxx
+-----token   ) PUNCT -RRB- )
+-----token     SPACE _SP  
+-----token   and CCONJ CC xxx
+-----token     SPACE _SP  
+-----token   Spring NOUN NN Xxxxx
+-----token     SPACE _SP  
+-----token   Boot PROPN NNP Xxxx
+-----token     SPACE _SP  
+-----token   using VERB VBG xxxx
+-----token     SPACE _SP  
+-----token   JAVA PROPN NNP XXXX
+
+
+--line  (Backend)  and  Shell  Scripting  on  automation  of  several  procedures  in  SAP  HANA  and  Sybase  database --main line  ['backend', ' ', ' ', 'shell', ' ', 'script', ' ', ' ', 'automation', ' ', ' ', ' ', 'procedure', ' ', ' ', 'sap', ' ', 'hana', ' ', ' ', 'sybase', ' ', 'database']
+--num_words  23 --cost  48516519540.97903 --prob 4.248354255291589e-18
+
+-----token   ( PUNCT -LRB- (
+-----token   Backend NOUN NN Xxxxx
+-----token   ) PUNCT -RRB- )
+-----token     SPACE _SP  
+-----token   and CCONJ CC xxx
+-----token     SPACE _SP  
+-----token   Shell PROPN NNP Xxxxx
+-----token     SPACE _SP  
+-----token   Scripting PROPN NNP Xxxxx
+-----token     SPACE _SP  
+-----token   on ADP IN xx
+-----token     SPACE _SP  
+-----token   automation NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   of ADP IN xx
+-----token     SPACE _SP  
+-----token   several ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   procedures NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   in ADP IN xx
+-----token     SPACE _SP  
+-----token   SAP PROPN NNP XXX
+-----token     SPACE _SP  
+-----token   HANA PROPN NNP XXXX
+-----token     SPACE _SP  
+-----token   and CCONJ CC xxx
+-----token     SPACE _SP  
+-----token   Sybase PROPN NNP Xxxxx
+-----token     SPACE _SP  
+-----token   database NOUN NN xxxx
+
+
+--line  environment. --main line  ['environment']
+--num_words  1 --cost  2000 --prob 0.010000000000000002
+
+-----token   environment NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  Skills: --main line  ['skill']
+--num_words  1 --cost  0 --prob 1
+
+-----token   Skills NOUN NNS Xxxxx
+-----token   : PUNCT : :
+
+
+--line  Algorithms, Data structure, Python, Java, C, Bash, SQL, Java Script. --main line  ['algorithms', 'datum', 'structure', 'python', 'java', 'c', 'bash', 'sql', 'java', 'script']
+--num_words  10 --cost  110663.31584284586 --prob 8.31528719103568e-08
+
+-----token   Algorithms PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Data NOUN NNS Xxxx
+-----token   structure NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   Python PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Java PROPN NNP Xxxx
+-----token   , PUNCT , ,
+-----token   C PROPN NNP X
+-----token   , PUNCT , ,
+-----token   Bash PROPN NNP Xxxx
+-----token   , PUNCT , ,
+-----token   SQL PROPN NNP XXX
+-----token   , PUNCT , ,
+-----token   Java PROPN NNP Xxxx
+-----token   Script PROPN NNP Xxxxx
+-----token   . PUNCT . .
+
+
+--line  Interested in Programming and worked in Linux environment. --main line  ['interested', 'programming', 'work', 'linux', 'environment']
+--num_words  5 --cost  1738.905609893065 --prob 0.001831563888873418
+
+-----token   Interested ADJ JJ Xxxxx
+-----token   in ADP IN xx
+-----token   Programming NOUN NN Xxxxx
+-----token   and CCONJ CC xxx
+-----token   worked VERB VBD xxxx
+-----token   in ADP IN xx
+-----token   Linux PROPN NNP Xxxxx
+-----token   environment NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  Well versed and fluent in English, Bengali and Hindi. --main line  ['versed', 'fluent', 'english', 'bengali', 'hindi']
+--num_words  5 --cost  1738.905609893065 --prob 0.001831563888873418
+
+-----token   Well INTJ UH Xxxx
+-----token   versed ADJ JJ xxxx
+-----token   and CCONJ CC xxx
+-----token   fluent ADJ JJ xxxx
+-----token   in ADP IN xx
+-----token   English PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Bengali PROPN NNP Xxxxx
+-----token   and CCONJ CC xxx
+-----token   Hindi PROPN NNP Xxxxx
+-----token   . PUNCT . .
+
+
+--line  Strong verbal and communication skill. --main line  ['strong', 'verbal', 'communication', 'skill']
+--num_words  4 --cost  1271.8281828459044 --prob 0.013533528323661271
+
+-----token   Strong ADJ JJ Xxxxx
+-----token   verbal ADJ JJ xxxx
+-----token   and CCONJ CC xxx
+-----token   communication NOUN NN xxxx
+-----token   skill NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  Academics: --main line  ['academic']
+--num_words  1 --cost  0 --prob 1
+
+-----token   Academics NOUN NNS Xxxxx
+-----token   : PUNCT : :
+
+
+--line  B.Tech,CSE,8.27 CGPA, Kalyani Govt Engineering College (2011 - 2015) --main line  ['b.tech', 'cse,8.27', 'cgpa', 'kalyani', 'govt', 'engineering', 'college', '2011', '2015']
+--num_words  9 --cost  40342.87934927351 --prob 6.14421235332821e-06
+
+-----token   B.Tech PROPN NNP X.Xxxx
+-----token   , PUNCT , ,
+-----token   CSE,8.27 PROPN NNP XXX,d.dd
+-----token   CGPA PROPN NNP XXXX
+-----token   , PUNCT , ,
+-----token   Kalyani PROPN NNP Xxxxx
+-----token   Govt PROPN NNP Xxxx
+-----token   Engineering PROPN NNP Xxxxx
+-----token   College PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   2011 NUM CD dddd
+-----token   - SYM SYM -
+-----token   2015 NUM CD dddd
+-----token   ) PUNCT -RRB- )
+
+
+--line  Scored 87.2% in 12th (WBCHSE 2011) --main line  ['score', '87.2', '12th', 'wbchse', '2011']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   Scored VERB VBN Xxxxx
+-----token   87.2 NUM CD dd.d
+-----token   % NOUN NN %
+-----token   in ADP IN xx
+-----token   12th NOUN NN ddxx
+-----token   ( PUNCT -LRB- (
+-----token   WBCHSE PROPN NNP XXXX
+-----token   2011 NUM CD dddd
+-----token   ) PUNCT -RRB- )
+
+
+--line  Scored 80.7% in 10th (WBBSE 2009) --main line  ['score', '80.7', '10th', 'wbbse', '2009']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   Scored VERB VBN Xxxxx
+-----token   80.7 NUM CD dd.d
+-----token   % NOUN NN %
+-----token   in ADP IN xx
+-----token   10th NOUN NN ddxx
+-----token   ( PUNCT -LRB- (
+-----token   WBBSE PROPN NNP XXXX
+-----token   2009 NUM CD dddd
+-----token   ) PUNCT -RRB- )
+
+
+--line  Professional Experience: --main line  ['professional', 'experience']
+--num_words  2 --cost  0 --prob 1
+
+-----token   Professional ADJ JJ Xxxxx
+-----token   Experience NOUN NN Xxxxx
+-----token   : PUNCT : :
+
+
+--line  Tracxn Technologies Pvt Ltd, Bangalore: --main line  ['tracxn', 'technologies', 'pvt', 'ltd', 'bangalore']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   Tracxn PROPN NNP Xxxxx
+-----token   Technologies PROPN NNPS Xxxxx
+-----token   Pvt PROPN NNP Xxx
+-----token   Ltd PROPN NNP Xxx
+-----token   , PUNCT , ,
+-----token   Bangalore PROPN NNP Xxxxx
+-----token   : PUNCT : :
+
+
+--line  (May, 2017 –  Dec, 2017) --main line  ['2017', ' ', 'dec', '2017']
+--num_words  4 --cost  271.8281828459045 --prob 0.1353352832366127
+
+-----token   ( PUNCT -LRB- (
+-----token   May PROPN NNP Xxx
+-----token   , PUNCT , ,
+-----token   2017 NUM CD dddd
+-----token   – PUNCT : –
+-----token     SPACE _SP  
+-----token   Dec PROPN NNP Xxx
+-----token   , PUNCT , ,
+-----token   2017 NUM CD dddd
+-----token   ) PUNCT -RRB- )
+
+
+--line  (Software Engineer) --main line  ['software', 'engineer']
+--num_words  2 --cost  0 --prob 1
+
+-----token   ( PUNCT -LRB- (
+-----token   Software PROPN NNP Xxxxx
+-----token   Engineer PROPN NNP Xxxxx
+-----token   ) PUNCT -RRB- )
+
+
+--line  End to end design and development of a web application to create and configure the conumergroups which --main line  ['end', 'end', 'design', 'development', 'web', 'application', 'create', 'configure', 'conumergroup']
+--num_words  9 --cost  40342.87934927351 --prob 6.14421235332821e-06
+
+-----token   End NOUN NN Xxx
+-----token   to PART TO xx
+-----token   end VERB VB xxx
+-----token   design NOUN NN xxxx
+-----token   and CCONJ CC xxx
+-----token   development NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   a DET DT x
+-----token   web NOUN NN xxx
+-----token   application NOUN NN xxxx
+-----token   to PART TO xx
+-----token   create VERB VB xxxx
+-----token   and CCONJ CC xxx
+-----token   configure VERB VB xxxx
+-----token   the DET DT xxx
+-----token   conumergroups NOUN NNS xxxx
+-----token   which DET WDT xxxx
+
+
+--line  reduces the manual efforts and risks of entering the configuration information to database. This application --main line  ['reduce', 'manual', 'effort', 'risk', 'enter', 'configuration', 'information', 'database', 'application']
+--num_words  9 --cost  41342.87934927351 --prob 6.14421235332821e-07
+
+-----token   reduces VERB VBZ xxxx
+-----token   the DET DT xxx
+-----token   manual ADJ JJ xxxx
+-----token   efforts NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   risks NOUN NNS xxxx
+-----token   of ADP IN xx
+-----token   entering VERB VBG xxxx
+-----token   the DET DT xxx
+-----token   configuration NOUN NN xxxx
+-----token   information NOUN NN xxxx
+-----token   to PART TO xx
+-----token   database VERB VB xxxx
+-----token   . PUNCT . .
+-----token   This DET DT Xxxx
+-----token   application NOUN NN xxxx
+
+
+--line  is also used as a devops monitoring tool to monitor the consumer groups based on active, inactive and --main line  ['devop', 'monitoring', 'tool', 'monitor', 'consumer', 'group', 'base', 'active', 'inactive']
+--num_words  9 --cost  41342.87934927351 --prob 6.14421235332821e-07
+
+-----token   is AUX VBZ xx
+-----token   also ADV RB xxxx
+-----token   used VERB VBN xxxx
+-----token   as SCONJ IN xx
+-----token   a DET DT x
+-----token   devops NOUN NNS xxxx
+-----token   monitoring NOUN NN xxxx
+-----token   tool NOUN NN xxxx
+-----token   to PART TO xx
+-----token   monitor VERB VB xxxx
+-----token   the DET DT xxx
+-----token   consumer NOUN NN xxxx
+-----token   groups NOUN NNS xxxx
+-----token   based VERB VBN xxxx
+-----token   on ADP IN xx
+-----token   active ADJ JJ xxxx
+-----token   , PUNCT , ,
+-----token   inactive ADJ JJ xxxx
+-----token   and CCONJ CC xxx
+
+
+--line  search functionalities. --main line  ['search', 'functionality']
+--num_words  2 --cost  2000 --prob 0.010000000000000002
+
+-----token   search NOUN NN xxxx
+-----token   functionalities NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  End to end design and development of a web application to create and configure Kafka topics  which --main line  ['end', 'end', 'design', 'development', 'web', 'application', 'create', 'configure', 'kafka', 'topic', ' ']
+--num_words  11 --cost  298095.79870417283 --prob 1.1253517471925912e-07
+
+-----token   End NOUN NN Xxx
+-----token   to PART TO xx
+-----token   end VERB VB xxx
+-----token   design NOUN NN xxxx
+-----token   and CCONJ CC xxx
+-----token   development NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   a DET DT x
+-----token   web NOUN NN xxx
+-----token   application NOUN NN xxxx
+-----token   to PART TO xx
+-----token   create VERB VB xxxx
+-----token   and CCONJ CC xxx
+-----token   configure VERB VB xxxx
+-----token   Kafka PROPN NNP Xxxxx
+-----token   topics NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   which DET WDT xxxx
+
+
+--line  reduces the manual efforts and risks of entering the configuration information to the database. This --main line  ['reduce', 'manual', 'effort', 'risk', 'enter', 'configuration', 'information', 'database']
+--num_words  8 --cost  15841.31591025766 --prob 4.539992976248485e-06
+
+-----token   reduces VERB VBZ xxxx
+-----token   the DET DT xxx
+-----token   manual ADJ JJ xxxx
+-----token   efforts NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   risks NOUN NNS xxxx
+-----token   of ADP IN xx
+-----token   entering VERB VBG xxxx
+-----token   the DET DT xxx
+-----token   configuration NOUN NN xxxx
+-----token   information NOUN NN xxxx
+-----token   to ADP IN xx
+-----token   the DET DT xxx
+-----token   database NOUN NN xxxx
+-----token   . PUNCT . .
+-----token   This DET DT Xxxx
+
+
+--line  application is also used as a devops monitoring tool to monitor the Kafka topics based on active, inactive --main line  ['application', 'devop', 'monitoring', 'tool', 'monitor', 'kafka', 'topic', 'base', 'active', 'inactive']
+--num_words  10 --cost  110663.31584284586 --prob 8.31528719103568e-08
+
+-----token   application NOUN NN xxxx
+-----token   is AUX VBZ xx
+-----token   also ADV RB xxxx
+-----token   used VERB VBN xxxx
+-----token   as SCONJ IN xx
+-----token   a DET DT x
+-----token   devops NOUN NNS xxxx
+-----token   monitoring NOUN NN xxxx
+-----token   tool NOUN NN xxxx
+-----token   to PART TO xx
+-----token   monitor VERB VB xxxx
+-----token   the DET DT xxx
+-----token   Kafka PROPN NNP Xxxxx
+-----token   topics NOUN NNS xxxx
+-----token   based VERB VBN xxxx
+-----token   on ADP IN xx
+-----token   active ADJ JJ xxxx
+-----token   , PUNCT , ,
+-----token   inactive ADJ JJ xxxx
+
+
+--line  and search functionalities. --main line  ['search', 'functionality']
+--num_words  2 --cost  2000 --prob 0.010000000000000002
+
+-----token   and CCONJ CC xxx
+-----token   search VERB VB xxxx
+-----token   functionalities NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  End to end design and development of a web application to create and configure cron jobs. This application --main line  ['end', 'end', 'design', 'development', 'web', 'application', 'create', 'configure', 'cron', 'job', 'application']
+--num_words  11 --cost  298095.79870417283 --prob 1.1253517471925912e-07
+
+-----token   End NOUN NN Xxx
+-----token   to PART TO xx
+-----token   end VERB VB xxx
+-----token   design NOUN NN xxxx
+-----token   and CCONJ CC xxx
+-----token   development NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   a DET DT x
+-----token   web NOUN NN xxx
+-----token   application NOUN NN xxxx
+-----token   to PART TO xx
+-----token   create VERB VB xxxx
+-----token   and CCONJ CC xxx
+-----token   configure VERB VB xxxx
+-----token   cron NOUN NN xxxx
+-----token   jobs NOUN NNS xxxx
+-----token   . PUNCT . .
+-----token   This DET DT Xxxx
+-----token   application NOUN NN xxxx
+
+
+--line  is also used as a devops monitoring tool to monitor the cron jobs based on active, inactive and search --main line  ['devop', 'monitoring', 'tool', 'monitor', 'cron', 'job', 'base', 'active', 'inactive', 'search']
+--num_words  10 --cost  110663.31584284586 --prob 8.31528719103568e-08
+
+-----token   is AUX VBZ xx
+-----token   also ADV RB xxxx
+-----token   used VERB VBN xxxx
+-----token   as SCONJ IN xx
+-----token   a DET DT x
+-----token   devops NOUN NNS xxxx
+-----token   monitoring NOUN NN xxxx
+-----token   tool NOUN NN xxxx
+-----token   to PART TO xx
+-----token   monitor VERB VB xxxx
+-----token   the DET DT xxx
+-----token   cron PROPN NNP xxxx
+-----token   jobs NOUN NNS xxxx
+-----token   based VERB VBN xxxx
+-----token   on ADP IN xx
+-----token   active ADJ JJ xxxx
+-----token   , PUNCT , ,
+-----token   inactive ADJ JJ xxxx
+-----token   and CCONJ CC xxx
+-----token   search VERB VB xxxx
+
+
+--line  functionalities. --main line  ['functionality']
+--num_words  1 --cost  2000 --prob 0.010000000000000002
+
+-----token   functionalities NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  Investor list showcase on login/Signup page based on a checklist CRUD. --main line  ['investor', 'list', 'showcase', 'login', 'signup', 'page', 'base', 'checklist', 'crud']
+--num_words  9 --cost  41342.87934927351 --prob 6.14421235332821e-07
+
+-----token   Investor NOUN NN Xxxxx
+-----token   list NOUN NN xxxx
+-----token   showcase NOUN NN xxxx
+-----token   on ADP IN xx
+-----token   login PROPN NNP xxxx
+-----token   / SYM SYM /
+-----token   Signup PROPN NNP Xxxxx
+-----token   page NOUN NN xxxx
+-----token   based VERB VBN xxxx
+-----token   on ADP IN xx
+-----token   a DET DT x
+-----token   checklist ADJ JJ xxxx
+-----token   CRUD PROPN NNP XXXX
+-----token   . PUNCT . .
+
+
+--line  Page 1 of 3 --main line  ['page', '1', '3']
+--num_words  3 --cost  0 --prob 1
+
+-----token   Page NOUN NN Xxxx
+-----token   1 NUM CD d
+-----token   of ADP IN xx
+-----token   3 NUM CD d
+
+
+--line  End to end development of a web application to monitor all the socket connections which helps to monitor --main line  ['end', 'end', 'development', 'web', 'application', 'monitor', 'socket', 'connection', 'help', 'monitor']
+--num_words  10 --cost  109663.31584284586 --prob 8.315287191035679e-07
+
+-----token   End NOUN NN Xxx
+-----token   to PART TO xx
+-----token   end VERB VB xxx
+-----token   development NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   a DET DT x
+-----token   web NOUN NN xxx
+-----token   application NOUN NN xxxx
+-----token   to PART TO xx
+-----token   monitor VERB VB xxxx
+-----token   all DET PDT xxx
+-----token   the DET DT xxx
+-----token   socket NOUN NN xxxx
+-----token   connections NOUN NNS xxxx
+-----token   which DET WDT xxxx
+-----token   helps VERB VBZ xxxx
+-----token   to PART TO xx
+-----token   monitor VERB VB xxxx
+
+
+--line  the website traffic. --main line  ['website', 'traffic']
+--num_words  2 --cost  2000 --prob 0.010000000000000002
+
+-----token   the DET DT xxx
+-----token   website NOUN NN xxxx
+-----token   traffic NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  Database migration scripts in python. --main line  ['database', 'migration', 'script', 'python']
+--num_words  4 --cost  1271.8281828459044 --prob 0.013533528323661271
+
+-----token   Database VERB VB Xxxxx
+-----token   migration NOUN NN xxxx
+-----token   scripts NOUN NNS xxxx
+-----token   in ADP IN xx
+-----token   python PROPN NNP xxxx
+-----token   . PUNCT . .
+
+
+--line  Worked on user authentication system. --main line  ['work', 'user', 'authentication', 'system']
+--num_words  4 --cost  1271.8281828459044 --prob 0.013533528323661271
+
+-----token   Worked VERB VBN Xxxxx
+-----token   on ADP IN xx
+-----token   user NOUN NN xxxx
+-----token   authentication NOUN NN xxxx
+-----token   system NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  Technology Used : React Js, Spring-boot, Java, Mongo DB, MySql. --main line  ['technology', 'react', 'js', 'spring', 'boot', 'java', 'mongo', 'db', 'mysql']
+--num_words  9 --cost  41342.87934927351 --prob 6.14421235332821e-07
+
+-----token   Technology NOUN NN Xxxxx
+-----token   Used VERB VBD Xxxx
+-----token   : PUNCT : :
+-----token   React PROPN NNP Xxxxx
+-----token   Js PROPN NNP Xx
+-----token   , PUNCT , ,
+-----token   Spring NOUN NN Xxxxx
+-----token   - PUNCT HYPH -
+-----token   boot NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   Java PROPN NNP Xxxx
+-----token   , PUNCT , ,
+-----token   Mongo PROPN NNP Xxxxx
+-----token   DB PROPN NNP XX
+-----token   , PUNCT , ,
+-----token   MySql PROPN NNP XxXxx
+-----token   . PUNCT . .
+
+
+--line  TCS : --main line  ['tcs']
+--num_words  1 --cost  0 --prob 1
+
+-----token   TCS NOUN NN XXX
+-----token   : PUNCT : :
+
+
+--line  (August, 2015 – April 2017) --main line  ['august', '2015', 'april', '2017']
+--num_words  4 --cost  271.8281828459045 --prob 0.1353352832366127
+
+-----token   ( PUNCT -LRB- (
+-----token   August PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   2015 NUM CD dddd
+-----token   – PUNCT : –
+-----token   April PROPN NNP Xxxxx
+-----token   2017 NUM CD dddd
+-----token   ) PUNCT -RRB- )
+
+
+--line  (Assistant System Engineer) --main line  ['assistant', 'system', 'engineer']
+--num_words  3 --cost  0 --prob 1
+
+-----token   ( PUNCT -LRB- (
+-----token   Assistant PROPN NNP Xxxxx
+-----token   System PROPN NNP Xxxxx
+-----token   Engineer PROPN NNP Xxxxx
+-----token   ) PUNCT -RRB- )
+
+
+--line  SAP HANA and Sybase database administration. --main line  ['sap', 'hana', 'sybase', 'database', 'administration']
+--num_words  5 --cost  1738.905609893065 --prob 0.001831563888873418
+
+-----token   SAP PROPN NNP XXX
+-----token   HANA PROPN NNP XXXX
+-----token   and CCONJ CC xxx
+-----token   Sybase PROPN NNP Xxxxx
+-----token   database NOUN NN xxxx
+-----token   administration NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  Automated problem resolutions and developed monitoring scripts for the database using BASH scripting --main line  ['automate', 'problem', 'resolution', 'develop', 'monitoring', 'script', 'database', 'bash', 'scripting']
+--num_words  9 --cost  40342.87934927351 --prob 6.14421235332821e-06
+
+-----token   Automated VERB VBN Xxxxx
+-----token   problem NOUN NN xxxx
+-----token   resolutions NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   developed VERB VBD xxxx
+-----token   monitoring NOUN NN xxxx
+-----token   scripts NOUN NNS xxxx
+-----token   for ADP IN xxx
+-----token   the DET DT xxx
+-----token   database NOUN NN xxxx
+-----token   using VERB VBG xxxx
+-----token   BASH PROPN NNP XXXX
+-----token   scripting NOUN NN xxxx
+
+
+--line  and SQL. --main line  ['sql']
+--num_words  1 --cost  2000 --prob 0.010000000000000002
+
+-----token   and CCONJ CC xxx
+-----token   SQL PROPN NNP XXX
+-----token   . PUNCT . .
+
+
+--line  Script to Detect and Monitor Long Running Transactions In Sybase database which shows the transaction --main line  ['script', 'detect', 'monitor', 'long', 'running', 'transaction', 'sybase', 'database', 'show', 'transaction']
+--num_words  10 --cost  109663.31584284586 --prob 8.315287191035679e-07
+
+-----token   Script NOUN NN Xxxxx
+-----token   to PART TO xx
+-----token   Detect VERB VB Xxxxx
+-----token   and CCONJ CC xxx
+-----token   Monitor VERB VB Xxxxx
+-----token   Long PROPN NNP Xxxx
+-----token   Running PROPN NNP Xxxxx
+-----token   Transactions NOUN NNS Xxxxx
+-----token   In ADP IN Xx
+-----token   Sybase PROPN NNP Xxxxx
+-----token   database NOUN NN xxxx
+-----token   which DET WDT xxxx
+-----token   shows VERB VBZ xxxx
+-----token   the DET DT xxx
+-----token   transaction NOUN NN xxxx
+
+
+--line  details and log space information. In Sybase database processes which are in hung state hold the log as well --main line  ['detail', 'log', 'space', 'information', 'sybase', 'database', 'process', 'hung', 'state', 'hold', 'log']
+--num_words  11 --cost  299095.79870417283 --prob 1.1253517471925913e-08
+
+-----token   details NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   log VERB VB xxx
+-----token   space NOUN NN xxxx
+-----token   information NOUN NN xxxx
+-----token   . PUNCT . .
+-----token   In ADP IN Xx
+-----token   Sybase PROPN NNP Xxxxx
+-----token   database NOUN NN xxxx
+-----token   processes NOUN NNS xxxx
+-----token   which DET WDT xxxx
+-----token   are AUX VBP xxx
+-----token   in ADP IN xx
+-----token   hung PROPN NNP xxxx
+-----token   state PROPN NNP xxxx
+-----token   hold VERB VBP xxxx
+-----token   the DET DT xxx
+-----token   log NOUN NN xxx
+-----token   as ADV RB xx
+-----token   well ADV RB xxxx
+
+
+--line  as block other processes and sometimes create deadlocks. That situation leads to a log full situation which --main line  ['block', 'process', 'create', 'deadlock', 'situation', 'lead', 'log', 'situation']
+--num_words  8 --cost  15841.31591025766 --prob 4.539992976248485e-06
+
+-----token   as SCONJ IN xx
+-----token   block NOUN NN xxxx
+-----token   other ADJ JJ xxxx
+-----token   processes NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   sometimes ADV RB xxxx
+-----token   create VERB VB xxxx
+-----token   deadlocks NOUN NNS xxxx
+-----token   . PUNCT . .
+-----token   That DET DT Xxxx
+-----token   situation NOUN NN xxxx
+-----token   leads VERB VBZ xxxx
+-----token   to ADP IN xx
+-----token   a DET DT x
+-----token   log NOUN NN xxx
+-----token   full ADJ JJ xxxx
+-----token   situation NOUN NN xxxx
+-----token   which DET WDT xxxx
+
+
+--line  can lead to database down. --main line  ['lead', 'database']
+--num_words  2 --cost  2000 --prob 0.010000000000000002
+
+-----token   can VERB MD xxx
+-----token   lead VERB VB xxxx
+-----token   to PART TO xx
+-----token   database VERB VB xxxx
+-----token   down ADP RP xxxx
+-----token   . PUNCT . .
+
+
+--line  A monitoring script to check whether all keys are able to connect to the database (HANA) or not. If all the --main line  ['monitoring', 'script', 'check', 'key', 'able', 'connect', 'database', 'hana']
+--num_words  8 --cost  14841.31591025766 --prob 4.5399929762484854e-05
+
+-----token   A DET DT X
+-----token   monitoring NOUN NN xxxx
+-----token   script NOUN NN xxxx
+-----token   to PART TO xx
+-----token   check VERB VB xxxx
+-----token   whether SCONJ IN xxxx
+-----token   all DET DT xxx
+-----token   keys NOUN NNS xxxx
+-----token   are AUX VBP xxx
+-----token   able ADJ JJ xxxx
+-----token   to PART TO xx
+-----token   connect VERB VB xxxx
+-----token   to ADP IN xx
+-----token   the DET DT xxx
+-----token   database NOUN NN xxxx
+-----token   ( PUNCT -LRB- (
+-----token   HANA NOUN NN XXXX
+-----token   ) PUNCT -RRB- )
+-----token   or CCONJ CC xx
+-----token   not PART RB xxx
+-----token   . PUNCT . .
+-----token   If SCONJ IN Xx
+-----token   all DET PDT xxx
+-----token   the DET DT xxx
+
+
+--line  keys are not working, that means there are some network connectivity issue or database  hung situation or --main line  ['key', 'work', 'mean', 'network', 'connectivity', 'issue', 'database', ' ', 'hung', 'situation']
+--num_words  10 --cost  110663.31584284586 --prob 8.31528719103568e-08
+
+-----token   keys NOUN NNS xxxx
+-----token   are AUX VBP xxx
+-----token   not PART RB xxx
+-----token   working VERB VBG xxxx
+-----token   , PUNCT , ,
+-----token   that DET DT xxxx
+-----token   means VERB VBZ xxxx
+-----token   there PRON EX xxxx
+-----token   are AUX VBP xxx
+-----token   some DET DT xxxx
+-----token   network NOUN NN xxxx
+-----token   connectivity NOUN NN xxxx
+-----token   issue NOUN NN xxxx
+-----token   or CCONJ CC xx
+-----token   database NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   hung ADJ JJ xxxx
+-----token   situation NOUN NN xxxx
+-----token   or CCONJ CC xx
+
+
+--line  memory issues or locked condition due to incorrect login attempts. All those incidents can lead to database --main line  ['memory', 'issue', 'lock', 'condition', 'incorrect', 'login', 'attempt', 'incident', 'lead', 'database']
+--num_words  10 --cost  110663.31584284586 --prob 8.31528719103568e-08
+
+-----token   memory NOUN NN xxxx
+-----token   issues NOUN NNS xxxx
+-----token   or CCONJ CC xx
+-----token   locked VERB VBN xxxx
+-----token   condition NOUN NN xxxx
+-----token   due ADP IN xxx
+-----token   to ADP IN xx
+-----token   incorrect ADJ JJ xxxx
+-----token   login ADJ JJ xxxx
+-----token   attempts NOUN NNS xxxx
+-----token   . PUNCT . .
+-----token   All DET PDT Xxx
+-----token   those DET DT xxxx
+-----token   incidents NOUN NNS xxxx
+-----token   can VERB MD xxx
+-----token   lead VERB VB xxxx
+-----token   to ADP IN xx
+-----token   database NOUN NN xxxx
+
+
+--line  down situation. --main line  ['situation']
+--num_words  1 --cost  2000 --prob 0.010000000000000002
+
+-----token   down ADP IN xxxx
+-----token   situation NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  A script to set any key in HANA database. It first set the user on which key is set by one predefined --main line  ['script', 'set', 'key', 'hana', 'database', 'set', 'user', 'key', 'set', 'predefine']
+--num_words  10 --cost  109663.31584284586 --prob 8.315287191035679e-07
+
+-----token   A DET DT X
+-----token   script NOUN NN xxxx
+-----token   to PART TO xx
+-----token   set VERB VB xxx
+-----token   any DET DT xxx
+-----token   key NOUN NN xxx
+-----token   in ADP IN xx
+-----token   HANA NOUN NN XXXX
+-----token   database NOUN NN xxxx
+-----token   . PUNCT . .
+-----token   It PRON PRP Xx
+-----token   first ADV RB xxxx
+-----token   set VERB VBD xxx
+-----token   the DET DT xxx
+-----token   user NOUN NN xxxx
+-----token   on ADP IN xx
+-----token   which DET WDT xxxx
+-----token   key NOUN NN xxx
+-----token   is AUX VBZ xx
+-----token   set VERB VBN xxx
+-----token   by ADP IN xx
+-----token   one NUM CD xxx
+-----token   predefined VERB VBN xxxx
+
+
+--line  password. Then it will set the key by same password. After that the key will be able to connect to the --main line  ['password', 'set', 'key', 'password', 'key', 'able', 'connect']
+--num_words  7 --cost  6459.815003314424 --prob 3.354626279025119e-05
+
+-----token   password NOUN NN xxxx
+-----token   . PUNCT . .
+-----token   Then ADV RB Xxxx
+-----token   it PRON PRP xx
+-----token   will VERB MD xxxx
+-----token   set VERB VB xxx
+-----token   the DET DT xxx
+-----token   key NOUN NN xxx
+-----token   by ADP IN xx
+-----token   same ADJ JJ xxxx
+-----token   password NOUN NN xxxx
+-----token   . PUNCT . .
+-----token   After ADP IN Xxxxx
+-----token   that DET DT xxxx
+-----token   the DET DT xxx
+-----token   key NOUN NN xxx
+-----token   will VERB MD xxxx
+-----token   be AUX VB xx
+-----token   able ADJ JJ xxxx
+-----token   to PART TO xx
+-----token   connect VERB VB xxxx
+-----token   to ADP IN xx
+-----token   the DET DT xxx
+
+
+--line  database. --main line  ['database']
+--num_words  1 --cost  2000 --prob 0.010000000000000002
+
+-----token   database NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  Script to resolve Security compliances in HANA Database. --main line  ['script', 'resolve', 'security', 'compliance', 'hana', 'database']
+--num_words  6 --cost  3008.5536923187665 --prob 0.00024787521766663585
+
+-----token   Script NOUN NN Xxxxx
+-----token   to PART TO xx
+-----token   resolve VERB VB xxxx
+-----token   Security NOUN NN Xxxxx
+-----token   compliances NOUN NNS xxxx
+-----token   in ADP IN xx
+-----token   HANA PROPN NNP XXXX
+-----token   Database PROPN NNP Xxxxx
+-----token   . PUNCT . .
+
+
+--line  Technology used: HANA and Sybase database, Bash, SQL. --main line  ['technology', 'hana', 'sybase', 'database', 'bash', 'sql']
+--num_words  6 --cost  3008.5536923187665 --prob 0.00024787521766663585
+
+-----token   Technology NOUN NN Xxxxx
+-----token   used VERB VBD xxxx
+-----token   : PUNCT : :
+-----token   HANA NOUN NN XXXX
+-----token   and CCONJ CC xxx
+-----token   Sybase PROPN NNP Xxxxx
+-----token   database NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   Bash PROPN NNP Xxxx
+-----token   , PUNCT , ,
+-----token   SQL PROPN NNP XXX
+-----token   . PUNCT . .
+
+
+--line  Projects: --main line  ['project']
+--num_words  1 --cost  0 --prob 1
+
+-----token   Projects NOUN NNS Xxxxx
+-----token   : PUNCT : :
+
+
+--line  Summer Training (2013 June-July): --main line  ['summer', 'training', '2013', 'june', 'july']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   Summer NOUN NN Xxxxx
+-----token   Training PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   2013 NUM CD dddd
+-----token   June PROPN NNP Xxxx
+-----token   - PUNCT HYPH -
+-----token   July PROPN NNP Xxxx
+-----token   ) PUNCT -RRB- )
+-----token   : PUNCT : :
+
+
+--line  (Ardent Computech Pvt Ltd) --main line  ['ardent', 'computech', 'pvt', 'ltd']
+--num_words  4 --cost  271.8281828459045 --prob 0.1353352832366127
+
+-----token   ( PUNCT -LRB- (
+-----token   Ardent PROPN NNP Xxxxx
+-----token   Computech PROPN NNP Xxxxx
+-----token   Pvt PROPN NNP Xxx
+-----token   Ltd PROPN NNP Xxx
+-----token   ) PUNCT -RRB- )
+
+
+--line  Online Product Store (eCommerce Application) --main line  ['online', 'product', 'store', 'ecommerce', 'application']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   Online PROPN NNP Xxxxx
+-----token   Product PROPN NNP Xxxxx
+-----token   Store PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   eCommerce PROPN NNP xXxxxx
+-----token   Application PROPN NNP Xxxxx
+-----token   ) PUNCT -RRB- )
+
+
+--line  Developed an online product store having the following functionalities: --main line  ['develop', 'online', 'product', 'store', 'have', 'follow', 'functionality']
+--num_words  7 --cost  5459.815003314424 --prob 0.00033546262790251185
+
+-----token   Developed VERB VBD Xxxxx
+-----token   an DET DT xx
+-----token   online ADJ JJ xxxx
+-----token   product NOUN NN xxxx
+-----token   store NOUN NN xxxx
+-----token   having VERB VBG xxxx
+-----token   the DET DT xxx
+-----token   following VERB VBG xxxx
+-----token   functionalities NOUN NNS xxxx
+-----token   : PUNCT : :
+
+
+--line  Filtering  functionality  using  which  all  the  products  can  be  filtered  on  the  basis  of  category,  price  and --main line  ['filter', ' ', 'functionality', ' ', ' ', ' ', ' ', ' ', 'product', ' ', ' ', ' ', 'filter', ' ', ' ', ' ', 'basis', ' ', ' ', 'category', ' ', 'price', ' ']
+--num_words  23 --cost  48516519540.97903 --prob 4.248354255291589e-18
+
+-----token   Filtering VERB VBG Xxxxx
+-----token     SPACE _SP  
+-----token   functionality NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   using VERB VBG xxxx
+-----token     SPACE _SP  
+-----token   which DET WDT xxxx
+-----token     SPACE _SP  
+-----token   all DET DT xxx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   products NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   can VERB MD xxx
+-----token     SPACE _SP  
+-----token   be AUX VB xx
+-----token     SPACE _SP  
+-----token   filtered VERB VBN xxxx
+-----token     SPACE _SP  
+-----token   on ADP IN xx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   basis NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   of ADP IN xx
+-----token     SPACE _SP  
+-----token   category NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token     SPACE _SP  
+-----token   price NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   and CCONJ CC xxx
+
+
+--line  popularity.  Sorted  view  of  products  based  on  the  price  and  the  user  ratings.  Product  availability  check. --main line  ['popularity', ' ', 'sort', ' ', 'view', ' ', ' ', 'product', ' ', 'base', ' ', ' ', ' ', 'price', ' ', ' ', ' ', 'user', ' ', 'rating', ' ', 'product', ' ', 'availability', ' ', 'check']
+--num_words  26 --cost  974480346624.8904 --prob 1.0530617357553812e-22
+
+-----token   popularity NOUN NN xxxx
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   Sorted ADJ JJ Xxxxx
+-----token     SPACE _SP  
+-----token   view NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   of ADP IN xx
+-----token     SPACE _SP  
+-----token   products NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   based VERB VBN xxxx
+-----token     SPACE _SP  
+-----token   on ADP IN xx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   price NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   and CCONJ CC xxx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   user NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   ratings NOUN NNS xxxx
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   Product NOUN NN Xxxxx
+-----token     SPACE _SP  
+-----token   availability NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   check NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  Adding to cart and wishlisting. --main line  ['add', 'cart', 'wishliste']
+--num_words  3 --cost  1000 --prob 0.1
+
+-----token   Adding VERB VBG Xxxxx
+-----token   to PART TO xx
+-----token   cart VERB VB xxxx
+-----token   and CCONJ CC xxx
+-----token   wishlisting VERB VBG xxxx
+-----token   . PUNCT . .
+
+
+--line  Technologies used: J2EE(following MVC structure), Oracle 10g Database , Tomcat 7. --main line  ['technology', 'j2ee(followe', 'mvc', 'structure', 'oracle', '10', 'g', 'database', 'tomcat', '7']
+--num_words  10 --cost  110663.31584284586 --prob 8.31528719103568e-08
+
+-----token   Technologies NOUN NNS Xxxxx
+-----token   used VERB VBD xxxx
+-----token   : PUNCT : :
+-----token   J2EE(following VERB VBG XdXX(xxxx
+-----token   MVC PROPN NNP XXX
+-----token   structure NOUN NN xxxx
+-----token   ) PUNCT -RRB- )
+-----token   , PUNCT , ,
+-----token   Oracle PROPN NNP Xxxxx
+-----token   10 NUM CD dd
+-----token   g NOUN NN x
+-----token   Database PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Tomcat PROPN NNP Xxxxx
+-----token   7 NUM CD d
+-----token   . PUNCT . .
+
+
+--line  Online Music Repository System(using Django framework): --main line  ['online', 'music', 'repository', 'system(use', 'django', 'framework']
+--num_words  6 --cost  2008.5536923187667 --prob 0.0024787521766663585
+
+-----token   Online ADJ JJ Xxxxx
+-----token   Music PROPN NNP Xxxxx
+-----token   Repository NOUN NN Xxxxx
+-----token   System(using VERB VBG Xxxxx(xxxx
+-----token   Django PROPN NNP Xxxxx
+-----token   framework NOUN NN xxxx
+-----token   ) PUNCT -RRB- )
+-----token   : PUNCT : :
+
+
+--line  (2014 June -July) --main line  ['2014', 'june', '-july']
+--num_words  3 --cost  0 --prob 1
+
+-----token   ( PUNCT -LRB- (
+-----token   2014 NUM CD dddd
+-----token   June PROPN NNP Xxxx
+-----token   -July PROPN NNP -Xxxx
+-----token   ) PUNCT -RRB- )
+
+
+--line  Developed a web based app that lets users to upload and store their favorite songs. --main line  ['develop', 'web', 'base', 'app', 'let', 'user', 'upload', 'store', 'favorite', 'song']
+--num_words  10 --cost  110663.31584284586 --prob 8.31528719103568e-08
+
+-----token   Developed VERB VBD Xxxxx
+-----token   a DET DT x
+-----token   web NOUN NN xxx
+-----token   based VERB VBN xxxx
+-----token   app NOUN NN xxx
+-----token   that DET WDT xxxx
+-----token   lets VERB VBZ xxxx
+-----token   users NOUN NNS xxxx
+-----token   to PART TO xx
+-----token   upload VERB VB xxxx
+-----token   and CCONJ CC xxx
+-----token   store VERB VB xxxx
+-----token   their DET PRP$ xxxx
+-----token   favorite ADJ JJ xxxx
+-----token   songs NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  It also facilitates the users to download self-uploaded and other songs uploaded by different users depending on --main line  ['facilitate', 'user', 'download', 'self', 'uploaded', 'song', 'upload', 'different', 'user', 'depend']
+--num_words  10 --cost  109663.31584284586 --prob 8.315287191035679e-07
+
+-----token   It PRON PRP Xx
+-----token   also ADV RB xxxx
+-----token   facilitates VERB VBZ xxxx
+-----token   the DET DT xxx
+-----token   users NOUN NNS xxxx
+-----token   to PART TO xx
+-----token   download VERB VB xxxx
+-----token   self NOUN NN xxxx
+-----token   - PUNCT HYPH -
+-----token   uploaded ADJ JJ xxxx
+-----token   and CCONJ CC xxx
+-----token   other ADJ JJ xxxx
+-----token   songs NOUN NNS xxxx
+-----token   uploaded VERB VBN xxxx
+-----token   by ADP IN xx
+-----token   different ADJ JJ xxxx
+-----token   users NOUN NNS xxxx
+-----token   depending VERB VBG xxxx
+-----token   on ADP IN xx
+
+
+--line  their permission setting. --main line  ['permission', 'setting']
+--num_words  2 --cost  2000 --prob 0.010000000000000002
+
+-----token   their DET PRP$ xxxx
+-----token   permission NOUN NN xxxx
+-----token   setting NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  Page 2 of 3 --main line  ['page', '2', '3']
+--num_words  3 --cost  0 --prob 1
+
+-----token   Page NOUN NN Xxxx
+-----token   2 NUM CD d
+-----token   of ADP IN xx
+-----token   3 NUM CD d
+
+
+--line  Implemented a feature where songs can be stored in the server directly from the third party websites by providing --main line  ['implement', 'feature', 'song', 'store', 'server', 'directly', 'party', 'website', 'provide']
+--num_words  9 --cost  40342.87934927351 --prob 6.14421235332821e-06
+
+-----token   Implemented VERB VBN Xxxxx
+-----token   a DET DT x
+-----token   feature NOUN NN xxxx
+-----token   where ADV WRB xxxx
+-----token   songs NOUN NNS xxxx
+-----token   can VERB MD xxx
+-----token   be AUX VB xx
+-----token   stored VERB VBN xxxx
+-----token   in ADP IN xx
+-----token   the DET DT xxx
+-----token   server NOUN NN xxxx
+-----token   directly ADV RB xxxx
+-----token   from ADP IN xxxx
+-----token   the DET DT xxx
+-----token   third ADJ JJ xxxx
+-----token   party NOUN NN xxxx
+-----token   websites NOUN NNS xxxx
+-----token   by ADP IN xx
+-----token   providing VERB VBG xxxx
+
+
+--line  the downloadable links. --main line  ['downloadable', 'link']
+--num_words  2 --cost  2000 --prob 0.010000000000000002
+
+-----token   the DET DT xxx
+-----token   downloadable ADJ JJ xxxx
+-----token   links NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  Implemented a rigorous search functionality that finds out all the relevant albums and songs in response to user --main line  ['implement', 'rigorous', 'search', 'functionality', 'find', 'relevant', 'album', 'song', 'response', 'user']
+--num_words  10 --cost  109663.31584284586 --prob 8.315287191035679e-07
+
+-----token   Implemented VERB VBN Xxxxx
+-----token   a DET DT x
+-----token   rigorous ADJ JJ xxxx
+-----token   search NOUN NN xxxx
+-----token   functionality NOUN NN xxxx
+-----token   that DET WDT xxxx
+-----token   finds VERB VBZ xxxx
+-----token   out ADP RP xxx
+-----token   all DET PDT xxx
+-----token   the DET DT xxx
+-----token   relevant ADJ JJ xxxx
+-----token   albums NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   songs NOUN NNS xxxx
+-----token   in ADP IN xx
+-----token   response NOUN NN xxxx
+-----token   to ADP IN xx
+-----token   user NOUN NN xxxx
+
+
+--line  queries. --main line  ['query']
+--num_words  1 --cost  2000 --prob 0.010000000000000002
+
+-----token   queries NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  Technologies used : Django framework, Python. --main line  ['technology', 'django', 'framework', 'python']
+--num_words  4 --cost  1271.8281828459044 --prob 0.013533528323661271
+
+-----token   Technologies NOUN NNS Xxxxx
+-----token   used VERB VBD xxxx
+-----token   : PUNCT : :
+-----token   Django PROPN NNP Xxxxx
+-----token   framework NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   Python PROPN NNP Xxxxx
+-----token   . PUNCT . .
+
+
+--line  Final Year Project (2014-2015): --main line  ['final', 'year', 'project', '2014', '2015']
+--num_words  5 --cost  738.905609893065 --prob 0.01831563888873418
+
+-----token   Final PROPN NNP Xxxxx
+-----token   Year PROPN NNP Xxxx
+-----token   Project PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   2014 NUM CD dddd
+-----token   - SYM SYM -
+-----token   2015 NUM CD dddd
+-----token   ) PUNCT -RRB- )
+-----token   : PUNCT : :
+
+
+--line  Online Logical Error detector(A Human Computer Interaction Application) : --main line  ['online', 'logical', 'error', 'detector(a', 'human', 'computer', 'interaction', 'application']
+--num_words  8 --cost  14841.31591025766 --prob 4.5399929762484854e-05
+
+-----token   Online PROPN NNP Xxxxx
+-----token   Logical PROPN NNP Xxxxx
+-----token   Error PROPN NNP Xxxxx
+-----token   detector(A VERB VBZ xxxx(X
+-----token   Human PROPN NNP Xxxxx
+-----token   Computer PROPN NNP Xxxxx
+-----token   Interaction PROPN NNP Xxxxx
+-----token   Application PROPN NNP Xxxxx
+-----token   ) PUNCT -RRB- )
+-----token   : PUNCT : :
+
+
+--line  Developed  an  online  coding  platform  for  the  naive  programmers  to  check  out  for  logical  errors  in  a  C --main line  ['develop', ' ', ' ', 'online', ' ', 'code', ' ', 'platform', ' ', ' ', ' ', 'naive', ' ', 'programmer', ' ', ' ', 'check', ' ', ' ', ' ', 'logical', ' ', 'error', ' ', ' ', ' ', 'c']
+--num_words  27 --cost  2648912212984.347 --prob 1.4251640827409352e-21
+
+-----token   Developed VERB VBN Xxxxx
+-----token     SPACE _SP  
+-----token   an DET DT xx
+-----token     SPACE _SP  
+-----token   online ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   coding VERB VBG xxxx
+-----token     SPACE _SP  
+-----token   platform NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   for ADP IN xxx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   naive ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   programmers NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   to PART TO xx
+-----token     SPACE _SP  
+-----token   check NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   out ADP RP xxx
+-----token     SPACE _SP  
+-----token   for ADP IN xxx
+-----token     SPACE _SP  
+-----token   logical ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   errors NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   in ADP IN xx
+-----token     SPACE _SP  
+-----token   a DET DT x
+-----token     SPACE _SP  
+-----token   C NOUN NN X
+
+
+--line  program. --main line  ['program']
+--num_words  1 --cost  2000 --prob 0.010000000000000002
+
+-----token   program NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  it has a predefined set of programs and their implementation logics stored in the database in terms of an --main line  ['predefined', 'set', 'program', 'implementation', 'logic', 'store', 'database', 'term']
+--num_words  8 --cost  15841.31591025766 --prob 4.539992976248485e-06
+
+-----token   it PRON PRP xx
+-----token   has AUX VBZ xxx
+-----token   a DET DT x
+-----token   predefined ADJ JJ xxxx
+-----token   set NOUN NN xxx
+-----token   of ADP IN xx
+-----token   programs NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   their DET PRP$ xxxx
+-----token   implementation NOUN NN xxxx
+-----token   logics NOUN NNS xxxx
+-----token   stored VERB VBN xxxx
+-----token   in ADP IN xx
+-----token   the DET DT xxx
+-----token   database NOUN NN xxxx
+-----token   in ADP IN xx
+-----token   terms NOUN NNS xxxx
+-----token   of ADP IN xx
+-----token   an DET DT xx
+
+
+--line  intermediate  string  with  special  syntax.  It  extracts  the  logic  out  of  the  code  submitted  by  the  user  and --main line  ['intermediate', ' ', 'stre', ' ', ' ', 'special', ' ', 'syntax', ' ', ' ', 'extract', ' ', ' ', 'logic', ' ', ' ', ' ', ' ', 'code', ' ', 'submit', ' ', ' ', ' ', 'user', ' ']
+--num_words  26 --cost  974480345624.8904 --prob 1.0530617357553812e-21
+
+-----token   intermediate ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   string VERB VBG xxxx
+-----token     SPACE _SP  
+-----token   with ADP IN xxxx
+-----token     SPACE _SP  
+-----token   special ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   syntax NOUN NN xxxx
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   It PRON PRP Xx
+-----token     SPACE _SP  
+-----token   extracts NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   logic NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   out ADP RP xxx
+-----token     SPACE _SP  
+-----token   of ADP IN xx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   code NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   submitted VERB VBD xxxx
+-----token     SPACE _SP  
+-----token   by ADP IN xx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   user NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   and CCONJ CC xxx
+
+
+--line  compares  with  the  logic  stored  in  the  database.  If  the  special  searching  mechanism  of  the  matching --main line  ['compare', ' ', ' ', ' ', 'logic', ' ', 'store', ' ', ' ', ' ', 'database', ' ', ' ', ' ', 'special', ' ', 'search', ' ', 'mechanism', ' ', ' ', ' ', 'matching']
+--num_words  23 --cost  48516520540.97903 --prob 4.248354255291589e-19
+
+-----token   compares VERB VBZ xxxx
+-----token     SPACE _SP  
+-----token   with ADP IN xxxx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   logic NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   stored VERB VBN xxxx
+-----token     SPACE _SP  
+-----token   in ADP IN xx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   database NOUN NN xxxx
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   If SCONJ IN Xx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   special ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   searching VERB VBG xxxx
+-----token     SPACE _SP  
+-----token   mechanism NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   of ADP IN xx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   matching NOUN NN xxxx
+
+
+--line  algorithm  detects  a  mismatch,  it  tracks  down  the  erroneous  statement  in  the  program  and  displays  it  in --main line  ['algorithm', ' ', 'detect', ' ', ' ', 'mismatch', ' ', ' ', 'track', ' ', ' ', ' ', 'erroneous', ' ', 'statement', ' ', ' ', ' ', 'program', ' ', ' ', 'display', ' ', ' ']
+--num_words  24 --cost  131881574448.32146 --prob 5.74952226429356e-20
+
+-----token   algorithm PROPN NNP xxxx
+-----token     SPACE _SP  
+-----token   detects NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   a DET DT x
+-----token     SPACE _SP  
+-----token   mismatch NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token     SPACE _SP  
+-----token   it PRON PRP xx
+-----token     SPACE _SP  
+-----token   tracks NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   down ADV RB xxxx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   erroneous ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   statement NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   in ADP IN xx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+-----token     SPACE _SP  
+-----token   program NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   and CCONJ CC xxx
+-----token     SPACE _SP  
+-----token   displays NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   it PRON PRP xx
+-----token     SPACE _SP  
+-----token   in ADP IN xx
+
+
+--line  a  user  friendly  way.  It  only  accepts  compiled  (syntactically  correct)  programs  as  input  because  the --main line  [' ', 'user', ' ', 'friendly', ' ', 'way', ' ', ' ', ' ', 'accept', ' ', 'compile', ' ', 'syntactically', ' ', 'correct', ' ', 'program', ' ', ' ', 'input', ' ', ' ']
+--num_words  23 --cost  48516520540.97903 --prob 4.248354255291589e-19
+
+-----token   a DET DT x
+-----token     SPACE _SP  
+-----token   user NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   friendly ADJ JJ xxxx
+-----token     SPACE _SP  
+-----token   way NOUN NN xxx
+-----token   . PUNCT . .
+-----token     SPACE _SP  
+-----token   It PRON PRP Xx
+-----token     SPACE _SP  
+-----token   only ADV RB xxxx
+-----token     SPACE _SP  
+-----token   accepts VERB VBZ xxxx
+-----token     SPACE _SP  
+-----token   compiled VERB VBN xxxx
+-----token     SPACE _SP  
+-----token   ( PUNCT -LRB- (
+-----token   syntactically ADV RB xxxx
+-----token     SPACE _SP  
+-----token   correct ADJ JJ xxxx
+-----token   ) PUNCT -RRB- )
+-----token     SPACE _SP  
+-----token   programs NOUN NNS xxxx
+-----token     SPACE _SP  
+-----token   as SCONJ IN xx
+-----token     SPACE _SP  
+-----token   input NOUN NN xxxx
+-----token     SPACE _SP  
+-----token   because SCONJ IN xxxx
+-----token     SPACE _SP  
+-----token   the DET DT xxx
+
+
+--line  concept of logical error applies only when the program executes successfully. --main line  ['concept', 'logical', 'error', 'apply', 'program', 'execute', 'successfully']
+--num_words  7 --cost  7459.815003314424 --prob 3.354626279025119e-06
+
+-----token   concept NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   logical ADJ JJ xxxx
+-----token   error NOUN NN xxxx
+-----token   applies VERB VBZ xxxx
+-----token   only ADV RB xxxx
+-----token   when ADV WRB xxxx
+-----token   the DET DT xxx
+-----token   program NOUN NN xxxx
+-----token   executes VERB VBZ xxxx
+-----token   successfully ADV RB xxxx
+-----token   . PUNCT . .
+
+
+--line  Tools and Technology: J2EE(maintaining MVC structure),Oracle 10g,Tomcat7,Eclipse(Indigo) --main line  ['tool', 'technology', 'j2ee(maintaine', 'mvc', 'structure),oracle', '10g', 'tomcat7,eclipse(indigo']
+--num_words  7 --cost  5459.815003314424 --prob 0.00033546262790251185
+
+-----token   Tools NOUN NNS Xxxxx
+-----token   and CCONJ CC xxx
+-----token   Technology NOUN NN Xxxxx
+-----token   : PUNCT : :
+-----token   J2EE(maintaining VERB VBG XdXX(xxxx
+-----token   MVC NOUN NN XXX
+-----token   structure),Oracle NOUN NNS xxxx),Xxxxx
+-----token   10g NOUN NNS ddx
+-----token   , PUNCT , ,
+-----token   Tomcat7,Eclipse(Indigo X ADD Xxxxxd,Xxxxx(Xxxxx
+-----token   ) PUNCT -RRB- )
+
+
+--line  Page 3 of 3 --main line  ['page', '3', '3']
+--num_words  3 --cost  0 --prob 1
+
+-----token   Page NOUN NN Xxxx
+-----token   3 NUM CD d
+-----token   of ADP IN xx
+-----token   3 NUM CD d
+
+
+Software Developer, Tracxn Technologies Pvt Ltd
+avikhazra93@gmail.com
+https://www.linkedin.com/in/avikhazra93
+Phone: +91 9874161982
+Personal Summary:
+Has  experience  of    full  stack  software  development  in  React  JS  (Front  End)  and  Spring  Boot  using  JAVA
+(Backend)  and  Shell  Scripting  on  automation  of  several  procedures  in  SAP  HANA  and  Sybase  database
+environment.
+Algorithms, Data structure, Python, Java, C, Bash, SQL, Java Script.
+Interested in Programming and worked in Linux environment.
+Well versed and fluent in English, Bengali and Hindi.
+Strong verbal and communication skill.
+B.Tech,CSE,8.27 CGPA, Kalyani Govt Engineering College (2011 - 2015)
+Scored 87.2% in 12th (WBCHSE 2011)
+Scored 80.7% in 10th (WBBSE 2009)
+Professional Experience:
+Tracxn Technologies Pvt Ltd, Bangalore:
+(May, 2017 –  Dec, 2017)
+(Software Engineer)
+End to end design and development of a web application to create and configure the conumergroups which
+reduces the manual efforts and risks of entering the configuration information to database. This application
+is also used as a devops monitoring tool to monitor the consumer groups based on active, inactive and
+search functionalities.
+End to end design and development of a web application to create and configure Kafka topics  which
+reduces the manual efforts and risks of entering the configuration information to the database. This
+application is also used as a devops monitoring tool to monitor the Kafka topics based on active, inactive
+and search functionalities.
+End to end design and development of a web application to create and configure cron jobs. This application
+is also used as a devops monitoring tool to monitor the cron jobs based on active, inactive and search
+functionalities.
+Investor list showcase on login/Signup page based on a checklist CRUD.
+Page 1 of 3
+End to end development of a web application to monitor all the socket connections which helps to monitor
+the website traffic.
+Database migration scripts in python.
+Worked on user authentication system.
+Technology Used : React Js, Spring-boot, Java, Mongo DB, MySql.
+(August, 2015 – April 2017)
+(Assistant System Engineer)
+SAP HANA and Sybase database administration.
+Automated problem resolutions and developed monitoring scripts for the database using BASH scripting
+Script to Detect and Monitor Long Running Transactions In Sybase database which shows the transaction
+details and log space information. In Sybase database processes which are in hung state hold the log as well
+as block other processes and sometimes create deadlocks. That situation leads to a log full situation which
+can lead to database down.
+A monitoring script to check whether all keys are able to connect to the database (HANA) or not. If all the
+keys are not working, that means there are some network connectivity issue or database  hung situation or
+memory issues or locked condition due to incorrect login attempts. All those incidents can lead to database
+down situation.
+A script to set any key in HANA database. It first set the user on which key is set by one predefined
+password. Then it will set the key by same password. After that the key will be able to connect to the
+Script to resolve Security compliances in HANA Database.
+Technology used: HANA and Sybase database, Bash, SQL.
+Summer Training (2013 June-July):
+(Ardent Computech Pvt Ltd)
+Online Product Store (eCommerce Application)
+Developed an online product store having the following functionalities:
+Filtering  functionality  using  which  all  the  products  can  be  filtered  on  the  basis  of  category,  price  and
+popularity.  Sorted  view  of  products  based  on  the  price  and  the  user  ratings.  Product  availability  check.
+Adding to cart and wishlisting.
+Technologies used: J2EE(following MVC structure), Oracle 10g Database , Tomcat 7.
+Online Music Repository System(using Django framework):
+(2014 June -July)
+Developed a web based app that lets users to upload and store their favorite songs.
+It also facilitates the users to download self-uploaded and other songs uploaded by different users depending on
+their permission setting.
+Page 2 of 3
+Implemented a feature where songs can be stored in the server directly from the third party websites by providing
+the downloadable links.
+Implemented a rigorous search functionality that finds out all the relevant albums and songs in response to user
+Technologies used : Django framework, Python.
+Final Year Project (2014-2015):
+Online Logical Error detector(A Human Computer Interaction Application) :
+Developed  an  online  coding  platform  for  the  naive  programmers  to  check  out  for  logical  errors  in  a  C
+it has a predefined set of programs and their implementation logics stored in the database in terms of an
+intermediate  string  with  special  syntax.  It  extracts  the  logic  out  of  the  code  submitted  by  the  user  and
+compares  with  the  logic  stored  in  the  database.  If  the  special  searching  mechanism  of  the  matching
+algorithm  detects  a  mismatch,  it  tracks  down  the  erroneous  statement  in  the  program  and  displays  it  in
+a  user  friendly  way.  It  only  accepts  compiled  (syntactically  correct)  programs  as  input  because  the
+concept of logical error applies only when the program executes successfully.
+Tools and Technology: J2EE(maintaining MVC structure),Oracle 10g,Tomcat7,Eclipse(Indigo)
+Page 3 of 3
+['Avik Hazra', 'Software Developer, Tracxn Technologies Pvt Ltd', 'avikhazra93@gmail.com', 'https://www.linkedin.com/in/avikhazra93', 'Phone: +91 9874161982', 'Personal Summary:', 'Has  experience  of    full  stack  software  development  in  React  JS  (Front  End)  and  Spring  Boot  using  JAVA', '(Backend)  and  Shell  Scripting  on  automation  of  several  procedures  in  SAP  HANA  and  Sybase  database', 'environment.', 'Skills:', 'Algorithms, Data structure, Python, Java, C, Bash, SQL, Java Script.', 'Interested in Programming and worked in Linux environment.', 'Well versed and fluent in English, Bengali and Hindi.', 'Strong verbal and communication skill.', 'Academics:', 'B.Tech,CSE,8.27 CGPA, Kalyani Govt Engineering College (2011 - 2015)', 'Scored 87.2% in 12th (WBCHSE 2011)', 'Scored 80.7% in 10th (WBBSE 2009)', 'Professional Experience:', 'Tracxn Technologies Pvt Ltd, Bangalore:', '(May, 2017 –  Dec, 2017)', '(Software Engineer)', 'End to end design and development of a web application to create and configure the conumergroups which', 'reduces the manual efforts and risks of entering the configuration information to database. This application', 'is also used as a devops monitoring tool to monitor the consumer groups based on active, inactive and', 'search functionalities.', 'End to end design and development of a web application to create and configure Kafka topics  which', 'reduces the manual efforts and risks of entering the configuration information to the database. This', 'application is also used as a devops monitoring tool to monitor the Kafka topics based on active, inactive', 'and search functionalities.', 'End to end design and development of a web application to create and configure cron jobs. This application', 'is also used as a devops monitoring tool to monitor the cron jobs based on active, inactive and search', 'functionalities.', 'Investor list showcase on login/Signup page based on a checklist CRUD.', 'Page 1 of 3', 'End to end development of a web application to monitor all the socket connections which helps to monitor', 'the website traffic.', 'Database migration scripts in python.', 'Worked on user authentication system.', 'Technology Used : React Js, Spring-boot, Java, Mongo DB, MySql.', 'TCS :', '(August, 2015 – April 2017)', '(Assistant System Engineer)', 'SAP HANA and Sybase database administration.', 'Automated problem resolutions and developed monitoring scripts for the database using BASH scripting', 'and SQL.', 'Script to Detect and Monitor Long Running Transactions In Sybase database which shows the transaction', 'details and log space information. In Sybase database processes which are in hung state hold the log as well', 'as block other processes and sometimes create deadlocks. That situation leads to a log full situation which', 'can lead to database down.', 'A monitoring script to check whether all keys are able to connect to the database (HANA) or not. If all the', 'keys are not working, that means there are some network connectivity issue or database  hung situation or', 'memory issues or locked condition due to incorrect login attempts. All those incidents can lead to database', 'down situation.', 'A script to set any key in HANA database. It first set the user on which key is set by one predefined', 'password. Then it will set the key by same password. After that the key will be able to connect to the', 'database.', 'Script to resolve Security compliances in HANA Database.', 'Technology used: HANA and Sybase database, Bash, SQL.', 'Projects:', 'Summer Training (2013 June-July):', '(Ardent Computech Pvt Ltd)', 'Online Product Store (eCommerce Application)', 'Developed an online product store having the following functionalities:', 'Filtering  functionality  using  which  all  the  products  can  be  filtered  on  the  basis  of  category,  price  and', 'popularity.  Sorted  view  of  products  based  on  the  price  and  the  user  ratings.  Product  availability  check.', 'Adding to cart and wishlisting.', 'Technologies used: J2EE(following MVC structure), Oracle 10g Database , Tomcat 7.', 'Online Music Repository System(using Django framework):', '(2014 June -July)', 'Developed a web based app that lets users to upload and store their favorite songs.', 'It also facilitates the users to download self-uploaded and other songs uploaded by different users depending on', 'their permission setting.', 'Page 2 of 3', 'Implemented a feature where songs can be stored in the server directly from the third party websites by providing', 'the downloadable links.', 'Implemented a rigorous search functionality that finds out all the relevant albums and songs in response to user', 'queries.', 'Technologies used : Django framework, Python.', 'Final Year Project (2014-2015):', 'Online Logical Error detector(A Human Computer Interaction Application) :', 'Developed  an  online  coding  platform  for  the  naive  programmers  to  check  out  for  logical  errors  in  a  C', 'program.', 'it has a predefined set of programs and their implementation logics stored in the database in terms of an', 'intermediate  string  with  special  syntax.  It  extracts  the  logic  out  of  the  code  submitted  by  the  user  and', 'compares  with  the  logic  stored  in  the  database.  If  the  special  searching  mechanism  of  the  matching', 'algorithm  detects  a  mismatch,  it  tracks  down  the  erroneous  statement  in  the  program  and  displays  it  in', 'a  user  friendly  way.  It  only  accepts  compiled  (syntactically  correct)  programs  as  input  because  the', 'concept of logical error applies only when the program executes successfully.', 'Tools and Technology: J2EE(maintaining MVC structure),Oracle 10g,Tomcat7,Eclipse(Indigo)', 'Page 3 of 3']
+name: Online Logical
+email: avikhazra93@gmail.com
+mobile: +91987416198
+experience: of
+expertise: loper, tracxn technologies pvt ltd
+expertise: lopment  in  react  js  (front  end)  and  spring  boot  using  java
+expertise: lopment of a web application to create and configure the conumergroups which
+expertise: ed as a devops monitoring tool to monitor the consumer groups based on active, inactive and
+expertise: lopment of a web application to create and configure kafka topics  which
+expertise: ed as a devops monitoring tool to monitor the kafka topics based on active, inactive
+expertise: lopment of a web application to create and configure cron jobs. this application
+expertise: ed as a devops monitoring tool to monitor the cron jobs based on active, inactive and search
+expertise: lopment of a web application to monitor all the socket connections which helps to monitor
+expertise: er authentication system.
+expertise: ed  react js, spring-boot, java, mongo db, mysql.
+expertise: loped monitoring scripts for the database using bash scripting
+expertise: er on which key is set by one predefined
+expertise: ed hana and sybase database, bash, sql.
+expertise: loped an online product store having the following functionalities
+expertise: er  ratings.  product  availability  check.
+expertise: ed j2ee(following mvc structure), oracle 10g database , tomcat 7.
+expertise: ers to upload and store their favorite songs.
+expertise: ers to download self-uploaded and other songs uploaded by different users depending on
+expertise: er
+expertise: ed  django framework, python.
+expertise: loped  an  online  coding  platform  for  the  naive  programmers  to  check  out  for  logical  errors  in  a  c
+expertise: er  and
+expertise: er  friendly  way.  it  only  accepts  compiled  (syntactically  correct)  programs  as  input  because  the
+++++++++++++++++++++++++++++++++++++++++++
+count:  3
