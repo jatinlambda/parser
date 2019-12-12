@@ -143,6 +143,81 @@ def extract_objective(parts, line):
             break
     return result
 
+    
+
+headers = {}
+
+titles = ['Experience','Skills','Projects','Qualifications','Education','Hobbies','Extra curricular','Personal Details']
+
+for title in titles:
+    headers[title] = []
+
+
+headers['Personal Details'].append('Personal Details')
+headers['Personal Details'].append('Personal Information')
+headers['Personal Details'].append('Personal Info')
+headers['Personal Details'].append('Personal Interests')
+headers['Personal Details'].append('Personal Profile')
+headers['Personal Details'].append('Personal particulars')
+
+headers['Experience'].append('Experience')
+headers['Experience'].append('experience')
+headers['Experience'].append('work experience')
+headers['Experience'].append('working experience')
+headers['Experience'].append('expertise')
+headers['Experience'].append('professional experience')
+headers['Experience'].append('internships')
+
+headers['Skills'].append('Skills')
+headers['Skills'].append('skills')
+headers['Skills'].append('specialties')
+headers['Skills'].append('key skills')
+headers['Skills'].append('additional skills')
+headers['Skills'].append('Technical Skills')
+headers['Skills'].append('Management Skills')
+
+headers['Projects'].append('Projects')
+headers['Projects'].append('key projects')
+headers['Projects'].append('projects')
+headers['Projects'].append('projects done')
+headers['Projects'].append('projects completed')
+headers['Projects'].append('projects undertaken')
+headers['Projects'].append('academic projects')
+headers['Projects'].append('Major Projects')
+headers['Projects'].append('Other Projects')
+
+
+headers['Qualifications'].append('Qualifications')
+headers['Qualifications'].append('qualifications')
+headers['Qualifications'].append('core qualifications')
+headers['Qualifications'].append('technical qualifications')
+headers['Qualifications'].append('academic qualifications')
+headers['Qualifications'].append('educational qualifications')
+headers['Qualifications'].append('achievements')
+headers['Qualifications'].append('awards and honours')
+headers['Qualifications'].append('awards')
+headers['Qualifications'].append('certifications')
+
+headers['Education'].append('education')
+headers['Education'].append('educational details')
+headers['Education'].append('academics')
+
+headers['Hobbies'].append('hobbies')
+
+headers['Extra curricular'].append('extra_curriculars')
+headers['Extra curricular'].append('extra_curricular activities')
+
+
+headers2 = {}
+
+def reverse_adj():
+    for k,v in headers.items():
+        for m in v:
+            headers2[m] = k
+
+
+
+
 def extract_headers(data):
     weight_num_words=100
     max_words_in_header=3
