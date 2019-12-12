@@ -4,6 +4,7 @@ from spacy.matcher import Matcher
 from src.util.tokenizer_utils import word_tokenize
 import spacy
 import numpy as np
+from src.util.headers_dict import bucket2title, title2bucket
 
 # load pre-trained model
 nlp = spacy.load('en_core_web_sm')
@@ -143,88 +144,20 @@ def extract_objective(parts, line):
             break
     return result
 
-    
 
-headers = {}
-
-titles = ['Experience','Skills','Projects','Qualifications','Education','Hobbies','Extra curricular','Personal Details']
-
-for title in titles:
-    headers[title] = []
-
-
-headers['Personal Details'].append('Personal Details')
-headers['Personal Details'].append('Personal Information')
-headers['Personal Details'].append('Personal Info')
-headers['Personal Details'].append('Personal Interests')
-headers['Personal Details'].append('Personal Profile')
-headers['Personal Details'].append('Personal particulars')
-
-headers['Experience'].append('Experience')
-headers['Experience'].append('experience')
-headers['Experience'].append('work experience')
-headers['Experience'].append('working experience')
-headers['Experience'].append('expertise')
-headers['Experience'].append('professional experience')
-headers['Experience'].append('internships')
-
-headers['Skills'].append('Skills')
-headers['Skills'].append('skills')
-headers['Skills'].append('specialties')
-headers['Skills'].append('key skills')
-headers['Skills'].append('additional skills')
-headers['Skills'].append('Technical Skills')
-headers['Skills'].append('Management Skills')
-
-headers['Projects'].append('Projects')
-headers['Projects'].append('key projects')
-headers['Projects'].append('projects')
-headers['Projects'].append('projects done')
-headers['Projects'].append('projects completed')
-headers['Projects'].append('projects undertaken')
-headers['Projects'].append('academic projects')
-headers['Projects'].append('Major Projects')
-headers['Projects'].append('Other Projects')
-
-
-headers['Qualifications'].append('Qualifications')
-headers['Qualifications'].append('qualifications')
-headers['Qualifications'].append('core qualifications')
-headers['Qualifications'].append('technical qualifications')
-headers['Qualifications'].append('academic qualifications')
-headers['Qualifications'].append('educational qualifications')
-headers['Qualifications'].append('achievements')
-headers['Qualifications'].append('awards and honours')
-headers['Qualifications'].append('awards')
-headers['Qualifications'].append('certifications')
-
-headers['Education'].append('education')
-headers['Education'].append('educational details')
-headers['Education'].append('academics')
-
-headers['Hobbies'].append('hobbies')
-
-headers['Extra curricular'].append('extra_curriculars')
-headers['Extra curricular'].append('extra_curricular activities')
-
-
-headers2 = {}
-
-def reverse_adj():
-    for k,v in headers.items():
-        for m in v:
-            headers2[m] = k
-
-
+def get_label(line):
+    for
 
 
 def extract_headers(data):
+    print("*************************************")
     weight_num_words=100
     max_words_in_header=3
     weight_full_stop=1000
     weight_capital_letter=1000
     weight_no_word=10000
     prob_no_word=0
+    thresh_prob1=0.5
 
     def process_main_text(text):
         doc = nlp(text.lower())
@@ -271,10 +204,11 @@ def extract_headers(data):
             cost=cost+weight_capital_letter
             prob=prob*0.1
 
-        print("--line ", line, "--main line ", main_text)
-        print("--num_words ", num_words, "--cost ", cost, "--prob", prob)
-        print()
-        for token in doc:
-            print("-----token  ", token.text, token.pos_, token.tag_,  token.shape_)
-        print()
-        print()
+        if prob>thresh_prob1:
+            print("--line ", line, "--main line ", main_text)
+            print("--num_words ", num_words, "--cost ", cost, "--prob", prob)
+            print()
+            # for token in doc:
+            #     print("-----token  ", token.text, token.pos_, token.tag_,  token.shape_)
+            # print()
+            print()
