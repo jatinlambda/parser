@@ -20,6 +20,7 @@ bucket2title['Experience'].append('working experience')
 bucket2title['Experience'].append('expertise')
 bucket2title['Experience'].append('professional experience')
 bucket2title['Experience'].append('internships')
+bucket2title['Experience'].append('course')
 
 bucket2title['Skills'].append('Skills')
 bucket2title['Skills'].append('skills')
@@ -63,6 +64,9 @@ bucket2title['Hobbies'].append('interests')
 bucket2title['Extra curricular'].append('extra-curriculars')
 bucket2title['Extra curricular'].append('extra-curricular activities')
 bucket2title['Extra curricular'].append('co-curricular activities')
+bucket2title['Extra curricular'].append('extra curriculars')
+bucket2title['Extra curricular'].append('extra curricular activities')
+bucket2title['Extra curricular'].append('co curricular activities')
 
 
 bucket2title['Objective'].append('responsibilities')
