@@ -56,13 +56,16 @@ bucket2title['Education'].append('academics')
 
 bucket2title['Hobbies'].append('hobbies')
 
-bucket2title['Extra curricular'].append('extra_curriculars')
-bucket2title['Extra curricular'].append('extra_curricular activities')
+bucket2title['Extra curricular'].append('extra-curriculars')
+bucket2title['Extra curricular'].append('extra-curricular activities')
 
 
 title2bucket = {}
+indexes_title={}
 
 def headers_dict_init():
     for k,v in bucket2title.items():
         for m in v:
             title2bucket[m] = k
+    for index, title in enumerate(title2bucket, start=0):
+        indexes_title[index] = title

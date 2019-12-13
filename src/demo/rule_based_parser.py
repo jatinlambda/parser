@@ -26,9 +26,6 @@ def main():
         parser = ResumeParser()
         parser.parse(file_content)
         print(parser.raw) # print out the raw contents extracted from pdf or docx files
-
-
-
         pickle.dump(parser.raw, fp)
 
         if parser.unknown is False:

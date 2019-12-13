@@ -1,0 +1,146 @@
+Avik Hazra
+
+Software Developer, Tracxn Technologies Pvt Ltd
+avikhazra93@gmail.com
+https://www.linkedin.com/in/avikhazra93
+Phone: +91 9874161982
+
+
+
+Personal Summary:
+
+Has experience of full stack software development in React JS (Front End) and Spring Boot using JAVA
+(Backend) and Shell Scripting on automation of several procedures in SAP HANA and Sybase database
+environment.
+
+
+Skills:
+
+Algorithms, Data structure, Python, Java, C, Bash, SQL, Java Script.
+Interested in Programming and worked in Linux environment.
+Well versed and fluent in English, Bengali and Hindi.
+Strong verbal and communication skill.
+
+
+Academics:
+
+B.Tech,CSE,8.27 CGPA, Kalyani Govt Engineering College (2011 - 2015)
+Scored 87.2% in 12th (WBCHSE 2011)
+Scored 80.7% in 10th (WBBSE 2009)
+
+Professional Experience:
+
+Tracxn Technologies Pvt Ltd, Bangalore:
+(May, 2017 – Dec, 2017)
+(Software Engineer)
+
+End to end design and development of a web application to create and configure the conumergroups which
+reduces the manual efforts and risks of entering the configuration information to database. This application
+is also used as a devops monitoring tool to monitor the consumer groups based on active, inactive and
+search functionalities.
+
+End to end design and development of a web application to create and configure Kafka topics which
+reduces the manual efforts and risks of entering the configuration information to the database. This
+application is also used as a devops monitoring tool to monitor the Kafka topics based on active, inactive
+and search functionalities.
+
+End to end design and development of a web application to create and configure cron jobs. This application
+is also used as a devops monitoring tool to monitor the cron jobs based on active, inactive and search
+functionalities.
+
+Investor list showcase on login/Signup page based on a checklist CRUD.
+
+
+
+
+          Page 1 of 3
+End to end development of a web application to monitor all the socket connections which helps to monitor
+the website traffic.
+
+Database migration scripts in python.
+
+Worked on user authentication system.
+
+Technology Used : React Js, Spring-boot, Java, Mongo DB, MySql.
+
+
+TCS :
+(August, 2015 – April 2017)
+(Assistant System Engineer)
+
+SAP HANA and Sybase database administration.
+
+Automated problem resolutions and developed monitoring scripts for the database using BASH scripting
+and SQL.
+
+Script to Detect and Monitor Long Running Transactions In Sybase database which shows the transaction
+details and log space information. In Sybase database processes which are in hung state hold the log as well
+as block other processes and sometimes create deadlocks. That situation leads to a log full situation which
+can lead to database down.
+
+A monitoring script to check whether all keys are able to connect to the database (HANA) or not. If all the
+keys are not working, that means there are some network connectivity issue or database hung situation or
+memory issues or locked condition due to incorrect login attempts. All those incidents can lead to database
+down situation.
+
+A script to set any key in HANA database. It first set the user on which key is set by one predefined
+password. Then it will set the key by same password. After that the key will be able to connect to the
+database.
+
+Script to resolve Security compliances in HANA Database.
+
+Technology used: HANA and Sybase database, Bash, SQL.
+
+Projects:
+
+Summer Training (2013 June-July):
+
+(Ardent Computech Pvt Ltd)
+
+Online Product Store (eCommerce Application)
+Developed an online product store having the following functionalities:
+Filtering functionality using which all the products can be filtered on the basis of category, price and
+popularity. Sorted view of products based on the price and the user ratings. Product availability check.
+Adding to cart and wishlisting.
+
+Technologies used: J2EE(following MVC structure), Oracle 10g Database , Tomcat 7.
+
+
+Online Music Repository System(using Django framework):
+(2014 June -July)
+
+Developed a web based app that lets users to upload and store their favorite songs.
+It also facilitates the users to download self-uploaded and other songs uploaded by different users depending on
+their permission setting.
+
+
+
+        Page 2 of 3
+Implemented a feature where songs can be stored in the server directly from the third party websites by providing
+the downloadable links.
+Implemented a rigorous search functionality that finds out all the relevant albums and songs in response to user
+queries.
+
+Technologies used : Django framework, Python.
+
+
+Final Year Project (2014-2015):
+
+Online Logical Error detector(A Human Computer Interaction Application) :
+
+Developed an online coding platform for the naive programmers to check out for logical errors in a C
+program.
+it has a predefined set of programs and their implementation logics stored in the database in terms of an
+intermediate string with special syntax. It extracts the logic out of the code submitted by the user and
+compares with the logic stored in the database. If the special searching mechanism of the matching
+algorithm detects a mismatch, it tracks down the erroneous statement in the program and displays it in
+a user friendly way. It only accepts compiled (syntactically correct) programs as input because the
+concept of logical error applies only when the program executes successfully.
+
+Tools and Technology: J2EE(maintaining MVC structure),Oracle 10g,Tomcat7,Eclipse(Indigo)
+
+
+
+
+        Page 3 of 3
+

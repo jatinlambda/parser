@@ -1,3 +1,4 @@
+import os, sys
 from io import StringIO
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.converter import TextConverter
@@ -5,7 +6,7 @@ from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
 
 
-def pdf_to_text(fname, pages=None):
+def pdf_to_text_pdfminer(fname, pages=None):
     if not pages:
         pagenums = set()
     else:
@@ -28,4 +29,15 @@ def pdf_to_text(fname, pages=None):
         line2 = line.strip()
         if line2 != '':
             result.append(line2)
+    return result
+
+def pdf_to_text_pdftotext(fname, pages=None):
+    os.system("pdftotext -layout "+fname+" .temp.txt")
+    with open(".temp.txt") as file:
+        lines=file.read()
+        result = []
+        for line in lines:
+            line=line.strip()
+            if line != '':
+                result.append(line)
     return result

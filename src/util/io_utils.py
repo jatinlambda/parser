@@ -1,7 +1,8 @@
 import os
-from src.util.pdf_utils import pdf_to_text
+from src.util.pdf_utils import pdf_to_text_pdfminer, pdf_to_text_pdftotext
 from src.util.docx_utils import docx_to_text
 
+pdf_to_text_tool=pdf_to_text_pdftotext
 
 def read_pdf_and_docx(dir_path, collected=None, command_logging=False, callback=None):
     if collected is None:
@@ -17,7 +18,7 @@ def read_pdf_and_docx(dir_path, collected=None, command_logging=False, callback=
             elif f.lower().endswith('.pdf'):
                 if command_logging:
                     print('extracting text from pdf: ', file_path)
-                txt = pdf_to_text(file_path)
+                    txt = pdf_to_text_tool(file_path)
             if txt is not None and len(txt) > 0:
                 if callback is not None:
                     callback(len(collected), file_path, txt)
@@ -36,7 +37,7 @@ def read_pdf(dir_path, collected=None):
         if os.path.isfile(file_path):
             txt = None
             if f.lower().endswith('.pdf'):
-                txt = pdf_to_text(file_path)
+                txt = pdf_to_text_tool(file_path)
             if txt is not None and len(txt) > 0:
                 collected[file_path] = txt
         elif os.path.isdir(file_path):

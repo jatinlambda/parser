@@ -22,6 +22,8 @@ class ResumeParser(object):
         headers_dict_init()
         self.raw = texts
         headers = extract_headers(self.raw)
+        print(headers)
+        buckets = extract_buckets(self.raw, headers)
 
         for p in texts:
             if len(p) > 10:
