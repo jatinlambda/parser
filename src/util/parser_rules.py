@@ -170,15 +170,6 @@ def process_main_text1(text):
     return result
 
 
-# def calculate_similarity_with_processing2(title, line):
-#     title = nlp(' '.join(process_main_text2(title)))
-#     line = nlp(' '.join(process_main_text2(line)))
-#     for token in line:
-#         token_id=nlp.vocab.strings[token.text]
-#         if token_id not in nlp.vocab:
-#             return 0
-#     return title.similarity(line)
-
 def calculate_similarity_with_processing(title, line):
     # print(title, line)
     process_main_tex_foo=process_main_text1
@@ -189,22 +180,6 @@ def calculate_similarity_with_processing(title, line):
         if token_id not in nlp.vocab:
             return 0
     return title.similarity(line)
-
-# def get_label(line):
-#     label="default"
-#     scores=np.zeros([len(title2bucket),1])
-#     # print("Line : ", line)
-#     for index, title in enumerate(title2bucket, start=0):
-#         scores[index]=calculate_similarity_with_processing1(title, line)
-#         # print("title : ", title, scores[index], calculate_similarity_with_processing2(title, line))
-#
-#     max_index=np.argmax(scores, axis=0)
-#     print(max_index)
-#     max_index=max_index[0]
-#     # print("Max title : ", indexes_title[max_index], np.amax(scores))
-#     # print()
-#     # print()
-#     return label
 
 
 def get_label(line):
@@ -248,7 +223,7 @@ def extract_headers(data):
     thresh_prob2=0.7
 
     # print(data)
-    headers=[]
+    headers={}
     for line in data:
 
         cost=0
@@ -287,7 +262,7 @@ def extract_headers(data):
             # print("--num_words ", num_words, "--cost ", cost, "--prob", prob, "--label ", label, " --similarity : ", similarity)
             if similarity>thresh_prob2:
                 # print("--------------TITLE---------------------")
-                headers.append({"line":line, "label":label, "similarity":similarity})
+                headers[line]={"label":label, "similarity":similarity}
 
             # print()
             # for token in doc:
@@ -300,11 +275,9 @@ def extract_headers(data):
 def extract_buckets(data, headers):
     last_label='Personal Details'
     buckets=[]
-    header_index=0
     for line in data:
-        if line==headers[header_index]["line"]:
-            last_label=header_index[header_index]["label"]
-            header_index+=1
+        if headers.get(line, None) is not None:
+            last_label=headers[line]["label"]
         buckets.append({"line":line, "label":last_label})
         print(last_label, '\t', line)
 

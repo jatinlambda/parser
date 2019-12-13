@@ -1,146 +1,83 @@
-Avik Hazra
+Braj Kishor
+Final Year Undergraduate
+Department of Computer Science and Engineering
+R kumarbrajkishor96@gmail.com                                                         Indian Institute of
+Ó+91-8668621993                                                          Information Technology, Nagpur
 
-Software Developer, Tracxn Technologies Pvt Ltd
-avikhazra93@gmail.com
-https://www.linkedin.com/in/avikhazra93
-Phone: +91 9874161982
+EDUCATION
+  Indian Institute of Information Technology, Nagpur                                           2016 - 2020*
+  B.Tech in Computer Science and Engineering
+  M.R.D.I.M. College Meghoul, Begusarai                                                           2013-2015
+  Senior Secondary (BSEB); (76.8%)
+  St. Joseph Public School Begusarai                                                              2009-2013
+  Secondary (CBSE); GPA: (9.8/10))
 
+INTERNSHIPS
+  Software Developer Intern - The Solar Labs                                        15 May 2019 - Present
+  As a part of the Software Engineering Team, Working on Shading Engine Algorithm.
 
+  Summer Research Internship - IIT Guwahati                                         May 2018 - July 2018
+  Implemented the Random Walk Algorithm to find out node voltage and current for DC & transient
+  circuit in power grid having million number of nodes.Developed a code from scratch in C++.
 
-Personal Summary:
+PUBLICATIONS
+  A Study on Relation between Mathematics and Music                              Cambridge Publishing
+  This report is mainly based on how different mathematical aspects are being used in musical theory and
+  how music has helped in the development of mathematics. How the musicians developed mathematical
+  concepts and vice versa. Historical relations between math and music and enhancement of math from
+  music has been described. Various concepts of math, like Fibonacci series, Harmonics and Logarithmic
+  series etc., are used in music, but this report focuses mainly on Harmonics.
 
-Has experience of full stack software development in React JS (Front End) and Spring Boot using JAVA
-(Backend) and Shell Scripting on automation of several procedures in SAP HANA and Sybase database
-environment.
-
-
-Skills:
-
-Algorithms, Data structure, Python, Java, C, Bash, SQL, Java Script.
-Interested in Programming and worked in Linux environment.
-Well versed and fluent in English, Bengali and Hindi.
-Strong verbal and communication skill.
-
-
-Academics:
-
-B.Tech,CSE,8.27 CGPA, Kalyani Govt Engineering College (2011 - 2015)
-Scored 87.2% in 12th (WBCHSE 2011)
-Scored 80.7% in 10th (WBBSE 2009)
-
-Professional Experience:
-
-Tracxn Technologies Pvt Ltd, Bangalore:
-(May, 2017 – Dec, 2017)
-(Software Engineer)
-
-End to end design and development of a web application to create and configure the conumergroups which
-reduces the manual efforts and risks of entering the configuration information to database. This application
-is also used as a devops monitoring tool to monitor the consumer groups based on active, inactive and
-search functionalities.
-
-End to end design and development of a web application to create and configure Kafka topics which
-reduces the manual efforts and risks of entering the configuration information to the database. This
-application is also used as a devops monitoring tool to monitor the Kafka topics based on active, inactive
-and search functionalities.
-
-End to end design and development of a web application to create and configure cron jobs. This application
-is also used as a devops monitoring tool to monitor the cron jobs based on active, inactive and search
-functionalities.
-
-Investor list showcase on login/Signup page based on a checklist CRUD.
+PROJECTS/ACTIVITIES
 
 
+  Loan Approval Prediction : Loan prediction was calculated for the customers based on the Gender,
+  Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others
+  who are eligible for loan amount to be sanctioned. It was implemented in R and Python.
+  Heart Disease Prediction Using Logistic Regression : The heart disease is increasing day by day
+  due to the modern lifestyle and food. The diagnosis of heart disease is a challenging task. In this project
+  I have predicted that whether the patient has heart disease or not based on various conditions/symptoms
+  of their body.
+  Magic Matrix Checker : The Objective of the project was to check whether the given matrix is a
+  Magic Square Matrix or not. The GUI portion has been Implemented with the help of HTML & CSS.
+  And the logic has been developed in javascript.
+  Library-Rec : A student record data management system implemented using linked lists as well as
+  arrays and file handling for storing data in C. Different functions like getting top most author, Most
+  Popular author in the list of records, finding kth popular book based on which author has maximum
+  number of copies issues, finding failures, finding topper, etc. are also provided.
+  Library Managements System : It includes user interface for both Admin and Students for surfing
+  out books in the library. It works on local server. It has features likes requesting book from anywhere,
+  Searching top trending books, No of book lefts etc. It is adopted by IIIT NAGPUR central library.
+
+TECHNICAL SKILLS
+  Programming Languages: C, CUDA, Python, R, & MySQL.
+  Tools and Frameworks: Numpy, Pandas, Matplotlib & Tableau.
+  Web Development: HTML, CSS, Basic JavaSricpt
+  Platform: Linux, Windows.
+
+KEY STRENGTHS
+    • Flexible, Dedicated and Hardworking.
+    • Adaptable to any Environmental Situation.
+    • Quick learner and ability to adopt quickly.
+
+ACHIEVEMENTS AND AWARDS
+    • Named in the merit list of top 1% Students of Inter Science Exam 2015 for Inspire-Scholorship.
+    • Won first prize in quiz in Institute Gathering 2017 at IIIT Nagpur.
+    • Having 2 years of experience in teaching Chemistry for JEE Mains.
+
+CO/EXTRA CURRICULAR ACTIVITIES
+
+    • Sports Secretary at IIIT Nagpur.
+    • Volunteered as Coordinator of IEEE conference held in college.
+    • Actively participated in organization of many events held at college as a technical council member.
+
+HOBBIES
 
 
-          Page 1 of 3
-End to end development of a web application to monitor all the socket connections which helps to monitor
-the website traffic.
+  Playing badminton, Teaching, Cooking, Travelling and Watching documentaries.
 
-Database migration scripts in python.
-
-Worked on user authentication system.
-
-Technology Used : React Js, Spring-boot, Java, Mongo DB, MySql.
-
-
-TCS :
-(August, 2015 – April 2017)
-(Assistant System Engineer)
-
-SAP HANA and Sybase database administration.
-
-Automated problem resolutions and developed monitoring scripts for the database using BASH scripting
-and SQL.
-
-Script to Detect and Monitor Long Running Transactions In Sybase database which shows the transaction
-details and log space information. In Sybase database processes which are in hung state hold the log as well
-as block other processes and sometimes create deadlocks. That situation leads to a log full situation which
-can lead to database down.
-
-A monitoring script to check whether all keys are able to connect to the database (HANA) or not. If all the
-keys are not working, that means there are some network connectivity issue or database hung situation or
-memory issues or locked condition due to incorrect login attempts. All those incidents can lead to database
-down situation.
-
-A script to set any key in HANA database. It first set the user on which key is set by one predefined
-password. Then it will set the key by same password. After that the key will be able to connect to the
-database.
-
-Script to resolve Security compliances in HANA Database.
-
-Technology used: HANA and Sybase database, Bash, SQL.
-
-Projects:
-
-Summer Training (2013 June-July):
-
-(Ardent Computech Pvt Ltd)
-
-Online Product Store (eCommerce Application)
-Developed an online product store having the following functionalities:
-Filtering functionality using which all the products can be filtered on the basis of category, price and
-popularity. Sorted view of products based on the price and the user ratings. Product availability check.
-Adding to cart and wishlisting.
-
-Technologies used: J2EE(following MVC structure), Oracle 10g Database , Tomcat 7.
-
-
-Online Music Repository System(using Django framework):
-(2014 June -July)
-
-Developed a web based app that lets users to upload and store their favorite songs.
-It also facilitates the users to download self-uploaded and other songs uploaded by different users depending on
-their permission setting.
-
-
-
-        Page 2 of 3
-Implemented a feature where songs can be stored in the server directly from the third party websites by providing
-the downloadable links.
-Implemented a rigorous search functionality that finds out all the relevant albums and songs in response to user
-queries.
-
-Technologies used : Django framework, Python.
-
-
-Final Year Project (2014-2015):
-
-Online Logical Error detector(A Human Computer Interaction Application) :
-
-Developed an online coding platform for the naive programmers to check out for logical errors in a C
-program.
-it has a predefined set of programs and their implementation logics stored in the database in terms of an
-intermediate string with special syntax. It extracts the logic out of the code submitted by the user and
-compares with the logic stored in the database. If the special searching mechanism of the matching
-algorithm detects a mismatch, it tracks down the erroneous statement in the program and displays it in
-a user friendly way. It only accepts compiled (syntactically correct) programs as input because the
-concept of logical error applies only when the program executes successfully.
-
-Tools and Technology: J2EE(maintaining MVC structure),Oracle 10g,Tomcat7,Eclipse(Indigo)
-
-
-
-
-        Page 3 of 3
+LINKS
+   Website here
+   Github here
+  ° Linkedin
 

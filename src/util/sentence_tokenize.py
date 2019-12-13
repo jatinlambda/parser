@@ -1,27 +1,43 @@
 import spacy
 import pickle
-from spacy import displacy
+import spacy
+
+
 
 with open ('outfile', 'rb') as fp:
-    itemlist = pickle.load(fp)
-    # print(itemlist)
-    for word in itemlist:
-        print(word)
-    line=" ".join(itemlist)
+    # itemlist = pickle.load(fp)
+    # # print(itemlist)
+    # for word in itemlist:
+    #     print(word)
+    # line=" ".join(itemlist)
     # print(line)
 
-    nlp = spacy.load("en_core_web_sm")
-    doc = nlp(line)
+    nlp = spacy.load('en_core_web_md')
+    # doc = nlp(line)
+    #
+    #
+    # def remove_stopwords_fast(text):
+    #     doc = nlp(text.lower())
+    #     result = [token.text for token in doc if token.text not in nlp.Defaults.stop_words]
+    #     return " ".join(result)
+    #
+    # # print(remove_stopwords_fast(line))
+    #
+    # def process_text(text):
+    #     doc = nlp(text.lower())
+    #     result = []
+    #     for token in doc:
+    #         if token.text in nlp.Defaults.stop_words:
+    #             continue
+    #         if token.is_punct:
+    #             continue
+    #         if token.lemma_ == '-PRON-':
+    #             continue
+    #         result.append(token.lemma_)
+    #     return " ".join(result)
 
 
-    def remove_stopwords_fast(text):
-        doc = nlp(text.lower())
-        result = [token.text for token in doc if token.text not in nlp.Defaults.stop_words]
-        return " ".join(result)
-
-    # print(remove_stopwords_fast(line))
-
-    def process_text(text):
+    def process_main_text2(text):
         doc = nlp(text.lower())
         result = []
         for token in doc:
@@ -32,13 +48,42 @@ with open ('outfile', 'rb') as fp:
             if token.lemma_ == '-PRON-':
                 continue
             result.append(token.lemma_)
-        return " ".join(result)
+        return result
 
 
-    def calculate_similarity(text1, text2):
-        base = nlp(process_text(text1))
-        compare = nlp(process_text(text2))
-        return base.similarity(compare)
+    def process_main_text1(text):
+        doc = nlp(text.lower())
+        result = []
+        for token in doc:
+            if token.is_punct:
+                continue
+            if token.lemma_ == '-PRON-':
+                continue
+            result.append(token.lemma_)
+        return result
+
+    def process_main_text0(text):
+        doc = nlp(text.lower())
+        result = []
+        for token in doc:
+            if token.is_punct:
+                continue
+            result.append(token.lemma_)
+        return result
+
+
+    def calculate_similarity_with_processing(title, line):
+        # print(title, line)
+        process_main_tex_foo = process_main_text0
+        title = nlp(' '.join(process_main_tex_foo(title)))
+        line = nlp(' '.join(process_main_tex_foo(line)))
+        for token in line:
+            token_id = nlp.vocab.strings[token.text]
+            if token_id not in nlp.vocab:
+                return 0
+        return title.similarity(line)
+
+
 
 
 
@@ -49,13 +94,15 @@ with open ('outfile', 'rb') as fp:
     # print(doc)
 
 
-    for sent in doc.sents:
-        print(sent.text)
+    # for sent in doc.sents:
+    #     print(sent.text)
 
-    # print(calculate_similarity("experience", "Indian Instiute of technology"))
-    # print(calculate_similarity("education", "Indian Instiute of technology"))
-    # print(calculate_similarity("project", "Indian Instiute of technology"))
-
+    print(calculate_similarity_with_processing("experience", "Experienced full stack developer with various web development framework expertise."))
+    print(calculate_similarity_with_processing("experience", "Over five years of commercial web and restful application development experience."))
+    print(calculate_similarity_with_processing("experience", "Web Development Frameworks: Laravel, CakePHP, NodeJs With Express"))
+    print(calculate_similarity_with_processing("personal details", "Web Development Frameworks: Laravel, CakePHP, NodeJs With Express"))
+    print(calculate_similarity_with_processing("personal details",
+                                               "Jatin Lamba"))
 
     # def get_verbs
 

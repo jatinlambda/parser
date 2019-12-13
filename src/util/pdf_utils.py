@@ -32,7 +32,7 @@ def pdf_to_text_pdfminer(fname, pages=None):
     return result
 
 def pdf_to_text_pdftotext(fname, pages=None):
-    os.system("pdftotext -layout "+fname+" .temp.txt")
+    os.system('pdftotext -layout "' + fname + '" .temp.txt')
     with open(".temp.txt") as file:
         lines=file.readlines()
     result=[]
