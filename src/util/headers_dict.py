@@ -1,6 +1,6 @@
 bucket2title = {}
 
-titles = ['Experience','Skills','Projects','Qualifications','Education','Hobbies','Extra curricular','Personal Details']
+titles = ['Experience','Skills','Projects','Qualifications','Education','Hobbies','Extra curricular','Personal Details','Objective']
 
 for title in titles:
     bucket2title[title] = []
@@ -12,6 +12,7 @@ bucket2title['Personal Details'].append('Personal Interests')
 bucket2title['Personal Details'].append('Personal Profile')
 bucket2title['Personal Details'].append('Personal particulars')
 
+
 bucket2title['Experience'].append('Experience')
 bucket2title['Experience'].append('experience')
 bucket2title['Experience'].append('work experience')
@@ -19,6 +20,7 @@ bucket2title['Experience'].append('working experience')
 bucket2title['Experience'].append('expertise')
 bucket2title['Experience'].append('professional experience')
 bucket2title['Experience'].append('internships')
+bucket2title['Experience'].append('course')
 
 bucket2title['Skills'].append('Skills')
 bucket2title['Skills'].append('skills')
@@ -49,15 +51,29 @@ bucket2title['Qualifications'].append('achievements')
 bucket2title['Qualifications'].append('awards and honours')
 bucket2title['Qualifications'].append('awards')
 bucket2title['Qualifications'].append('certifications')
+bucket2title['Qualifications'].append('certificates')
+bucket2title['Qualifications'].append('academic credentials')
 
 bucket2title['Education'].append('education')
 bucket2title['Education'].append('educational details')
 bucket2title['Education'].append('academics')
 
 bucket2title['Hobbies'].append('hobbies')
+bucket2title['Hobbies'].append('interests')
 
 bucket2title['Extra curricular'].append('extra-curriculars')
 bucket2title['Extra curricular'].append('extra-curricular activities')
+bucket2title['Extra curricular'].append('co-curricular activities')
+bucket2title['Extra curricular'].append('extra curriculars')
+bucket2title['Extra curricular'].append('extra curricular activities')
+bucket2title['Extra curricular'].append('co curricular activities')
+
+bucket2title['Objective'].append('responsibilities')
+bucket2title['Objective'].append('objective')
+bucket2title['Objective'].append('career objective')
+bucket2title['Objective'].append('aim')
+bucket2title['Objective'].append('main objectives')
+bucket2title['Objective'].append('roles')
 
 
 title2bucket = {}
