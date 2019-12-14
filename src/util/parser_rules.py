@@ -144,6 +144,34 @@ def extract_objective(parts, line):
             break
     return result
 
+def extract_insti(lines):
+
+	#text is assumed to be sentences after sentence tokenisation of text.
+	lines = [nltk.word_tokenize(el) for el in lines]
+	lines = [nltk.pos_tag(el) for el in lines]
+
+	indianColleges = open('indianColleges.txt','r').read().lower()
+	indianColleges = set(indianColleges.split())
+	#instiregex = r'INSTI: {<DT.>?<NNP.*>+<IN.*>?<NNP.*>+}'
+	instiregex = r'INSTI: {<JJ.>?<NN.>?<IN.>?<DT.>?<NNP.*>+<IN.>?<NNP.*>+}'
+	chunkParser = nltk.RegexpParser(instiregex)
+
+	lst = []
+	for tagged_tokens in lines:
+		print(tagged_tokens)
+		chunked_tokens = chunkParser.parse(tagged_tokens)
+		for subtree in chunked_tokens.subtrees():
+			#print(subtree)
+			if subtree.label() == 'INSTI':
+				for ind,leaf in enumerate(subtree.leaves()):
+					#print(ind,leaf)
+					if leaf[0].lower() in indianColleges and 'NNP' in leaf[1]:
+					#	print(leaf)
+						hit = " ".join([el[0] for el in tagged_tokens])
+						lst.append(hit)
+	return lst
+
+
 
 def process_main_text2(text):
     doc = nlp(text.lower())
@@ -270,6 +298,7 @@ def extract_headers(data):
             # print()
             # print()
     return headers
+
 
 
 def extract_buckets(data, headers):

@@ -1,83 +1,58 @@
-Braj Kishor
-Final Year Undergraduate
-Department of Computer Science and Engineering
-R kumarbrajkishor96@gmail.com                                                         Indian Institute of
-Ó+91-8668621993                                                          Information Technology, Nagpur
+BHARAT BORANA                                                                                      WZ-433, Shiv nagar,
+Senior Software Engineer,                                                                Tihar Jail Road, Delhi, 110058
+Appster LLP, Gurugram, Haryana                                                               boranab@rediffmail.com
+                                                                                                    (+91) 900-120-2858
 
-EDUCATION
-  Indian Institute of Information Technology, Nagpur                                           2016 - 2020*
-  B.Tech in Computer Science and Engineering
-  M.R.D.I.M. College Meghoul, Begusarai                                                           2013-2015
-  Senior Secondary (BSEB); (76.8%)
-  St. Joseph Public School Begusarai                                                              2009-2013
-  Secondary (CBSE); GPA: (9.8/10))
-
-INTERNSHIPS
-  Software Developer Intern - The Solar Labs                                        15 May 2019 - Present
-  As a part of the Software Engineering Team, Working on Shading Engine Algorithm.
-
-  Summer Research Internship - IIT Guwahati                                         May 2018 - July 2018
-  Implemented the Random Walk Algorithm to find out node voltage and current for DC & transient
-  circuit in power grid having million number of nodes.Developed a code from scratch in C++.
-
-PUBLICATIONS
-  A Study on Relation between Mathematics and Music                              Cambridge Publishing
-  This report is mainly based on how different mathematical aspects are being used in musical theory and
-  how music has helped in the development of mathematics. How the musicians developed mathematical
-  concepts and vice versa. Historical relations between math and music and enhancement of math from
-  music has been described. Various concepts of math, like Fibonacci series, Harmonics and Logarithmic
-  series etc., are used in music, but this report focuses mainly on Harmonics.
-
-PROJECTS/ACTIVITIES
+➢   Experienced full stack developer with various web development framework expertise.
+➢   Over five years of commercial web and restful application development experience.
+➢   Experience working in Agile Scrum environment and project management.
+➢   Web Development Frameworks: Laravel, CakePHP, NodeJs With Express.
+➢   UI Frameworks/Technologies: HTML5, CSS3, jQuery, Angular JS.
+➢   Databases: MySQL and MongoDB
+➢   Other tools: Bitbucket for version control, JIRA, ZOHO, ASANA for task management, AWS EC2 for hosting
+    services, AWS S3 for image hosting
 
 
-  Loan Approval Prediction : Loan prediction was calculated for the customers based on the Gender,
-  Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others
-  who are eligible for loan amount to be sanctioned. It was implemented in R and Python.
-  Heart Disease Prediction Using Logistic Regression : The heart disease is increasing day by day
-  due to the modern lifestyle and food. The diagnosis of heart disease is a challenging task. In this project
-  I have predicted that whether the patient has heart disease or not based on various conditions/symptoms
-  of their body.
-  Magic Matrix Checker : The Objective of the project was to check whether the given matrix is a
-  Magic Square Matrix or not. The GUI portion has been Implemented with the help of HTML & CSS.
-  And the logic has been developed in javascript.
-  Library-Rec : A student record data management system implemented using linked lists as well as
-  arrays and file handling for storing data in C. Different functions like getting top most author, Most
-  Popular author in the list of records, finding kth popular book based on which author has maximum
-  number of copies issues, finding failures, finding topper, etc. are also provided.
-  Library Managements System : It includes user interface for both Admin and Students for surfing
-  out books in the library. It works on local server. It has features likes requesting book from anywhere,
-  Searching top trending books, No of book lefts etc. It is adopted by IIIT NAGPUR central library.
+Education:
+●   Rajasthan Technical University,Kota, Rajasthan                                                 2009/08 - 2012/07
+    Bachelor of Technology, Computer Science and Technology (Agg. 70.3)
+●   Government Polytechnic College, Jodhpur, Rajasthan                                            2006/06 – 2009/07
+    3 years Diploma in Computer Science (Agg. 70.8)
 
-TECHNICAL SKILLS
-  Programming Languages: C, CUDA, Python, R, & MySQL.
-  Tools and Frameworks: Numpy, Pandas, Matplotlib & Tableau.
-  Web Development: HTML, CSS, Basic JavaSricpt
-  Platform: Linux, Windows.
+Work Experience:
+ 1. Senior Software Engineer                                                                  2016/12 - Present
+    ➢ Appster LLC, Gurugram
+    ➢ Developing restful apis using Laravel framework for mobile team. Live chat implementation using NodeJs
+       socket and Express.
+    ➢ Database design process in sprint-0, Code review process for assigned projects
+    ➢ Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.
+    ➢ Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI
+        2 certification.
+ 2. Senior Software Engineer                                                                   2014/12 - 2016/11
+    ➢ Xicom Technologies, New Delhi
+    ➢ Lead a team of two junior developers where my roles are to check if proper coding standard is followed.
+    ➢ My roles are developing restful apis, developing web applications with high scalability.
+ 3. Software Engineer - Level I                                                                2012/10 - 2014/11
+    ➢ C.G.Technosoft, Jodhpur
+    ➢ Started my career as trainee at this organization. My roles is to understand web application development
+      using Cakephp 2.0 framework.
+Key Projects:
+ 1. Pelican Auto Finance Powered by Payix
+   ➢ Payix provides state-of-the-art collections tools, payment processing resources and business intelligence
+      solutions to U.S. lenders and auto dealers. Offering real-time loan management system (LMS) integration.
+    ➢ Pelican Auto Finance, LLC’s senior management team has over 100 years of experience collectively in
+      automotive and consumer lending.
+    ➢ Technology stack: Laravel 5 framework
 
-KEY STRENGTHS
-    • Flexible, Dedicated and Hardworking.
-    • Adaptable to any Environmental Situation.
-    • Quick learner and ability to adopt quickly.
+ 2. BlockPartee
+    ➢ Blockpartee is an app that allows you to host a virtual party following your favourite sports teams, centered
+      around the squares/blocks game played by thousands of fans for years during the Super Bowl. This app makes
+      it easier to set-up and play the game, invite friends and fans, and has added features like live chat.
+    ➢ Technology stack: Laravel 5 framework for API development and NodeJs for Chat Server
 
-ACHIEVEMENTS AND AWARDS
-    • Named in the merit list of top 1% Students of Inter Science Exam 2015 for Inspire-Scholorship.
-    • Won first prize in quiz in Institute Gathering 2017 at IIIT Nagpur.
-    • Having 2 years of experience in teaching Chemistry for JEE Mains.
-
-CO/EXTRA CURRICULAR ACTIVITIES
-
-    • Sports Secretary at IIIT Nagpur.
-    • Volunteered as Coordinator of IEEE conference held in college.
-    • Actively participated in organization of many events held at college as a technical council member.
-
-HOBBIES
-
-
-  Playing badminton, Teaching, Cooking, Travelling and Watching documentaries.
-
-LINKS
-   Website here
-   Github here
-  ° Linkedin
+ 3. Fitfix.co.uk
+   ➢ Fitfix is a revolutionary platform for Personal Trainers to help them manage, train and increase their clients. It
+       provides comprehensive cloud based business management, physical training and nutrition tools in a very
+       friendly way.
+   ➢ Technology stack: Cakephp 3.0 framework
 
