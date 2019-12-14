@@ -1,5 +1,6 @@
 import re
 import spacy
+import nltk  #used in extract insti function
 from spacy.matcher import Matcher
 from src.util.tokenizer_utils import word_tokenize
 import spacy
@@ -152,11 +153,15 @@ def extract_insti(lines):
 
 	indianColleges = open('indianColleges.txt','r').read().lower()
 	indianColleges = set(indianColleges.split())
+	indianDegrees = open('indianDegrees.txt','r').read().lower()
+	indianDegrees = set(indianDegrees.split())
+	print(indianDegrees)
 	#instiregex = r'INSTI: {<DT.>?<NNP.*>+<IN.*>?<NNP.*>+}'
 	instiregex = r'INSTI: {<JJ.>?<NN.>?<IN.>?<DT.>?<NNP.*>+<IN.>?<NNP.*>+}'
 	chunkParser = nltk.RegexpParser(instiregex)
 
-	lst = []
+	insti = []
+	degrees = []
 	for tagged_tokens in lines:
 		print(tagged_tokens)
 		chunked_tokens = chunkParser.parse(tagged_tokens)
@@ -168,9 +173,14 @@ def extract_insti(lines):
 					if leaf[0].lower() in indianColleges and 'NNP' in leaf[1]:
 					#	print(leaf)
 						hit = " ".join([el[0] for el in tagged_tokens])
-						lst.append(hit)
-	return lst
-
+						insti.append(hit)
+			else:
+				for ind,leaf in enumerate(subtree.leaves()):
+					if leaf[0].lower() in indianDegrees:
+						#print(leaf[0].lower())
+						new_hit = " ".join([el[0] for el in tagged_tokens])
+						degrees.append(new_hit)
+	return insti,degrees
 
 
 def process_main_text2(text):
