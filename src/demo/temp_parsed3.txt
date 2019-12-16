@@ -1,0 +1,500 @@
+extracting text from pdf:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/Akshesh.Cv.pdf.pdf
+extracting text from pdf:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/AayeshaBassy_IIITN.pdf
+extracting text from pdf:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/Braj_Kishor_Resume.pdf
+extracting text from pdf:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/Ankit Cv.pdf.pdf
+parsing file:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/Akshesh.Cv.pdf.pdf
+--line  EDUCATIONAL QUALIFICATIONS
+--num_words  2 --prob 1 --label  Qualifications  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  IT PROFICIENCY
+--num_words  1 --prob 1 --label  Skills  --similarity :  0.7028837593330527
+--------------TITLE---------------------
+
+--line  ➢   PHP
+--num_words  3 --prob 1 --label  Personal Details  --similarity :  0.2672066602656486
+
+--line  ➢   MySQL
+--num_words  3 --prob 0.8 --label  Projects  --similarity :  0.22587492603682774
+
+--line  EXPERIENCE
+--num_words  1 --prob 1 --label  Experience  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  Nov 2017 – MAY 2019
+--num_words  4 --prob 0.10826822658929017 --label  Projects  --similarity :  0.22512943806209895
+
+--line  June 2019 – Present
+--num_words  3 --prob 0.6400000000000001 --label  Projects  --similarity :  0.30979744399798614
+
+--line  PROJECT UNDERTAKEN
+--num_words  2 --prob 1 --label  Projects  --similarity :  0.9528480671777796
+--------------TITLE---------------------
+
+--line  Solutions Pvt Ltd.
+--num_words  3 --prob 0.5120000000000001 --label  Experience  --similarity :  0.4021696245954391
+
+--line  EXTRA CURRICULAR ACTIVITIES
+--num_words  3 --prob 1 --label  Extra curricular  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  PERSONAL DETAILS
+--num_words  2 --prob 1 --label  Personal Details  --similarity :  1.0
+--------------TITLE---------------------
+
+
+Using the 'ent' visualizer
+Serving on http://0.0.0.0:5000 ...
+
+Shutting down server on port 5000.
+Personal Details 	 AKSHESH TRIPATHI
+Personal Details 	 B.Tech, computer science
+Personal Details 	 Contact No -9198733588
+Personal Details 	 Email- akshesh111n@gmail.com
+Qualifications 	 EDUCATIONAL QUALIFICATIONS
+Qualifications 	 ➢ High school from UP Board in 2010 with 59% .
+Qualifications 	 ➢ Intermediate from UP Board in 2012 with 64.2% .
+Qualifications 	 ➢ B.Tech from Azad Institute of Engineering & Technology, Lucknow in stream
+Qualifications 	 of CSE with Aggregate 65.6% .
+Skills 	 IT PROFICIENCY
+Skills 	 ➢   HTML , CSS ,BOOTSTRAP
+Skills 	 ➢   PHP
+Skills 	 ➢   MySQL
+Skills 	 ➢   jQUERY, Ajax , Wordpress
+Experience 	 EXPERIENCE
+Experience 	 ➢ Genextek Solutions Pvt Ltd – Software Engineer
+Experience 	 Nov 2017 – MAY 2019
+Experience 	 ➢ Alexa Studio – PHP Developer
+Experience 	 June 2019 – Present
+Projects 	 PROJECT UNDERTAKEN
+Projects 	 ➢ Project Title: The Trashco Web App JUN 2019 - PRESENT Project Client: The
+Projects 	 Trashco - Project (http://www.dataman.co.in/etrace/) Description: The
+Projects 	 Trashco is a Ecommerce Project for Buy and Sale Ewaste Items.
+Projects 	 ➢ Project Title: GenexTemplates Web App NOV 2018 - MAY Project Client:
+Projects 	 Genextek Solution - Own Project (http://genextemplates.com/) Description:
+Projects 	 GenexTemplates is a product of Genextek Solutions Pvt. Ltd.
+Projects 	 ➢ Project Title: Apac Biotech web App AUG 2018 – OCT 2018 Project Client:
+Projects 	 Apac Biotech Pvt. Ltd. (http://apacbiotech.com) Description: Apac Biotech is
+Projects 	 a Biotechnologi Company manufacturing of Dendritic cell based
+Projects 	 immunotherapy treatment of Cancer.
+Projects 	 ➢ Project Title: SmartStudents Web App MAY 2018 – AUGUST 2018 Project
+Projects 	 Client: Smartstudents (http://smartstudents.co.in/) Description:
+Projects 	 Smartstudents is a product in education sector, registered with GenexTek
+Projects 	 Solutions Pvt Ltd.
+Projects 	 ➢ Project Title: GenexTekad Web App DEC 2017 - APRIL 2018 Project Client:
+Projects 	 GenexTekad (http://genextekad.com/) Description: GenexTekad is a
+Projects 	 product in Advertsing sector, registered with GenexTek Solutions Pvt Ltd.
+Extra curricular 	 EXTRA CURRICULAR ACTIVITIES
+Extra curricular 	 ➢ Member of college cultural & sport committee.
+Extra curricular 	 ➢ Making software collection.
+Extra curricular 	 ➢ Playing outdoor game like Cricket.
+Personal Details 	 PERSONAL DETAILS
+Personal Details 	 Father Name          : Mr. Govind Tripathi
+Personal Details 	 Date Of Birth       : 07/07/1996
+Personal Details 	 Language Known      : Hindi , English
+++++++++++++++++++++++++++++++++++++++++++
+parsing file:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/AayeshaBassy_IIITN.pdf
+--line  CAREER OBJECTIVE
+--num_words  2 --prob 1 --label  Objective  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  ACADEMIC QUALIFICATION (B.Tech.)
+--num_words  3 --prob 0.8 --label  Qualifications  --similarity :  0.7460083928741081
+--------------TITLE---------------------
+
+--line  INTERNSHIPS
+--num_words  1 --prob 1 --label  Experience  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  Summer Internship
+--num_words  2 --prob 0.6400000000000001 --label  Experience  --similarity :  0.754559122089029
+--------------TITLE---------------------
+
+--line  PROJECTS/ACTIVITIES
+--num_words  2 --prob 1 --label  Projects  --similarity :  0.8721751111107565
+--------------TITLE---------------------
+
+--line  COMPUTER PROFICIENCY
+--num_words  2 --prob 1 --label  Skills  --similarity :  0.6886890270063099
+--------------OTHER TITLE---------------------
+
+--line  CURRENT ACTIVITIES
+--num_words  2 --prob 1 --label  Extra curricular  --similarity :  0.7423963745072311
+--------------TITLE---------------------
+
+--line  ACHIEVEMENTS AND HONOURS
+--num_words  3 --prob 0.1 --label  Qualifications  --similarity :  0.8563170927428414
+--------------TITLE---------------------
+
+--line  EXTRA CURRICULAR ACTIVITIES
+--num_words  3 --prob 1 --label  Extra curricular  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  PERSONAL DETAILS:
+--num_words  2 --prob 1 --label  Personal Details  --similarity :  1.0
+--------------TITLE---------------------
+
+
+Using the 'ent' visualizer
+Serving on http://0.0.0.0:5000 ...
+
+Shutting down server on port 5000.
+Personal Details 	 INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, NAGPUR
+Personal Details 	 AAYESHA BASSY
+Personal Details 	 Mobile: +91 7350452238
+Personal Details 	 Email-id: aayes1998@gmail.com
+Personal Details 	 Linked-in: www.linkedin.com/in/aayesha-bassy/
+Objective 	 CAREER OBJECTIVE
+Objective 	 I am a creative, highly analytical individual and a pro-active problem solver with a solid Computer Science
+Objective 	 background. Have the ability to engineer responsive solutions and can work in a dynamic environment. Looking for
+Objective 	 an effective position in Software Development related fields in a progressive organization that gives me a scope to
+Objective 	 enhance my technical acumen and utilize my skills towards the growth of the organization.
+Qualifications 	 ACADEMIC QUALIFICATION (B.Tech.)
+Qualifications 	 Enrollment no: BT16CSE008
+Qualifications 	 Branch: Computer Science & Engineering (CSE)
+Qualifications 	 Current CGPA: 7.95/10
+Qualifications 	 QUALIFICATION                     INSTITUTE                    YEAR       SCORE/SGPA              CGPA
+Qualifications 	 B.Tech. 7th Semester                IIIT Nagpur                 2019          Ongoing
+Qualifications 	 B.Tech. 6th Semester                IIIT Nagpur                 2019            8.33                7.95
+Qualifications 	 B.Tech. 5th Semester                IIIT Nagpur                 2018            8.18                7.89
+Qualifications 	 B.Tech. 4th Semester                IIIT Nagpur                 2018            9.65                7.84
+Qualifications 	 B.Tech. 3rd Semester                IIIT Nagpur                 2017            7.10                7.27
+Qualifications 	 B.Tech. 2nd Semester                IIIT Nagpur                 2017            7.39                7.38
+Qualifications 	 B.Tech. 1st Semester                IIIT Nagpur                 2016            7.36                7.36
+Qualifications 	 CLASS XII(HSC)         K.V. Manauri, Allahabad (CBSE)         2016           94.5%
+Qualifications 	 CLASS X(SSC)          K.V. Manauri, Allahabad (CBSE)         2014            95%                 10
+Experience 	 INTERNSHIPS
+Experience 	 •   Academic Intern - Persistent Systems Ltd, Nagpur                                       June 2018 – July 2018
+Experience 	 Summer Internship
+Experience 	 The goal of the project was to accept input files (.csv files) having their content in different formats and
+Experience 	 transforming them into a fixed, specified format file according to a set of predefined rules, using Java and
+Experience 	 SQL. (Transforming unstructured data into structured data)
+Experience 	 UI & Python Intern – Persistent Systems Ltd, Nagpur                              June 2019 – Present
+Experience 	 Semester Long Internship (6 Months)
+Experience 	 Currently being trained on the front-end technologies, namely, HTML5, CSS3, JavaScript, AJAX and
+Experience 	 Angular. Also working on the “Pool Operations Management” project wherein we are automating the tasks
+Experience 	 that are performed by the likes of Excel, etc.
+Projects 	 PROJECTS/ACTIVITIES
+Projects 	 •       Blog-a-thon                                                                                     March 2017
+Projects 	 A dynamic website providing users to create, delete, view and update their blogs. It was developed using
+Projects 	 HTML, CSS and JS using BOOTSTRAP and a portal was also developed in PHP
+Projects 	 •       Face Detection and Recognition:                                                                 March 2018
+Projects 	 A project that uses the OpenCV library and Python for detecting facial features and recognizing faces,
+Projects 	 saving detected faces in the database
+Projects 	 •       Hostel Management Portal                                                                         April 2018
+Projects 	 A web application providing a technical way for the replacement of the existing manual system, using JSP
+Projects 	 and Servlet technology, providing effective communication between the users
+Projects 	 • SocketPro                                                                                          Oct 2018
+Projects 	 A peer-to-peer chat application developed using UDP sockets and a file transfer system developed using TCP
+Projects 	 sockets in C
+others 	 COMPUTER PROFICIENCY
+others 	 •     Programming Languages: C/C++, Java, Python, R
+others 	 •     Website Designing: CSS, HTML, Bootstrap, JavaScript, PHP, Angular
+others 	 •     Database Management: MySQL
+others 	 •     Software Packages: Android Studio, Pentaho, Netbeans, Corel Draw, MySQL Workbench
+others 	 •     Coursework: Data Structures and Algorithms, Object Oriented Programming, Operating Systems,
+others 	 Database Management System, Software Engineering, Theory of Computation
+Extra curricular 	 CURRENT ACTIVITIES
+Extra curricular 	 Online Advertising Head (IIITN)                                                                     2016-Present
+Extra curricular 	 Responsible for handling and maintaining all the social media profiles of our institute, and promoting our institute
+Extra curricular 	 events. Have played a vital role in the increase of participation for our institute fests by 70% in 2018 as compared to
+Extra curricular 	 2017.
+Qualifications 	 ACHIEVEMENTS AND HONOURS
+Qualifications 	 •      Was awarded the Kalpana Chawla Award for Academic Excellence (2014)
+Qualifications 	 •      Was the School Head Girl (2015-2016)
+Qualifications 	 •      Bagged the first position in the Poster Designing Competition held by AFWWA, 24 ED Manauri
+Extra curricular 	 EXTRA CURRICULAR ACTIVITIES
+Extra curricular 	 •   Frequent anchor at various events.
+Extra curricular 	 •   Designing Team Head at Tantrafiesta 2018, Abhivyakti 2019, IIITN.
+Extra curricular 	 •   Member of SAC – Cultural Chief Coordinator (2018 – 2019), IIITN.
+Extra curricular 	 •   Food Blogging: Own and manage the Instagram handle – The Subtle Savour (TSS).
+Extra curricular 	 •   I have a flair in writing, technical as well as creative.
+Extra curricular 	 •   I have an avid interest in playing the guitar.
+Personal Details 	 PERSONAL DETAILS:
+Personal Details 	 Date of Birth: 14/12/1998
+Personal Details 	 Address: IIIT Nagpur, Seminary Hills, Nagpur, Maharashtra- 440006
+Personal Details 	 Alternate Contact: +91 8009119992 (Father)
+Personal Details 	 I hereby acknowledge that the information furnished above is correct to the best of my knowledge.
+Personal Details 	 Aayesha Bassy
+Personal Details 	 (Date: 23/07/19)
+++++++++++++++++++++++++++++++++++++++++++
+parsing file:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/Braj_Kishor_Resume.pdf
+--line  Final Year Undergraduate
+--num_words  3 --prob 0.5120000000000001 --label  Projects  --similarity :  0.6597188272330923
+
+--line  EDUCATION
+--num_words  1 --prob 1 --label  Education  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  Secondary (CBSE); GPA: (9.8/10))
+--num_words  4 --prob 0.10826822658929017 --label  Qualifications  --similarity :  0.44460963324275
+
+--line  INTERNSHIPS
+--num_words  1 --prob 1 --label  Experience  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  PUBLICATIONS
+--num_words  1 --prob 1 --label  Projects  --similarity :  0.5481292865005746
+--------------OTHER TITLE---------------------
+
+--line  PROJECTS/ACTIVITIES
+--num_words  2 --prob 1 --label  Projects  --similarity :  0.8721751111107565
+--------------TITLE---------------------
+
+--line  TECHNICAL SKILLS
+--num_words  2 --prob 1 --label  Skills  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  KEY STRENGTHS
+--num_words  2 --prob 1 --label  Skills  --similarity :  0.8172035517047928
+--------------TITLE---------------------
+
+--line  ACHIEVEMENTS AND AWARDS
+--num_words  3 --prob 1 --label  Qualifications  --similarity :  0.8791366795451455
+--------------TITLE---------------------
+
+--line  CO/EXTRA CURRICULAR ACTIVITIES
+--num_words  4 --prob 0.1353352832366127 --label  Extra curricular  --similarity :  0.9373491208631839
+--------------TITLE---------------------
+
+--line  HOBBIES
+--num_words  1 --prob 1 --label  Hobbies  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  LINKS
+--num_words  1 --prob 1 --label  Personal Details  --similarity :  0.5504560144542626
+--------------OTHER TITLE---------------------
+
+--line  ° Linkedin
+--num_words  2 --prob 0.8 --label  Personal Details  --similarity :  0.2894709638913941
+
+
+Using the 'ent' visualizer
+Serving on http://0.0.0.0:5000 ...
+
+Shutting down server on port 5000.
+Personal Details 	 Braj Kishor
+Personal Details 	 Final Year Undergraduate
+Personal Details 	 Department of Computer Science and Engineering
+Personal Details 	 R kumarbrajkishor96@gmail.com                                                         Indian Institute of
+Personal Details 	 Ó+91-8668621993                                                          Information Technology, Nagpur
+Education 	 EDUCATION
+Education 	 Indian Institute of Information Technology, Nagpur                                           2016 - 2020*
+Education 	 B.Tech in Computer Science and Engineering
+Education 	 M.R.D.I.M. College Meghoul, Begusarai                                                           2013-2015
+Education 	 Senior Secondary (BSEB); (76.8%)
+Education 	 St. Joseph Public School Begusarai                                                              2009-2013
+Education 	 Secondary (CBSE); GPA: (9.8/10))
+Experience 	 INTERNSHIPS
+Experience 	 Software Developer Intern - The Solar Labs                                        15 May 2019 - Present
+Experience 	 As a part of the Software Engineering Team, Working on Shading Engine Algorithm.
+Experience 	 Summer Research Internship - IIT Guwahati                                         May 2018 - July 2018
+Experience 	 Implemented the Random Walk Algorithm to find out node voltage and current for DC & transient
+Experience 	 circuit in power grid having million number of nodes.Developed a code from scratch in C++.
+others 	 PUBLICATIONS
+others 	 A Study on Relation between Mathematics and Music                              Cambridge Publishing
+others 	 This report is mainly based on how different mathematical aspects are being used in musical theory and
+others 	 how music has helped in the development of mathematics. How the musicians developed mathematical
+others 	 concepts and vice versa. Historical relations between math and music and enhancement of math from
+others 	 music has been described. Various concepts of math, like Fibonacci series, Harmonics and Logarithmic
+others 	 series etc., are used in music, but this report focuses mainly on Harmonics.
+Projects 	 PROJECTS/ACTIVITIES
+Projects 	 Loan Approval Prediction : Loan prediction was calculated for the customers based on the Gender,
+Projects 	 Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others
+Projects 	 who are eligible for loan amount to be sanctioned. It was implemented in R and Python.
+Projects 	 Heart Disease Prediction Using Logistic Regression : The heart disease is increasing day by day
+Projects 	 due to the modern lifestyle and food. The diagnosis of heart disease is a challenging task. In this project
+Projects 	 I have predicted that whether the patient has heart disease or not based on various conditions/symptoms
+Projects 	 of their body.
+Projects 	 Magic Matrix Checker : The Objective of the project was to check whether the given matrix is a
+Projects 	 Magic Square Matrix or not. The GUI portion has been Implemented with the help of HTML & CSS.
+Projects 	 And the logic has been developed in javascript.
+Projects 	 Library-Rec : A student record data management system implemented using linked lists as well as
+Projects 	 arrays and file handling for storing data in C. Different functions like getting top most author, Most
+Projects 	 Popular author in the list of records, finding kth popular book based on which author has maximum
+Projects 	 number of copies issues, finding failures, finding topper, etc. are also provided.
+Projects 	 Library Managements System : It includes user interface for both Admin and Students for surfing
+Projects 	 out books in the library. It works on local server. It has features likes requesting book from anywhere,
+Projects 	 Searching top trending books, No of book lefts etc. It is adopted by IIIT NAGPUR central library.
+Skills 	 TECHNICAL SKILLS
+Skills 	 Programming Languages: C, CUDA, Python, R, & MySQL.
+Skills 	 Tools and Frameworks: Numpy, Pandas, Matplotlib & Tableau.
+Skills 	 Web Development: HTML, CSS, Basic JavaSricpt
+Skills 	 Platform: Linux, Windows.
+Skills 	 KEY STRENGTHS
+Skills 	 • Flexible, Dedicated and Hardworking.
+Skills 	 • Adaptable to any Environmental Situation.
+Skills 	 • Quick learner and ability to adopt quickly.
+Qualifications 	 ACHIEVEMENTS AND AWARDS
+Qualifications 	 • Named in the merit list of top 1% Students of Inter Science Exam 2015 for Inspire-Scholorship.
+Qualifications 	 • Won first prize in quiz in Institute Gathering 2017 at IIIT Nagpur.
+Qualifications 	 • Having 2 years of experience in teaching Chemistry for JEE Mains.
+Extra curricular 	 CO/EXTRA CURRICULAR ACTIVITIES
+Extra curricular 	 • Sports Secretary at IIIT Nagpur.
+Extra curricular 	 • Volunteered as Coordinator of IEEE conference held in college.
+Extra curricular 	 • Actively participated in organization of many events held at college as a technical council member.
+Hobbies 	 HOBBIES
+Hobbies 	 Playing badminton, Teaching, Cooking, Travelling and Watching documentaries.
+others 	 LINKS
+others 	  Website here
+others 	  Github here
+others 	 ° Linkedin
+++++++++++++++++++++++++++++++++++++++++++
+parsing file:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/Ankit Cv.pdf.pdf
+--line  ANKIT KUMAR
+--num_words  2 --prob 0.1 --label  Hobbies  --similarity :  0.07479880250563416
+
+--line  B.TECH (INFORMATION TECHNOLOGY)
+--num_words  3 --prob 0.1 --label  Education  --similarity :  0.5100104359115307
+
+--line  QUALIFICATION
+--num_words  1 --prob 1 --label  Qualifications  --similarity :  0.8370598577386572
+--------------TITLE---------------------
+
+--line  PROFESSIONAL EXPERIENCE
+--num_words  2 --prob 1 --label  Experience  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  PHP DEVELOPER (Trainee)
+--num_words  3 --prob 0.8 --label  Skills  --similarity :  0.45962846187326545
+--------------OTHER TITLE---------------------
+
+--line  PHP DEVELOPER
+--num_words  2 --prob 1 --label  Projects  --similarity :  0.3918493833917564
+
+--line  PHP DEVELOPER
+--num_words  2 --prob 1 --label  Projects  --similarity :  0.3918493833917564
+
+--line  TECHNICAL SKILLS
+--num_words  2 --prob 1 --label  Skills  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  Page | 1
+--num_words  3 --prob 0.8 --label  Personal Details  --similarity :  0.37317130478325283
+
+--line  PROJECT
+--num_words  1 --prob 1 --label  Projects  --similarity :  0.8699969590989026
+--------------TITLE---------------------
+
+--line   REALESTATE WEBSITE
+--num_words  3 --prob 1 --label  Personal Details  --similarity :  0.5176779104128721
+--------------OTHER TITLE---------------------
+
+--line   SCHOOL MANAGEMENT SYSTEM
+--num_words  4 --prob 0.1353352832366127 --label  Skills  --similarity :  0.7627365537332824
+--------------TITLE---------------------
+
+--line   EMPLOYEE MANAGEMENT SYSTEM
+--num_words  4 --prob 0.1353352832366127 --label  Skills  --similarity :  0.7530534756970991
+--------------TITLE---------------------
+
+--line  SPECIAL INTERESTS
+--num_words  2 --prob 1 --label  Hobbies  --similarity :  0.836800443094694
+--------------TITLE---------------------
+
+--line  PERSONAL DETAILS
+--num_words  2 --prob 1 --label  Personal Details  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  Nationality: Indian
+--num_words  2 --prob 0.6400000000000001 --label  Personal Details  --similarity :  0.3457401270830141
+
+--line  Marital Status: Unmarried
+--num_words  3 --prob 0.5120000000000001 --label  Personal Details  --similarity :  0.4781541578001875
+
+--line  DECLARATION
+--num_words  1 --prob 1 --label  Personal Details  --similarity :  0.3970304531145636
+
+--line  NAME: ANKIT KUMAR
+--num_words  3 --prob 0.1 --label  Personal Details  --similarity :  0.17291605114723776
+
+--line  Page | 2
+--num_words  3 --prob 0.8 --label  Personal Details  --similarity :  0.3775144072232356
+
+--line  Page | 3
+--num_words  3 --prob 0.8 --label  Personal Details  --similarity :  0.3780286508161921
+
+
+Using the 'ent' visualizer
+Serving on http://0.0.0.0:5000 ...
+
+Shutting down server on port 5000.
+Personal Details 	 ANKIT KUMAR
+Personal Details 	 B.TECH (INFORMATION TECHNOLOGY)
+Personal Details 	 G-96, Karampura, New Delhi - 110015 ◼ Phone: 9654215063 ◼ DOB: 01/12/1993
+Personal Details 	 ◼ Email: ankitkumarchoudhary7@gmail.com
+Personal Details 	 Determined, perceptive and goal-oriented individual seeking a challenging and inspiring career that
+Personal Details 	 would utilize my concepts and skills of information technology as well as enrich my knowledge by
+Personal Details 	 giving me an opportunity to be part of team that contributes towards the common growth of an
+Personal Details 	 organization, thereby stimulating both job satisfaction and professional growth.
+Qualifications 	 QUALIFICATION
+Qualifications 	 NAME OF SCHOOL/COLLEGE          BOARD/UNIVERSITY                                    PERCENTAGE (%)
+Qualifications 	 B. Tech. (IT)                   Northern India Engineering College (GGSIPU)              67.89
+Qualifications 	 12th                       S.S.D SBM S. Sec School, Punjabi Bagh, Delhi (CBSE)      60.04
+Qualifications 	 10th                       S.S.D SBM S. Sec School, Punjabi Bagh, Delhi (CBSE)      70
+Experience 	 PROFESSIONAL EXPERIENCE
+Experience 	 Organization                      Designation                 Duration
+Experience 	 Tecinso llb Pvt. Ltd.              PHP DEVELOPER          May 2017 to March 2018
+Experience 	 Blue Eagle Infotech Pvt. Ltd.          PHP DEVELOPER          March 2018 To Oct 2019
+Experience 	  Mobiloitte India Pvt. Ltd., OKHLA PHASE 1 , New Delhi
+others 	 PHP DEVELOPER (Trainee)
+others 	     Worked on HTML, CORE PHP, SQL
+others 	     DATABASE-MYSQL & PHPMYADMIN
+others 	  Tecinso Llb India Pvt. Ltd., Spaze Itech park, Gurugram, Sohna road, Haryana
+others 	 PHP DEVELOPER
+others 	     Worked on CORE PHP, CODEIGNITER, JAVASCRIPT and AJAX
+others 	     DATABASE-MYSQL & PHPMYADMIN
+others 	  Blue Eagle Infotech Pvt Ltd ,JMD Megapolis, Gurugram,Sohna road,Haryana
+others 	 PHP DEVELOPER
+others 	     Working on CORE PHP, JAVASCRIPT, AJAX,API and ECOMMERCE websites
+others 	     DATABASE-MYSQL & PHPMYADMIN
+Skills 	 TECHNICAL SKILLS
+Skills 	 Programming Languages           CORE PHP, HTML CODEIGNITER, JAVASCRIPT, AJAX,DATABASE, OOPS, API
+Skills 	 Database                        MYSQL, PHPMYADMIN
+Skills 	 Operating System                Windows XP/VISTA/7/8/10 and MAC
+Skills 	 Page | 1
+Projects 	 PROJECT
+Projects 	    LIST OF E-COMMERCE WEBSITES
+Projects 	    https://fruituncle.in/
+Projects 	    https://flowguards.net/
+Projects 	    https://opensms.in/refashion/
+Projects 	    https://www.ptah.in/
+Projects 	    https://www.buy24x7.in/
+Projects 	    http://adahfashion.com/
+Projects 	    https://opensms.in/tailoring/
+Projects 	    LIST OF CLIENT WEBSITES
+Projects 	    http://financialdesk.opensms.in/financial
+Projects 	    https://www.presude.com
+Projects 	    https://paissamanagement.com
+Projects 	    https://www.thebaristadiner.com
+Projects 	    http://prlindia.com/
+Projects 	    https://opensms.in/food/
+Projects 	  EVENT MANAGEMENT SYSTEM
+Projects 	  https://vteamseducation.com/
+others 	  REALESTATE WEBSITE
+others 	  https://www.arsrealty.in
+Skills 	  SCHOOL MANAGEMENT SYSTEM
+Skills 	 A complete school portal for admin, student, teacher and parent was created. All activity can be measured
+Skills 	 online on one plea like student marks, attendance on daily basis exam. This project was used especially to
+Skills 	 improve the ability and interest of the weak students. (codeigniter)
+Skills 	  EMPLOYEE MANAGEMENT SYSTEM
+Skills 	 An admin login for provide user login, assign project and manage work reports and user login for attendance
+Skills 	 and project timming using php (core php and codeigniter).
+Hobbies 	 SPECIAL INTERESTS
+Hobbies 	    Interacting with people and making friends
+Hobbies 	    Dancing in loud music
+Hobbies 	    Listening music
+Hobbies 	    Playing cricket and chess
+Personal Details 	 PERSONAL DETAILS
+Personal Details 	 Nationality: Indian
+Personal Details 	 Languages Know: Hindi (Native), English (Fluent)
+Personal Details 	 Attributes: Sincere, Honest, Responsible, Hardworking, Creative, Interactive and Dedicated to my work
+Personal Details 	 Marital Status: Unmarried
+Personal Details 	 Age: 25 years (Male)
+Personal Details 	 DECLARATION
+Personal Details 	 I hereby declare that the information furnished is correct to the best of my knowledge.
+Personal Details 	 NAME: ANKIT KUMAR
+Personal Details 	 Page | 2
+Personal Details 	 Page | 3
+++++++++++++++++++++++++++++++++++++++++++
+count:  4

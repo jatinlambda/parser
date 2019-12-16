@@ -1,15 +1,15 @@
 import re
-import spacy
 import nltk  #used in extract insti function
 from spacy.matcher import Matcher
+from spacy import displacy
 from src.util.tokenizer_utils import word_tokenize
 import spacy
 import numpy as np
 from src.util.headers_dict import bucket2title, title2bucket, indexes_title
 
 # load pre-trained model
-nlp = spacy.load('en_core_web_md')
-
+# nlp = spacy.load('en_core_web_md')
+nlp = spacy.load('en_core_web_lg')
 # initialize matcher with a vocab
 matcher = Matcher(nlp.vocab)
 
@@ -208,9 +208,19 @@ def process_main_text1(text):
     return result
 
 
+def process_main_text0(text):
+    doc = nlp(text.lower())
+    result = []
+    for token in doc:
+        if token.is_punct:
+            continue
+        result.append(token.text)
+    return result
+
+
 def calculate_similarity_with_processing(title, line):
     # print(title, line)
-    process_main_tex_foo=process_main_text1
+    process_main_tex_foo=process_main_text0
     title = nlp(' '.join(process_main_tex_foo(title)))
     line = nlp(' '.join(process_main_tex_foo(line)))
     for token in line:
@@ -251,28 +261,35 @@ def get_label(line):
 
 
 def extract_headers(data):
-    weight_num_words=100
-    max_words_in_header=4
-    weight_full_stop=1000
-    weight_capital_letter=1000
-    weight_no_word=10000
+    # weight_num_words=100
+    max_words_in_header=3
+    # weight_full_stop=1000
+    # weight_capital_letter=1000
+    # weight_no_word=10000
     prob_no_word=0
     thresh_prob1=0.09
-    thresh_prob2=0.7
+    similarity_thresh_prob1=0.7
+    thresh_prob2 = 0.6
+    similarity_thresh_prob2 = 0.4
 
     # print(data)
     headers={}
     for line in data:
 
-        cost=0
+        # cost=0
         prob=1
         doc =nlp(line)
+
+        for token in doc:
+            token_id = nlp.vocab.strings[token.text]
+            if token_id not in nlp.vocab:
+                prob=prob*0.1
 
         main_text=process_main_text1(line)
 
         num_words=len(main_text)
         if num_words>max_words_in_header or num_words==0:
-            cost=cost+weight_num_words*np.exp(num_words-max_words_in_header)
+            # cost=cost+weight_num_words*np.exp(num_words-max_words_in_header)
             prob=prob*np.exp(-2*(num_words-max_words_in_header))
 
         word_found=False
@@ -282,27 +299,42 @@ def extract_headers(data):
                 break
 
         if not word_found:
-            cost=cost+weight_no_word
+            # cost=cost+weight_no_word
             prob=prob*prob_no_word
 
         if doc[-1].pos_=="PUNCT" and doc[-1].text=='.':
-            cost=cost+weight_full_stop
+            # cost=cost+weight_full_stop
             prob=prob*0.1
 
-        first_word=re.search("^[a-z]+$", doc[0].text)
-        if first_word is not None:
-            cost=cost+weight_capital_letter
-            prob=prob*0.1
+        words=re.findall("[A-Za-z][^ ]*", line)
+        if words:
+            first_word=True
+            for word in words:
+                if word.islower():
+                    if first_word:
+                        prob=0
+                        first_word=False
+                    else:
+                        prob=prob*0.4
+                elif word.isupper():
+                    continue
+                if word[0].isupper():
+                    prob=prob*0.8
+        else:
+            prob=0
 
         if prob>thresh_prob1:
             label, similarity=get_label(line)
-            # print("--line ", line, "     --main line ", main_text)
-            # print("--num_words ", num_words, "--cost ", cost, "--prob", prob, "--label ", label, " --similarity : ", similarity)
-            if similarity>thresh_prob2:
-                # print("--------------TITLE---------------------")
+            print("--line ", line)
+            print("--num_words ", num_words, "--prob", prob, "--label ", label, " --similarity : ", similarity)
+            if similarity>similarity_thresh_prob1:
+                print("--------------TITLE---------------------")
                 headers[line]={"label":label, "similarity":similarity}
+            elif prob>thresh_prob2 and similarity>similarity_thresh_prob2:
+                print("--------------OTHER TITLE---------------------")
+                headers[line] = {"label": "others", "similarity": similarity}
 
-            # print()
+            print()
             # for token in doc:
             #     print("-----token  ", token.text, token.pos_, token.tag_,  token.shape_)
             # print()
@@ -312,6 +344,19 @@ def extract_headers(data):
 
 
 def extract_buckets(data, headers):
+    lines="\n".join(data)
+    doc = nlp(lines)
+    displacy.serve(doc, style="ent")
+
+    # print("--------------------- Printing sentences  ----------------------------------------------------------------------")
+    # print()
+    # lines = " ".join(data)
+    # doc = nlp(lines)
+    # for sent in doc.sents:
+    #     print(sent.text)
+    # print()
+    # print()
+
     last_label='Personal Details'
     buckets=[]
     for line in data:

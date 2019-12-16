@@ -1,0 +1,2050 @@
+extracting text from pdf:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/rajneeshbarnwal.pdf
+extracting text from pdf:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/iimjobs_BHARAT_BORANA.pdf
+parsing file:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/rajneeshbarnwal.pdf
+--line  RAJNEESH KUMAR BARNWAL
+--num_words  3 --prob 1 --label  other  --similarity :  0
+
+-----token   RAJNEESH PROPN NNP XXXX
+-----token   KUMAR PROPN NNP XXXX
+-----token   BARNWAL PROPN NNP XXXX
+
+
+--line  Address:                                                                          Contact No: 07042488448 / 07503075418
+--num_words  6 --prob 0.01831563888873418 --label  other  --similarity :  0
+
+-----token   Address NOUN NN Xxxxx
+-----token   : PUNCT : :
+-----token                                                                             SPACE _SP     
+-----token   Contact PROPN NNP Xxxxx
+-----token   No NOUN NN Xx
+-----token   : PUNCT : :
+-----token   07042488448 NUM CD dddd
+-----token   / SYM SYM /
+-----token   07503075418 NUM CD dddd
+
+
+--line  G-Block, Greenwood City                                                               E-mail: rajneeshbarnwal@gmail.com
+--num_words  8 --prob 0.00033546262790251185 --label  other  --similarity :  0
+
+-----token   G PROPN NNP X
+-----token   - PUNCT HYPH -
+-----token   Block PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Greenwood PROPN NNP Xxxxx
+-----token   City PROPN NNP Xxxx
+-----token                                                                  SPACE _SP     
+-----token   E NOUN NN X
+-----token   - NOUN NN -
+-----token   mail NOUN NN xxxx
+-----token   : PUNCT : :
+-----token   rajneeshbarnwal@gmail.com X ADD xxxx@xxxx.xxx
+
+
+--line  Sector-40, Gurgaon
+--num_words  2 --prob 1 --label  other  --similarity :  0
+
+-----token   Sector-40 PROPN NNP Xxxxx-dd
+-----token   , PUNCT , ,
+-----token   Gurgaon PROPN NNP Xxxxx
+
+
+--line  Haryana - 122003
+--num_words  2 --prob 1 --label  other  --similarity :  0
+
+-----token   Haryana PROPN NNP Xxxxx
+-----token   - PUNCT HYPH -
+-----token   122003 NUM CD dddd
+
+
+--line  OBJECTIVE
+--num_words  1 --prob 1 --label  Objective  --similarity :  1.0
+--------------TITLE---------------------
+
+-----token   OBJECTIVE NOUN NN XXXX
+
+
+--line  To associate with the reputed industry and work for the organization’s and personal growth and progress with my whole energy,
+--num_words  20 --prob 1.2664165549094176e-14 --label  Experience  --similarity :  0.7704912004191063
+--------------TITLE---------------------
+
+-----token   To PART TO Xx
+-----token   associate VERB VB xxxx
+-----token   with ADP IN xxxx
+-----token   the DET DT xxx
+-----token   reputed ADJ JJ xxxx
+-----token   industry NOUN NN xxxx
+-----token   and CCONJ CC xxx
+-----token   work NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   the DET DT xxx
+-----token   organization NOUN NN xxxx
+-----token   ’s PART POS ’x
+-----token   and CCONJ CC xxx
+-----token   personal ADJ JJ xxxx
+-----token   growth NOUN NN xxxx
+-----token   and CCONJ CC xxx
+-----token   progress NOUN NN xxxx
+-----token   with ADP IN xxxx
+-----token   my DET PRP$ xx
+-----token   whole ADJ JJ xxxx
+-----token   energy NOUN NN xxxx
+-----token   , PUNCT , ,
+
+
+--line  knowledge, dedication and sincere efforts.
+--num_words  5 --prob 0.013533528323661271 --label  Experience  --similarity :  0.694324647583534
+
+-----token   knowledge NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   dedication NOUN NN xxxx
+-----token   and CCONJ CC xxx
+-----token   sincere ADJ JJ xxxx
+-----token   efforts NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  PROFESSIONAL EXPERIENCE
+--num_words  2 --prob 1 --label  Experience  --similarity :  1.0
+--------------TITLE---------------------
+
+-----token   PROFESSIONAL ADJ JJ XXXX
+-----token   EXPERIENCE NOUN NN XXXX
+
+
+--line  ●    Working as Software Engineer with Aricent Technologies, Gurgaon since June 2016.
+--num_words  13 --prob 1.522997974471263e-09 --label  other  --similarity :  0
+
+-----token   ● PUNCT NFP ●
+-----token       SPACE _SP    
+-----token   Working VERB VBG Xxxxx
+-----token   as SCONJ IN xx
+-----token   Software PROPN NNP Xxxxx
+-----token   Engineer PROPN NNP Xxxxx
+-----token   with ADP IN xxxx
+-----token   Aricent PROPN NNP Xxxxx
+-----token   Technologies PROPN NNPS Xxxxx
+-----token   , PUNCT , ,
+-----token   Gurgaon PROPN NNP Xxxxx
+-----token   since SCONJ IN xxxx
+-----token   June PROPN NNP Xxxx
+-----token   2016 NUM CD dddd
+-----token   . PUNCT . .
+
+
+--line  ●    Did Internship from Aricent Technologies, Gurgaon from Jan 2015 to June 2015.
+--num_words  14 --prob 2.061153622438558e-10 --label  other  --similarity :  0
+
+-----token   ● PUNCT NFP ●
+-----token       SPACE _SP    
+-----token   Did AUX VBD Xxx
+-----token   Internship PROPN NNP Xxxxx
+-----token   from ADP IN xxxx
+-----token   Aricent PROPN NNP Xxxxx
+-----token   Technologies PROPN NNPS Xxxxx
+-----token   , PUNCT , ,
+-----token   Gurgaon PROPN NNP Xxxxx
+-----token   from ADP IN xxxx
+-----token   Jan PROPN NNP Xxx
+-----token   2015 NUM CD dddd
+-----token   to ADP IN xx
+-----token   June PROPN NNP Xxxx
+-----token   2015 NUM CD dddd
+-----token   . PUNCT . .
+
+
+--line  PROJECTS UNDERTAKEN
+--num_words  2 --prob 1 --label  Projects  --similarity :  1.0
+--------------TITLE---------------------
+
+-----token   PROJECTS NOUN NNS XXXX
+-----token   UNDERTAKEN NOUN NNS XXXX
+
+
+--line  1.   GUI based Network Monitoring System, Since Jan 2017
+--num_words  10 --prob 6.14421235332821e-06 --label  Projects  --similarity :  0.5536012475920851
+
+-----token   1 X LS d
+-----token   . PUNCT . .
+-----token      SPACE _SP   
+-----token   GUI PROPN NNP XXX
+-----token   based VERB VBN xxxx
+-----token   Network PROPN NNP Xxxxx
+-----token   Monitoring PROPN NNP Xxxxx
+-----token   System PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Since SCONJ IN Xxxxx
+-----token   Jan PROPN NNP Xxx
+-----token   2017 NUM CD dddd
+
+
+--line  ● Working as UI developer for this project
+--num_words  8 --prob 0.00033546262790251185 --label  Projects  --similarity :  0.805908314348853
+--------------TITLE---------------------
+
+-----token   ● PUNCT NFP ●
+-----token   Working VERB VBG Xxxxx
+-----token   as SCONJ IN xx
+-----token   UI PROPN NNP XX
+-----token   developer NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   this DET DT xxxx
+-----token   project NOUN NN xxxx
+
+
+--line  ● Coding is being done in AngularJS with Bootstrap, HTML and less/css.
+--num_words  13 --prob 1.522997974471263e-09 --label  Projects  --similarity :  0.6738627721895301
+
+-----token   ● PUNCT NFP ●
+-----token   Coding NOUN NN Xxxxx
+-----token   is AUX VBZ xx
+-----token   being AUX VBG xxxx
+-----token   done VERB VBN xxxx
+-----token   in ADP IN xx
+-----token   AngularJS PROPN NNP XxxxxXX
+-----token   with ADP IN xxxx
+-----token   Bootstrap PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   HTML NOUN NN XXXX
+-----token   and CCONJ CC xxx
+-----token   less ADJ JJR xxxx
+-----token   / SYM SYM /
+-----token   css NOUN NN xxx
+-----token   . PUNCT . .
+
+
+--line  ● Implemented graphical representation of Networking devices using Cytoscape JS.
+--num_words  10 --prob 6.14421235332821e-07 --label  other  --similarity :  0
+
+-----token   ● PUNCT NFP ●
+-----token   Implemented VERB VBN Xxxxx
+-----token   graphical ADJ JJ xxxx
+-----token   representation NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   Networking NOUN NN Xxxxx
+-----token   devices NOUN NNS xxxx
+-----token   using VERB VBG xxxx
+-----token   Cytoscape PROPN NNP Xxxxx
+-----token   JS PROPN NNP XX
+-----token   . PUNCT . .
+
+
+--line  ● Involved from planning phase till development code.
+--num_words  8 --prob 3.354626279025119e-05 --label  Projects  --similarity :  0.7276644746349168
+--------------TITLE---------------------
+
+-----token   ● PUNCT NFP ●
+-----token   Involved VERB VBN Xxxxx
+-----token   from ADP IN xxxx
+-----token   planning VERB VBG xxxx
+-----token   phase NOUN NN xxxx
+-----token   till SCONJ IN xxxx
+-----token   development NOUN NN xxxx
+-----token   code NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  2.   GUI based Network Monitoring System, June 2016 – Dec 2017
+--num_words  11 --prob 8.315287191035679e-07 --label  Projects  --similarity :  0.5080300457576062
+
+-----token   2 X LS d
+-----token   . PUNCT . .
+-----token      SPACE _SP   
+-----token   GUI PROPN NNP XXX
+-----token   based VERB VBN xxxx
+-----token   Network PROPN NNP Xxxxx
+-----token   Monitoring PROPN NNP Xxxxx
+-----token   System PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   June PROPN NNP Xxxx
+-----token   2016 NUM CD dddd
+-----token   – PUNCT : –
+-----token   Dec PROPN NNP Xxx
+-----token   2017 NUM CD dddd
+
+
+--line  ● Worked as a UI developer for this project.
+--num_words  9 --prob 4.539992976248485e-06 --label  Projects  --similarity :  0.7986604712613482
+--------------TITLE---------------------
+
+-----token   ● PUNCT NFP ●
+-----token   Worked VERB VBD Xxxxx
+-----token   as SCONJ IN xx
+-----token   a DET DT x
+-----token   UI PROPN NNP XX
+-----token   developer NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   this DET DT xxxx
+-----token   project NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ● Coding was done in AngularJS with Material Design, HTML and less/css.
+--num_words  13 --prob 1.522997974471263e-09 --label  Projects  --similarity :  0.6734817409031674
+
+-----token   ● PUNCT NFP ●
+-----token   Coding NOUN NN Xxxxx
+-----token   was AUX VBD xxx
+-----token   done VERB VBN xxxx
+-----token   in ADP IN xx
+-----token   AngularJS PROPN NNP XxxxxXX
+-----token   with ADP IN xxxx
+-----token   Material PROPN NNP Xxxxx
+-----token   Design PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   HTML PROPN NNP XXXX
+-----token   and CCONJ CC xxx
+-----token   less ADJ JJR xxxx
+-----token   / SYM SYM /
+-----token   css NOUN NN xxx
+-----token   . PUNCT . .
+
+
+--line  ● Implemented various widgets using Ui-Grid, Cytoscape JS.
+--num_words  9 --prob 4.539992976248485e-06 --label  other  --similarity :  0
+
+-----token   ● PUNCT NFP ●
+-----token   Implemented VERB VBN Xxxxx
+-----token   various ADJ JJ xxxx
+-----token   widgets NOUN NNS xxxx
+-----token   using VERB VBG xxxx
+-----token   Ui PROPN NNP Xx
+-----token   - PUNCT HYPH -
+-----token   Grid PROPN NNP Xxxx
+-----token   , PUNCT , ,
+-----token   Cytoscape PROPN NNP Xxxxx
+-----token   JS PROPN NNP XX
+-----token   . PUNCT . .
+
+
+--line  ● Did coding, unit testing, and automation testing with AngularJS, karma, and selenium frameworks.
+--num_words  14 --prob 2.061153622438558e-10 --label  Projects  --similarity :  0.6585527199552221
+
+-----token   ● PUNCT NFP ●
+-----token   Did AUX VBD Xxx
+-----token   coding NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   unit NOUN NN xxxx
+-----token   testing NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   and CCONJ CC xxx
+-----token   automation NOUN NN xxxx
+-----token   testing NOUN NN xxxx
+-----token   with ADP IN xxxx
+-----token   AngularJS PROPN NNP XxxxxXX
+-----token   , PUNCT , ,
+-----token   karma NOUN NNS xxxx
+-----token   , PUNCT , ,
+-----token   and CCONJ CC xxx
+-----token   selenium NOUN NN xxxx
+-----token   frameworks NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  3.   Industrial Automation
+--num_words  4 --prob 1 --label  Projects  --similarity :  0.5086755332821866
+
+-----token   3 X LS d
+-----token   . PUNCT . .
+-----token      SPACE _SP   
+-----token   Industrial PROPN NNP Xxxxx
+-----token   Automation PROPN NNP Xxxxx
+
+
+--line  ● Worked on this project on behalf of my internship training at Aricent Technologies, Gurgaon.
+--num_words  14 --prob 2.061153622438558e-10 --label  other  --similarity :  0
+
+-----token   ● PUNCT NFP ●
+-----token   Worked VERB VBN Xxxxx
+-----token   on ADP IN xx
+-----token   this DET DT xxxx
+-----token   project NOUN NN xxxx
+-----token   on ADP IN xx
+-----token   behalf NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   my DET PRP$ xx
+-----token   internship NOUN NN xxxx
+-----token   training NOUN NN xxxx
+-----token   at ADP IN xx
+-----token   Aricent PROPN NNP Xxxxx
+-----token   Technologies PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Gurgaon PROPN NNP Xxxxx
+-----token   . PUNCT . .
+
+
+--line  ● Worked on module implementation of Modbus Protocol.
+--num_words  8 --prob 3.354626279025119e-05 --label  Projects  --similarity :  0.6365190263822894
+
+-----token   ● PUNCT NFP ●
+-----token   Worked VERB VBN Xxxxx
+-----token   on ADP IN xx
+-----token   module NOUN NN xxxx
+-----token   implementation NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   Modbus PROPN NNP Xxxxx
+-----token   Protocol PROPN NNP Xxxxx
+-----token   . PUNCT . .
+
+
+--line  ● Also worked with BeagleBone Device and RPM Sensors.
+--num_words  9 --prob 4.539992976248485e-06 --label  Experience  --similarity :  0.5961515120220117
+
+-----token   ● PUNCT NFP ●
+-----token   Also ADV RB Xxxx
+-----token   worked VERB VBN xxxx
+-----token   with ADP IN xxxx
+-----token   BeagleBone PROPN NNP XxxxxXxxx
+-----token   Device PROPN NNP Xxxxx
+-----token   and CCONJ CC xxx
+-----token   RPM PROPN NNP XXX
+-----token   Sensors NOUN NNS Xxxxx
+-----token   . PUNCT . .
+
+
+--line  ● Used Core Java and JNI implementation with C/C++.
+--num_words  10 --prob 6.14421235332821e-07 --label  Projects  --similarity :  0.5478712314109916
+
+-----token   ● PUNCT NFP ●
+-----token   Used VERB VBN Xxxx
+-----token   Core PROPN NNP Xxxx
+-----token   Java PROPN NNP Xxxx
+-----token   and CCONJ CC xxx
+-----token   JNI PROPN NNP XXX
+-----token   implementation NOUN NN xxxx
+-----token   with ADP IN xxxx
+-----token   C PROPN NNP X
+-----token   / SYM SYM /
+-----token   C++ PROPN NNP X++
+-----token   . PUNCT . .
+
+
+--line  4.   RB MAP, 2013
+--num_words  5 --prob 0.1353352832366127 --label  Projects  --similarity :  0.3248055790157587
+
+-----token   4 X LS d
+-----token   . PUNCT . .
+-----token      SPACE _SP   
+-----token   RB PROPN NNP XX
+-----token   MAP PROPN NNP XXX
+-----token   , PUNCT , ,
+-----token   2013 NUM CD dddd
+
+
+--line  ● The application provides solutions for shortest routes and finding all routes between two cities.
+--num_words  15 --prob 2.7894680928689248e-11 --label  Projects  --similarity :  0.7338511746609013
+--------------TITLE---------------------
+
+-----token   ● PUNCT NFP ●
+-----token   The DET DT Xxx
+-----token   application NOUN NN xxxx
+-----token   provides VERB VBZ xxxx
+-----token   solutions NOUN NNS xxxx
+-----token   for ADP IN xxx
+-----token   shortest ADJ JJS xxxx
+-----token   routes NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   finding VERB VBG xxxx
+-----token   all DET DT xxx
+-----token   routes NOUN NNS xxxx
+-----token   between ADP IN xxxx
+-----token   two NUM CD xxx
+-----token   cities NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  ● Developed to learn the concepts of Dijkstra’s and Warshall’s algorithms and basics of data structures and
+--num_words  19 --prob 9.357622968840175e-14 --label  other  --similarity :  0
+
+-----token   ● PUNCT NFP ●
+-----token   Developed VERB VBN Xxxxx
+-----token   to PART TO xx
+-----token   learn VERB VB xxxx
+-----token   the DET DT xxx
+-----token   concepts NOUN NNS xxxx
+-----token   of ADP IN xx
+-----token   Dijkstra PROPN NNP Xxxxx
+-----token   ’s PART POS ’x
+-----token   and CCONJ CC xxx
+-----token   Warshall PROPN NNP Xxxxx
+-----token   ’s PART POS ’x
+-----token   algorithms NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   basics NOUN NNS xxxx
+-----token   of ADP IN xx
+-----token   data NOUN NN xxxx
+-----token   structures NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+
+
+--line  OOPs.
+--num_words  1 --prob 0.1 --label  Personal Details  --similarity :  0.21715297119904833
+
+-----token   OOPs NOUN NNS XXXx
+-----token   . PUNCT . .
+
+
+--line  ● The application, coded in C++ using the Visual Studio 2012 platform.
+--num_words  12 --prob 1.1253517471925913e-08 --label  Projects  --similarity :  0.6765251571923457
+
+-----token   ● PUNCT NFP ●
+-----token   The DET DT Xxx
+-----token   application NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   coded VERB VBN xxxx
+-----token   in ADP IN xx
+-----token   C++ PROPN NNP X++
+-----token   using VERB VBG xxxx
+-----token   the DET DT xxx
+-----token   Visual PROPN NNP Xxxxx
+-----token   Studio NOUN NN Xxxxx
+-----token   2012 NUM CD dddd
+-----token   platform NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ● Submitted as a summer project during MCA.
+--num_words  8 --prob 3.354626279025119e-05 --label  Projects  --similarity :  0.7289431934718122
+--------------TITLE---------------------
+
+-----token   ● PUNCT NFP ●
+-----token   Submitted VERB VBN Xxxxx
+-----token   as SCONJ IN xx
+-----token   a DET DT x
+-----token   summer NOUN NN xxxx
+-----token   project NOUN NN xxxx
+-----token   during ADP IN xxxx
+-----token   MCA PROPN NNP XXX
+-----token   . PUNCT . .
+
+
+--line  AREAS OF EXPERTISE
+--num_words  3 --prob 1 --label  Experience  --similarity :  0.7570721458161542
+--------------TITLE---------------------
+
+-----token   AREAS NOUN NNS XXXX
+-----token   OF ADP IN XX
+-----token   EXPERTISE NOUN NN XXXX
+
+
+--line  ● Knowledge of Web development framework AngularJS, Angular 2, Angular 5.
+--num_words  11 --prob 8.31528719103568e-08 --label  Projects  --similarity :  0.6589504176367583
+
+-----token   ● PUNCT NFP ●
+-----token   Knowledge NOUN NN Xxxxx
+-----token   of ADP IN xx
+-----token   Web NOUN NN Xxx
+-----token   development NOUN NN xxxx
+-----token   framework NOUN NN xxxx
+-----token   AngularJS PROPN NNP XxxxxXX
+-----token   , PUNCT , ,
+-----token   Angular PROPN NNP Xxxxx
+-----token   2 NUM CD d
+-----token   , PUNCT , ,
+-----token   Angular PROPN NNP Xxxxx
+-----token   5 NUM CD d
+-----token   . PUNCT . .
+
+
+--line  ● Knowledge of web technologies like HTML, JavaScript, ES6, TypeScript, LESS/CSS, Material Design, Bootstrap
+--num_words  15 --prob 2.7894680928689246e-10 --label  Projects  --similarity :  0.6501244441067326
+
+-----token   ● PUNCT NFP ●
+-----token   Knowledge NOUN NN Xxxxx
+-----token   of ADP IN xx
+-----token   web NOUN NN xxx
+-----token   technologies NOUN NNS xxxx
+-----token   like SCONJ IN xxxx
+-----token   HTML NOUN NN XXXX
+-----token   , PUNCT , ,
+-----token   JavaScript PROPN NNP XxxxXxxxx
+-----token   , PUNCT , ,
+-----token   ES6 PROPN NNP XXd
+-----token   , PUNCT , ,
+-----token   TypeScript PROPN NNP XxxxXxxxx
+-----token   , PUNCT , ,
+-----token   LESS ADJ JJR XXXX
+-----token   / SYM SYM /
+-----token   CSS PROPN NNP XXX
+-----token   , PUNCT , ,
+-----token   Material PROPN NNP Xxxxx
+-----token   Design PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Bootstrap VERB VB Xxxxx
+
+
+--line  ● Knowledge of GitHub and GIT version control system.
+--num_words  9 --prob 4.539992976248485e-06 --label  Projects  --similarity :  0.6065575552060319
+
+-----token   ● PUNCT NFP ●
+-----token   Knowledge NOUN NN Xxxxx
+-----token   of ADP IN xx
+-----token   GitHub PROPN NNP XxxXxx
+-----token   and CCONJ CC xxx
+-----token   GIT PROPN NNP XXX
+-----token   version NOUN NN xxxx
+-----token   control NOUN NN xxxx
+-----token   system NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ● Working Knowledge of Agile software development methodologies.
+--num_words  8 --prob 3.354626279025119e-05 --label  Skills  --similarity :  0.8210501006659364
+--------------TITLE---------------------
+
+-----token   ● PUNCT NFP ●
+-----token   Working PROPN NNP Xxxxx
+-----token   Knowledge PROPN NNP Xxxxx
+-----token   of ADP IN xx
+-----token   Agile PROPN NNP Xxxxx
+-----token   software NOUN NN xxxx
+-----token   development NOUN NN xxxx
+-----token   methodologies NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  ● Strong organizational and preparation skills.
+--num_words  6 --prob 0.001831563888873418 --label  Skills  --similarity :  0.7816460952700349
+--------------TITLE---------------------
+
+-----token   ● PUNCT NFP ●
+-----token   Strong ADJ JJ Xxxxx
+-----token   organizational ADJ JJ xxxx
+-----token   and CCONJ CC xxx
+-----token   preparation NOUN NN xxxx
+-----token   skills NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  EDUCATION
+--num_words  1 --prob 1 --label  Education  --similarity :  1.0
+--------------TITLE---------------------
+
+-----token   EDUCATION NOUN NN XXXX
+
+
+--line  Institute                                            Course                               Marks         Year of Passing
+--num_words  9 --prob 4.5399929762484854e-05 --label  Experience  --similarity :  0.7488131691133549
+--------------TITLE---------------------
+
+-----token   Institute PROPN NNP Xxxxx
+-----token                                               SPACE _SP     
+-----token   Course NOUN NN Xxxxx
+-----token                                  SPACE _SP     
+-----token   Marks PROPN NNP Xxxxx
+-----token            SPACE _SP     
+-----token   Year NOUN NN Xxxx
+-----token   of ADP IN xx
+-----token   Passing VERB VBG Xxxxx
+
+
+--line  GGSIPU, New Delhi                                    MCA                                  81%           2015
+--num_words  9 --prob 4.5399929762484854e-05 --label  other  --similarity :  0
+
+-----token   GGSIPU PROPN NNP XXXX
+-----token   , PUNCT , ,
+-----token   New PROPN NNP Xxx
+-----token   Delhi PROPN NNP Xxxxx
+-----token                                       SPACE _SP     
+-----token   MCA PROPN NNP XXX
+-----token                                     SPACE _SP     
+-----token   81 NUM CD dd
+-----token   % NOUN NN %
+-----token              SPACE _SP     
+-----token   2015 NUM CD dddd
+
+
+--line  Integral University, Lucknow (U.P.)                  BCA                                  70%           2011
+--num_words  10 --prob 6.14421235332821e-06 --label  Education  --similarity :  0.5674111740841585
+
+-----token   Integral PROPN NNP Xxxxx
+-----token   University PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Lucknow PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   U.P. PROPN NNP X.X.
+-----token   ) PUNCT -RRB- )
+-----token                     SPACE _SP     
+-----token   BCA PROPN NNP XXX
+-----token                                     SPACE _SP     
+-----token   70 NUM CD dd
+-----token   % NOUN NN %
+-----token              SPACE _SP     
+-----token   2011 NUM CD dddd
+
+
+--line  Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)          Class XII (CBSE) (Comp Sci.)         66%           2008
+--num_words  15 --prob 2.7894680928689246e-10 --label  other  --similarity :  0
+
+-----token   Jawahar PROPN NNP Xxxxx
+-----token   Navodaya PROPN NNP Xxxxx
+-----token   Vidyalaya PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Azamgarh PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   U.P. PROPN NNP X.X.
+-----token   ) PUNCT -RRB- )
+-----token             SPACE _SP     
+-----token   Class PROPN NNP Xxxxx
+-----token   XII PROPN NNP XXX
+-----token   ( PUNCT -LRB- (
+-----token   CBSE NOUN NN XXXX
+-----token   ) PUNCT -RRB- )
+-----token   ( PUNCT -LRB- (
+-----token   Comp PROPN NNP Xxxx
+-----token   Sci PROPN NNP Xxx
+-----token   . PUNCT . .
+-----token   ) PUNCT -RRB- )
+-----token            SPACE _SP     
+-----token   66 NUM CD dd
+-----token   % NOUN NN %
+-----token              SPACE _SP     
+-----token   2008 NUM CD dddd
+
+
+--line  Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)          Class X (CBSE)                       82%           2006
+--num_words  13 --prob 1.522997974471263e-08 --label  other  --similarity :  0
+
+-----token   Jawahar PROPN NNP Xxxxx
+-----token   Navodaya PROPN NNP Xxxxx
+-----token   Vidyalaya PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Azamgarh PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   U.P. PROPN NNP X.X.
+-----token   ) PUNCT -RRB- )
+-----token             SPACE _SP     
+-----token   Class NOUN NN Xxxxx
+-----token   X NOUN NN X
+-----token   ( PUNCT -LRB- (
+-----token   CBSE NOUN NN XXXX
+-----token   ) PUNCT -RRB- )
+-----token                          SPACE _SP     
+-----token   82 NUM CD dd
+-----token   % NOUN NN %
+-----token              SPACE _SP     
+-----token   2006 NUM CD dddd
+
+
+--line  EXTRA-CURRICULAR
+--num_words  2 --prob 1 --label  Extra curricular  --similarity :  1.0
+--------------TITLE---------------------
+
+-----token   EXTRA ADJ JJ XXXX
+-----token   - PUNCT HYPH -
+-----token   CURRICULAR NOUN NN XXXX
+
+
+--line  ● Updated website for NSC 2014 and INDIACOM 2014 during MCA.
+--num_words  11 --prob 8.31528719103568e-08 --label  other  --similarity :  0
+
+-----token   ● PUNCT NFP ●
+-----token   Updated VERB VBN Xxxxx
+-----token   website NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   NSC PROPN NNP XXX
+-----token   2014 NUM CD dddd
+-----token   and CCONJ CC xxx
+-----token   INDIACOM PROPN NNP XXXX
+-----token   2014 NUM CD dddd
+-----token   during ADP IN xxxx
+-----token   MCA PROPN NNP XXX
+-----token   . PUNCT . .
+
+
+--line  ● Perform updates and testing on LAN solution of INDIACOM Desktop Registration system during MCA.
+--num_words  15 --prob 2.7894680928689248e-11 --label  other  --similarity :  0
+
+-----token   ● PUNCT NFP ●
+-----token   Perform VERB VB Xxxxx
+-----token   updates NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   testing NOUN NN xxxx
+-----token   on ADP IN xx
+-----token   LAN PROPN NNP XXX
+-----token   solution NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   INDIACOM PROPN NNP XXXX
+-----token   Desktop PROPN NNP Xxxxx
+-----token   Registration PROPN NNP Xxxxx
+-----token   system NOUN NN xxxx
+-----token   during ADP IN xxxx
+-----token   MCA PROPN NNP XXX
+-----token   . PUNCT . .
+
+
+--line  ● Actively participated in technical and non-technical activities in college during MCA.
+--num_words  13 --prob 1.522997974471263e-09 --label  Extra curricular  --similarity :  0.7365854323860844
+--------------TITLE---------------------
+
+-----token   ● PUNCT NFP ●
+-----token   Actively ADV RB Xxxxx
+-----token   participated VERB VBD xxxx
+-----token   in ADP IN xx
+-----token   technical ADJ JJ xxxx
+-----token   and CCONJ CC xxx
+-----token   non ADJ JJ xxx
+-----token   - ADJ JJ -
+-----token   technical ADJ JJ xxxx
+-----token   activities NOUN NNS xxxx
+-----token   in ADP IN xx
+-----token   college NOUN NN xxxx
+-----token   during ADP IN xxxx
+-----token   MCA PROPN NNP XXX
+-----token   . PUNCT . .
+
+
+--line  ACHIEVEMENTS
+--num_words  1 --prob 1 --label  Qualifications  --similarity :  1.0
+--------------TITLE---------------------
+
+-----token   ACHIEVEMENTS NOUN NNS XXXX
+
+
+--line  ● Awarded for Technical Support Excellence in Batch by BVICAM (2015)
+--num_words  11 --prob 8.315287191035679e-07 --label  other  --similarity :  0
+
+-----token   ● PUNCT NFP ●
+-----token   Awarded VERB VBN Xxxxx
+-----token   for ADP IN xxx
+-----token   Technical PROPN NNP Xxxxx
+-----token   Support PROPN NNP Xxxxx
+-----token   Excellence PROPN NNP Xxxxx
+-----token   in ADP IN xx
+-----token   Batch PROPN NNP Xxxxx
+-----token   by ADP IN xx
+-----token   BVICAM PROPN NNP XXXX
+-----token   ( PUNCT -LRB- (
+-----token   2015 NUM CD dddd
+-----token   ) PUNCT -RRB- )
+
+
+--line  ● Secured 2nd position in IT Quiz organized by BVICAM (2013).
+--num_words  10 --prob 6.14421235332821e-07 --label  other  --similarity :  0
+
+-----token   ● PUNCT NFP ●
+-----token   Secured VERB VBN Xxxxx
+-----token   2nd ADJ JJ dxx
+-----token   position NOUN NN xxxx
+-----token   in ADP IN xx
+-----token   IT PROPN NNP XX
+-----token   Quiz PROPN NNP Xxxx
+-----token   organized VERB VBN xxxx
+-----token   by ADP IN xx
+-----token   BVICAM PROPN NNP XXXX
+-----token   ( PUNCT -LRB- (
+-----token   2013 NUM CD dddd
+-----token   ) PUNCT -RRB- )
+-----token   . PUNCT . .
+
+
+--line  ● Secured 2nd position in Structure Formation organized by UPTEC Computer Consultancy Limited (2009).
+--num_words  14 --prob 2.061153622438558e-10 --label  other  --similarity :  0
+
+-----token   ● PUNCT NFP ●
+-----token   Secured VERB VBN Xxxxx
+-----token   2nd ADJ JJ dxx
+-----token   position NOUN NN xxxx
+-----token   in ADP IN xx
+-----token   Structure PROPN NNP Xxxxx
+-----token   Formation PROPN NNP Xxxxx
+-----token   organized VERB VBN xxxx
+-----token   by ADP IN xx
+-----token   UPTEC PROPN NNP XXXX
+-----token   Computer PROPN NNP Xxxxx
+-----token   Consultancy PROPN NNP Xxxxx
+-----token   Limited PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   2009 NUM CD dddd
+-----token   ) PUNCT -RRB- )
+-----token   . PUNCT . .
+
+
+--line  PERSONAL DETAILS
+--num_words  2 --prob 1 --label  Personal Details  --similarity :  1.0
+--------------TITLE---------------------
+
+-----token   PERSONAL ADJ JJ XXXX
+-----token   DETAILS NOUN NNS XXXX
+
+
+--line  Father’s Name              :       Mr. Sushil Kumar Baranwal
+--num_words  9 --prob 4.5399929762484854e-05 --label  other  --similarity :  0
+
+-----token   Father PROPN NNP Xxxxx
+-----token   ’s PART POS ’x
+-----token   Name PROPN NNP Xxxx
+-----token                 SPACE _SP     
+-----token   : PUNCT : :
+-----token          SPACE _SP     
+-----token   Mr. PROPN NNP Xx.
+-----token   Sushil PROPN NNP Xxxxx
+-----token   Kumar PROPN NNP Xxxxx
+-----token   Baranwal PROPN NNP Xxxxx
+
+
+--line  Date of Birth              :       10-Sep-1990
+--num_words  6 --prob 0.01831563888873418 --label  other  --similarity :  0
+
+-----token   Date NOUN NN Xxxx
+-----token   of ADP IN xx
+-----token   Birth PROPN NNP Xxxxx
+-----token                 SPACE _SP     
+-----token   : PUNCT : :
+-----token          SPACE _SP     
+-----token   10-Sep-1990 PROPN NNP dd-Xxx-dddd
+
+
+--line  Languages Known            :       Hindi & English
+--num_words  6 --prob 0.01831563888873418 --label  Education  --similarity :  0.47279948581021647
+
+-----token   Languages NOUN NNS Xxxxx
+-----token   Known VERB VBN Xxxxx
+-----token               SPACE _SP     
+-----token   : PUNCT : :
+-----token          SPACE _SP     
+-----token   Hindi PROPN NNP Xxxxx
+-----token   & CCONJ CC &
+-----token   English PROPN NNP Xxxxx
+
+
+--line  Nationality                :       Indian
+--num_words  4 --prob 1 --label  Education  --similarity :  0.32266783963232354
+
+-----token   Nationality NOUN NN Xxxxx
+-----token                   SPACE _SP     
+-----token   : PUNCT : :
+-----token          SPACE _SP     
+-----token   Indian PROPN NNP Xxxxx
+
+
+--line  Alternate E-Mail ID        :       rajneeshbarnwal@rocketmail.com
+--num_words  7 --prob 0.0024787521766663585 --label  other  --similarity :  0
+
+-----token   Alternate ADJ JJ Xxxxx
+-----token   E PROPN NNP X
+-----token   - PROPN NNP -
+-----token   Mail PROPN NNP Xxxx
+-----token   ID PROPN NNP XX
+-----token           SPACE _SP     
+-----token   : PUNCT : :
+-----token          SPACE _SP     
+-----token   rajneeshbarnwal@rocketmail.com X ADD xxxx@xxxx.xxx
+
+
+--line  Marital Status             :       Married
+--num_words  5 --prob 0.1353352832366127 --label  Personal Details  --similarity :  0.46672639809940747
+
+-----token   Marital ADJ JJ Xxxxx
+-----token   Status PROPN NNP Xxxxx
+-----token                SPACE _SP     
+-----token   : PUNCT : :
+-----token          SPACE _SP     
+-----token   Married ADJ JJ Xxxxx
+
+
+--line  Strengths                  :       Quick Learner, Adoptable, Commitment Oriented
+--num_words  8 --prob 0.00033546262790251185 --label  Extra curricular  --similarity :  0.7045524317086459
+--------------TITLE---------------------
+
+-----token   Strengths NOUN NNS Xxxxx
+-----token                     SPACE _SP     
+-----token   : PUNCT : :
+-----token          SPACE _SP     
+-----token   Quick PROPN NNP Xxxxx
+-----token   Learner PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Adoptable ADJ JJ Xxxxx
+-----token   , PUNCT , ,
+-----token   Commitment PROPN NNP Xxxxx
+-----token   Oriented PROPN NNP Xxxxx
+
+
+{'OBJECTIVE': {'label': 'Objective', 'similarity': 1.0}, 'To associate with the reputed industry and work for the organization’s and personal growth and progress with my whole energy,': {'label': 'Experience', 'similarity': 0.7704912004191063}, 'PROFESSIONAL EXPERIENCE': {'label': 'Experience', 'similarity': 1.0}, 'PROJECTS UNDERTAKEN': {'label': 'Projects', 'similarity': 1.0}, '● Working as UI developer for this project': {'label': 'Projects', 'similarity': 0.805908314348853}, '● Involved from planning phase till development code.': {'label': 'Projects', 'similarity': 0.7276644746349168}, '● Worked as a UI developer for this project.': {'label': 'Projects', 'similarity': 0.7986604712613482}, '● The application provides solutions for shortest routes and finding all routes between two cities.': {'label': 'Projects', 'similarity': 0.7338511746609013}, '● Submitted as a summer project during MCA.': {'label': 'Projects', 'similarity': 0.7289431934718122}, 'AREAS OF EXPERTISE': {'label': 'Experience', 'similarity': 0.7570721458161542}, '● Working Knowledge of Agile software development methodologies.': {'label': 'Skills', 'similarity': 0.8210501006659364}, '● Strong organizational and preparation skills.': {'label': 'Skills', 'similarity': 0.7816460952700349}, 'EDUCATION': {'label': 'Education', 'similarity': 1.0}, 'Institute                                            Course                               Marks         Year of Passing': {'label': 'Experience', 'similarity': 0.7488131691133549}, 'EXTRA-CURRICULAR': {'label': 'Extra curricular', 'similarity': 1.0}, '● Actively participated in technical and non-technical activities in college during MCA.': {'label': 'Extra curricular', 'similarity': 0.7365854323860844}, 'ACHIEVEMENTS': {'label': 'Qualifications', 'similarity': 1.0}, 'PERSONAL DETAILS': {'label': 'Personal Details', 'similarity': 1.0}, 'Strengths                  :       Quick Learner, Adoptable, Commitment Oriented': {'label': 'Extra curricular', 'similarity': 0.7045524317086459}}
+Personal Details 	 RAJNEESH KUMAR BARNWAL
+Personal Details 	 Address:                                                                          Contact No: 07042488448 / 07503075418
+Personal Details 	 G-Block, Greenwood City                                                               E-mail: rajneeshbarnwal@gmail.com
+Personal Details 	 Sector-40, Gurgaon
+Personal Details 	 Haryana - 122003
+Objective 	 OBJECTIVE
+Experience 	 To associate with the reputed industry and work for the organization’s and personal growth and progress with my whole energy,
+Experience 	 knowledge, dedication and sincere efforts.
+Experience 	 PROFESSIONAL EXPERIENCE
+Experience 	 ●    Working as Software Engineer with Aricent Technologies, Gurgaon since June 2016.
+Experience 	 ●    Did Internship from Aricent Technologies, Gurgaon from Jan 2015 to June 2015.
+Projects 	 PROJECTS UNDERTAKEN
+Projects 	 1.   GUI based Network Monitoring System, Since Jan 2017
+Projects 	 ● Working as UI developer for this project
+Projects 	 ● Coding is being done in AngularJS with Bootstrap, HTML and less/css.
+Projects 	 ● Implemented graphical representation of Networking devices using Cytoscape JS.
+Projects 	 ● Involved from planning phase till development code.
+Projects 	 2.   GUI based Network Monitoring System, June 2016 – Dec 2017
+Projects 	 ● Worked as a UI developer for this project.
+Projects 	 ● Coding was done in AngularJS with Material Design, HTML and less/css.
+Projects 	 ● Implemented various widgets using Ui-Grid, Cytoscape JS.
+Projects 	 ● Did coding, unit testing, and automation testing with AngularJS, karma, and selenium frameworks.
+Projects 	 3.   Industrial Automation
+Projects 	 ● Worked on this project on behalf of my internship training at Aricent Technologies, Gurgaon.
+Projects 	 ● Worked on module implementation of Modbus Protocol.
+Projects 	 ● Also worked with BeagleBone Device and RPM Sensors.
+Projects 	 ● Used Core Java and JNI implementation with C/C++.
+Projects 	 4.   RB MAP, 2013
+Projects 	 ● The application provides solutions for shortest routes and finding all routes between two cities.
+Projects 	 ● Developed to learn the concepts of Dijkstra’s and Warshall’s algorithms and basics of data structures and
+Projects 	 OOPs.
+Projects 	 ● The application, coded in C++ using the Visual Studio 2012 platform.
+Projects 	 ● Submitted as a summer project during MCA.
+Experience 	 AREAS OF EXPERTISE
+Experience 	 ● Knowledge of Web development framework AngularJS, Angular 2, Angular 5.
+Experience 	 ● Knowledge of web technologies like HTML, JavaScript, ES6, TypeScript, LESS/CSS, Material Design, Bootstrap
+Experience 	 ● Knowledge of GitHub and GIT version control system.
+Skills 	 ● Working Knowledge of Agile software development methodologies.
+Skills 	 ● Strong organizational and preparation skills.
+Education 	 EDUCATION
+Experience 	 Institute                                            Course                               Marks         Year of Passing
+Experience 	 GGSIPU, New Delhi                                    MCA                                  81%           2015
+Experience 	 Integral University, Lucknow (U.P.)                  BCA                                  70%           2011
+Experience 	 Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)          Class XII (CBSE) (Comp Sci.)         66%           2008
+Experience 	 Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)          Class X (CBSE)                       82%           2006
+Extra curricular 	 EXTRA-CURRICULAR
+Extra curricular 	 ● Updated website for NSC 2014 and INDIACOM 2014 during MCA.
+Extra curricular 	 ● Perform updates and testing on LAN solution of INDIACOM Desktop Registration system during MCA.
+Extra curricular 	 ● Actively participated in technical and non-technical activities in college during MCA.
+Qualifications 	 ACHIEVEMENTS
+Qualifications 	 ● Awarded for Technical Support Excellence in Batch by BVICAM (2015)
+Qualifications 	 ● Secured 2nd position in IT Quiz organized by BVICAM (2013).
+Qualifications 	 ● Secured 2nd position in Structure Formation organized by UPTEC Computer Consultancy Limited (2009).
+Personal Details 	 PERSONAL DETAILS
+Personal Details 	 Father’s Name              :       Mr. Sushil Kumar Baranwal
+Personal Details 	 Date of Birth              :       10-Sep-1990
+Personal Details 	 Languages Known            :       Hindi & English
+Personal Details 	 Nationality                :       Indian
+Personal Details 	 Alternate E-Mail ID        :       rajneeshbarnwal@rocketmail.com
+Personal Details 	 Marital Status             :       Married
+Extra curricular 	 Strengths                  :       Quick Learner, Adoptable, Commitment Oriented
+RAJNEESH KUMAR BARNWAL
+Address:                                                                          Contact No: 07042488448 / 07503075418
+G-Block, Greenwood City                                                               E-mail: rajneeshbarnwal@gmail.com
+Sector-40, Gurgaon
+Haryana - 122003
+To associate with the reputed industry and work for the organization’s and personal growth and progress with my whole energy,
+knowledge, dedication and sincere efforts.
+PROFESSIONAL EXPERIENCE
+●    Working as Software Engineer with Aricent Technologies, Gurgaon since June 2016.
+●    Did Internship from Aricent Technologies, Gurgaon from Jan 2015 to June 2015.
+PROJECTS UNDERTAKEN
+1.   GUI based Network Monitoring System, Since Jan 2017
+● Working as UI developer for this project
+● Coding is being done in AngularJS with Bootstrap, HTML and less/css.
+● Implemented graphical representation of Networking devices using Cytoscape JS.
+● Involved from planning phase till development code.
+2.   GUI based Network Monitoring System, June 2016 – Dec 2017
+● Worked as a UI developer for this project.
+● Coding was done in AngularJS with Material Design, HTML and less/css.
+● Implemented various widgets using Ui-Grid, Cytoscape JS.
+● Did coding, unit testing, and automation testing with AngularJS, karma, and selenium frameworks.
+3.   Industrial Automation
+● Worked on this project on behalf of my internship training at Aricent Technologies, Gurgaon.
+● Worked on module implementation of Modbus Protocol.
+● Also worked with BeagleBone Device and RPM Sensors.
+● Used Core Java and JNI implementation with C/C++.
+4.   RB MAP, 2013
+● The application provides solutions for shortest routes and finding all routes between two cities.
+● Developed to learn the concepts of Dijkstra’s and Warshall’s algorithms and basics of data structures and
+● The application, coded in C++ using the Visual Studio 2012 platform.
+● Submitted as a summer project during MCA.
+AREAS OF EXPERTISE
+● Knowledge of Web development framework AngularJS, Angular 2, Angular 5.
+● Knowledge of web technologies like HTML, JavaScript, ES6, TypeScript, LESS/CSS, Material Design, Bootstrap
+● Knowledge of GitHub and GIT version control system.
+● Working Knowledge of Agile software development methodologies.
+● Strong organizational and preparation skills.
+Institute                                            Course                               Marks         Year of Passing
+GGSIPU, New Delhi                                    MCA                                  81%           2015
+Integral University, Lucknow (U.P.)                  BCA                                  70%           2011
+Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)          Class XII (CBSE) (Comp Sci.)         66%           2008
+Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)          Class X (CBSE)                       82%           2006
+EXTRA-CURRICULAR
+● Updated website for NSC 2014 and INDIACOM 2014 during MCA.
+● Perform updates and testing on LAN solution of INDIACOM Desktop Registration system during MCA.
+● Actively participated in technical and non-technical activities in college during MCA.
+ACHIEVEMENTS
+● Awarded for Technical Support Excellence in Batch by BVICAM (2015)
+● Secured 2nd position in IT Quiz organized by BVICAM (2013).
+● Secured 2nd position in Structure Formation organized by UPTEC Computer Consultancy Limited (2009).
+PERSONAL DETAILS
+Father’s Name              :       Mr. Sushil Kumar Baranwal
+Date of Birth              :       10-Sep-1990
+Languages Known            :       Hindi & English
+Nationality                :       Indian
+Alternate E-Mail ID        :       rajneeshbarnwal@rocketmail.com
+Marital Status             :       Married
+Strengths                  :       Quick Learner, Adoptable, Commitment Oriented
+name: Quick Learner
+email: rajneeshbarnwal@rocketmail.com
+mobile: +07042488448
+expertise: ledge, dedication and sincere efforts.
+expertise: loper for this project
+expertise: lopment code.
+expertise: loper for this project.
+expertise: ed core java and jni implementation with c/c++.
+expertise: loped to learn the concepts of dijkstra’s and warshall’s algorithms and basics of data structures and
+expertise: ledge of web development framework angularjs, angular 2, angular 5.
+expertise: ledge of web technologies like html, javascript, es6, typescript, less/css, material design, bootstrap
+expertise: ledge of github and git version control system.
+expertise: ledge of agile software development methodologies.
+expertise: (u.p.)                  bca                                  70%           2011
+expertise: n                   hindi & english
+++++++++++++++++++++++++++++++++++++++++++
+parsing file:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/iimjobs_BHARAT_BORANA.pdf
+--line  BHARAT BORANA                                                                                      WZ-433, Shiv nagar,
+--num_words  6 --prob 0.01831563888873418 --label  other  --similarity :  0
+
+-----token   BHARAT PROPN NNP XXXX
+-----token   BORANA PROPN NNP XXXX
+-----token                                                                                         SPACE _SP     
+-----token   WZ-433 PROPN NNP XX-ddd
+-----token   , PUNCT , ,
+-----token   Shiv PROPN NNP Xxxx
+-----token   nagar PROPN NNP xxxx
+-----token   , PUNCT , ,
+
+
+--line  Senior Software Engineer,                                                                Tihar Jail Road, Delhi, 110058
+--num_words  9 --prob 4.5399929762484854e-05 --label  other  --similarity :  0
+
+-----token   Senior PROPN NNP Xxxxx
+-----token   Software PROPN NNP Xxxxx
+-----token   Engineer PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token                                                                   SPACE _SP     
+-----token   Tihar PROPN NNP Xxxxx
+-----token   Jail PROPN NNP Xxxx
+-----token   Road PROPN NNP Xxxx
+-----token   , PUNCT , ,
+-----token   Delhi PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   110058 NUM CD dddd
+
+
+--line  Appster LLP, Gurugram, Haryana                                                               boranab@rediffmail.com
+--num_words  6 --prob 0.01831563888873418 --label  other  --similarity :  0
+
+-----token   Appster PROPN NNP Xxxxx
+-----token   LLP PROPN NNP XXX
+-----token   , PUNCT , ,
+-----token   Gurugram PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Haryana PROPN NNP Xxxxx
+-----token                                                                  SPACE _SP     
+-----token   boranab@rediffmail.com X ADD xxxx@xxxx.xxx
+
+
+--line  ➢   Experienced full stack developer with various web development framework expertise.
+--num_words  12 --prob 1.1253517471925913e-08 --label  Experience  --similarity :  0.7721148147581652
+--------------TITLE---------------------
+
+-----token   ➢ INTJ UH ➢
+-----token      SPACE _SP   
+-----token   Experienced VERB VBD Xxxxx
+-----token   full ADJ JJ xxxx
+-----token   stack NOUN NN xxxx
+-----token   developer NOUN NN xxxx
+-----token   with ADP IN xxxx
+-----token   various ADJ JJ xxxx
+-----token   web NOUN NN xxx
+-----token   development NOUN NN xxxx
+-----token   framework NOUN NN xxxx
+-----token   expertise NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢   Over five years of commercial web and restful application development experience.
+--num_words  13 --prob 1.522997974471263e-09 --label  Experience  --similarity :  0.7870799985862772
+--------------TITLE---------------------
+
+-----token   ➢ INTJ UH ➢
+-----token      SPACE _SP   
+-----token   Over ADP IN Xxxx
+-----token   five NUM CD xxxx
+-----token   years NOUN NNS xxxx
+-----token   of ADP IN xx
+-----token   commercial ADJ JJ xxxx
+-----token   web NOUN NN xxx
+-----token   and CCONJ CC xxx
+-----token   restful ADJ JJ xxxx
+-----token   application NOUN NN xxxx
+-----token   development NOUN NN xxxx
+-----token   experience NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢   Experience working in Agile Scrum environment and project management.
+--num_words  11 --prob 8.31528719103568e-08 --label  Experience  --similarity :  0.8320110267463866
+--------------TITLE---------------------
+
+-----token   ➢ INTJ UH ➢
+-----token      SPACE _SP   
+-----token   Experience NOUN NN Xxxxx
+-----token   working VERB VBG xxxx
+-----token   in ADP IN xx
+-----token   Agile PROPN NNP Xxxxx
+-----token   Scrum PROPN NNP Xxxxx
+-----token   environment NOUN NN xxxx
+-----token   and CCONJ CC xxx
+-----token   project NOUN NN xxxx
+-----token   management NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢   Web Development Frameworks: Laravel, CakePHP, NodeJs With Express.
+--num_words  10 --prob 6.14421235332821e-07 --label  Projects  --similarity :  0.6314786347210027
+
+-----token   ➢ INTJ UH ➢
+-----token      SPACE _SP   
+-----token   Web PROPN NNP Xxx
+-----token   Development PROPN NNP Xxxxx
+-----token   Frameworks PROPN NNPS Xxxxx
+-----token   : PUNCT : :
+-----token   Laravel PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   CakePHP PROPN NNP XxxxXXX
+-----token   , PUNCT , ,
+-----token   NodeJs PROPN NNP XxxxXx
+-----token   With ADP IN Xxxx
+-----token   Express PROPN NNP Xxxxx
+-----token   . PUNCT . .
+
+
+--line  ➢   UI Frameworks/Technologies: HTML5, CSS3, jQuery, Angular JS.
+--num_words  10 --prob 6.14421235332821e-07 --label  Projects  --similarity :  0.34804988923989694
+
+-----token   ➢ X XX ➢
+-----token      SPACE _SP   
+-----token   UI PROPN NNP XX
+-----token   Frameworks PROPN NNP Xxxxx
+-----token   / SYM SYM /
+-----token   Technologies PROPN NNPS Xxxxx
+-----token   : PUNCT : :
+-----token   HTML5 PROPN NNP XXXXd
+-----token   , PUNCT , ,
+-----token   CSS3 PROPN NNP XXXd
+-----token   , PUNCT , ,
+-----token   jQuery PROPN NNP xXxxxx
+-----token   , PUNCT , ,
+-----token   Angular PROPN NNP Xxxxx
+-----token   JS PROPN NNP XX
+-----token   . PUNCT . .
+
+
+--line  ➢   Databases: MySQL and MongoDB
+--num_words  6 --prob 0.01831563888873418 --label  Projects  --similarity :  0.4376013090095108
+
+-----token   ➢ INTJ UH ➢
+-----token      SPACE _SP   
+-----token   Databases NOUN NNS Xxxxx
+-----token   : PUNCT : :
+-----token   MySQL PROPN NNP XxXXX
+-----token   and CCONJ CC xxx
+-----token   MongoDB PROPN NNP XxxxxXX
+
+
+--line  ➢   Other tools: Bitbucket for version control, JIRA, ZOHO, ASANA for task management, AWS EC2 for hosting
+--num_words  18 --prob 6.914400106940203e-13 --label  Projects  --similarity :  0.6213268023916685
+
+-----token   ➢ INTJ UH ➢
+-----token      SPACE _SP   
+-----token   Other ADJ JJ Xxxxx
+-----token   tools NOUN NNS xxxx
+-----token   : PUNCT : :
+-----token   Bitbucket PROPN NNP Xxxxx
+-----token   for ADP IN xxx
+-----token   version NOUN NN xxxx
+-----token   control NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   JIRA PROPN NNP XXXX
+-----token   , PUNCT , ,
+-----token   ZOHO PROPN NNP XXXX
+-----token   , PUNCT , ,
+-----token   ASANA PROPN NNP XXXX
+-----token   for ADP IN xxx
+-----token   task NOUN NN xxxx
+-----token   management NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   AWS PROPN NNP XXX
+-----token   EC2 PROPN NNP XXd
+-----token   for ADP IN xxx
+-----token   hosting VERB VBG xxxx
+
+
+--line  services, AWS S3 for image hosting
+--num_words  6 --prob 0.01831563888873418 --label  Projects  --similarity :  0.4659786570936874
+
+-----token   services NOUN NNS xxxx
+-----token   , PUNCT , ,
+-----token   AWS PROPN NNP XXX
+-----token   S3 NOUN NN Xd
+-----token   for ADP IN xxx
+-----token   image NOUN NN xxxx
+-----token   hosting VERB VBG xxxx
+
+
+--line  Education:
+--num_words  1 --prob 1 --label  Education  --similarity :  1.0
+--------------TITLE---------------------
+
+-----token   Education NOUN NN Xxxxx
+-----token   : PUNCT : :
+
+
+--line  ●   Rajasthan Technical University,Kota, Rajasthan                                                 2009/08 - 2012/07
+--num_words  10 --prob 6.14421235332821e-06 --label  other  --similarity :  0
+
+-----token   ● PUNCT NFP ●
+-----token      SPACE _SP   
+-----token   Rajasthan PROPN NNP Xxxxx
+-----token   Technical PROPN NNP Xxxxx
+-----token   University PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Kota PROPN NNP Xxxx
+-----token   , PUNCT , ,
+-----token   Rajasthan PROPN NNP Xxxxx
+-----token                                                    SPACE _SP     
+-----token   2009/08 NUM CD dddd/dd
+-----token   - SYM SYM -
+-----token   2012/07 NUM CD dddd/dd
+
+
+--line  Bachelor of Technology, Computer Science and Technology (Agg. 70.3)
+--num_words  9 --prob 4.5399929762484854e-05 --label  Experience  --similarity :  0.637034022823607
+
+-----token   Bachelor NOUN NN Xxxxx
+-----token   of ADP IN xx
+-----token   Technology PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Computer PROPN NNP Xxxxx
+-----token   Science PROPN NNP Xxxxx
+-----token   and CCONJ CC xxx
+-----token   Technology PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   Agg PROPN NNP Xxx
+-----token   . PUNCT . .
+-----token   70.3 NUM CD dd.d
+-----token   ) PUNCT -RRB- )
+
+
+--line  ●   Government Polytechnic College, Jodhpur, Rajasthan                                            2006/06 – 2009/07
+--num_words  10 --prob 6.14421235332821e-06 --label  other  --similarity :  0
+
+-----token   ● PUNCT NFP ●
+-----token      SPACE _SP   
+-----token   Government PROPN NNP Xxxxx
+-----token   Polytechnic PROPN NNP Xxxxx
+-----token   College PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Jodhpur PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   Rajasthan PROPN NNP Xxxxx
+-----token                                               SPACE _SP     
+-----token   2006/06 NUM CD dddd/dd
+-----token   – PUNCT : –
+-----token   2009/07 NUM CD dddd/dd
+
+
+--line  3 years Diploma in Computer Science (Agg. 70.8)
+--num_words  8 --prob 0.00033546262790251185 --label  Qualifications  --similarity :  0.5989131279388102
+
+-----token   3 NUM CD d
+-----token   years NOUN NNS xxxx
+-----token   Diploma PROPN NNP Xxxxx
+-----token   in ADP IN xx
+-----token   Computer PROPN NNP Xxxxx
+-----token   Science PROPN NNP Xxxxx
+-----token   ( PUNCT -LRB- (
+-----token   Agg PROPN NNP Xxx
+-----token   . PUNCT . .
+-----token   70.8 NUM CD dd.d
+-----token   ) PUNCT -RRB- )
+
+
+--line  Work Experience:
+--num_words  2 --prob 1 --label  Experience  --similarity :  1.0
+--------------TITLE---------------------
+
+-----token   Work NOUN NN Xxxx
+-----token   Experience NOUN NN Xxxxx
+-----token   : PUNCT : :
+
+
+--line  1. Senior Software Engineer                                                                  2016/12 - Present
+--num_words  7 --prob 0.0024787521766663585 --label  other  --similarity :  0
+
+-----token   1 X LS d
+-----token   . PUNCT . .
+-----token   Senior PROPN NNP Xxxxx
+-----token   Software PROPN NNP Xxxxx
+-----token   Engineer PROPN NNP Xxxxx
+-----token                                                                     SPACE _SP     
+-----token   2016/12 NUM CD dddd/dd
+-----token   - PUNCT HYPH -
+-----token   Present ADJ JJ Xxxxx
+
+
+--line  ➢ Appster LLC, Gurugram
+--num_words  4 --prob 1 --label  other  --similarity :  0
+
+-----token   ➢ PROPN NNP ➢
+-----token   Appster PROPN NNP Xxxxx
+-----token   LLC PROPN NNP XXX
+-----token   , PUNCT , ,
+-----token   Gurugram PROPN NNP Xxxxx
+
+
+--line  ➢ Developing restful apis using Laravel framework for mobile team. Live chat implementation using NodeJs
+--num_words  15 --prob 2.7894680928689246e-10 --label  Projects  --similarity :  0.684911144870656
+
+-----token   ➢ X XX ➢
+-----token   Developing VERB VBG Xxxxx
+-----token   restful ADJ JJ xxxx
+-----token   apis NOUN NN xxxx
+-----token   using VERB VBG xxxx
+-----token   Laravel PROPN NNP Xxxxx
+-----token   framework NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   mobile ADJ JJ xxxx
+-----token   team NOUN NN xxxx
+-----token   . PUNCT . .
+-----token   Live ADJ JJ Xxxx
+-----token   chat NOUN NN xxxx
+-----token   implementation NOUN NN xxxx
+-----token   using VERB VBG xxxx
+-----token   NodeJs PROPN NNP XxxxXx
+
+
+--line  socket and Express.
+--num_words  3 --prob 0.1 --label  Personal Details  --similarity :  0.5120008165106192
+
+-----token   socket PROPN NNP xxxx
+-----token   and CCONJ CC xxx
+-----token   Express PROPN NNP Xxxxx
+-----token   . PUNCT . .
+
+
+--line  ➢ Database design process in sprint-0, Code review process for assigned projects
+--num_words  12 --prob 1.1253517471925912e-07 --label  other  --similarity :  0
+
+-----token   ➢ INTJ UH ➢
+-----token   Database NOUN NN Xxxxx
+-----token   design NOUN NN xxxx
+-----token   process NOUN NN xxxx
+-----token   in ADP IN xx
+-----token   sprint-0 PROPN NNP xxxx-d
+-----token   , PUNCT , ,
+-----token   Code NOUN NN Xxxx
+-----token   review NOUN NN xxxx
+-----token   process NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   assigned VERB VBN xxxx
+-----token   projects NOUN NNS xxxx
+
+
+--line  ➢ Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.
+--num_words  19 --prob 9.357622968840175e-15 --label  Projects  --similarity :  0.8010349221653591
+--------------TITLE---------------------
+
+-----token   ➢ INTJ UH ➢
+-----token   Design VERB VB Xxxxx
+-----token   and CCONJ CC xxx
+-----token   develop VERB VB xxxx
+-----token   template NOUN NN xxxx
+-----token   admin NOUN NN xxxx
+-----token   panel NOUN NN xxxx
+-----token   CMS PROPN NNP XXX
+-----token   using VERB VBG xxxx
+-----token   AngularJs PROPN NNP XxxxxXx
+-----token   2 NUM CD d
+-----token   which DET WDT xxxx
+-----token   is AUX VBZ xx
+-----token   later ADV RB xxxx
+-----token   on ADP IN xx
+-----token   reused VERB VBN xxxx
+-----token   in ADP IN xx
+-----token   other ADJ JJ xxxx
+-----token   projects NOUN NNS xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢ Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI
+--num_words  17 --prob 5.109089028063325e-12 --label  Projects  --similarity :  0.732824263158852
+--------------TITLE---------------------
+
+-----token   ➢ INTJ UH ➢
+-----token   Worked VERB VBD Xxxxx
+-----token   for ADP IN xxx
+-----token   one NUM CD xxx
+-----token   of ADP IN xx
+-----token   the DET DT xxx
+-----token   enterprise NOUN NN xxxx
+-----token   client NOUN NN xxxx
+-----token   Pelican PROPN NNP Xxxxx
+-----token   Auto PROPN NNP Xxxx
+-----token   Finance PROPN NNP Xxxxx
+-----token   . PUNCT . .
+-----token   We PRON PRP Xx
+-----token   have AUX VBP xxxx
+-----token   developed VERB VBN xxxx
+-----token   Payment PROPN NNP Xxxxx
+-----token   gateway NOUN NN xxxx
+-----token   with ADP IN xxxx
+-----token   PCI NOUN NN XXX
+
+
+--line  2 certification.
+--num_words  2 --prob 0.1 --label  Qualifications  --similarity :  0.8348150019568967
+--------------TITLE---------------------
+
+-----token   2 NUM CD d
+-----token   certification NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  2. Senior Software Engineer                                                                   2014/12 - 2016/11
+--num_words  7 --prob 0.0024787521766663585 --label  other  --similarity :  0
+
+-----token   2 X LS d
+-----token   . PUNCT . .
+-----token   Senior PROPN NNP Xxxxx
+-----token   Software PROPN NNP Xxxxx
+-----token   Engineer PROPN NNP Xxxxx
+-----token                                                                      SPACE _SP     
+-----token   2014/12 NUM CD dddd/dd
+-----token   - PUNCT : -
+-----token   2016/11 NUM CD dddd/dd
+
+
+--line  ➢ Xicom Technologies, New Delhi
+--num_words  5 --prob 0.1353352832366127 --label  other  --similarity :  0
+
+-----token   ➢ INTJ UH ➢
+-----token   Xicom PROPN NNP Xxxxx
+-----token   Technologies PROPN NNPS Xxxxx
+-----token   , PUNCT , ,
+-----token   New PROPN NNP Xxx
+-----token   Delhi PROPN NNP Xxxxx
+
+
+--line  ➢ Lead a team of two junior developers where my roles are to check if proper coding standard is followed.
+--num_words  19 --prob 9.357622968840175e-15 --label  Projects  --similarity :  0.7383218924257714
+--------------TITLE---------------------
+
+-----token   ➢ INTJ UH ➢
+-----token   Lead VERB VB Xxxx
+-----token   a DET DT x
+-----token   team NOUN NN xxxx
+-----token   of ADP IN xx
+-----token   two NUM CD xxx
+-----token   junior ADJ JJ xxxx
+-----token   developers NOUN NNS xxxx
+-----token   where ADV WRB xxxx
+-----token   my DET PRP$ xx
+-----token   roles NOUN NNS xxxx
+-----token   are AUX VBP xxx
+-----token   to PART TO xx
+-----token   check VERB VB xxxx
+-----token   if SCONJ IN xx
+-----token   proper ADJ JJ xxxx
+-----token   coding VERB VBG xxxx
+-----token   standard NOUN NN xxxx
+-----token   is AUX VBZ xx
+-----token   followed VERB VBN xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢ My roles are developing restful apis, developing web applications with high scalability.
+--num_words  12 --prob 1.1253517471925913e-08 --label  Experience  --similarity :  0.729848069110626
+--------------TITLE---------------------
+
+-----token   ➢ PUNCT `` ➢
+-----token   My DET PRP$ Xx
+-----token   roles NOUN NNS xxxx
+-----token   are AUX VBP xxx
+-----token   developing VERB VBG xxxx
+-----token   restful ADJ JJ xxxx
+-----token   apis NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   developing VERB VBG xxxx
+-----token   web NOUN NN xxx
+-----token   applications NOUN NNS xxxx
+-----token   with ADP IN xxxx
+-----token   high ADJ JJ xxxx
+-----token   scalability NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  3. Software Engineer - Level I                                                                2012/10 - 2014/11
+--num_words  8 --prob 0.00033546262790251185 --label  other  --similarity :  0
+
+-----token   3 X LS d
+-----token   . PUNCT . .
+-----token   Software PROPN NNP Xxxxx
+-----token   Engineer PROPN NNP Xxxxx
+-----token   - PUNCT HYPH -
+-----token   Level PROPN NNP Xxxxx
+-----token   I NOUN NN X
+-----token                                                                   SPACE _SP     
+-----token   2012/10 NUM CD dddd/dd
+-----token   - PUNCT HYPH -
+-----token   2014/11 NUM CD dddd/dd
+
+
+--line  ➢ C.G.Technosoft, Jodhpur
+--num_words  3 --prob 1 --label  other  --similarity :  0
+
+-----token   ➢ INTJ UH ➢
+-----token   C.G.Technosoft PROPN NNP X.X.Xxxxx
+-----token   , PUNCT , ,
+-----token   Jodhpur PROPN NNP Xxxxx
+
+
+--line  ➢ Started my career as trainee at this organization. My roles is to understand web application development
+--num_words  15 --prob 2.7894680928689246e-10 --label  Experience  --similarity :  0.7764132296479026
+--------------TITLE---------------------
+
+-----token   ➢ INTJ UH ➢
+-----token   Started VERB VBD Xxxxx
+-----token   my DET PRP$ xx
+-----token   career NOUN NN xxxx
+-----token   as SCONJ IN xx
+-----token   trainee NOUN NN xxxx
+-----token   at ADP IN xx
+-----token   this DET DT xxxx
+-----token   organization NOUN NN xxxx
+-----token   . PUNCT . .
+-----token   My DET PRP$ Xx
+-----token   roles NOUN NNS xxxx
+-----token   is AUX VBZ xx
+-----token   to PART TO xx
+-----token   understand VERB VB xxxx
+-----token   web NOUN NN xxx
+-----token   application NOUN NN xxxx
+-----token   development NOUN NN xxxx
+
+
+--line  using Cakephp 2.0 framework.
+--num_words  4 --prob 0.1 --label  Projects  --similarity :  0.4946805854090801
+
+-----token   using VERB VBG xxxx
+-----token   Cakephp PROPN NNP Xxxxx
+-----token   2.0 NUM CD d.d
+-----token   framework NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  Key Projects:
+--num_words  2 --prob 1 --label  Projects  --similarity :  1.0
+--------------TITLE---------------------
+
+-----token   Key ADJ JJ Xxx
+-----token   Projects NOUN NNS Xxxxx
+-----token   : PUNCT : :
+
+
+--line  1. Pelican Auto Finance Powered by Payix
+--num_words  7 --prob 0.0024787521766663585 --label  other  --similarity :  0
+
+-----token   1 X LS d
+-----token   . PUNCT . .
+-----token   Pelican PROPN NNP Xxxxx
+-----token   Auto PROPN NNP Xxxx
+-----token   Finance PROPN NNP Xxxxx
+-----token   Powered PROPN NNP Xxxxx
+-----token   by ADP IN xx
+-----token   Payix PROPN NNP Xxxxx
+
+
+--line  ➢ Payix provides state-of-the-art collections tools, payment processing resources and business intelligence
+--num_words  15 --prob 2.7894680928689246e-10 --label  other  --similarity :  0
+
+-----token   ➢ INTJ UH ➢
+-----token   Payix PROPN NNP Xxxxx
+-----token   provides VERB VBZ xxxx
+-----token   state NOUN NN xxxx
+-----token   - PUNCT HYPH -
+-----token   of ADP IN xx
+-----token   - PUNCT HYPH -
+-----token   the DET DT xxx
+-----token   - PUNCT HYPH -
+-----token   art NOUN NN xxx
+-----token   collections NOUN NNS xxxx
+-----token   tools NOUN NNS xxxx
+-----token   , PUNCT , ,
+-----token   payment NOUN NN xxxx
+-----token   processing NOUN NN xxxx
+-----token   resources NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   business NOUN NN xxxx
+-----token   intelligence NOUN NN xxxx
+
+
+--line  solutions to U.S. lenders and auto dealers. Offering real-time loan management system (LMS) integration.
+--num_words  15 --prob 2.7894680928689248e-11 --label  Personal Details  --similarity :  0.6856447117956502
+
+-----token   solutions NOUN NNS xxxx
+-----token   to ADP IN xx
+-----token   U.S. PROPN NNP X.X.
+-----token   lenders NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   auto NOUN NN xxxx
+-----token   dealers NOUN NNS xxxx
+-----token   . PUNCT . .
+-----token   Offering VERB VBG Xxxxx
+-----token   real ADJ JJ xxxx
+-----token   - PUNCT HYPH -
+-----token   time NOUN NN xxxx
+-----token   loan NOUN NN xxxx
+-----token   management NOUN NN xxxx
+-----token   system NOUN NN xxxx
+-----token   ( PUNCT -LRB- (
+-----token   LMS PROPN NNP XXX
+-----token   ) PUNCT -RRB- )
+-----token   integration NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢ Pelican Auto Finance, LLC’s senior management team has over 100 years of experience collectively in
+--num_words  17 --prob 5.109089028063325e-12 --label  Experience  --similarity :  0.7236886132347311
+--------------TITLE---------------------
+
+-----token   ➢ INTJ UH ➢
+-----token   Pelican PROPN NNP Xxxxx
+-----token   Auto PROPN NNP Xxxx
+-----token   Finance PROPN NNP Xxxxx
+-----token   , PUNCT , ,
+-----token   LLC PROPN NNP XXX
+-----token   ’s PART POS ’x
+-----token   senior ADJ JJ xxxx
+-----token   management NOUN NN xxxx
+-----token   team NOUN NN xxxx
+-----token   has AUX VBZ xxx
+-----token   over ADP IN xxxx
+-----token   100 NUM CD ddd
+-----token   years NOUN NNS xxxx
+-----token   of ADP IN xx
+-----token   experience NOUN NN xxxx
+-----token   collectively ADV RB xxxx
+-----token   in ADP IN xx
+
+
+--line  automotive and consumer lending.
+--num_words  4 --prob 0.1 --label  Personal Details  --similarity :  0.6369250958935242
+
+-----token   automotive ADJ JJ xxxx
+-----token   and CCONJ CC xxx
+-----token   consumer NOUN NN xxxx
+-----token   lending NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢ Technology stack: Laravel 5 framework
+--num_words  6 --prob 0.01831563888873418 --label  Projects  --similarity :  0.5880325474099525
+
+-----token   ➢ INTJ UH ➢
+-----token   Technology NOUN NN Xxxxx
+-----token   stack NOUN NN xxxx
+-----token   : PUNCT : :
+-----token   Laravel PROPN NNP Xxxxx
+-----token   5 NUM CD d
+-----token   framework NOUN NN xxxx
+
+
+--line  2. BlockPartee
+--num_words  2 --prob 1 --label  other  --similarity :  0
+
+-----token   2 X LS d
+-----token   . PUNCT . .
+-----token   BlockPartee PROPN NNP XxxxxXxxxx
+
+
+--line  ➢ Blockpartee is an app that allows you to host a virtual party following your favourite sports teams, centered
+--num_words  17 --prob 5.109089028063325e-12 --label  other  --similarity :  0
+
+-----token   ➢ INTJ UH ➢
+-----token   Blockpartee PROPN NNP Xxxxx
+-----token   is AUX VBZ xx
+-----token   an DET DT xx
+-----token   app NOUN NN xxx
+-----token   that DET WDT xxxx
+-----token   allows VERB VBZ xxxx
+-----token   you PRON PRP xxx
+-----token   to PART TO xx
+-----token   host VERB VB xxxx
+-----token   a DET DT x
+-----token   virtual ADJ JJ xxxx
+-----token   party NOUN NN xxxx
+-----token   following VERB VBG xxxx
+-----token   your DET PRP$ xxxx
+-----token   favourite ADJ JJ xxxx
+-----token   sports NOUN NNS xxxx
+-----token   teams NOUN NNS xxxx
+-----token   , PUNCT , ,
+-----token   centered VERB VBN xxxx
+
+
+--line  around the squares/blocks game played by thousands of fans for years during the Super Bowl. This app makes
+--num_words  19 --prob 9.357622968840175e-14 --label  Projects  --similarity :  0.6616207598866657
+
+-----token   around ADP IN xxxx
+-----token   the DET DT xxx
+-----token   squares NOUN NNS xxxx
+-----token   / SYM SYM /
+-----token   blocks NOUN NNS xxxx
+-----token   game NOUN NN xxxx
+-----token   played VERB VBN xxxx
+-----token   by ADP IN xx
+-----token   thousands NOUN NNS xxxx
+-----token   of ADP IN xx
+-----token   fans NOUN NNS xxxx
+-----token   for ADP IN xxx
+-----token   years NOUN NNS xxxx
+-----token   during ADP IN xxxx
+-----token   the DET DT xxx
+-----token   Super PROPN NNP Xxxxx
+-----token   Bowl PROPN NNP Xxxx
+-----token   . PUNCT . .
+-----token   This DET DT Xxxx
+-----token   app NOUN NN xxx
+-----token   makes VERB VBZ xxxx
+
+
+--line  it easier to set-up and play the game, invite friends and fans, and has added features like live chat.
+--num_words  19 --prob 9.357622968840175e-15 --label  Projects  --similarity :  0.6660749045997555
+
+-----token   it PRON PRP xx
+-----token   easier ADJ JJR xxxx
+-----token   to PART TO xx
+-----token   set VERB VB xxx
+-----token   - PUNCT HYPH -
+-----token   up NOUN NN xx
+-----token   and CCONJ CC xxx
+-----token   play VERB VB xxxx
+-----token   the DET DT xxx
+-----token   game NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   invite VERB VB xxxx
+-----token   friends NOUN NNS xxxx
+-----token   and CCONJ CC xxx
+-----token   fans NOUN NNS xxxx
+-----token   , PUNCT , ,
+-----token   and CCONJ CC xxx
+-----token   has AUX VBZ xxx
+-----token   added VERB VBN xxxx
+-----token   features NOUN NNS xxxx
+-----token   like SCONJ IN xxxx
+-----token   live ADJ JJ xxxx
+-----token   chat NOUN NN xxxx
+-----token   . PUNCT . .
+
+
+--line  ➢ Technology stack: Laravel 5 framework for API development and NodeJs for Chat Server
+--num_words  14 --prob 2.061153622438558e-09 --label  Projects  --similarity :  0.6762655744115267
+
+-----token   ➢ INTJ UH ➢
+-----token   Technology NOUN NN Xxxxx
+-----token   stack NOUN NN xxxx
+-----token   : PUNCT : :
+-----token   Laravel PROPN NNP Xxxxx
+-----token   5 NUM CD d
+-----token   framework NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   API NOUN NN XXX
+-----token   development NOUN NN xxxx
+-----token   and CCONJ CC xxx
+-----token   NodeJs PROPN NNP XxxxXx
+-----token   for ADP IN xxx
+-----token   Chat NOUN NN Xxxx
+-----token   Server NOUN NN Xxxxx
+
+
+--line  ➢ Fitfix is a revolutionary platform for Personal Trainers to help them manage, train and increase their clients. It
+--num_words  16 --prob 3.775134544279098e-11 --label  other  --similarity :  0
+
+-----token   ➢ INTJ UH ➢
+-----token   Fitfix PROPN NNP Xxxxx
+-----token   is AUX VBZ xx
+-----token   a DET DT x
+-----token   revolutionary ADJ JJ xxxx
+-----token   platform NOUN NN xxxx
+-----token   for ADP IN xxx
+-----token   Personal PROPN NNP Xxxxx
+-----token   Trainers PROPN NNPS Xxxxx
+-----token   to PART TO xx
+-----token   help VERB VB xxxx
+-----token   them PRON PRP xxxx
+-----token   manage VERB VB xxxx
+-----token   , PUNCT , ,
+-----token   train VERB VB xxxx
+-----token   and CCONJ CC xxx
+-----token   increase VERB VB xxxx
+-----token   their DET PRP$ xxxx
+-----token   clients NOUN NNS xxxx
+-----token   . PUNCT . .
+-----token   It PRON PRP Xx
+
+
+--line  provides comprehensive cloud based business management, physical training and nutrition tools in a very
+--num_words  14 --prob 2.061153622438558e-09 --label  Skills  --similarity :  0.7469611321255961
+--------------TITLE---------------------
+
+-----token   provides VERB VBZ xxxx
+-----token   comprehensive ADJ JJ xxxx
+-----token   cloud NOUN NN xxxx
+-----token   based VERB VBN xxxx
+-----token   business NOUN NN xxxx
+-----token   management NOUN NN xxxx
+-----token   , PUNCT , ,
+-----token   physical ADJ JJ xxxx
+-----token   training NOUN NN xxxx
+-----token   and CCONJ CC xxx
+-----token   nutrition NOUN NN xxxx
+-----token   tools NOUN NNS xxxx
+-----token   in ADP IN xx
+-----token   a DET DT x
+-----token   very ADV RB xxxx
+
+
+--line  friendly way.
+--num_words  2 --prob 0.1 --label  Experience  --similarity :  0.5890083257556812
+
+-----token   friendly ADJ JJ xxxx
+-----token   way PROPN NNP xxx
+-----token   . PUNCT . .
+
+
+--line  ➢ Technology stack: Cakephp 3.0 framework
+--num_words  6 --prob 0.01831563888873418 --label  Projects  --similarity :  0.5127614228534919
+
+-----token   ➢ INTJ UH ➢
+-----token   Technology NOUN NN Xxxxx
+-----token   stack NOUN NN xxxx
+-----token   : PUNCT : :
+-----token   Cakephp NOUN NN Xxxxx
+-----token   3.0 NUM CD d.d
+-----token   framework NOUN NN xxxx
+
+
+{'➢   Experienced full stack developer with various web development framework expertise.': {'label': 'Experience', 'similarity': 0.7721148147581652}, '➢   Over five years of commercial web and restful application development experience.': {'label': 'Experience', 'similarity': 0.7870799985862772}, '➢   Experience working in Agile Scrum environment and project management.': {'label': 'Experience', 'similarity': 0.8320110267463866}, 'Education:': {'label': 'Education', 'similarity': 1.0}, 'Work Experience:': {'label': 'Experience', 'similarity': 1.0}, '➢ Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.': {'label': 'Projects', 'similarity': 0.8010349221653591}, '➢ Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI': {'label': 'Projects', 'similarity': 0.732824263158852}, '2 certification.': {'label': 'Qualifications', 'similarity': 0.8348150019568967}, '➢ Lead a team of two junior developers where my roles are to check if proper coding standard is followed.': {'label': 'Projects', 'similarity': 0.7383218924257714}, '➢ My roles are developing restful apis, developing web applications with high scalability.': {'label': 'Experience', 'similarity': 0.729848069110626}, '➢ Started my career as trainee at this organization. My roles is to understand web application development': {'label': 'Experience', 'similarity': 0.7764132296479026}, 'Key Projects:': {'label': 'Projects', 'similarity': 1.0}, '➢ Pelican Auto Finance, LLC’s senior management team has over 100 years of experience collectively in': {'label': 'Experience', 'similarity': 0.7236886132347311}, 'provides comprehensive cloud based business management, physical training and nutrition tools in a very': {'label': 'Skills', 'similarity': 0.7469611321255961}}
+Personal Details 	 BHARAT BORANA                                                                                      WZ-433, Shiv nagar,
+Personal Details 	 Senior Software Engineer,                                                                Tihar Jail Road, Delhi, 110058
+Personal Details 	 Appster LLP, Gurugram, Haryana                                                               boranab@rediffmail.com
+Personal Details 	 (+91) 900-120-2858
+Experience 	 ➢   Experienced full stack developer with various web development framework expertise.
+Experience 	 ➢   Over five years of commercial web and restful application development experience.
+Experience 	 ➢   Experience working in Agile Scrum environment and project management.
+Experience 	 ➢   Web Development Frameworks: Laravel, CakePHP, NodeJs With Express.
+Experience 	 ➢   UI Frameworks/Technologies: HTML5, CSS3, jQuery, Angular JS.
+Experience 	 ➢   Databases: MySQL and MongoDB
+Experience 	 ➢   Other tools: Bitbucket for version control, JIRA, ZOHO, ASANA for task management, AWS EC2 for hosting
+Experience 	 services, AWS S3 for image hosting
+Education 	 Education:
+Education 	 ●   Rajasthan Technical University,Kota, Rajasthan                                                 2009/08 - 2012/07
+Education 	 Bachelor of Technology, Computer Science and Technology (Agg. 70.3)
+Education 	 ●   Government Polytechnic College, Jodhpur, Rajasthan                                            2006/06 – 2009/07
+Education 	 3 years Diploma in Computer Science (Agg. 70.8)
+Experience 	 Work Experience:
+Experience 	 1. Senior Software Engineer                                                                  2016/12 - Present
+Experience 	 ➢ Appster LLC, Gurugram
+Experience 	 ➢ Developing restful apis using Laravel framework for mobile team. Live chat implementation using NodeJs
+Experience 	 socket and Express.
+Experience 	 ➢ Database design process in sprint-0, Code review process for assigned projects
+Projects 	 ➢ Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.
+Projects 	 ➢ Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI
+Qualifications 	 2 certification.
+Qualifications 	 2. Senior Software Engineer                                                                   2014/12 - 2016/11
+Qualifications 	 ➢ Xicom Technologies, New Delhi
+Projects 	 ➢ Lead a team of two junior developers where my roles are to check if proper coding standard is followed.
+Experience 	 ➢ My roles are developing restful apis, developing web applications with high scalability.
+Experience 	 3. Software Engineer - Level I                                                                2012/10 - 2014/11
+Experience 	 ➢ C.G.Technosoft, Jodhpur
+Experience 	 ➢ Started my career as trainee at this organization. My roles is to understand web application development
+Experience 	 using Cakephp 2.0 framework.
+Projects 	 Key Projects:
+Projects 	 1. Pelican Auto Finance Powered by Payix
+Projects 	 ➢ Payix provides state-of-the-art collections tools, payment processing resources and business intelligence
+Projects 	 solutions to U.S. lenders and auto dealers. Offering real-time loan management system (LMS) integration.
+Experience 	 ➢ Pelican Auto Finance, LLC’s senior management team has over 100 years of experience collectively in
+Experience 	 automotive and consumer lending.
+Experience 	 ➢ Technology stack: Laravel 5 framework
+Experience 	 2. BlockPartee
+Experience 	 ➢ Blockpartee is an app that allows you to host a virtual party following your favourite sports teams, centered
+Experience 	 around the squares/blocks game played by thousands of fans for years during the Super Bowl. This app makes
+Experience 	 it easier to set-up and play the game, invite friends and fans, and has added features like live chat.
+Experience 	 ➢ Technology stack: Laravel 5 framework for API development and NodeJs for Chat Server
+Experience 	 3. Fitfix.co.uk
+Experience 	 ➢ Fitfix is a revolutionary platform for Personal Trainers to help them manage, train and increase their clients. It
+Skills 	 provides comprehensive cloud based business management, physical training and nutrition tools in a very
+Skills 	 friendly way.
+Skills 	 ➢ Technology stack: Cakephp 3.0 framework
+BHARAT BORANA                                                                                      WZ-433, Shiv nagar,
+Senior Software Engineer,                                                                Tihar Jail Road, Delhi, 110058
+Appster LLP, Gurugram, Haryana                                                               boranab@rediffmail.com
+(+91) 900-120-2858
+➢   Experienced full stack developer with various web development framework expertise.
+➢   Over five years of commercial web and restful application development experience.
+➢   Experience working in Agile Scrum environment and project management.
+➢   Web Development Frameworks: Laravel, CakePHP, NodeJs With Express.
+➢   UI Frameworks/Technologies: HTML5, CSS3, jQuery, Angular JS.
+➢   Databases: MySQL and MongoDB
+➢   Other tools: Bitbucket for version control, JIRA, ZOHO, ASANA for task management, AWS EC2 for hosting
+services, AWS S3 for image hosting
+●   Rajasthan Technical University,Kota, Rajasthan                                                 2009/08 - 2012/07
+Bachelor of Technology, Computer Science and Technology (Agg. 70.3)
+●   Government Polytechnic College, Jodhpur, Rajasthan                                            2006/06 – 2009/07
+3 years Diploma in Computer Science (Agg. 70.8)
+Work Experience:
+1. Senior Software Engineer                                                                  2016/12 - Present
+➢ Appster LLC, Gurugram
+➢ Developing restful apis using Laravel framework for mobile team. Live chat implementation using NodeJs
+socket and Express.
+➢ Database design process in sprint-0, Code review process for assigned projects
+➢ Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.
+➢ Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI
+2 certification.
+2. Senior Software Engineer                                                                   2014/12 - 2016/11
+➢ Xicom Technologies, New Delhi
+➢ Lead a team of two junior developers where my roles are to check if proper coding standard is followed.
+➢ My roles are developing restful apis, developing web applications with high scalability.
+3. Software Engineer - Level I                                                                2012/10 - 2014/11
+➢ C.G.Technosoft, Jodhpur
+➢ Started my career as trainee at this organization. My roles is to understand web application development
+using Cakephp 2.0 framework.
+Key Projects:
+1. Pelican Auto Finance Powered by Payix
+➢ Payix provides state-of-the-art collections tools, payment processing resources and business intelligence
+solutions to U.S. lenders and auto dealers. Offering real-time loan management system (LMS) integration.
+➢ Pelican Auto Finance, LLC’s senior management team has over 100 years of experience collectively in
+automotive and consumer lending.
+➢ Technology stack: Laravel 5 framework
+2. BlockPartee
+➢ Blockpartee is an app that allows you to host a virtual party following your favourite sports teams, centered
+around the squares/blocks game played by thousands of fans for years during the Super Bowl. This app makes
+it easier to set-up and play the game, invite friends and fans, and has added features like live chat.
+➢ Technology stack: Laravel 5 framework for API development and NodeJs for Chat Server
+3. Fitfix.co.uk
+➢ Fitfix is a revolutionary platform for Personal Trainers to help them manage, train and increase their clients. It
+provides comprehensive cloud based business management, physical training and nutrition tools in a very
+friendly way.
+➢ Technology stack: Cakephp 3.0 framework
+name: Personal Trainers
+email: boranab@rediffmail.com
+experience: collectively
+expertise: loper with various web development framework expertise.
+expertise: lopment experience.
+expertise: lopment frameworks laravel, cakephp, nodejs with express.
+expertise: loping restful apis using laravel framework for mobile team. live chat implementation using nodejs
+expertise: ed in other projects.
+expertise: loped payment gateway with pci
+expertise: lopers where my roles are to check if proper coding standard is followed.
+expertise: loping restful apis, developing web applications with high scalability.
+expertise: rstand web application development
+expertise: lopment and nodejs for chat server
+++++++++++++++++++++++++++++++++++++++++++
+count:  2

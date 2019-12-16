@@ -1,58 +1,103 @@
-BHARAT BORANA                                                                                      WZ-433, Shiv nagar,
-Senior Software Engineer,                                                                Tihar Jail Road, Delhi, 110058
-Appster LLP, Gurugram, Haryana                                                               boranab@rediffmail.com
-                                                                                                    (+91) 900-120-2858
-
-➢   Experienced full stack developer with various web development framework expertise.
-➢   Over five years of commercial web and restful application development experience.
-➢   Experience working in Agile Scrum environment and project management.
-➢   Web Development Frameworks: Laravel, CakePHP, NodeJs With Express.
-➢   UI Frameworks/Technologies: HTML5, CSS3, jQuery, Angular JS.
-➢   Databases: MySQL and MongoDB
-➢   Other tools: Bitbucket for version control, JIRA, ZOHO, ASANA for task management, AWS EC2 for hosting
-    services, AWS S3 for image hosting
+                                          ANKIT KUMAR
+                          B.TECH (INFORMATION TECHNOLOGY)
+        G-96, Karampura, New Delhi - 110015 ◼ Phone: 9654215063 ◼ DOB: 01/12/1993
+                          ◼ Email: ankitkumarchoudhary7@gmail.com
 
 
-Education:
-●   Rajasthan Technical University,Kota, Rajasthan                                                 2009/08 - 2012/07
-    Bachelor of Technology, Computer Science and Technology (Agg. 70.3)
-●   Government Polytechnic College, Jodhpur, Rajasthan                                            2006/06 – 2009/07
-    3 years Diploma in Computer Science (Agg. 70.8)
+ Determined, perceptive and goal-oriented individual seeking a challenging and inspiring career that
+ would utilize my concepts and skills of information technology as well as enrich my knowledge by
+ giving me an opportunity to be part of team that contributes towards the common growth of an
+ organization, thereby stimulating both job satisfaction and professional growth.
 
-Work Experience:
- 1. Senior Software Engineer                                                                  2016/12 - Present
-    ➢ Appster LLC, Gurugram
-    ➢ Developing restful apis using Laravel framework for mobile team. Live chat implementation using NodeJs
-       socket and Express.
-    ➢ Database design process in sprint-0, Code review process for assigned projects
-    ➢ Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.
-    ➢ Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI
-        2 certification.
- 2. Senior Software Engineer                                                                   2014/12 - 2016/11
-    ➢ Xicom Technologies, New Delhi
-    ➢ Lead a team of two junior developers where my roles are to check if proper coding standard is followed.
-    ➢ My roles are developing restful apis, developing web applications with high scalability.
- 3. Software Engineer - Level I                                                                2012/10 - 2014/11
-    ➢ C.G.Technosoft, Jodhpur
-    ➢ Started my career as trainee at this organization. My roles is to understand web application development
-      using Cakephp 2.0 framework.
-Key Projects:
- 1. Pelican Auto Finance Powered by Payix
-   ➢ Payix provides state-of-the-art collections tools, payment processing resources and business intelligence
-      solutions to U.S. lenders and auto dealers. Offering real-time loan management system (LMS) integration.
-    ➢ Pelican Auto Finance, LLC’s senior management team has over 100 years of experience collectively in
-      automotive and consumer lending.
-    ➢ Technology stack: Laravel 5 framework
+                                            QUALIFICATION
+NAME OF SCHOOL/COLLEGE          BOARD/UNIVERSITY                                    PERCENTAGE (%)
+B. Tech. (IT)                   Northern India Engineering College (GGSIPU)              67.89
+     12th                       S.S.D SBM S. Sec School, Punjabi Bagh, Delhi (CBSE)      60.04
+     10th                       S.S.D SBM S. Sec School, Punjabi Bagh, Delhi (CBSE)      70
 
- 2. BlockPartee
-    ➢ Blockpartee is an app that allows you to host a virtual party following your favourite sports teams, centered
-      around the squares/blocks game played by thousands of fans for years during the Super Bowl. This app makes
-      it easier to set-up and play the game, invite friends and fans, and has added features like live chat.
-    ➢ Technology stack: Laravel 5 framework for API development and NodeJs for Chat Server
 
- 3. Fitfix.co.uk
-   ➢ Fitfix is a revolutionary platform for Personal Trainers to help them manage, train and increase their clients. It
-       provides comprehensive cloud based business management, physical training and nutrition tools in a very
-       friendly way.
-   ➢ Technology stack: Cakephp 3.0 framework
+                                        PROFESSIONAL EXPERIENCE
+
+               Organization                      Designation                 Duration
+            Tecinso llb Pvt. Ltd.              PHP DEVELOPER          May 2017 to March 2018
+        Blue Eagle Infotech Pvt. Ltd.          PHP DEVELOPER          March 2018 To Oct 2019
+
+ Mobiloitte India Pvt. Ltd., OKHLA PHASE 1 , New Delhi
+  PHP DEVELOPER (Trainee)
+       Worked on HTML, CORE PHP, SQL
+       DATABASE-MYSQL & PHPMYADMIN
+
+ Tecinso Llb India Pvt. Ltd., Spaze Itech park, Gurugram, Sohna road, Haryana
+  PHP DEVELOPER
+        Worked on CORE PHP, CODEIGNITER, JAVASCRIPT and AJAX
+        DATABASE-MYSQL & PHPMYADMIN
+
+ Blue Eagle Infotech Pvt Ltd ,JMD Megapolis, Gurugram,Sohna road,Haryana
+  PHP DEVELOPER
+        Working on CORE PHP, JAVASCRIPT, AJAX,API and ECOMMERCE websites
+        DATABASE-MYSQL & PHPMYADMIN
+
+
+                                             TECHNICAL SKILLS
+Programming Languages           CORE PHP, HTML CODEIGNITER, JAVASCRIPT, AJAX,DATABASE, OOPS, API
+Database                        MYSQL, PHPMYADMIN
+Operating System                Windows XP/VISTA/7/8/10 and MAC
+
+
+
+
+                                                                                             Page | 1
+                                                PROJECT
+   LIST OF E-COMMERCE WEBSITES
+   https://fruituncle.in/
+   https://flowguards.net/
+   https://opensms.in/refashion/
+   https://www.ptah.in/
+   https://www.buy24x7.in/
+   http://adahfashion.com/
+   https://opensms.in/tailoring/
+
+   LIST OF CLIENT WEBSITES
+   http://financialdesk.opensms.in/financial
+   https://www.presude.com
+   https://paissamanagement.com
+   https://www.thebaristadiner.com
+   http://prlindia.com/
+   https://opensms.in/food/
+
+ EVENT MANAGEMENT SYSTEM
+ https://vteamseducation.com/
+
+ REALESTATE WEBSITE
+ https://www.arsrealty.in
+
+ SCHOOL MANAGEMENT SYSTEM
+A complete school portal for admin, student, teacher and parent was created. All activity can be measured
+online on one plea like student marks, attendance on daily basis exam. This project was used especially to
+improve the ability and interest of the weak students. (codeigniter)
+
+ EMPLOYEE MANAGEMENT SYSTEM
+An admin login for provide user login, assign project and manage work reports and user login for attendance
+and project timming using php (core php and codeigniter).
+
+                                                SPECIAL INTERESTS
+       Interacting with people and making friends
+       Dancing in loud music
+       Listening music
+       Playing cricket and chess
+
+                                                PERSONAL DETAILS
+Nationality: Indian
+Languages Know: Hindi (Native), English (Fluent)
+Attributes: Sincere, Honest, Responsible, Hardworking, Creative, Interactive and Dedicated to my work
+Marital Status: Unmarried
+Age: 25 years (Male)
+
+                                                DECLARATION
+I hereby declare that the information furnished is correct to the best of my knowledge.
+NAME: ANKIT KUMAR
+
+
+                                                                                                    Page | 2
+Page | 3
 

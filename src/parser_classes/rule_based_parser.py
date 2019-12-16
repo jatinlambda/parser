@@ -22,14 +22,13 @@ class ResumeParser(object):
         headers_dict_init()
         self.raw = texts
         headers = extract_headers(self.raw)
-        print(headers)
+        # print(headers)
         buckets = extract_buckets(self.raw, headers)
 
         for p in texts:
             if len(p) > 10:
                 print(p)
                 s = word_tokenize(p.lower())
-                # print("s -> ", s)
                 unknown = True
                 name = extract_name(s, p)
                 email = extract_email(s, p)

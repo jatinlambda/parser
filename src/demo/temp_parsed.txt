@@ -1,0 +1,514 @@
+extracting text from pdf:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/rajneeshbarnwal.pdf
+extracting text from pdf:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/iimjobs_BHARAT_BORANA.pdf
+parsing file:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/rajneeshbarnwal.pdf
+--line  RAJNEESH KUMAR BARNWAL      --main line  ['rajneesh', 'kumar', 'barnwal']
+--num_words  3 --cost  0 --prob 1 --label  other  --similarity :  0
+--line  Address:                                                                          Contact No: 07042488448 / 07503075418      --main line  ['address', '                                                                         ', 'contact', 'no', '07042488448', '07503075418']
+--num_words  6 --cost  738.905609893065 --prob 0.01831563888873418 --label  other  --similarity :  0
+--line  G-Block, Greenwood City                                                               E-mail: rajneeshbarnwal@gmail.com      --main line  ['g', 'block', 'greenwood', 'city', '                                                              ', 'e', 'mail', 'rajneeshbarnwal@gmail.com']
+--num_words  8 --cost  5459.815003314424 --prob 0.00033546262790251185 --label  other  --similarity :  0
+--line  Sector-40, Gurgaon      --main line  ['sector-40', 'gurgaon']
+--num_words  2 --cost  0 --prob 1 --label  other  --similarity :  0
+--line  Haryana - 122003      --main line  ['haryana', '122003']
+--num_words  2 --cost  0 --prob 1 --label  other  --similarity :  0
+--line  OBJECTIVE      --main line  ['objective']
+--num_words  1 --cost  0 --prob 1 --label  Objective  --similarity :  1.0
+--------------TITLE---------------------
+--line  To associate with the reputed industry and work for the organization’s and personal growth and progress with my whole energy,      --main line  ['to', 'associate', 'with', 'the', 'reputed', 'industry', 'and', 'work', 'for', 'the', 'organization', '’s', 'and', 'personal', 'growth', 'and', 'progress', 'with', 'whole', 'energy']
+--num_words  20 --cost  888611052.0507872 --prob 1.2664165549094176e-14 --label  Experience  --similarity :  0.7704912004191063
+--------------TITLE---------------------
+--line  knowledge, dedication and sincere efforts.      --main line  ['knowledge', 'dedication', 'and', 'sincere', 'effort']
+--num_words  5 --cost  2271.8281828459044 --prob 0.0013533528323661271 --label  Experience  --similarity :  0.694324647583534
+--line  PROFESSIONAL EXPERIENCE      --main line  ['professional', 'experience']
+--num_words  2 --cost  0 --prob 1 --label  Experience  --similarity :  1.0
+--------------TITLE---------------------
+--line  ●    Working as Software Engineer with Aricent Technologies, Gurgaon since June 2016.      --main line  ['●', '   ', 'work', 'as', 'software', 'engineer', 'with', 'aricent', 'technologies', 'gurgaon', 'since', 'june', '2016']
+--num_words  13 --cost  811308.3927575385 --prob 1.522997974471263e-09 --label  other  --similarity :  0
+--line  ●    Did Internship from Aricent Technologies, Gurgaon from Jan 2015 to June 2015.      --main line  ['●', '   ', 'do', 'internship', 'from', 'aricent', 'technologies', 'gurgaon', 'from', 'jan', '2015', 'to', 'june', '2015']
+--num_words  14 --cost  2203646.579480672 --prob 2.061153622438558e-10 --label  other  --similarity :  0
+--line  PROJECTS UNDERTAKEN      --main line  ['project', 'undertake']
+--num_words  2 --cost  0 --prob 1 --label  Projects  --similarity :  1.0
+--------------TITLE---------------------
+--line  1.   GUI based Network Monitoring System, Since Jan 2017      --main line  ['1', '  ', 'gui', 'base', 'network', 'monitoring', 'system', 'since', 'jan', '2017']
+--num_words  10 --cost  40342.87934927351 --prob 6.14421235332821e-06 --label  Projects  --similarity :  0.5536012475920851
+--line  ● Working as UI developer for this project      --main line  ['●', 'work', 'as', 'ui', 'developer', 'for', 'this', 'project']
+--num_words  8 --cost  5459.815003314424 --prob 0.00033546262790251185 --label  Projects  --similarity :  0.805908314348853
+--------------TITLE---------------------
+--line  ● Coding is being done in AngularJS with Bootstrap, HTML and less/css.      --main line  ['●', 'coding', 'be', 'be', 'do', 'in', 'angularjs', 'with', 'bootstrap', 'html', 'and', 'less', 'css']
+--num_words  13 --cost  811308.3927575385 --prob 1.522997974471263e-09 --label  Projects  --similarity :  0.6738627721895301
+--line  ● Implemented graphical representation of Networking devices using Cytoscape JS.      --main line  ['●', 'implement', 'graphical', 'representation', 'of', 'networking', 'device', 'use', 'cytoscape', 'js']
+--num_words  10 --cost  41342.87934927351 --prob 6.14421235332821e-07 --label  other  --similarity :  0
+--line  ● Involved from planning phase till development code.      --main line  ['●', 'involve', 'from', 'plan', 'phase', 'till', 'development', 'code']
+--num_words  8 --cost  6459.815003314424 --prob 3.354626279025119e-05 --label  Projects  --similarity :  0.7276644746349168
+--------------TITLE---------------------
+--line  2.   GUI based Network Monitoring System, June 2016 – Dec 2017      --main line  ['2', '  ', 'gui', 'base', 'network', 'monitoring', 'system', 'june', '2016', 'dec', '2017']
+--num_words  11 --cost  109663.31584284586 --prob 8.315287191035679e-07 --label  Projects  --similarity :  0.5080300457576062
+--line  ● Worked as a UI developer for this project.      --main line  ['●', 'work', 'as', 'a', 'ui', 'developer', 'for', 'this', 'project']
+--num_words  9 --cost  15841.31591025766 --prob 4.539992976248485e-06 --label  Projects  --similarity :  0.7986604712613482
+--------------TITLE---------------------
+--line  ● Coding was done in AngularJS with Material Design, HTML and less/css.      --main line  ['●', 'coding', 'be', 'do', 'in', 'angularjs', 'with', 'material', 'design', 'html', 'and', 'less', 'css']
+--num_words  13 --cost  811308.3927575385 --prob 1.522997974471263e-09 --label  Projects  --similarity :  0.6734817409031674
+--line  ● Implemented various widgets using Ui-Grid, Cytoscape JS.      --main line  ['●', 'implement', 'various', 'widget', 'use', 'ui', 'grid', 'cytoscape', 'js']
+--num_words  9 --cost  15841.31591025766 --prob 4.539992976248485e-06 --label  other  --similarity :  0
+--line  ● Did coding, unit testing, and automation testing with AngularJS, karma, and selenium frameworks.      --main line  ['●', 'do', 'coding', 'unit', 'testing', 'and', 'automation', 'testing', 'with', 'angularjs', 'karma', 'and', 'selenium', 'framework']
+--num_words  14 --cost  2203646.579480672 --prob 2.061153622438558e-10 --label  Projects  --similarity :  0.6585527199552221
+--line  3.   Industrial Automation      --main line  ['3', '  ', 'industrial', 'automation']
+--num_words  4 --cost  0 --prob 1 --label  Projects  --similarity :  0.5086755332821866
+--line  ● Worked on this project on behalf of my internship training at Aricent Technologies, Gurgaon.      --main line  ['●', 'work', 'on', 'this', 'project', 'on', 'behalf', 'of', 'internship', 'training', 'at', 'aricent', 'technologies', 'gurgaon']
+--num_words  14 --cost  2203646.579480672 --prob 2.061153622438558e-10 --label  other  --similarity :  0
+--line  ● Worked on module implementation of Modbus Protocol.      --main line  ['●', 'work', 'on', 'module', 'implementation', 'of', 'modbus', 'protocol']
+--num_words  8 --cost  6459.815003314424 --prob 3.354626279025119e-05 --label  Projects  --similarity :  0.6365190263822894
+--line  ● Also worked with BeagleBone Device and RPM Sensors.      --main line  ['●', 'also', 'work', 'with', 'beaglebone', 'device', 'and', 'rpm', 'sensor']
+--num_words  9 --cost  15841.31591025766 --prob 4.539992976248485e-06 --label  Experience  --similarity :  0.5961515120220117
+--line  ● Used Core Java and JNI implementation with C/C++.      --main line  ['●', 'use', 'core', 'java', 'and', 'jni', 'implementation', 'with', 'c', 'c++']
+--num_words  10 --cost  41342.87934927351 --prob 6.14421235332821e-07 --label  Projects  --similarity :  0.5478712314109916
+--line  4.   RB MAP, 2013      --main line  ['4', '  ', 'rb', 'map', '2013']
+--num_words  5 --cost  271.8281828459045 --prob 0.1353352832366127 --label  Projects  --similarity :  0.3248055790157587
+--line  ● The application provides solutions for shortest routes and finding all routes between two cities.      --main line  ['●', 'the', 'application', 'provide', 'solution', 'for', 'short', 'route', 'and', 'find', 'all', 'route', 'between', 'two', 'city']
+--num_words  15 --cost  5988414.171519781 --prob 2.7894680928689248e-11 --label  Projects  --similarity :  0.7338511746609013
+--------------TITLE---------------------
+--line  ● Developed to learn the concepts of Dijkstra’s and Warshall’s algorithms and basics of data structures and      --main line  ['●', 'develop', 'to', 'learn', 'the', 'concept', 'of', 'dijkstra', '’s', 'and', 'warshall', '’s', 'algorithm', 'and', 'basic', 'of', 'data', 'structure', 'and']
+--num_words  19 --cost  326901737.24721104 --prob 9.357622968840175e-14 --label  other  --similarity :  0
+--line  OOPs.      --main line  ['oops']
+--num_words  1 --cost  1000 --prob 0.1 --label  Personal Details  --similarity :  0.21715297119904833
+--line  ● The application, coded in C++ using the Visual Studio 2012 platform.      --main line  ['●', 'the', 'application', 'code', 'in', 'c++', 'use', 'the', 'visual', 'studio', '2012', 'platform']
+--num_words  12 --cost  299095.79870417283 --prob 1.1253517471925913e-08 --label  Projects  --similarity :  0.6765251571923457
+--line  ● Submitted as a summer project during MCA.      --main line  ['●', 'submit', 'as', 'a', 'summer', 'project', 'during', 'mca']
+--num_words  8 --cost  6459.815003314424 --prob 3.354626279025119e-05 --label  Projects  --similarity :  0.7289431934718122
+--------------TITLE---------------------
+--line  AREAS OF EXPERTISE      --main line  ['area', 'of', 'expertise']
+--num_words  3 --cost  0 --prob 1 --label  Experience  --similarity :  0.7570721458161542
+--------------TITLE---------------------
+--line  ● Knowledge of Web development framework AngularJS, Angular 2, Angular 5.      --main line  ['●', 'knowledge', 'of', 'web', 'development', 'framework', 'angularjs', 'angular', '2', 'angular', '5']
+--num_words  11 --cost  110663.31584284586 --prob 8.31528719103568e-08 --label  Projects  --similarity :  0.6589504176367583
+--line  ● Knowledge of web technologies like HTML, JavaScript, ES6, TypeScript, LESS/CSS, Material Design, Bootstrap      --main line  ['●', 'knowledge', 'of', 'web', 'technology', 'like', 'html', 'javascript', 'es6', 'typescript', 'less', 'css', 'material', 'design', 'bootstrap']
+--num_words  15 --cost  5987414.171519781 --prob 2.7894680928689246e-10 --label  Projects  --similarity :  0.6501244441067326
+--line  ● Knowledge of GitHub and GIT version control system.      --main line  ['●', 'knowledge', 'of', 'github', 'and', 'git', 'version', 'control', 'system']
+--num_words  9 --cost  15841.31591025766 --prob 4.539992976248485e-06 --label  Projects  --similarity :  0.6065575552060319
+--line  ● Working Knowledge of Agile software development methodologies.      --main line  ['●', 'work', 'knowledge', 'of', 'agile', 'software', 'development', 'methodology']
+--num_words  8 --cost  6459.815003314424 --prob 3.354626279025119e-05 --label  Skills  --similarity :  0.8210501006659364
+--------------TITLE---------------------
+--line  ● Strong organizational and preparation skills.      --main line  ['●', 'strong', 'organizational', 'and', 'preparation', 'skill']
+--num_words  6 --cost  1738.905609893065 --prob 0.001831563888873418 --label  Skills  --similarity :  0.7816460952700349
+--------------TITLE---------------------
+--line  EDUCATION      --main line  ['education']
+--num_words  1 --cost  0 --prob 1 --label  Education  --similarity :  1.0
+--------------TITLE---------------------
+--line  Institute                                            Course                               Marks         Year of Passing      --main line  ['institute', '                                           ', 'course', '                              ', 'marks', '        ', 'year', 'of', 'pass']
+--num_words  9 --cost  14841.31591025766 --prob 4.5399929762484854e-05 --label  Experience  --similarity :  0.7488131691133549
+--------------TITLE---------------------
+--line  GGSIPU, New Delhi                                    MCA                                  81%           2015      --main line  ['ggsipu', 'new', 'delhi', '                                   ', 'mca', '                                 ', '81', '          ', '2015']
+--num_words  9 --cost  14841.31591025766 --prob 4.5399929762484854e-05 --label  other  --similarity :  0
+--line  Integral University, Lucknow (U.P.)                  BCA                                  70%           2011      --main line  ['integral', 'university', 'lucknow', 'u.p', '                 ', 'bca', '                                 ', '70', '          ', '2011']
+--num_words  10 --cost  40342.87934927351 --prob 6.14421235332821e-06 --label  Education  --similarity :  0.5674111740841585
+--line  Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)          Class XII (CBSE) (Comp Sci.)         66%           2008      --main line  ['jawahar', 'navodaya', 'vidyalaya', 'azamgarh', 'u.p', '         ', 'class', 'xii', 'cbse', 'comp', 'sci', '        ', '66', '          ', '2008']
+--num_words  15 --cost  5987414.171519781 --prob 2.7894680928689246e-10 --label  other  --similarity :  0
+--line  Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)          Class X (CBSE)                       82%           2006      --main line  ['jawahar', 'navodaya', 'vidyalaya', 'azamgarh', 'u.p', '         ', 'class', 'x', 'cbse', '                      ', '82', '          ', '2006']
+--num_words  13 --cost  810308.3927575385 --prob 1.522997974471263e-08 --label  other  --similarity :  0
+--line  EXTRA-CURRICULAR      --main line  ['extra', 'curricular']
+--num_words  2 --cost  0 --prob 1 --label  Extra curricular  --similarity :  1.0
+--------------TITLE---------------------
+--line  ● Updated website for NSC 2014 and INDIACOM 2014 during MCA.      --main line  ['●', 'update', 'website', 'for', 'nsc', '2014', 'and', 'indiacom', '2014', 'during', 'mca']
+--num_words  11 --cost  110663.31584284586 --prob 8.31528719103568e-08 --label  other  --similarity :  0
+--line  ● Perform updates and testing on LAN solution of INDIACOM Desktop Registration system during MCA.      --main line  ['●', 'perform', 'update', 'and', 'testing', 'on', 'lan', 'solution', 'of', 'indiacom', 'desktop', 'registration', 'system', 'during', 'mca']
+--num_words  15 --cost  5988414.171519781 --prob 2.7894680928689248e-11 --label  other  --similarity :  0
+--line  ● Actively participated in technical and non-technical activities in college during MCA.      --main line  ['●', 'actively', 'participate', 'in', 'technical', 'and', 'non', 'technical', 'activity', 'in', 'college', 'during', 'mca']
+--num_words  13 --cost  811308.3927575385 --prob 1.522997974471263e-09 --label  Extra curricular  --similarity :  0.7365854323860844
+--------------TITLE---------------------
+--line  ACHIEVEMENTS      --main line  ['achievement']
+--num_words  1 --cost  0 --prob 1 --label  Qualifications  --similarity :  1.0
+--------------TITLE---------------------
+--line  ● Awarded for Technical Support Excellence in Batch by BVICAM (2015)      --main line  ['●', 'award', 'for', 'technical', 'support', 'excellence', 'in', 'batch', 'by', 'bvicam', '2015']
+--num_words  11 --cost  109663.31584284586 --prob 8.315287191035679e-07 --label  other  --similarity :  0
+--line  ● Secured 2nd position in IT Quiz organized by BVICAM (2013).      --main line  ['●', 'secure', '2nd', 'position', 'in', 'quiz', 'organize', 'by', 'bvicam', '2013']
+--num_words  10 --cost  41342.87934927351 --prob 6.14421235332821e-07 --label  other  --similarity :  0
+--line  ● Secured 2nd position in Structure Formation organized by UPTEC Computer Consultancy Limited (2009).      --main line  ['●', 'secure', '2nd', 'position', 'in', 'structure', 'formation', 'organize', 'by', 'uptec', 'computer', 'consultancy', 'limit', '2009']
+--num_words  14 --cost  2203646.579480672 --prob 2.061153622438558e-10 --label  other  --similarity :  0
+--line  PERSONAL DETAILS      --main line  ['personal', 'detail']
+--num_words  2 --cost  0 --prob 1 --label  Personal Details  --similarity :  1.0
+--------------TITLE---------------------
+--line  Father’s Name              :       Mr. Sushil Kumar Baranwal      --main line  ['father', '’s', 'name', '             ', '      ', 'mr', 'sushil', 'kumar', 'baranwal']
+--num_words  9 --cost  14841.31591025766 --prob 4.5399929762484854e-05 --label  other  --similarity :  0
+--line  Date of Birth              :       10-Sep-1990      --main line  ['date', 'of', 'birth', '             ', '      ', '10-sep-1990']
+--num_words  6 --cost  738.905609893065 --prob 0.01831563888873418 --label  other  --similarity :  0
+--line  Languages Known            :       Hindi & English      --main line  ['language', 'know', '           ', '      ', 'hindi', 'english']
+--num_words  6 --cost  738.905609893065 --prob 0.01831563888873418 --label  Education  --similarity :  0.47279948581021647
+--line  Nationality                :       Indian      --main line  ['nationality', '               ', '      ', 'indian']
+--num_words  4 --cost  0 --prob 1 --label  Education  --similarity :  0.32266783963232354
+--line  Alternate E-Mail ID        :       rajneeshbarnwal@rocketmail.com      --main line  ['alternate', 'e', 'mail', 'would', '       ', '      ', 'rajneeshbarnwal@rocketmail.com']
+--num_words  7 --cost  2008.5536923187667 --prob 0.0024787521766663585 --label  other  --similarity :  0
+--line  Marital Status             :       Married      --main line  ['marital', 'status', '            ', '      ', 'married']
+--num_words  5 --cost  271.8281828459045 --prob 0.1353352832366127 --label  Personal Details  --similarity :  0.46672639809940747
+--line  Strengths                  :       Quick Learner, Adoptable, Commitment Oriented      --main line  ['strength', '                 ', '      ', 'quick', 'learner', 'adoptable', 'commitment', 'orient']
+--num_words  8 --cost  5459.815003314424 --prob 0.00033546262790251185 --label  Extra curricular  --similarity :  0.7045524317086459
+--------------TITLE---------------------
+{'OBJECTIVE': {'label': 'Objective', 'similarity': 1.0}, 'To associate with the reputed industry and work for the organization’s and personal growth and progress with my whole energy,': {'label': 'Experience', 'similarity': 0.7704912004191063}, 'PROFESSIONAL EXPERIENCE': {'label': 'Experience', 'similarity': 1.0}, 'PROJECTS UNDERTAKEN': {'label': 'Projects', 'similarity': 1.0}, '● Working as UI developer for this project': {'label': 'Projects', 'similarity': 0.805908314348853}, '● Involved from planning phase till development code.': {'label': 'Projects', 'similarity': 0.7276644746349168}, '● Worked as a UI developer for this project.': {'label': 'Projects', 'similarity': 0.7986604712613482}, '● The application provides solutions for shortest routes and finding all routes between two cities.': {'label': 'Projects', 'similarity': 0.7338511746609013}, '● Submitted as a summer project during MCA.': {'label': 'Projects', 'similarity': 0.7289431934718122}, 'AREAS OF EXPERTISE': {'label': 'Experience', 'similarity': 0.7570721458161542}, '● Working Knowledge of Agile software development methodologies.': {'label': 'Skills', 'similarity': 0.8210501006659364}, '● Strong organizational and preparation skills.': {'label': 'Skills', 'similarity': 0.7816460952700349}, 'EDUCATION': {'label': 'Education', 'similarity': 1.0}, 'Institute                                            Course                               Marks         Year of Passing': {'label': 'Experience', 'similarity': 0.7488131691133549}, 'EXTRA-CURRICULAR': {'label': 'Extra curricular', 'similarity': 1.0}, '● Actively participated in technical and non-technical activities in college during MCA.': {'label': 'Extra curricular', 'similarity': 0.7365854323860844}, 'ACHIEVEMENTS': {'label': 'Qualifications', 'similarity': 1.0}, 'PERSONAL DETAILS': {'label': 'Personal Details', 'similarity': 1.0}, 'Strengths                  :       Quick Learner, Adoptable, Commitment Oriented': {'label': 'Extra curricular', 'similarity': 0.7045524317086459}}
+Personal Details 	 RAJNEESH KUMAR BARNWAL
+Personal Details 	 Address:                                                                          Contact No: 07042488448 / 07503075418
+Personal Details 	 G-Block, Greenwood City                                                               E-mail: rajneeshbarnwal@gmail.com
+Personal Details 	 Sector-40, Gurgaon
+Personal Details 	 Haryana - 122003
+Objective 	 OBJECTIVE
+Experience 	 To associate with the reputed industry and work for the organization’s and personal growth and progress with my whole energy,
+Experience 	 knowledge, dedication and sincere efforts.
+Experience 	 PROFESSIONAL EXPERIENCE
+Experience 	 ●    Working as Software Engineer with Aricent Technologies, Gurgaon since June 2016.
+Experience 	 ●    Did Internship from Aricent Technologies, Gurgaon from Jan 2015 to June 2015.
+Projects 	 PROJECTS UNDERTAKEN
+Projects 	 1.   GUI based Network Monitoring System, Since Jan 2017
+Projects 	 ● Working as UI developer for this project
+Projects 	 ● Coding is being done in AngularJS with Bootstrap, HTML and less/css.
+Projects 	 ● Implemented graphical representation of Networking devices using Cytoscape JS.
+Projects 	 ● Involved from planning phase till development code.
+Projects 	 2.   GUI based Network Monitoring System, June 2016 – Dec 2017
+Projects 	 ● Worked as a UI developer for this project.
+Projects 	 ● Coding was done in AngularJS with Material Design, HTML and less/css.
+Projects 	 ● Implemented various widgets using Ui-Grid, Cytoscape JS.
+Projects 	 ● Did coding, unit testing, and automation testing with AngularJS, karma, and selenium frameworks.
+Projects 	 3.   Industrial Automation
+Projects 	 ● Worked on this project on behalf of my internship training at Aricent Technologies, Gurgaon.
+Projects 	 ● Worked on module implementation of Modbus Protocol.
+Projects 	 ● Also worked with BeagleBone Device and RPM Sensors.
+Projects 	 ● Used Core Java and JNI implementation with C/C++.
+Projects 	 4.   RB MAP, 2013
+Projects 	 ● The application provides solutions for shortest routes and finding all routes between two cities.
+Projects 	 ● Developed to learn the concepts of Dijkstra’s and Warshall’s algorithms and basics of data structures and
+Projects 	 OOPs.
+Projects 	 ● The application, coded in C++ using the Visual Studio 2012 platform.
+Projects 	 ● Submitted as a summer project during MCA.
+Experience 	 AREAS OF EXPERTISE
+Experience 	 ● Knowledge of Web development framework AngularJS, Angular 2, Angular 5.
+Experience 	 ● Knowledge of web technologies like HTML, JavaScript, ES6, TypeScript, LESS/CSS, Material Design, Bootstrap
+Experience 	 ● Knowledge of GitHub and GIT version control system.
+Skills 	 ● Working Knowledge of Agile software development methodologies.
+Skills 	 ● Strong organizational and preparation skills.
+Education 	 EDUCATION
+Experience 	 Institute                                            Course                               Marks         Year of Passing
+Experience 	 GGSIPU, New Delhi                                    MCA                                  81%           2015
+Experience 	 Integral University, Lucknow (U.P.)                  BCA                                  70%           2011
+Experience 	 Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)          Class XII (CBSE) (Comp Sci.)         66%           2008
+Experience 	 Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)          Class X (CBSE)                       82%           2006
+Extra curricular 	 EXTRA-CURRICULAR
+Extra curricular 	 ● Updated website for NSC 2014 and INDIACOM 2014 during MCA.
+Extra curricular 	 ● Perform updates and testing on LAN solution of INDIACOM Desktop Registration system during MCA.
+Extra curricular 	 ● Actively participated in technical and non-technical activities in college during MCA.
+Qualifications 	 ACHIEVEMENTS
+Qualifications 	 ● Awarded for Technical Support Excellence in Batch by BVICAM (2015)
+Qualifications 	 ● Secured 2nd position in IT Quiz organized by BVICAM (2013).
+Qualifications 	 ● Secured 2nd position in Structure Formation organized by UPTEC Computer Consultancy Limited (2009).
+Personal Details 	 PERSONAL DETAILS
+Personal Details 	 Father’s Name              :       Mr. Sushil Kumar Baranwal
+Personal Details 	 Date of Birth              :       10-Sep-1990
+Personal Details 	 Languages Known            :       Hindi & English
+Personal Details 	 Nationality                :       Indian
+Personal Details 	 Alternate E-Mail ID        :       rajneeshbarnwal@rocketmail.com
+Personal Details 	 Marital Status             :       Married
+Extra curricular 	 Strengths                  :       Quick Learner, Adoptable, Commitment Oriented
+RAJNEESH KUMAR BARNWAL
+Address:                                                                          Contact No: 07042488448 / 07503075418
+G-Block, Greenwood City                                                               E-mail: rajneeshbarnwal@gmail.com
+Sector-40, Gurgaon
+Haryana - 122003
+To associate with the reputed industry and work for the organization’s and personal growth and progress with my whole energy,
+knowledge, dedication and sincere efforts.
+PROFESSIONAL EXPERIENCE
+●    Working as Software Engineer with Aricent Technologies, Gurgaon since June 2016.
+●    Did Internship from Aricent Technologies, Gurgaon from Jan 2015 to June 2015.
+PROJECTS UNDERTAKEN
+1.   GUI based Network Monitoring System, Since Jan 2017
+● Working as UI developer for this project
+● Coding is being done in AngularJS with Bootstrap, HTML and less/css.
+● Implemented graphical representation of Networking devices using Cytoscape JS.
+● Involved from planning phase till development code.
+2.   GUI based Network Monitoring System, June 2016 – Dec 2017
+● Worked as a UI developer for this project.
+● Coding was done in AngularJS with Material Design, HTML and less/css.
+● Implemented various widgets using Ui-Grid, Cytoscape JS.
+● Did coding, unit testing, and automation testing with AngularJS, karma, and selenium frameworks.
+3.   Industrial Automation
+● Worked on this project on behalf of my internship training at Aricent Technologies, Gurgaon.
+● Worked on module implementation of Modbus Protocol.
+● Also worked with BeagleBone Device and RPM Sensors.
+● Used Core Java and JNI implementation with C/C++.
+4.   RB MAP, 2013
+● The application provides solutions for shortest routes and finding all routes between two cities.
+● Developed to learn the concepts of Dijkstra’s and Warshall’s algorithms and basics of data structures and
+● The application, coded in C++ using the Visual Studio 2012 platform.
+● Submitted as a summer project during MCA.
+AREAS OF EXPERTISE
+● Knowledge of Web development framework AngularJS, Angular 2, Angular 5.
+● Knowledge of web technologies like HTML, JavaScript, ES6, TypeScript, LESS/CSS, Material Design, Bootstrap
+● Knowledge of GitHub and GIT version control system.
+● Working Knowledge of Agile software development methodologies.
+● Strong organizational and preparation skills.
+Institute                                            Course                               Marks         Year of Passing
+GGSIPU, New Delhi                                    MCA                                  81%           2015
+Integral University, Lucknow (U.P.)                  BCA                                  70%           2011
+Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)          Class XII (CBSE) (Comp Sci.)         66%           2008
+Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)          Class X (CBSE)                       82%           2006
+EXTRA-CURRICULAR
+● Updated website for NSC 2014 and INDIACOM 2014 during MCA.
+● Perform updates and testing on LAN solution of INDIACOM Desktop Registration system during MCA.
+● Actively participated in technical and non-technical activities in college during MCA.
+ACHIEVEMENTS
+● Awarded for Technical Support Excellence in Batch by BVICAM (2015)
+● Secured 2nd position in IT Quiz organized by BVICAM (2013).
+● Secured 2nd position in Structure Formation organized by UPTEC Computer Consultancy Limited (2009).
+PERSONAL DETAILS
+Father’s Name              :       Mr. Sushil Kumar Baranwal
+Date of Birth              :       10-Sep-1990
+Languages Known            :       Hindi & English
+Nationality                :       Indian
+Alternate E-Mail ID        :       rajneeshbarnwal@rocketmail.com
+Marital Status             :       Married
+Strengths                  :       Quick Learner, Adoptable, Commitment Oriented
+name: Quick Learner
+email: rajneeshbarnwal@rocketmail.com
+mobile: +07042488448
+expertise: ledge, dedication and sincere efforts.
+expertise: loper for this project
+expertise: lopment code.
+expertise: loper for this project.
+expertise: ed core java and jni implementation with c/c++.
+expertise: loped to learn the concepts of dijkstra’s and warshall’s algorithms and basics of data structures and
+expertise: ledge of web development framework angularjs, angular 2, angular 5.
+expertise: ledge of web technologies like html, javascript, es6, typescript, less/css, material design, bootstrap
+expertise: ledge of github and git version control system.
+expertise: ledge of agile software development methodologies.
+expertise: (u.p.)                  bca                                  70%           2011
+expertise: n                   hindi & english
+++++++++++++++++++++++++++++++++++++++++++
+parsing file:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/iimjobs_BHARAT_BORANA.pdf
+--line  BHARAT BORANA                                                                                      WZ-433, Shiv nagar,      --main line  ['bharat', 'borana', '                                                                                     ', 'wz-433', 'shiv', 'nagar']
+--num_words  6 --cost  738.905609893065 --prob 0.01831563888873418 --label  other  --similarity :  0
+--line  Senior Software Engineer,                                                                Tihar Jail Road, Delhi, 110058      --main line  ['senior', 'software', 'engineer', '                                                               ', 'tihar', 'jail', 'road', 'delhi', '110058']
+--num_words  9 --cost  14841.31591025766 --prob 4.5399929762484854e-05 --label  other  --similarity :  0
+--line  Appster LLP, Gurugram, Haryana                                                               boranab@rediffmail.com      --main line  ['appster', 'llp', 'gurugram', 'haryana', '                                                              ', 'boranab@rediffmail.com']
+--num_words  6 --cost  738.905609893065 --prob 0.01831563888873418 --label  other  --similarity :  0
+--line  (+91) 900-120-2858      --main line  ['+91', '900', '120', '2858']
+--num_words  4 --cost  0 --prob 1 --label  Skills  --similarity :  0.224590168661897
+--line  ➢   Experienced full stack developer with various web development framework expertise.      --main line  ['➢', '  ', 'experience', 'full', 'stack', 'developer', 'with', 'various', 'web', 'development', 'framework', 'expertise']
+--num_words  12 --cost  299095.79870417283 --prob 1.1253517471925913e-08 --label  Experience  --similarity :  0.7721148147581652
+--------------TITLE---------------------
+--line  ➢   Over five years of commercial web and restful application development experience.      --main line  ['➢', '  ', 'over', 'five', 'year', 'of', 'commercial', 'web', 'and', 'restful', 'application', 'development', 'experience']
+--num_words  13 --cost  811308.3927575385 --prob 1.522997974471263e-09 --label  Experience  --similarity :  0.7870799985862772
+--------------TITLE---------------------
+--line  ➢   Experience working in Agile Scrum environment and project management.      --main line  ['➢', '  ', 'experience', 'work', 'in', 'agile', 'scrum', 'environment', 'and', 'project', 'management']
+--num_words  11 --cost  110663.31584284586 --prob 8.31528719103568e-08 --label  Experience  --similarity :  0.8320110267463866
+--------------TITLE---------------------
+--line  ➢   Web Development Frameworks: Laravel, CakePHP, NodeJs With Express.      --main line  ['➢', '  ', 'web', 'development', 'framework', 'laravel', 'cakephp', 'nodejs', 'with', 'express']
+--num_words  10 --cost  41342.87934927351 --prob 6.14421235332821e-07 --label  Projects  --similarity :  0.6314786347210027
+--line  ➢   UI Frameworks/Technologies: HTML5, CSS3, jQuery, Angular JS.      --main line  ['➢', '  ', 'ui', 'frameworks', 'technology', 'html5', 'css3', 'jquery', 'angular', 'js']
+--num_words  10 --cost  41342.87934927351 --prob 6.14421235332821e-07 --label  Projects  --similarity :  0.34804988923989694
+--line  ➢   Databases: MySQL and MongoDB      --main line  ['➢', '  ', 'database', 'mysql', 'and', 'mongodb']
+--num_words  6 --cost  738.905609893065 --prob 0.01831563888873418 --label  Projects  --similarity :  0.4376013090095108
+--line  ➢   Other tools: Bitbucket for version control, JIRA, ZOHO, ASANA for task management, AWS EC2 for hosting      --main line  ['➢', '  ', 'other', 'tool', 'bitbucket', 'for', 'version', 'control', 'jira', 'zoho', 'asana', 'for', 'task', 'management', 'aws', 'ec2', 'for', 'host']
+--num_words  18 --cost  120260428.41647768 --prob 6.914400106940203e-13 --label  Projects  --similarity :  0.6213268023916685
+--line  services, AWS S3 for image hosting      --main line  ['services', 'aws', 's3', 'for', 'image', 'host']
+--num_words  6 --cost  1738.905609893065 --prob 0.001831563888873418 --label  Projects  --similarity :  0.4659786570936874
+--line  Education:      --main line  ['education']
+--num_words  1 --cost  0 --prob 1 --label  Education  --similarity :  1.0
+--------------TITLE---------------------
+--line  ●   Rajasthan Technical University,Kota, Rajasthan                                                 2009/08 - 2012/07      --main line  ['●', '  ', 'rajasthan', 'technical', 'university', 'kota', 'rajasthan', '                                                ', '2009/08', '2012/07']
+--num_words  10 --cost  40342.87934927351 --prob 6.14421235332821e-06 --label  other  --similarity :  0
+--line  Bachelor of Technology, Computer Science and Technology (Agg. 70.3)      --main line  ['bachelor', 'of', 'technology', 'computer', 'science', 'and', 'technology', 'agg', '70.3']
+--num_words  9 --cost  14841.31591025766 --prob 4.5399929762484854e-05 --label  Experience  --similarity :  0.637034022823607
+--line  ●   Government Polytechnic College, Jodhpur, Rajasthan                                            2006/06 – 2009/07      --main line  ['●', '  ', 'government', 'polytechnic', 'college', 'jodhpur', 'rajasthan', '                                           ', '2006/06', '2009/07']
+--num_words  10 --cost  40342.87934927351 --prob 6.14421235332821e-06 --label  other  --similarity :  0
+--line  3 years Diploma in Computer Science (Agg. 70.8)      --main line  ['3', 'year', 'diploma', 'in', 'computer', 'science', 'agg', '70.8']
+--num_words  8 --cost  5459.815003314424 --prob 0.00033546262790251185 --label  Qualifications  --similarity :  0.5989131279388102
+--line  Work Experience:      --main line  ['work', 'experience']
+--num_words  2 --cost  0 --prob 1 --label  Experience  --similarity :  1.0
+--------------TITLE---------------------
+--line  1. Senior Software Engineer                                                                  2016/12 - Present      --main line  ['1', 'senior', 'software', 'engineer', '                                                                 ', '2016/12', 'present']
+--num_words  7 --cost  2008.5536923187667 --prob 0.0024787521766663585 --label  other  --similarity :  0
+--line  ➢ Appster LLC, Gurugram      --main line  ['➢', 'appster', 'llc', 'gurugram']
+--num_words  4 --cost  0 --prob 1 --label  other  --similarity :  0
+--line  ➢ Developing restful apis using Laravel framework for mobile team. Live chat implementation using NodeJs      --main line  ['➢', 'develop', 'restful', 'apis', 'use', 'laravel', 'framework', 'for', 'mobile', 'team', 'live', 'chat', 'implementation', 'use', 'nodejs']
+--num_words  15 --cost  5987414.171519781 --prob 2.7894680928689246e-10 --label  Projects  --similarity :  0.684911144870656
+--line  socket and Express.      --main line  ['socket', 'and', 'express']
+--num_words  3 --cost  2000 --prob 0.010000000000000002 --label  Personal Details  --similarity :  0.5120008165106192
+--line  ➢ Database design process in sprint-0, Code review process for assigned projects      --main line  ['➢', 'database', 'design', 'process', 'in', 'sprint-0', 'code', 'review', 'process', 'for', 'assign', 'project']
+--num_words  12 --cost  298095.79870417283 --prob 1.1253517471925912e-07 --label  other  --similarity :  0
+--line  ➢ Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.      --main line  ['➢', 'design', 'and', 'develop', 'template', 'admin', 'panel', 'cms', 'use', 'angularjs', '2', 'which', 'be', 'later', 'on', 'reuse', 'in', 'other', 'project']
+--num_words  19 --cost  326902737.24721104 --prob 9.357622968840175e-15 --label  Projects  --similarity :  0.8010349221653591
+--------------TITLE---------------------
+--line  ➢ Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI      --main line  ['➢', 'work', 'for', 'one', 'of', 'the', 'enterprise', 'client', 'pelican', 'auto', 'finance', 'have', 'develop', 'payment', 'gateway', 'with', 'pci']
+--num_words  17 --cost  44241339.200892046 --prob 5.109089028063325e-12 --label  Projects  --similarity :  0.732824263158852
+--------------TITLE---------------------
+--line  2 certification.      --main line  ['2', 'certification']
+--num_words  2 --cost  1000 --prob 0.1 --label  Qualifications  --similarity :  0.8348150019568967
+--------------TITLE---------------------
+--line  2. Senior Software Engineer                                                                   2014/12 - 2016/11      --main line  ['2', 'senior', 'software', 'engineer', '                                                                  ', '2014/12', '2016/11']
+--num_words  7 --cost  2008.5536923187667 --prob 0.0024787521766663585 --label  other  --similarity :  0
+--line  ➢ Xicom Technologies, New Delhi      --main line  ['➢', 'xicom', 'technologies', 'new', 'delhi']
+--num_words  5 --cost  271.8281828459045 --prob 0.1353352832366127 --label  other  --similarity :  0
+--line  ➢ Lead a team of two junior developers where my roles are to check if proper coding standard is followed.      --main line  ['➢', 'lead', 'a', 'team', 'of', 'two', 'junior', 'developer', 'where', 'role', 'be', 'to', 'check', 'if', 'proper', 'code', 'standard', 'be', 'follow']
+--num_words  19 --cost  326902737.24721104 --prob 9.357622968840175e-15 --label  Projects  --similarity :  0.7383218924257714
+--------------TITLE---------------------
+--line  ➢ My roles are developing restful apis, developing web applications with high scalability.      --main line  ['➢', 'role', 'be', 'develop', 'restful', 'apis', 'develop', 'web', 'application', 'with', 'high', 'scalability']
+--num_words  12 --cost  299095.79870417283 --prob 1.1253517471925913e-08 --label  Experience  --similarity :  0.729848069110626
+--------------TITLE---------------------
+--line  3. Software Engineer - Level I                                                                2012/10 - 2014/11      --main line  ['3', 'software', 'engineer', 'level', 'i', '                                                               ', '2012/10', '2014/11']
+--num_words  8 --cost  5459.815003314424 --prob 0.00033546262790251185 --label  other  --similarity :  0
+--line  ➢ C.G.Technosoft, Jodhpur      --main line  ['➢', 'c.g.technosoft', 'jodhpur']
+--num_words  3 --cost  0 --prob 1 --label  other  --similarity :  0
+--line  ➢ Started my career as trainee at this organization. My roles is to understand web application development      --main line  ['➢', 'start', 'career', 'as', 'trainee', 'at', 'this', 'organization', 'role', 'be', 'to', 'understand', 'web', 'application', 'development']
+--num_words  15 --cost  5987414.171519781 --prob 2.7894680928689246e-10 --label  Experience  --similarity :  0.7764132296479026
+--------------TITLE---------------------
+--line  using Cakephp 2.0 framework.      --main line  ['use', 'cakephp', '2.0', 'framework']
+--num_words  4 --cost  2000 --prob 0.010000000000000002 --label  Projects  --similarity :  0.4946805854090801
+--line  Key Projects:      --main line  ['key', 'project']
+--num_words  2 --cost  0 --prob 1 --label  Projects  --similarity :  1.0
+--------------TITLE---------------------
+--line  1. Pelican Auto Finance Powered by Payix      --main line  ['1', 'pelican', 'auto', 'finance', 'power', 'by', 'payix']
+--num_words  7 --cost  2008.5536923187667 --prob 0.0024787521766663585 --label  other  --similarity :  0
+--line  ➢ Payix provides state-of-the-art collections tools, payment processing resources and business intelligence      --main line  ['➢', 'payix', 'provide', 'state', 'of', 'the', 'art', 'collection', 'tool', 'payment', 'processing', 'resource', 'and', 'business', 'intelligence']
+--num_words  15 --cost  5987414.171519781 --prob 2.7894680928689246e-10 --label  other  --similarity :  0
+--line  solutions to U.S. lenders and auto dealers. Offering real-time loan management system (LMS) integration.      --main line  ['solution', 'to', 'u.s', 'lender', 'and', 'auto', 'dealer', 'offer', 'real', 'time', 'loan', 'management', 'system', 'lms', 'integration']
+--num_words  15 --cost  5989414.171519781 --prob 2.789468092868925e-12 --label  Personal Details  --similarity :  0.6856447117956502
+--line  ➢ Pelican Auto Finance, LLC’s senior management team has over 100 years of experience collectively in      --main line  ['➢', 'pelican', 'auto', 'finance', 'llc', '’s', 'senior', 'management', 'team', 'have', 'over', '100', 'year', 'of', 'experience', 'collectively', 'in']
+--num_words  17 --cost  44241339.200892046 --prob 5.109089028063325e-12 --label  Experience  --similarity :  0.7236886132347311
+--------------TITLE---------------------
+--line  automotive and consumer lending.      --main line  ['automotive', 'and', 'consumer', 'lending']
+--num_words  4 --cost  2000 --prob 0.010000000000000002 --label  Personal Details  --similarity :  0.6369250958935242
+--line  ➢ Technology stack: Laravel 5 framework      --main line  ['➢', 'technology', 'stack', 'laravel', '5', 'framework']
+--num_words  6 --cost  738.905609893065 --prob 0.01831563888873418 --label  Projects  --similarity :  0.5880325474099525
+--line  2. BlockPartee      --main line  ['2', 'blockpartee']
+--num_words  2 --cost  0 --prob 1 --label  other  --similarity :  0
+--line  ➢ Blockpartee is an app that allows you to host a virtual party following your favourite sports teams, centered      --main line  ['➢', 'blockpartee', 'be', 'an', 'app', 'that', 'allow', 'to', 'host', 'a', 'virtual', 'party', 'follow', 'favourite', 'sport', 'team', 'center']
+--num_words  17 --cost  44241339.200892046 --prob 5.109089028063325e-12 --label  other  --similarity :  0
+--line  around the squares/blocks game played by thousands of fans for years during the Super Bowl. This app makes      --main line  ['around', 'the', 'square', 'block', 'game', 'play', 'by', 'thousand', 'of', 'fan', 'for', 'year', 'during', 'the', 'super', 'bowl', 'this', 'app', 'make']
+--num_words  19 --cost  326902737.24721104 --prob 9.357622968840175e-15 --label  Projects  --similarity :  0.6616207598866657
+--line  it easier to set-up and play the game, invite friends and fans, and has added features like live chat.      --main line  ['easy', 'to', 'set', 'up', 'and', 'play', 'the', 'game', 'invite', 'friend', 'and', 'fan', 'and', 'have', 'add', 'feature', 'like', 'live', 'chat']
+--num_words  19 --cost  326903737.24721104 --prob 9.357622968840176e-16 --label  Projects  --similarity :  0.6660749045997555
+--line  ➢ Technology stack: Laravel 5 framework for API development and NodeJs for Chat Server      --main line  ['➢', 'technology', 'stack', 'laravel', '5', 'framework', 'for', 'api', 'development', 'and', 'nodejs', 'for', 'chat', 'server']
+--num_words  14 --cost  2202646.579480672 --prob 2.061153622438558e-09 --label  Projects  --similarity :  0.6762655744115267
+--line  3. Fitfix.co.uk      --main line  ['3', 'fitfix.co.uk']
+--num_words  2 --cost  0 --prob 1 --label  other  --similarity :  0
+--line  ➢ Fitfix is a revolutionary platform for Personal Trainers to help them manage, train and increase their clients. It      --main line  ['➢', 'fitfix', 'be', 'a', 'revolutionary', 'platform', 'for', 'personal', 'trainer', 'to', 'help', 'manage', 'train', 'and', 'increase', 'client']
+--num_words  16 --cost  16275479.141900392 --prob 3.775134544279098e-11 --label  other  --similarity :  0
+--line  provides comprehensive cloud based business management, physical training and nutrition tools in a very      --main line  ['provide', 'comprehensive', 'cloud', 'base', 'business', 'management', 'physical', 'training', 'and', 'nutrition', 'tool', 'in', 'a', 'very']
+--num_words  14 --cost  2203646.579480672 --prob 2.061153622438558e-10 --label  Skills  --similarity :  0.7469611321255961
+--------------TITLE---------------------
+--line  friendly way.      --main line  ['friendly', 'way']
+--num_words  2 --cost  2000 --prob 0.010000000000000002 --label  Experience  --similarity :  0.5890083257556812
+--line  ➢ Technology stack: Cakephp 3.0 framework      --main line  ['➢', 'technology', 'stack', 'cakephp', '3.0', 'framework']
+--num_words  6 --cost  738.905609893065 --prob 0.01831563888873418 --label  Projects  --similarity :  0.5127614228534919
+{'➢   Experienced full stack developer with various web development framework expertise.': {'label': 'Experience', 'similarity': 0.7721148147581652}, '➢   Over five years of commercial web and restful application development experience.': {'label': 'Experience', 'similarity': 0.7870799985862772}, '➢   Experience working in Agile Scrum environment and project management.': {'label': 'Experience', 'similarity': 0.8320110267463866}, 'Education:': {'label': 'Education', 'similarity': 1.0}, 'Work Experience:': {'label': 'Experience', 'similarity': 1.0}, '➢ Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.': {'label': 'Projects', 'similarity': 0.8010349221653591}, '➢ Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI': {'label': 'Projects', 'similarity': 0.732824263158852}, '2 certification.': {'label': 'Qualifications', 'similarity': 0.8348150019568967}, '➢ Lead a team of two junior developers where my roles are to check if proper coding standard is followed.': {'label': 'Projects', 'similarity': 0.7383218924257714}, '➢ My roles are developing restful apis, developing web applications with high scalability.': {'label': 'Experience', 'similarity': 0.729848069110626}, '➢ Started my career as trainee at this organization. My roles is to understand web application development': {'label': 'Experience', 'similarity': 0.7764132296479026}, 'Key Projects:': {'label': 'Projects', 'similarity': 1.0}, '➢ Pelican Auto Finance, LLC’s senior management team has over 100 years of experience collectively in': {'label': 'Experience', 'similarity': 0.7236886132347311}, 'provides comprehensive cloud based business management, physical training and nutrition tools in a very': {'label': 'Skills', 'similarity': 0.7469611321255961}}
+Personal Details 	 BHARAT BORANA                                                                                      WZ-433, Shiv nagar,
+Personal Details 	 Senior Software Engineer,                                                                Tihar Jail Road, Delhi, 110058
+Personal Details 	 Appster LLP, Gurugram, Haryana                                                               boranab@rediffmail.com
+Personal Details 	 (+91) 900-120-2858
+Experience 	 ➢   Experienced full stack developer with various web development framework expertise.
+Experience 	 ➢   Over five years of commercial web and restful application development experience.
+Experience 	 ➢   Experience working in Agile Scrum environment and project management.
+Experience 	 ➢   Web Development Frameworks: Laravel, CakePHP, NodeJs With Express.
+Experience 	 ➢   UI Frameworks/Technologies: HTML5, CSS3, jQuery, Angular JS.
+Experience 	 ➢   Databases: MySQL and MongoDB
+Experience 	 ➢   Other tools: Bitbucket for version control, JIRA, ZOHO, ASANA for task management, AWS EC2 for hosting
+Experience 	 services, AWS S3 for image hosting
+Education 	 Education:
+Education 	 ●   Rajasthan Technical University,Kota, Rajasthan                                                 2009/08 - 2012/07
+Education 	 Bachelor of Technology, Computer Science and Technology (Agg. 70.3)
+Education 	 ●   Government Polytechnic College, Jodhpur, Rajasthan                                            2006/06 – 2009/07
+Education 	 3 years Diploma in Computer Science (Agg. 70.8)
+Experience 	 Work Experience:
+Experience 	 1. Senior Software Engineer                                                                  2016/12 - Present
+Experience 	 ➢ Appster LLC, Gurugram
+Experience 	 ➢ Developing restful apis using Laravel framework for mobile team. Live chat implementation using NodeJs
+Experience 	 socket and Express.
+Experience 	 ➢ Database design process in sprint-0, Code review process for assigned projects
+Projects 	 ➢ Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.
+Projects 	 ➢ Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI
+Qualifications 	 2 certification.
+Qualifications 	 2. Senior Software Engineer                                                                   2014/12 - 2016/11
+Qualifications 	 ➢ Xicom Technologies, New Delhi
+Projects 	 ➢ Lead a team of two junior developers where my roles are to check if proper coding standard is followed.
+Experience 	 ➢ My roles are developing restful apis, developing web applications with high scalability.
+Experience 	 3. Software Engineer - Level I                                                                2012/10 - 2014/11
+Experience 	 ➢ C.G.Technosoft, Jodhpur
+Experience 	 ➢ Started my career as trainee at this organization. My roles is to understand web application development
+Experience 	 using Cakephp 2.0 framework.
+Projects 	 Key Projects:
+Projects 	 1. Pelican Auto Finance Powered by Payix
+Projects 	 ➢ Payix provides state-of-the-art collections tools, payment processing resources and business intelligence
+Projects 	 solutions to U.S. lenders and auto dealers. Offering real-time loan management system (LMS) integration.
+Experience 	 ➢ Pelican Auto Finance, LLC’s senior management team has over 100 years of experience collectively in
+Experience 	 automotive and consumer lending.
+Experience 	 ➢ Technology stack: Laravel 5 framework
+Experience 	 2. BlockPartee
+Experience 	 ➢ Blockpartee is an app that allows you to host a virtual party following your favourite sports teams, centered
+Experience 	 around the squares/blocks game played by thousands of fans for years during the Super Bowl. This app makes
+Experience 	 it easier to set-up and play the game, invite friends and fans, and has added features like live chat.
+Experience 	 ➢ Technology stack: Laravel 5 framework for API development and NodeJs for Chat Server
+Experience 	 3. Fitfix.co.uk
+Experience 	 ➢ Fitfix is a revolutionary platform for Personal Trainers to help them manage, train and increase their clients. It
+Skills 	 provides comprehensive cloud based business management, physical training and nutrition tools in a very
+Skills 	 friendly way.
+Skills 	 ➢ Technology stack: Cakephp 3.0 framework
+BHARAT BORANA                                                                                      WZ-433, Shiv nagar,
+Senior Software Engineer,                                                                Tihar Jail Road, Delhi, 110058
+Appster LLP, Gurugram, Haryana                                                               boranab@rediffmail.com
+(+91) 900-120-2858
+➢   Experienced full stack developer with various web development framework expertise.
+➢   Over five years of commercial web and restful application development experience.
+➢   Experience working in Agile Scrum environment and project management.
+➢   Web Development Frameworks: Laravel, CakePHP, NodeJs With Express.
+➢   UI Frameworks/Technologies: HTML5, CSS3, jQuery, Angular JS.
+➢   Databases: MySQL and MongoDB
+➢   Other tools: Bitbucket for version control, JIRA, ZOHO, ASANA for task management, AWS EC2 for hosting
+services, AWS S3 for image hosting
+●   Rajasthan Technical University,Kota, Rajasthan                                                 2009/08 - 2012/07
+Bachelor of Technology, Computer Science and Technology (Agg. 70.3)
+●   Government Polytechnic College, Jodhpur, Rajasthan                                            2006/06 – 2009/07
+3 years Diploma in Computer Science (Agg. 70.8)
+Work Experience:
+1. Senior Software Engineer                                                                  2016/12 - Present
+➢ Appster LLC, Gurugram
+➢ Developing restful apis using Laravel framework for mobile team. Live chat implementation using NodeJs
+socket and Express.
+➢ Database design process in sprint-0, Code review process for assigned projects
+➢ Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.
+➢ Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI
+2 certification.
+2. Senior Software Engineer                                                                   2014/12 - 2016/11
+➢ Xicom Technologies, New Delhi
+➢ Lead a team of two junior developers where my roles are to check if proper coding standard is followed.
+➢ My roles are developing restful apis, developing web applications with high scalability.
+3. Software Engineer - Level I                                                                2012/10 - 2014/11
+➢ C.G.Technosoft, Jodhpur
+➢ Started my career as trainee at this organization. My roles is to understand web application development
+using Cakephp 2.0 framework.
+Key Projects:
+1. Pelican Auto Finance Powered by Payix
+➢ Payix provides state-of-the-art collections tools, payment processing resources and business intelligence
+solutions to U.S. lenders and auto dealers. Offering real-time loan management system (LMS) integration.
+➢ Pelican Auto Finance, LLC’s senior management team has over 100 years of experience collectively in
+automotive and consumer lending.
+➢ Technology stack: Laravel 5 framework
+2. BlockPartee
+➢ Blockpartee is an app that allows you to host a virtual party following your favourite sports teams, centered
+around the squares/blocks game played by thousands of fans for years during the Super Bowl. This app makes
+it easier to set-up and play the game, invite friends and fans, and has added features like live chat.
+➢ Technology stack: Laravel 5 framework for API development and NodeJs for Chat Server
+3. Fitfix.co.uk
+➢ Fitfix is a revolutionary platform for Personal Trainers to help them manage, train and increase their clients. It
+provides comprehensive cloud based business management, physical training and nutrition tools in a very
+friendly way.
+➢ Technology stack: Cakephp 3.0 framework
+name: Personal Trainers
+email: boranab@rediffmail.com
+experience: collectively
+expertise: loper with various web development framework expertise.
+expertise: lopment experience.
+expertise: lopment frameworks laravel, cakephp, nodejs with express.
+expertise: loping restful apis using laravel framework for mobile team. live chat implementation using nodejs
+expertise: ed in other projects.
+expertise: loped payment gateway with pci
+expertise: lopers where my roles are to check if proper coding standard is followed.
+expertise: loping restful apis, developing web applications with high scalability.
+expertise: rstand web application development
+expertise: lopment and nodejs for chat server
+++++++++++++++++++++++++++++++++++++++++++
+count:  2

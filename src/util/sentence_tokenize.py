@@ -1,20 +1,22 @@
 import spacy
 import pickle
 import spacy
+from spacy import displacy
 
 
 
 with open ('outfile', 'rb') as fp:
-    # itemlist = pickle.load(fp)
-    # # print(itemlist)
-    # for word in itemlist:
-    #     print(word)
-    # line=" ".join(itemlist)
-    # print(line)
+    itemlist = pickle.load(fp)
+    # print(itemlist)
+    for word in itemlist:
+        print(word)
+    line=" ".join(itemlist)
+    print(line)
 
     nlp = spacy.load('en_core_web_md')
-    # doc = nlp(line)
-    #
+    doc = nlp(line)
+    displacy.serve(doc, style="ent")
+
     #
     # def remove_stopwords_fast(text):
     #     doc = nlp(text.lower())
