@@ -132,7 +132,13 @@ def extract_name(parts, line):
         span = nlp_text[start:end]
         return span.text
 
-
+def extract_duration(personal_info_line):
+	nlp = spacy.load("en_core_web_sm")
+	doc = nlp("personal_info_line")
+	for ent in doc.ents:
+		if ent.label_ is "DATE":
+			return ent.text 
+            
 def extract_objective(parts, line):
     found = False
     result = None
