@@ -6,12 +6,19 @@ from src.util.tokenizer_utils import word_tokenize
 import spacy
 import numpy as np
 from src.util.headers_dict import bucket2title, title2bucket, indexes_title
-
+import string
+from entity_extractor import group_extractor
+result = string.punctuation
+result = result.replace(" ","")
+punctuation_list = []
+for x in result:
+    punctuation_list.append(x)
 # load pre-trained model
 # nlp = spacy.load('en_core_web_md')
-nlp = spacy.load('en_core_web_lg')
+nlp = spacy.load('en_core_web_md')
 # initialize matcher with a vocab
 matcher = Matcher(nlp.vocab)
+matcher2 = Matcher(nlp.vocab)
 
 def extract_email(s, line):
     email = re.findall("[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.{0,})+[a-zA-Z]+", line)
@@ -125,16 +132,30 @@ def extract_name(parts, line):
     pattern = [{'POS': 'PROPN'}, {'POS': 'PROPN'}]
 
     matcher.add('NAME', None, pattern)
+    pattern2 = [{'POS': 'PROPN'}, {'POS': 'PROPN'}, {'POS': 'PROPN'}]
+    matcher2.add('NAME', None, pattern2)
 
     matches = matcher(nlp_text)
+    matches2 = matcher2(nlp_text)
+
+    for match_id, start, end in matches2:
+        span = nlp_text[start:end]
+        lst = span.text.split(" ")
+        if lst[0].lower in indianNames and lst[1].lower in indianNames and lst[2].lower in indianNames:
+            return span.text
 
     for match_id, start, end in matches:
         span = nlp_text[start:end]
-        return span.text
+        lst = span.text.split(" ")
+        if lst[0].lower in indianNames and lst[1].lower in indianNames:
+            return span.text
+
+
+
 
 def extract_duration(personal_info_line):
 	nlp = spacy.load("en_core_web_sm")
-	doc = nlp("personal_info_line")
+	doc = nlp(personal_info_line)
 	for ent in doc.ents:
 		if ent.label_ is "DATE":
 			return ent.text 
@@ -152,7 +173,7 @@ def extract_objective(parts, line):
     return result
 
 def extract_insti(lines):
-
+    """
 	#text is assumed to be sentences after sentence tokenisation of text.
 	lines = [nltk.word_tokenize(el) for el in lines]
 	lines = [nltk.pos_tag(el) for el in lines]
@@ -187,7 +208,19 @@ def extract_insti(lines):
 						new_hit = " ".join([el[0] for el in tagged_tokens])
 						degrees.append(new_hit)
 	return insti,degrees
+    """
+    insti = []
+    indianColleges = open('indianColleges.txt','r').read().lower()
+    indianColleges = set(indianColleges.split())
+    lst_of_groups = group_extractor(lines)
+    for l in lst_of_groups:
+        a = l.split(" ")
+        for x in a:
+            if(x in indianColleges):
+                insti.append(l)
+                break;
 
+    return insti
 
 def process_main_text2(text):
     doc = nlp(text.lower())

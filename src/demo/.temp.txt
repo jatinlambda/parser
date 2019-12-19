@@ -1,103 +1,125 @@
-                                          ANKIT KUMAR
-                          B.TECH (INFORMATION TECHNOLOGY)
-        G-96, Karampura, New Delhi - 110015 ◼ Phone: 9654215063 ◼ DOB: 01/12/1993
-                          ◼ Email: ankitkumarchoudhary7@gmail.com
+                   INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, NAGPUR
 
+                                             AAYESHA BASSY
 
- Determined, perceptive and goal-oriented individual seeking a challenging and inspiring career that
- would utilize my concepts and skills of information technology as well as enrich my knowledge by
- giving me an opportunity to be part of team that contributes towards the common growth of an
- organization, thereby stimulating both job satisfaction and professional growth.
+Mobile: +91 7350452238
 
-                                            QUALIFICATION
-NAME OF SCHOOL/COLLEGE          BOARD/UNIVERSITY                                    PERCENTAGE (%)
-B. Tech. (IT)                   Northern India Engineering College (GGSIPU)              67.89
-     12th                       S.S.D SBM S. Sec School, Punjabi Bagh, Delhi (CBSE)      60.04
-     10th                       S.S.D SBM S. Sec School, Punjabi Bagh, Delhi (CBSE)      70
+Email-id: aayes1998@gmail.com
 
+Linked-in: www.linkedin.com/in/aayesha-bassy/
 
-                                        PROFESSIONAL EXPERIENCE
+CAREER OBJECTIVE
 
-               Organization                      Designation                 Duration
-            Tecinso llb Pvt. Ltd.              PHP DEVELOPER          May 2017 to March 2018
-        Blue Eagle Infotech Pvt. Ltd.          PHP DEVELOPER          March 2018 To Oct 2019
-
- Mobiloitte India Pvt. Ltd., OKHLA PHASE 1 , New Delhi
-  PHP DEVELOPER (Trainee)
-       Worked on HTML, CORE PHP, SQL
-       DATABASE-MYSQL & PHPMYADMIN
-
- Tecinso Llb India Pvt. Ltd., Spaze Itech park, Gurugram, Sohna road, Haryana
-  PHP DEVELOPER
-        Worked on CORE PHP, CODEIGNITER, JAVASCRIPT and AJAX
-        DATABASE-MYSQL & PHPMYADMIN
-
- Blue Eagle Infotech Pvt Ltd ,JMD Megapolis, Gurugram,Sohna road,Haryana
-  PHP DEVELOPER
-        Working on CORE PHP, JAVASCRIPT, AJAX,API and ECOMMERCE websites
-        DATABASE-MYSQL & PHPMYADMIN
-
-
-                                             TECHNICAL SKILLS
-Programming Languages           CORE PHP, HTML CODEIGNITER, JAVASCRIPT, AJAX,DATABASE, OOPS, API
-Database                        MYSQL, PHPMYADMIN
-Operating System                Windows XP/VISTA/7/8/10 and MAC
+I am a creative, highly analytical individual and a pro-active problem solver with a solid Computer Science
+background. Have the ability to engineer responsive solutions and can work in a dynamic environment. Looking for
+an effective position in Software Development related fields in a progressive organization that gives me a scope to
+enhance my technical acumen and utilize my skills towards the growth of the organization.
 
 
 
+ACADEMIC QUALIFICATION (B.Tech.)
+Enrollment no: BT16CSE008
 
-                                                                                             Page | 1
-                                                PROJECT
-   LIST OF E-COMMERCE WEBSITES
-   https://fruituncle.in/
-   https://flowguards.net/
-   https://opensms.in/refashion/
-   https://www.ptah.in/
-   https://www.buy24x7.in/
-   http://adahfashion.com/
-   https://opensms.in/tailoring/
+Branch: Computer Science & Engineering (CSE)
 
-   LIST OF CLIENT WEBSITES
-   http://financialdesk.opensms.in/financial
-   https://www.presude.com
-   https://paissamanagement.com
-   https://www.thebaristadiner.com
-   http://prlindia.com/
-   https://opensms.in/food/
-
- EVENT MANAGEMENT SYSTEM
- https://vteamseducation.com/
-
- REALESTATE WEBSITE
- https://www.arsrealty.in
-
- SCHOOL MANAGEMENT SYSTEM
-A complete school portal for admin, student, teacher and parent was created. All activity can be measured
-online on one plea like student marks, attendance on daily basis exam. This project was used especially to
-improve the ability and interest of the weak students. (codeigniter)
-
- EMPLOYEE MANAGEMENT SYSTEM
-An admin login for provide user login, assign project and manage work reports and user login for attendance
-and project timming using php (core php and codeigniter).
-
-                                                SPECIAL INTERESTS
-       Interacting with people and making friends
-       Dancing in loud music
-       Listening music
-       Playing cricket and chess
-
-                                                PERSONAL DETAILS
-Nationality: Indian
-Languages Know: Hindi (Native), English (Fluent)
-Attributes: Sincere, Honest, Responsible, Hardworking, Creative, Interactive and Dedicated to my work
-Marital Status: Unmarried
-Age: 25 years (Male)
-
-                                                DECLARATION
-I hereby declare that the information furnished is correct to the best of my knowledge.
-NAME: ANKIT KUMAR
+Current CGPA: 7.95/10
 
 
-                                                                                                    Page | 2
-Page | 3
+
+       QUALIFICATION                     INSTITUTE                    YEAR       SCORE/SGPA              CGPA
+      B.Tech. 7th Semester                IIIT Nagpur                 2019          Ongoing
+      B.Tech. 6th Semester                IIIT Nagpur                 2019            8.33                7.95
+      B.Tech. 5th Semester                IIIT Nagpur                 2018            8.18                7.89
+      B.Tech. 4th Semester                IIIT Nagpur                 2018            9.65                7.84
+      B.Tech. 3rd Semester                IIIT Nagpur                 2017            7.10                7.27
+      B.Tech. 2nd Semester                IIIT Nagpur                 2017            7.39                7.38
+      B.Tech. 1st Semester                IIIT Nagpur                 2016            7.36                7.36
+        CLASS XII(HSC)         K.V. Manauri, Allahabad (CBSE)         2016           94.5%
+         CLASS X(SSC)          K.V. Manauri, Allahabad (CBSE)         2014            95%                 10
+
+
+INTERNSHIPS
+  •   Academic Intern - Persistent Systems Ltd, Nagpur                                       June 2018 – July 2018
+
+       Summer Internship
+       The goal of the project was to accept input files (.csv files) having their content in different formats and
+       transforming them into a fixed, specified format file according to a set of predefined rules, using Java and
+       SQL. (Transforming unstructured data into structured data)
+          UI & Python Intern – Persistent Systems Ltd, Nagpur                              June 2019 – Present
+          Semester Long Internship (6 Months)
+          Currently being trained on the front-end technologies, namely, HTML5, CSS3, JavaScript, AJAX and
+          Angular. Also working on the “Pool Operations Management” project wherein we are automating the tasks
+          that are performed by the likes of Excel, etc.
+
+
+
+PROJECTS/ACTIVITIES
+
+ •       Blog-a-thon                                                                                     March 2017
+          A dynamic website providing users to create, delete, view and update their blogs. It was developed using
+          HTML, CSS and JS using BOOTSTRAP and a portal was also developed in PHP
+
+ •       Face Detection and Recognition:                                                                 March 2018
+          A project that uses the OpenCV library and Python for detecting facial features and recognizing faces,
+          saving detected faces in the database
+
+ •       Hostel Management Portal                                                                         April 2018
+          A web application providing a technical way for the replacement of the existing manual system, using JSP
+          and Servlet technology, providing effective communication between the users
+
+ • SocketPro                                                                                          Oct 2018
+      A peer-to-peer chat application developed using UDP sockets and a file transfer system developed using TCP
+      sockets in C
+
+
+
+COMPUTER PROFICIENCY
+
+     •     Programming Languages: C/C++, Java, Python, R
+     •     Website Designing: CSS, HTML, Bootstrap, JavaScript, PHP, Angular
+     •     Database Management: MySQL
+     •     Software Packages: Android Studio, Pentaho, Netbeans, Corel Draw, MySQL Workbench
+     •     Coursework: Data Structures and Algorithms, Object Oriented Programming, Operating Systems,
+           Database Management System, Software Engineering, Theory of Computation
+
+
+CURRENT ACTIVITIES
+
+Online Advertising Head (IIITN)                                                                     2016-Present
+
+Responsible for handling and maintaining all the social media profiles of our institute, and promoting our institute
+events. Have played a vital role in the increase of participation for our institute fests by 70% in 2018 as compared to
+2017.
+
+
+ACHIEVEMENTS AND HONOURS
+
+     •      Was awarded the Kalpana Chawla Award for Academic Excellence (2014)
+     •      Was the School Head Girl (2015-2016)
+     •      Bagged the first position in the Poster Designing Competition held by AFWWA, 24 ED Manauri
+EXTRA CURRICULAR ACTIVITIES
+
+    •   Frequent anchor at various events.
+    •   Designing Team Head at Tantrafiesta 2018, Abhivyakti 2019, IIITN.
+    •   Member of SAC – Cultural Chief Coordinator (2018 – 2019), IIITN.
+    •   Food Blogging: Own and manage the Instagram handle – The Subtle Savour (TSS).
+    •   I have a flair in writing, technical as well as creative.
+    •   I have an avid interest in playing the guitar.
+
+
+
+PERSONAL DETAILS:
+Date of Birth: 14/12/1998
+
+Address: IIIT Nagpur, Seminary Hills, Nagpur, Maharashtra- 440006
+
+Alternate Contact: +91 8009119992 (Father)
+
+
+
+
+I hereby acknowledge that the information furnished above is correct to the best of my knowledge.
+
+Aayesha Bassy
+(Date: 23/07/19)
 

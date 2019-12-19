@@ -1,0 +1,189 @@
+extracting text from pdf:  /home/shalabh/Resume_Parser/parser/src/demo/../../dataset/samplecv/Ankit Cv.pdf.pdf
+extracting text from pdf:  /home/shalabh/Resume_Parser/parser/src/demo/../../dataset/samplecv/Braj_Kishor_Resume.pdf
+extracting text from pdf:  /home/shalabh/Resume_Parser/parser/src/demo/../../dataset/samplecv/Akshesh.Cv.pdf.pdf
+extracting text from pdf:  /home/shalabh/Resume_Parser/parser/src/demo/../../dataset/samplecv/AayeshaBassy_IIITN.pdf
+parsing file:  /home/shalabh/Resume_Parser/parser/src/demo/../../dataset/samplecv/Ankit Cv.pdf.pdf
+--line  ANKIT KUMAR
+--num_words  2 --prob 0.1 --label  Qualifications  --similarity :  0.07748406484079319
+
+--line  B.TECH (INFORMATION TECHNOLOGY)
+--num_words  3 --prob 0.1 --label  Personal Details  --similarity :  0.6647585516948886
+
+--line  QUALIFICATION
+--num_words  1 --prob 1 --label  Qualifications  --similarity :  0.8370598577386572
+--------------TITLE---------------------
+
+--line  PROFESSIONAL EXPERIENCE
+--num_words  2 --prob 1 --label  Experience  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  PHP DEVELOPER (Trainee)
+--num_words  3 --prob 0.8 --label  Skills  --similarity :  0.4629742100840187
+--------------OTHER TITLE---------------------
+
+--line  PHP DEVELOPER
+--num_words  2 --prob 1 --label  Projects  --similarity :  0.3918493833917564
+
+--line  PHP DEVELOPER
+--num_words  2 --prob 1 --label  Projects  --similarity :  0.3918493833917564
+
+--line  TECHNICAL SKILLS
+--num_words  2 --prob 1 --label  Skills  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  Page | 1
+--num_words  3 --prob 0.8 --label  Personal Details  --similarity :  0.37317130478325283
+
+--line  PROJECT
+--num_words  1 --prob 1 --label  Projects  --similarity :  0.8699969590989026
+--------------TITLE---------------------
+
+--line   REALESTATE WEBSITE
+--num_words  3 --prob 1 --label  Personal Details  --similarity :  0.6368230636809163
+--------------OTHER TITLE---------------------
+
+--line   SCHOOL MANAGEMENT SYSTEM
+--num_words  4 --prob 0.1353352832366127 --label  Skills  --similarity :  0.7627365537332824
+--------------TITLE---------------------
+
+--line   EMPLOYEE MANAGEMENT SYSTEM
+--num_words  4 --prob 0.1353352832366127 --label  Skills  --similarity :  0.7530534756970991
+--------------TITLE---------------------
+
+--line  SPECIAL INTERESTS
+--num_words  2 --prob 1 --label  Hobbies  --similarity :  0.836800443094694
+--------------TITLE---------------------
+
+--line  PERSONAL DETAILS
+--num_words  2 --prob 1 --label  Personal Details  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  Nationality: Indian
+--num_words  2 --prob 0.6400000000000001 --label  Personal Details  --similarity :  0.3457401270830141
+
+--line  Marital Status: Unmarried
+--num_words  3 --prob 0.5120000000000001 --label  Personal Details  --similarity :  0.4586737176619346
+
+--line  DECLARATION
+--num_words  1 --prob 1 --label  Qualifications  --similarity :  0.40033869216857887
+--------------OTHER TITLE---------------------
+
+--line  NAME: ANKIT KUMAR
+--num_words  3 --prob 0.1 --label  Qualifications  --similarity :  0.20556857578848742
+
+--line  Page | 2
+--num_words  3 --prob 0.8 --label  Personal Details  --similarity :  0.3775144072232356
+
+--line  Page | 3
+--num_words  3 --prob 0.8 --label  Personal Details  --similarity :  0.3780286508161921
+
+
+Using the 'ent' visualizer
+Serving on http://0.0.0.0:5000 ...
+
+Shutting down server on port 5000.
+Personal Details 	 ANKIT KUMAR
+Personal Details 	 B.TECH (INFORMATION TECHNOLOGY)
+Personal Details 	 G-96, Karampura, New Delhi - 110015 ◼ Phone: 9654215063 ◼ DOB: 01/12/1993
+Personal Details 	 ◼ Email: ankitkumarchoudhary7@gmail.com
+Personal Details 	 Determined, perceptive and goal-oriented individual seeking a challenging and inspiring career that
+Personal Details 	 would utilize my concepts and skills of information technology as well as enrich my knowledge by
+Personal Details 	 giving me an opportunity to be part of team that contributes towards the common growth of an
+Personal Details 	 organization, thereby stimulating both job satisfaction and professional growth.
+Qualifications 	 QUALIFICATION
+Qualifications 	 NAME OF SCHOOL/COLLEGE          BOARD/UNIVERSITY                                    PERCENTAGE (%)
+Qualifications 	 B. Tech. (IT)                   Northern India Engineering College (GGSIPU)              67.89
+Qualifications 	 12th                       S.S.D SBM S. Sec School, Punjabi Bagh, Delhi (CBSE)      60.04
+Qualifications 	 10th                       S.S.D SBM S. Sec School, Punjabi Bagh, Delhi (CBSE)      70
+Experience 	 PROFESSIONAL EXPERIENCE
+Experience 	 Organization                      Designation                 Duration
+Experience 	 Tecinso llb Pvt. Ltd.              PHP DEVELOPER          May 2017 to March 2018
+Experience 	 Blue Eagle Infotech Pvt. Ltd.          PHP DEVELOPER          March 2018 To Oct 2019
+Experience 	  Mobiloitte India Pvt. Ltd., OKHLA PHASE 1 , New Delhi
+others 	 PHP DEVELOPER (Trainee)
+others 	     Worked on HTML, CORE PHP, SQL
+others 	     DATABASE-MYSQL & PHPMYADMIN
+others 	  Tecinso Llb India Pvt. Ltd., Spaze Itech park, Gurugram, Sohna road, Haryana
+others 	 PHP DEVELOPER
+others 	     Worked on CORE PHP, CODEIGNITER, JAVASCRIPT and AJAX
+others 	     DATABASE-MYSQL & PHPMYADMIN
+others 	  Blue Eagle Infotech Pvt Ltd ,JMD Megapolis, Gurugram,Sohna road,Haryana
+others 	 PHP DEVELOPER
+others 	     Working on CORE PHP, JAVASCRIPT, AJAX,API and ECOMMERCE websites
+others 	     DATABASE-MYSQL & PHPMYADMIN
+Skills 	 TECHNICAL SKILLS
+Skills 	 Programming Languages           CORE PHP, HTML CODEIGNITER, JAVASCRIPT, AJAX,DATABASE, OOPS, API
+Skills 	 Database                        MYSQL, PHPMYADMIN
+Skills 	 Operating System                Windows XP/VISTA/7/8/10 and MAC
+Skills 	 Page | 1
+Projects 	 PROJECT
+Projects 	    LIST OF E-COMMERCE WEBSITES
+Projects 	    https://fruituncle.in/
+Projects 	    https://flowguards.net/
+Projects 	    https://opensms.in/refashion/
+Projects 	    https://www.ptah.in/
+Projects 	    https://www.buy24x7.in/
+Projects 	    http://adahfashion.com/
+Projects 	    https://opensms.in/tailoring/
+Projects 	    LIST OF CLIENT WEBSITES
+Projects 	    http://financialdesk.opensms.in/financial
+Projects 	    https://www.presude.com
+Projects 	    https://paissamanagement.com
+Projects 	    https://www.thebaristadiner.com
+Projects 	    http://prlindia.com/
+Projects 	    https://opensms.in/food/
+Projects 	  EVENT MANAGEMENT SYSTEM
+Projects 	  https://vteamseducation.com/
+others 	  REALESTATE WEBSITE
+others 	  https://www.arsrealty.in
+Skills 	  SCHOOL MANAGEMENT SYSTEM
+Skills 	 A complete school portal for admin, student, teacher and parent was created. All activity can be measured
+Skills 	 online on one plea like student marks, attendance on daily basis exam. This project was used especially to
+Skills 	 improve the ability and interest of the weak students. (codeigniter)
+Skills 	  EMPLOYEE MANAGEMENT SYSTEM
+Skills 	 An admin login for provide user login, assign project and manage work reports and user login for attendance
+Skills 	 and project timming using php (core php and codeigniter).
+Hobbies 	 SPECIAL INTERESTS
+Hobbies 	    Interacting with people and making friends
+Hobbies 	    Dancing in loud music
+Hobbies 	    Listening music
+Hobbies 	    Playing cricket and chess
+Personal Details 	 PERSONAL DETAILS
+Personal Details 	 Nationality: Indian
+Personal Details 	 Languages Know: Hindi (Native), English (Fluent)
+Personal Details 	 Attributes: Sincere, Honest, Responsible, Hardworking, Creative, Interactive and Dedicated to my work
+Personal Details 	 Marital Status: Unmarried
+Personal Details 	 Age: 25 years (Male)
+others 	 DECLARATION
+others 	 I hereby declare that the information furnished is correct to the best of my knowledge.
+others 	 NAME: ANKIT KUMAR
+others 	 Page | 2
+others 	 Page | 3
+++++++++++++++++++++++++++++++++++++++++++
+parsing file:  /home/shalabh/Resume_Parser/parser/src/demo/../../dataset/samplecv/Braj_Kishor_Resume.pdf
+--line  Final Year Undergraduate
+--num_words  3 --prob 0.5120000000000001 --label  Projects  --similarity :  0.6597188272330923
+
+--line  EDUCATION
+--num_words  1 --prob 1 --label  Education  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  Secondary (CBSE); GPA: (9.8/10))
+--num_words  4 --prob 0.10826822658929017 --label  Qualifications  --similarity :  0.5360915023069841
+
+--line  INTERNSHIPS
+--num_words  1 --prob 1 --label  Experience  --similarity :  1.0
+--------------TITLE---------------------
+
+--line  PUBLICATIONS
+--num_words  1 --prob 1 --label  Projects  --similarity :  0.5481292865005746
+--------------OTHER TITLE---------------------
+
+--line  PROJECTS/ACTIVITIES
+--num_words  2 --prob 1 --label  Projects  --similarity :  0.8721751111107565
+--------------TITLE---------------------
+
+--line  TECHNICAL SKILLS
+--num_words  2 --prob 1 --label  Skills  --similarity :  1.0
+--------------TITLE---------------------
+
