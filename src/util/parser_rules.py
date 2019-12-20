@@ -229,7 +229,7 @@ def extract_insti(lines):
 
     for college in indianColleges:
         if(college[1:-1] in lines.lower()):
-            insti.append(college[1:-1])
+            insti.append(college)
 
     return insti
 
