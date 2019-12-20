@@ -209,6 +209,7 @@ def extract_insti(lines):
 						degrees.append(new_hit)
 	return insti,degrees
     """
+    """
     insti = []
     indianColleges = open('indianColleges.txt','r').read().lower()
     indianColleges = set(indianColleges.split())
@@ -219,6 +220,16 @@ def extract_insti(lines):
             if(x in indianColleges):
                 insti.append(l)
                 break;
+
+    return insti
+    """
+    insti = []
+    indianColleges = open('file.csv','r').read.lower()
+    indianColleges = list(indianColleges.split(",,,,\n"))
+
+    for college in indianColleges:
+        if(college[1:-1] in lines.lower()):
+            insti.append(college[1:-1])
 
     return insti
 
