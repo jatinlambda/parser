@@ -1,0 +1,75 @@
+                                            RAJNEESH KUMAR BARNWAL
+
+Address:                                                                          Contact No: 07042488448 / 07503075418
+G-Block, Greenwood City                                                               E-mail: rajneeshbarnwal@gmail.com
+Sector-40, Gurgaon
+Haryana - 122003
+
+
+OBJECTIVE
+
+To associate with the reputed industry and work for the organization’s and personal growth and progress with my whole energy,
+knowledge, dedication and sincere efforts.
+
+PROFESSIONAL EXPERIENCE
+
+    ●    Working as Software Engineer with Aricent Technologies, Gurgaon since June 2016.
+    ●    Did Internship from Aricent Technologies, Gurgaon from Jan 2015 to June 2015.
+
+PROJECTS UNDERTAKEN
+
+    1.   GUI based Network Monitoring System, Since Jan 2017
+             ● Working as UI developer for this project
+             ● Coding is being done in AngularJS with Bootstrap, HTML and less/css.
+             ● Implemented graphical representation of Networking devices using Cytoscape JS.
+             ● Involved from planning phase till development code.
+    2.   GUI based Network Monitoring System, June 2016 – Dec 2017
+             ● Worked as a UI developer for this project.
+             ● Coding was done in AngularJS with Material Design, HTML and less/css.
+             ● Implemented various widgets using Ui-Grid, Cytoscape JS.
+             ● Did coding, unit testing, and automation testing with AngularJS, karma, and selenium frameworks.
+    3.   Industrial Automation
+             ● Worked on this project on behalf of my internship training at Aricent Technologies, Gurgaon.
+             ● Worked on module implementation of Modbus Protocol.
+             ● Also worked with BeagleBone Device and RPM Sensors.
+             ● Used Core Java and JNI implementation with C/C++.
+    4.   RB MAP, 2013
+             ● The application provides solutions for shortest routes and finding all routes between two cities.
+             ● Developed to learn the concepts of Dijkstra’s and Warshall’s algorithms and basics of data structures and
+                 OOPs.
+             ● The application, coded in C++ using the Visual Studio 2012 platform.
+             ● Submitted as a summer project during MCA.
+
+AREAS OF EXPERTISE
+   ● Knowledge of Web development framework AngularJS, Angular 2, Angular 5.
+   ● Knowledge of web technologies like HTML, JavaScript, ES6, TypeScript, LESS/CSS, Material Design, Bootstrap
+   ● Knowledge of GitHub and GIT version control system.
+   ● Working Knowledge of Agile software development methodologies.
+   ● Strong organizational and preparation skills.
+
+EDUCATION
+
+   Institute                                            Course                               Marks         Year of Passing
+   GGSIPU, New Delhi                                    MCA                                  81%           2015
+   Integral University, Lucknow (U.P.)                  BCA                                  70%           2011
+   Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)          Class XII (CBSE) (Comp Sci.)         66%           2008
+   Jawahar Navodaya Vidyalaya, Azamgarh (U.P.)          Class X (CBSE)                       82%           2006
+EXTRA-CURRICULAR
+   ● Updated website for NSC 2014 and INDIACOM 2014 during MCA.
+   ● Perform updates and testing on LAN solution of INDIACOM Desktop Registration system during MCA.
+   ● Actively participated in technical and non-technical activities in college during MCA.
+
+ACHIEVEMENTS
+  ● Awarded for Technical Support Excellence in Batch by BVICAM (2015)
+  ● Secured 2nd position in IT Quiz organized by BVICAM (2013).
+  ● Secured 2nd position in Structure Formation organized by UPTEC Computer Consultancy Limited (2009).
+
+PERSONAL DETAILS
+     Father’s Name              :       Mr. Sushil Kumar Baranwal
+     Date of Birth              :       10-Sep-1990
+     Languages Known            :       Hindi & English
+     Nationality                :       Indian
+     Alternate E-Mail ID        :       rajneeshbarnwal@rocketmail.com
+     Marital Status             :       Married
+     Strengths                  :       Quick Learner, Adoptable, Commitment Oriented
+

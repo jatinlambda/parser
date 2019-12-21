@@ -6,16 +6,16 @@ from spacy import displacy
 
 
 with open ('outfile', 'rb') as fp:
-    itemlist = pickle.load(fp)
-    # print(itemlist)
-    for word in itemlist:
-        print(word)
-    line=" ".join(itemlist)
-    print(line)
+    # itemlist = pickle.load(fp)
+    # # print(itemlist)
+    # for word in itemlist:
+    #     print(word)
+    # line=" ".join(itemlist)
+    # print(line)
 
     nlp = spacy.load('en_core_web_md')
-    doc = nlp(line)
-    displacy.serve(doc, style="ent")
+    # doc = nlp(line)
+    # displacy.serve(doc, style="ent")
 
     #
     # def remove_stopwords_fast(text):
@@ -89,6 +89,8 @@ with open ('outfile', 'rb') as fp:
 
 
 
+
+
     # doc=nlp(remove_stopwords_fast(line))
 
     # doc = nlp(process_text(line))
@@ -98,13 +100,11 @@ with open ('outfile', 'rb') as fp:
 
     # for sent in doc.sents:
     #     print(sent.text)
+    
 
-    print(calculate_similarity_with_processing("experience", "Experienced full stack developer with various web development framework expertise."))
-    print(calculate_similarity_with_processing("experience", "Over five years of commercial web and restful application development experience."))
-    print(calculate_similarity_with_processing("experience", "Web Development Frameworks: Laravel, CakePHP, NodeJs With Express"))
-    print(calculate_similarity_with_processing("personal details", "Web Development Frameworks: Laravel, CakePHP, NodeJs With Express"))
-    print(calculate_similarity_with_processing("personal details",
-                                               "Jatin Lamba"))
+    print(calculate_similarity_with_processing("Technical University", "Rajasthan Technical University,Kota, Rajasthan"))
+    print(calculate_similarity_with_processing("university", "3 years Diploma in Computer Science (Agg. 70.8)"))
+    print(calculate_similarity_with_processing("university", "Bachelor of Technology, Computer Science and Technology"))
 
     # def get_verbs
 

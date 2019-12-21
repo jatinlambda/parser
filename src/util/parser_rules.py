@@ -138,6 +138,9 @@ def extract_name(parts, line):
     matches = matcher(nlp_text)
     matches2 = matcher2(nlp_text)
 
+    indianNames = open('../util/allNames.txt', 'r').read().lower()
+    indianNames = set(indianNames.split())
+
     for match_id, start, end in matches2:
         span = nlp_text[start:end]
         lst = span.text.split(" ")
@@ -172,66 +175,158 @@ def extract_objective(parts, line):
             break
     return result
 
+# def extract_insti(lines):
+#
+#     #text is assumed to be sentences after sentence tokenisation of text.
+#     lines = [nltk.word_tokenize(el) for el in lines]
+#     lines = [nltk.pos_tag(el) for el in lines]
+#
+#     indianColleges = open('indianColleges.txt','r').read().lower()
+#     indianColleges = set(indianColleges.split())
+#     indianDegrees = open('indianDegrees.txt','r').read().lower()
+#     indianDegrees = set(indianDegrees.split())
+#     print(indianDegrees)
+#     #instiregex = r'INSTI: {<DT.>?<NNP.*>+<IN.*>?<NNP.*>+}'
+#     instiregex = r'INSTI: {<JJ.>?<NN.>?<IN.>?<DT.>?<NNP.*>+<IN.>?<NNP.*>+}'
+#     chunkParser = nltk.RegexpParser(instiregex)
+#
+#     insti = []
+#     degrees = []
+#     for tagged_tokens in lines:
+# 		print(tagged_tokens)
+# 		chunked_tokens = chunkParser.parse(tagged_tokens)
+# 		for subtree in chunked_tokens.subtrees():
+# 			#print(subtree)
+# 			if subtree.label() == 'INSTI':
+# 				for ind,leaf in enumerate(subtree.leaves()):
+# 					#print(ind,leaf)
+# 					if leaf[0].lower() in indianColleges and 'NNP' in leaf[1]:
+# 					#	print(leaf)
+# 						hit = " ".join([el[0] for el in tagged_tokens])
+# 						insti.append(hit)
+# 			else:
+# 				for ind,leaf in enumerate(subtree.leaves()):
+# 					if leaf[0].lower() in indianDegrees:
+# 						#print(leaf[0].lower())
+# 						new_hit = " ".join([el[0] for el in tagged_tokens])
+# 						degrees.append(new_hit)
+#     return insti,degrees
+#
+#     """
+#     insti = []
+#     indianColleges = open('indianColleges.txt','r').read().lower()
+#     indianColleges = set(indianColleges.split())
+#     lst_of_groups = group_extractor(lines)
+#     for l in lst_of_groups:
+#         a = l.split(" ")
+#         for x in a:
+#             if(x in indianColleges):
+#                 insti.append(l)
+#                 break;
+#
+#     return insti
+#     """
+#     # insti = []
+#     # indianColleges = open('file.csv','r').read.lower()
+#     # indianColleges = list(indianColleges.split(",,,,\n"))
+#     #
+#     # for college in indianColleges:
+#     #     if(college[1:-1] in lines.lower()):
+#     #         insti.append(college)
+#
+#     return insti
+
+
 def extract_insti(lines):
     """
-	#text is assumed to be sentences after sentence tokenisation of text.
-	lines = [nltk.word_tokenize(el) for el in lines]
-	lines = [nltk.pos_tag(el) for el in lines]
+    # text is assumed to be sentences after sentence tokenisation of text.
+    lines = [nltk.word_tokenize(el) for el in lines]
+    lines = [nltk.pos_tag(el) for el in lines]
 
-	indianColleges = open('indianColleges.txt','r').read().lower()
-	indianColleges = set(indianColleges.split())
-	indianDegrees = open('indianDegrees.txt','r').read().lower()
-	indianDegrees = set(indianDegrees.split())
-	print(indianDegrees)
-	#instiregex = r'INSTI: {<DT.>?<NNP.*>+<IN.*>?<NNP.*>+}'
-	instiregex = r'INSTI: {<JJ.>?<NN.>?<IN.>?<DT.>?<NNP.*>+<IN.>?<NNP.*>+}'
-	chunkParser = nltk.RegexpParser(instiregex)
-
-	insti = []
-	degrees = []
-	for tagged_tokens in lines:
-		print(tagged_tokens)
-		chunked_tokens = chunkParser.parse(tagged_tokens)
-		for subtree in chunked_tokens.subtrees():
-			#print(subtree)
-			if subtree.label() == 'INSTI':
-				for ind,leaf in enumerate(subtree.leaves()):
-					#print(ind,leaf)
-					if leaf[0].lower() in indianColleges and 'NNP' in leaf[1]:
-					#	print(leaf)
-						hit = " ".join([el[0] for el in tagged_tokens])
-						insti.append(hit)
-			else:
-				for ind,leaf in enumerate(subtree.leaves()):
-					if leaf[0].lower() in indianDegrees:
-						#print(leaf[0].lower())
-						new_hit = " ".join([el[0] for el in tagged_tokens])
-						degrees.append(new_hit)
-	return insti,degrees
-    """
-    """
-    insti = []
-    indianColleges = open('indianColleges.txt','r').read().lower()
+    indianColleges = open('indianColleges.txt', 'r').read().lower()
     indianColleges = set(indianColleges.split())
-    lst_of_groups = group_extractor(lines)
+    indianDegrees = open('indianDegrees.txt', 'r').read().lower()
+    indianDegrees = set(indianDegrees.split())
+    print(indianDegrees)
+    # instiregex = r'INSTI: {<DT.>?<NNP.*>+<IN.*>?<NNP.*>+}'
+    instiregex = r'INSTI: {<JJ.>?<NN.>?<IN.>?<DT.>?<NNP.*>+<IN.>?<NNP.*>+}'
+    chunkParser = nltk.RegexpParser(instiregex)
+
+    insti = []
+    degrees = []
+    for tagged_tokens in lines:
+        print(tagged_tokens)
+        chunked_tokens = chunkParser.parse(tagged_tokens)
+        for subtree in chunked_tokens.subtrees():
+            # print(subtree)
+            if subtree.label() == 'INSTI':
+                for ind, leaf in enumerate(subtree.leaves()):
+                    # print(ind,leaf)
+                    if leaf[0].lower() in indianColleges and 'NNP' in leaf[1]:
+                        #	print(leaf)
+                        hit = " ".join([el[0] for el in tagged_tokens])
+                        insti.append(hit)
+            else:
+                for ind, leaf in enumerate(subtree.leaves()):
+                    if leaf[0].lower() in indianDegrees:
+                        # print(leaf[0].lower())
+                        new_hit = " ".join([el[0] for el in tagged_tokens])
+                        degrees.append(new_hit)
+    return insti, degrees
+    """
+
+
+    insti = []
+    indianColleges = open('../util/indianColleges.txt','r').read().lower()
+    indianColleges = set(indianColleges.split())
+
+    indianDegrees = open('../util/indianColleges.txt', 'r').read().lower()
+    indianDegrees = set(indianDegrees.split())
+
+    # degree_location=None
+
+
+    lst_of_groups = group_extractor('\n'.join(lines))
     for l in lst_of_groups:
         a = l.split(" ")
         for x in a:
-            if(x in indianColleges):
+            if x.lower() in indianColleges:
                 insti.append(l)
                 break;
 
-    return insti
-    """
-    insti = []
-    indianColleges = open('file.csv','r').read.lower()
-    indianColleges = list(indianColleges.split(",,,,\n"))
-
-    for college in indianColleges:
-        if(college[1:-1] in lines.lower()):
-            insti.append(college)
+    # entries = []
+    # for line in lines:
+    #     entries = entries + re.split('\t|\s\s+', line)
+    # print(entries)
 
     return insti
+
+
+# def extract_insti_degree(lines):
+#
+#     insti = []
+#     degree = []
+#     indianColleges = open('../util/indianColleges.txt', 'r').read().lower()
+#     indianColleges = set(indianColleges.split())
+#
+#     indianDegrees = open('../util/indianColleges.txt', 'r').read().lower()
+#     indianDegrees = set(indianDegrees.split())
+#
+#     entries = []
+#     for line in lines:
+#         entries = entries + re.split('\t|\s\s+', line)
+#
+#     print(entries)
+#
+#     lst_of_groups = group_extractor('\n'.join(lines))
+#     for l in lst_of_groups:
+#         a = l.split(" ")
+#         for x in a:
+#             if x.lower() in indianColleges:
+#                 insti.append(l)
+#                 break;
+#     return insti
+
 
 def process_main_text2(text):
     doc = nlp(text.lower())

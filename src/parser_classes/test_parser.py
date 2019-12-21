@@ -15,6 +15,12 @@ class ResumeParser(object):
         headers = extract_headers(self.raw)
         # print(headers)
         buckets = extract_buckets(self.raw, headers)
+        education_lines=[]
+        for entry in buckets:
+            if entry['label']=="Eduaction":
+                education_lines.append(entry['line'])
+        print(extract_insti(education_lines))
+
 
     def summary(self):
         print("Skiping Summary")
