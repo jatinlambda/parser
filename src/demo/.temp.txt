@@ -1,125 +1,82 @@
-                   INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, NAGPUR
+BHARAT BORANA                                                                        WZ-433, Shiv nagar,
+                                                                           Tihar Jail Road, Delhi, 110058
+Senior Software Engineer,
+                                                                                boranab@rediffmail.com
+Appster LLP, Gurugram, Haryana                                                         (+91) 900-120-2858
 
-                                             AAYESHA BASSY
+ Experienced full stack developer with various web development framework expertise.
 
-Mobile: +91 7350452238
+ Over five years of commercial web and restful application development experience.
 
-Email-id: aayes1998@gmail.com
+ Experience working in Agile Scrum environment and project management.
+ Web Development Frameworks: Laravel, CakePHP, NodeJs With Express.
+ UI Frameworks/Technologies: HTML5, CSS3, jQuery, Angular JS.
+ Databases: MySQL and MongoDB
+ Other tools: Bitbucket for version control, JIRA, ZOHO, ASANA for task management, AWS EC2 for hosting
 
-Linked-in: www.linkedin.com/in/aayesha-bassy/
+     services, AWS S3 for image hosting
 
-CAREER OBJECTIVE
+Education:                                                                                 2009/08 - 2012/07
+                                                                                           2006/06 � 2009/07
+  Rajasthan Technical University,Kota, Rajasthan
+      Bachelor of Technology, Computer Science and Technology (Agg. 70.3)
 
-I am a creative, highly analytical individual and a pro-active problem solver with a solid Computer Science
-background. Have the ability to engineer responsive solutions and can work in a dynamic environment. Looking for
-an effective position in Software Development related fields in a progressive organization that gives me a scope to
-enhance my technical acumen and utilize my skills towards the growth of the organization.
+  Government Polytechnic College, Jodhpur, Rajasthan
+      3 years Diploma in Computer Science (Agg. 70.8)
 
+Work Experience:
 
+1. Senior Software Engineer                                                                2016/12 - Present
 
-ACADEMIC QUALIFICATION (B.Tech.)
-Enrollment no: BT16CSE008
+ Appster LLC, Gurugram
 
-Branch: Computer Science & Engineering (CSE)
+ Developing restful apis using Laravel framework for mobile team. Live chat implementation using NodeJs
+     socket and Express.
 
-Current CGPA: 7.95/10
+ Database design process in sprint-0, Code review process for assigned projects
 
+ Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.
 
+ Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI
+     2 certification.
 
-       QUALIFICATION                     INSTITUTE                    YEAR       SCORE/SGPA              CGPA
-      B.Tech. 7th Semester                IIIT Nagpur                 2019          Ongoing
-      B.Tech. 6th Semester                IIIT Nagpur                 2019            8.33                7.95
-      B.Tech. 5th Semester                IIIT Nagpur                 2018            8.18                7.89
-      B.Tech. 4th Semester                IIIT Nagpur                 2018            9.65                7.84
-      B.Tech. 3rd Semester                IIIT Nagpur                 2017            7.10                7.27
-      B.Tech. 2nd Semester                IIIT Nagpur                 2017            7.39                7.38
-      B.Tech. 1st Semester                IIIT Nagpur                 2016            7.36                7.36
-        CLASS XII(HSC)         K.V. Manauri, Allahabad (CBSE)         2016           94.5%
-         CLASS X(SSC)          K.V. Manauri, Allahabad (CBSE)         2014            95%                 10
+2. Senior Software Engineer                                                                2014/12 - 2016/11
 
+ Xicom Technologies, New Delhi
 
-INTERNSHIPS
-  •   Academic Intern - Persistent Systems Ltd, Nagpur                                       June 2018 – July 2018
+ Lead a team of two junior developers where my roles are to check if proper coding standard is followed.
 
-       Summer Internship
-       The goal of the project was to accept input files (.csv files) having their content in different formats and
-       transforming them into a fixed, specified format file according to a set of predefined rules, using Java and
-       SQL. (Transforming unstructured data into structured data)
-          UI & Python Intern – Persistent Systems Ltd, Nagpur                              June 2019 – Present
-          Semester Long Internship (6 Months)
-          Currently being trained on the front-end technologies, namely, HTML5, CSS3, JavaScript, AJAX and
-          Angular. Also working on the “Pool Operations Management” project wherein we are automating the tasks
-          that are performed by the likes of Excel, etc.
+ My roles are developing restful apis, developing web applications with high scalability.
 
+3. Software Engineer - Level I                                                             2012/10 - 2014/11
 
+ C.G.Technosoft, Jodhpur
 
-PROJECTS/ACTIVITIES
+ Started my career as trainee at this organization. My roles is to understand web application development
+     using Cakephp 2.0 framework.
 
- •       Blog-a-thon                                                                                     March 2017
-          A dynamic website providing users to create, delete, view and update their blogs. It was developed using
-          HTML, CSS and JS using BOOTSTRAP and a portal was also developed in PHP
+Key Projects:
 
- •       Face Detection and Recognition:                                                                 March 2018
-          A project that uses the OpenCV library and Python for detecting facial features and recognizing faces,
-          saving detected faces in the database
+1. Pelican Auto Finance Powered by Payix
 
- •       Hostel Management Portal                                                                         April 2018
-          A web application providing a technical way for the replacement of the existing manual system, using JSP
-          and Servlet technology, providing effective communication between the users
+ Payix provides state-of-the-art collections tools, payment processing resources and business intelligence
 
- • SocketPro                                                                                          Oct 2018
-      A peer-to-peer chat application developed using UDP sockets and a file transfer system developed using TCP
-      sockets in C
+solutions to U.S. lenders and auto dealers. Offering real-time loan management system (LMS) integration.
 
+ Pelican Auto Finance, LLC's senior management team has over 100 years of experience collectively in
+     automotive and consumer lending.
 
+ Technology stack: Laravel 5 framework
 
-COMPUTER PROFICIENCY
+2. BlockPartee
+    Blockpartee is an app that allows you to host a virtual party following your favourite sports teams, centered
+        around the squares/blocks game played by thousands of fans for years during the Super Bowl. This app makes
+        it easier to set-up and play the game, invite friends and fans, and has added features like live chat.
+    Technology stack: Laravel 5 framework for API development and NodeJs for Chat Server
 
-     •     Programming Languages: C/C++, Java, Python, R
-     •     Website Designing: CSS, HTML, Bootstrap, JavaScript, PHP, Angular
-     •     Database Management: MySQL
-     •     Software Packages: Android Studio, Pentaho, Netbeans, Corel Draw, MySQL Workbench
-     •     Coursework: Data Structures and Algorithms, Object Oriented Programming, Operating Systems,
-           Database Management System, Software Engineering, Theory of Computation
-
-
-CURRENT ACTIVITIES
-
-Online Advertising Head (IIITN)                                                                     2016-Present
-
-Responsible for handling and maintaining all the social media profiles of our institute, and promoting our institute
-events. Have played a vital role in the increase of participation for our institute fests by 70% in 2018 as compared to
-2017.
-
-
-ACHIEVEMENTS AND HONOURS
-
-     •      Was awarded the Kalpana Chawla Award for Academic Excellence (2014)
-     •      Was the School Head Girl (2015-2016)
-     •      Bagged the first position in the Poster Designing Competition held by AFWWA, 24 ED Manauri
-EXTRA CURRICULAR ACTIVITIES
-
-    •   Frequent anchor at various events.
-    •   Designing Team Head at Tantrafiesta 2018, Abhivyakti 2019, IIITN.
-    •   Member of SAC – Cultural Chief Coordinator (2018 – 2019), IIITN.
-    •   Food Blogging: Own and manage the Instagram handle – The Subtle Savour (TSS).
-    •   I have a flair in writing, technical as well as creative.
-    •   I have an avid interest in playing the guitar.
-
-
-
-PERSONAL DETAILS:
-Date of Birth: 14/12/1998
-
-Address: IIIT Nagpur, Seminary Hills, Nagpur, Maharashtra- 440006
-
-Alternate Contact: +91 8009119992 (Father)
-
-
-
-
-I hereby acknowledge that the information furnished above is correct to the best of my knowledge.
-
-Aayesha Bassy
-(Date: 23/07/19)
+3. Fitfix.co.uk
+    Fitfix is a revolutionary platform for Personal Trainers to help them manage, train and increase their clients. It
+        provides comprehensive cloud based business management, physical training and nutrition tools in a very
+        friendly way.
+    Technology stack: Cakephp 3.0 framework
 

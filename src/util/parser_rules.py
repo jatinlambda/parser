@@ -5,9 +5,12 @@ from spacy import displacy
 from src.util.tokenizer_utils import word_tokenize
 import spacy
 import numpy as np
-from src.util.headers_dict import bucket2title, title2bucket, indexes_title
+from src.util.headers_dict import bucket2title, title2bucket, line2feature
 import string
-from entity_extractor import group_extractor
+from src.util.entity_extractor import group_extractor
+
+
+
 result = string.punctuation
 result = result.replace(" ","")
 punctuation_list = []
@@ -354,7 +357,7 @@ def process_main_text1(text):
 
 
 def process_main_text0(text):
-    doc = nlp(text.lower())
+    doc = nlp(text)
     result = []
     for token in doc:
         if token.is_punct:
@@ -363,9 +366,9 @@ def process_main_text0(text):
     return result
 
 
-def calculate_similarity_with_processing(title, line):
+def calculate_similarity_with_processing(title, line, process_main_tex_foo=process_main_text1):
     # print(title, line)
-    process_main_tex_foo=process_main_text0
+    # process_main_tex_foo=process_main_text1
     title = nlp(' '.join(process_main_tex_foo(title)))
     line = nlp(' '.join(process_main_tex_foo(line)))
     for token in line:
@@ -379,14 +382,14 @@ def get_label(line):
     # print("Line : ", line)
     global_max_bucket=0
     global_max_bucket_name="other"
-    mean_bucket=np.zeros([len(bucket2title), 1])
+    # mean_bucket=np.zeros([len(bucket2title), 1])
     # std_bucket=np.zeros([len(bucket2title), 1])
 
     for index, bucket in enumerate(bucket2title):
         scores = np.zeros([len(bucket2title[bucket]), 1])
         for count, title in enumerate(bucket2title[bucket]):
             scores[count]=calculate_similarity_with_processing(title, line)
-        mean_bucket[index]=np.mean(scores)
+        # mean_bucket[index]=np.mean(scores)
         # std_bucket[index]=np.std(scores)
         max_bucket=np.amax(scores)
         # print("--bucket : ", bucket, "  --mean : ", np.mean(scores), "  --max local bucket : ", max_bucket)
@@ -511,3 +514,31 @@ def extract_buckets(data, headers):
         print(last_label, '\t', line)
 
     return buckets
+
+
+
+
+def extract_address(lines):
+    method1=False
+
+    max_score=-1
+    max_score_line=''
+    for line in lines:
+        for feature in line2feature:
+            score=calculate_similarity_with_processing(line, feature, process_main_text0)
+            print("address score : ",score, line)
+            if score>max_score:
+                max_score=score
+                max_score_line=line
+
+
+
+
+
+
+
+
+
+
+
+

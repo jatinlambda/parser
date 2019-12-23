@@ -102,9 +102,9 @@ with open ('outfile', 'rb') as fp:
     #     print(sent.text)
     
 
-    print(calculate_similarity_with_processing("Technical University", "Rajasthan Technical University,Kota, Rajasthan"))
-    print(calculate_similarity_with_processing("university", "3 years Diploma in Computer Science (Agg. 70.8)"))
-    print(calculate_similarity_with_processing("university", "Bachelor of Technology, Computer Science and Technology"))
+    # print(calculate_similarity_with_processing("Technical University", "Rajasthan Technical University,Kota, Rajasthan"))
+    # print(calculate_similarity_with_processing("university", "3 years Diploma in Computer Science (Agg. 70.8)"))
+    # print(calculate_similarity_with_processing("university", "Bachelor of Technology, Computer Science and Technology"))
 
     # def get_verbs
 

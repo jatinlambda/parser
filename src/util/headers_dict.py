@@ -75,15 +75,26 @@ bucket2title['Objective'].append('aim')
 bucket2title['Objective'].append('main objectives')
 bucket2title['Objective'].append('roles')
 
-
-
-
 title2bucket = {}
-indexes_title={}
+# indexes_title={}
+
+
+features=['address']
+line2feature={}
+
+for feature in features:
+    line2feature[feature]=[]
+
+
+line2feature['address'].append("Address")
+line2feature['address'].append("Location")
+line2feature['address'].append("Current Address")
+line2feature['address'].append("Permanent Address")
+
 
 def headers_dict_init():
     for k,v in bucket2title.items():
         for m in v:
             title2bucket[m] = k
-    for index, title in enumerate(title2bucket, start=0):
-        indexes_title[index] = title
+    # for index, title in enumerate(title2bucket, start=0):
+    #     indexes_title[index] = title
