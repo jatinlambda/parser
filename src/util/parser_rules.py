@@ -129,6 +129,7 @@ def extract_ethnicity(parts, line):
 
 
 def extract_name(parts, line):
+    print(line)
     nlp_text = nlp(line)
 
     # First name and Last name are always Proper Nouns
@@ -150,12 +151,17 @@ def extract_name(parts, line):
         if lst[0].lower in indianNames and lst[1].lower in indianNames and lst[2].lower in indianNames:
             return span.text
 
+
     for match_id, start, end in matches:
         span = nlp_text[start:end]
         lst = span.text.split(" ")
-        if lst[0].lower in indianNames and lst[1].lower in indianNames:
+        #print(lst[0],lst[1])
+        #print(lst[0].lower(),lst[1].lower())
+        if lst[0].lower() in indianNames and lst[1].lower() in indianNames:
             return span.text
 
+
+    
 
 
 
@@ -473,16 +479,16 @@ def extract_headers(data):
 
         if prob>thresh_prob1:
             label, similarity=get_label(line)
-            print("--line ", line)
-            print("--num_words ", num_words, "--prob", prob, "--label ", label, " --similarity : ", similarity)
+            #print("--line ", line)
+            #print("--num_words ", num_words, "--prob", prob, "--label ", label, " --similarity : ", similarity)
             if similarity>similarity_thresh_prob1:
-                print("--------------TITLE---------------------")
+             #   print("--------------TITLE---------------------")
                 headers[line]={"label":label, "similarity":similarity}
             elif prob>thresh_prob2 and similarity>similarity_thresh_prob2:
-                print("--------------OTHER TITLE---------------------")
+              #  print("--------------OTHER TITLE---------------------")
                 headers[line] = {"label": "others", "similarity": similarity}
 
-            print()
+            #print()
             # for token in doc:
             #     print("-----token  ", token.text, token.pos_, token.tag_,  token.shape_)
             # print()
@@ -511,7 +517,7 @@ def extract_buckets(data, headers):
         if headers.get(line, None) is not None:
             last_label=headers[line]["label"]
         buckets.append({"line":line, "label":last_label})
-        print(last_label, '\t', line)
+       # print(last_label, '\t', line)
 
     return buckets
 
@@ -526,7 +532,7 @@ def extract_address(lines):
     for line in lines:
         for feature in line2feature:
             score=calculate_similarity_with_processing(line, feature, process_main_text0)
-            print("address score : ",score, line)
+            #print("address score : ",score, line)
             if score>max_score:
                 max_score=score
                 max_score_line=line

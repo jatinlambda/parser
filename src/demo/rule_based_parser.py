@@ -18,7 +18,7 @@ def main():
 
         print('parsing file: ', file_path)
 
-        parser = ResumeParser()
+        parser = ResumeParser(file_path)
         parser.parse(file_content)
         # print(parser.raw) # print out the raw contents extracted from pdf or docx files
 
