@@ -3,9 +3,9 @@ from src.util.tokenizer_utils import word_tokenize
 from src.util.headers_dict import bucket2title, title2bucket, headers_dict_init
 
 dict1 = {}
-dict1["Resume_Parser"] = {"ResumeFileName" : '' , "FullName" : '' , "Email" : '' , "Phone" : '' , "Links" : '' , "Address" : '' , "Education_full" : '' , "Education" : [] , "SkillSet" : '' , "Experience" : '' ,"Projects" : [], "Hobbies" : '' , "Objective" : '' , "Extracurricular_Activities" : '' , "Personal Details" : ''} 
+dict1["Resume_Parser"] = {"ResumeFileName" : '' , "FullName" : '' , "Email" : '' , "Phone" : '' , "Links" : '' , "Address" : '' , "Education_full" : '' , "Education" : [] , "SkillSet" : '' , "Skills" : [] , "Experience" : '' ,"Projects" : [], "Hobbies" : '' , "Objective" : '' , "Extracurricular_Activities" : '' , "Personal Details" : ''} 
 
-Education_dict = {"Name" : '' , "Degree" : ''}
+
 
 
 class ResumeParser(object):
@@ -79,8 +79,34 @@ class ResumeParser(object):
 
         dict1["Resume_Parser"]["Projects"] = self.project_lines
 
-
+        degree = extract_degree(self.education_lines)
+        #print(degree)
+        #print(self.education_lines)
+        #print(self.skills_lines)
+        final_skill_list = extract_skills('\n'.join(self.skills_lines))
+        final_skill_list2 = extract_skills('\n'.join(self.project_lines))
+        res_list = [sum(i) for i in zip(final_skill_list, final_skill_list2)] 
+        dict1["Resume_Parser"]["Skills"] = res_list 
         print(dict1)
+        #for k,v in dict1["Resume_Parser"].items():
+         #   print(k,":")
+          #  print(v)
+
+
+    def summary(self):
+        print("Skiping Summary")
+        return ""
+            
+"""
+        insti_list = extract_insti(self.education_lines)
+        print(insti_list)
+
+        for insti in insti_list:
+            Education_dict = {"Name" : '' , "Degree" : ''}
+            Education_dict["Name"] = insti
+            dict1["Resume_Parser"]["Education"].append(Education_dict)
+"""
+
 
         #print(" ---mobile : ", extract_mobile(self.personal_lines))
         #print(" ---email : ", extract_email(self.personal_lines))
@@ -89,6 +115,4 @@ class ResumeParser(object):
         #print(extract_insti(self.education_lines))
 
 
-    def summary(self):
-        print("Skiping Summary")
-        return ""
+    

@@ -7,7 +7,6 @@ b.c.a.
 b.d.s.
 b.des.
 b.d.
-b.ed.
 b.e.
 b.tech.
 b.m.c.
@@ -46,5 +45,20 @@ m.phil
 m.des
 m.sc
 ph.d
+honours
+btech
+mtech
+bsc
+bcom
+bba
+ba
+bca
+bdes
+bed
+be
+mbbs
+mba
+msc
+
 
 

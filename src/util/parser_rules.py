@@ -245,6 +245,22 @@ def extract_objective(parts, line):
 #
 #     return insti
 
+def extract_degree(lines):
+    indianDegrees = open('../util/indianDegrees.txt', 'r').read().lower()
+    indianDegrees = list(indianDegrees.split())
+    degree = []
+    for line in lines:
+        for punct in punctuation_list:
+            line_without_punct = line.replace(punct," ")
+
+        words = line_without_punct.lower().split(" ")
+        for x in words:
+            print(x)
+            if(x in indianDegrees):
+                degree.append(x)
+
+    return degree
+
 
 def extract_insti(lines):
     """
@@ -254,8 +270,7 @@ def extract_insti(lines):
 
     indianColleges = open('indianColleges.txt', 'r').read().lower()
     indianColleges = set(indianColleges.split())
-    indianDegrees = open('indianDegrees.txt', 'r').read().lower()
-    indianDegrees = set(indianDegrees.split())
+   
     print(indianDegrees)
     # instiregex = r'INSTI: {<DT.>?<NNP.*>+<IN.*>?<NNP.*>+}'
     instiregex = r'INSTI: {<JJ.>?<NN.>?<IN.>?<DT.>?<NNP.*>+<IN.>?<NNP.*>+}'
@@ -309,6 +324,23 @@ def extract_insti(lines):
     # print(entries)
 
     return insti
+
+def extract_skills(text):
+    skills_list = open('../util/new_file.txt','r').read().lower()
+    skills_list = list(skills_list.split("\n"))
+
+    #word_list = re.split('<space> | \n', text)
+    word_list = nltk.word_tokenize(text)
+    print(word_list)
+    final_skill = []
+
+    for word in word_list:
+        print(word.lower())
+        print(skills_list[-3])
+        if word.lower() in skills_list:
+            final_skill.append(word)
+
+    return final_skill
 
 
 # def extract_insti_degree(lines):
@@ -517,7 +549,7 @@ def extract_buckets(data, headers):
         if headers.get(line, None) is not None:
             last_label=headers[line]["label"]
         buckets.append({"line":line, "label":last_label})
-       # print(last_label, '\t', line)
+        print(last_label, '\t', line)
 
     return buckets
 
