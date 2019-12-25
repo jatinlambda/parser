@@ -79,14 +79,36 @@ class ResumeParser(object):
 
         dict1["Resume_Parser"]["Projects"] = self.project_lines
 
-        degree = extract_degree(self.education_lines)
+        dict1["Resume_Parser"]["Personal Details"] = '\n'.join(self.personal_lines)
+
+        dict1["Resume_Parser"]["Extracurricular_Activities"] = '\n'.join(self.extra_curricular_lines) 
+
+        degree = extract_degree(self.education_lines)     #degrees extracted as a list. Currently not added in the dictionary
+
+        insti_list = []
+        for line in self.education_lines:
+            insti = extract_insti(line)
+            for i in insti:
+                insti_list.append(i)                      #insti_list extracted
         #print(degree)
         #print(self.education_lines)
         #print(self.skills_lines)
+        dict1["Resume_Parser"]["Education"] = insti_list
+
+
+        #Skills extraction from skills and projects, then merging into one list and removing duplicates
         final_skill_list = extract_skills('\n'.join(self.skills_lines))
         final_skill_list2 = extract_skills('\n'.join(self.project_lines))
-        res_list = [sum(i) for i in zip(final_skill_list, final_skill_list2)] 
-        dict1["Resume_Parser"]["Skills"] = res_list 
+        res_list = [[i1,i2] for (i1,i2) in zip(final_skill_list, final_skill_list2)] 
+        flat_list = [item for sublist in res_list for item in sublist]
+        flat_list = list(dict.fromkeys(flat_list))
+        dict1["Resume_Parser"]["Skills"] = flat_list 
+
+
+        #date_list extracted but not added to dictionary
+        date_list = extract_date('\n'.join(self.education_lines))
+
+        #print(extract_insti('\n'.join(education_lines)))
         print(dict1)
         #for k,v in dict1["Resume_Parser"].items():
          #   print(k,":")

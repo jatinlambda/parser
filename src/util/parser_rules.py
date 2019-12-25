@@ -255,7 +255,7 @@ def extract_degree(lines):
 
         words = line_without_punct.lower().split(" ")
         for x in words:
-            print(x)
+           # print(x)
             if(x in indianDegrees):
                 degree.append(x)
 
@@ -310,7 +310,7 @@ def extract_insti(lines):
     # degree_location=None
 
 
-    lst_of_groups = group_extractor('\n'.join(lines))
+    lst_of_groups = group_extractor(lines)
     for l in lst_of_groups:
         a = l.split(" ")
         for x in a:
@@ -331,17 +331,19 @@ def extract_skills(text):
 
     #word_list = re.split('<space> | \n', text)
     word_list = nltk.word_tokenize(text)
-    print(word_list)
+    #print(word_list)
     final_skill = []
 
     for word in word_list:
-        print(word.lower())
-        print(skills_list[-3])
+        #print(word.lower())
+        #print(skills_list[-3])
         if word.lower() in skills_list:
             final_skill.append(word)
 
     return final_skill
 
+def extract_date(text):
+    return [en.text for en in nlp(text).ents if en.label_ == 'DATE']
 
 # def extract_insti_degree(lines):
 #
