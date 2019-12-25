@@ -4,9 +4,11 @@ from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.pdfpage import PDFPage
 from pdfminer.layout import LTTextBoxHorizontal
 from shapely.geometry import Polygon
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+
 import tabula
-
-
+import json
 
 
 def get_columns(fname):
@@ -35,9 +37,6 @@ def get_columns(fname):
 
     doc_part_rects=[]
     doc_text_boxes=[]
-
-    import matplotlib.pyplot as plt
-    import matplotlib.patches as patches
 
     # Create figure and axes
     fig, ax = plt.subplots(1)
@@ -167,8 +166,26 @@ def get_columns(fname):
                                          part_rect[3] - part_rect[1], linewidth=1, edgecolor='b', facecolor='none')
                 ax.add_patch(rect)
                 doc_part_rects.append(part_rect)
+
         page_num += 1
-    tabula.convert_into(fname, ".temp.", output_format="csv", pages='all')
+
+        tabula.convert_into(fname, ".temp.json", output_format="json", pages=str(page_num))
+        tables = None
+        with open('.temp.json') as json_file:
+            tables = json.load(json_file)
+        for key in range(len(tables)):
+            # print(key)
+            part_rect=[tables[key]['left'], 900*(num_pages-page_num+1)-tables[key]['bottom'], tables[key]['right'], 900*(num_pages-page_num+1)-tables[key]['top']]
+
+            rect = patches.Rectangle((part_rect[0], part_rect[1]), part_rect[2] - part_rect[0],
+                                     part_rect[3] - part_rect[1], linewidth=1, edgecolor='y', facecolor='none')
+            ax.add_patch(rect)
+
+
+    # print(tables)
+    # print()
+    df = tabula.read_pdf(fname, multiple_tables=True, pages='all')
+    print(df)
 
     plt.axis([0, 700, 0, 900*num_pages])
     plt.show()
@@ -186,21 +203,8 @@ def get_text(fname):
     # for element in doc_text_boxes:
     #     print(element.bbox,"  ->  ",element.get_text())
 
-
     doc_part_rects.sort(key=lambda rect: rect[1], reverse=True)
-    # for element in doc_part_rects:
-    #     print(element)
 
-    # side_first=None
-    # lower_y=None
-    # text_box_num=0
-    # ordered_text_boxes=[]
-    # # for part_rect in doc_part_rects:
-    # #     while(True):
-    # #         if doc_text_boxes[text_box_num].bbox[1]>=part_rect[1] and doc_text_boxes[text_box_num].bbox[3]<=part_rect[3]:
-    # #             if doc
-    # #     if not lower_y:
-    # #         side_first=None
 
     ordered_text_boxes = []
     part_rect_num=0
@@ -262,39 +266,23 @@ def get_text(fname):
         print(element.get_text())
 
     print("----------------------------------------------------")
-
-
-
-
-
-
-
-
-    # side_first=None
-    # for key in doc_part_rects:
-    #     doc_text_boxes[key].sort(key=lambda element : element.bbox[1], reverse=True)
-    #     if len(doc_part_rects[key])==1:
-    #         split_column(doc_text_boxes[key], doc_part_rects[key][0], side_first)
-    #     doc_part_rects[key].sort(key=lambda rect : rect[1], reverse=True)
-
-
-
+    return new_ordered_text_boxes
 
 
 if __name__ == "__main__":
-    fname='/home/jatin/iitb/flexiele/parser/dataset/samplecv/5 Sourabh.pdf'
-    text = get_text(fname)
+    # fname='/home/jatin/iitb/flexiele/parser/dataset/samplecv/5 Sourabh.pdf'
+    # text = get_text(fname)
     fname='/home/jatin/iitb/flexiele/parser/dataset/samplecv/3 Bhirgu Sharma.pdf'
     text=get_text(fname)
-    fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/6 Sujeet.pdf'
-    text = get_text(fname)
-    fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/iimjobs_Gaurav_Suman.pdf'
-    text = get_text(fname)
+    # fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/6 Sujeet.pdf'
+    # text = get_text(fname)
+    # fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/iimjobs_Gaurav_Suman.pdf'
+    # text = get_text(fname)
     fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/iimjobs_Swostik_Rout.pdf'
-    text = get_text(fname)
+    # text = get_text(fname)
     fname = '/home/jatin/iitb/flexiele/dataset/more/Copy of IIITN_AMAN_SONI_CV.pdf'
     text = get_text(fname)
-    fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/sdarunkataria@gmail.com.pdf'
+    # fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/sdarunkataria@gmail.com.pdf'
     text = get_text(fname)
 
 

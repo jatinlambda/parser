@@ -1,6 +1,6 @@
 bucket2title = {}
 
-titles = ['Experience','Skills','Projects','Qualifications','Education','Hobbies','Extra curricular','Personal Details','Objective']
+titles = ['Experience','Skills','Projects','Qualifications','Education','Hobbies','Extra curricular','Personal Details','Objective', 'Language']
 
 for title in titles:
     bucket2title[title] = []
@@ -22,7 +22,7 @@ bucket2title['Experience'].append('professional experience')
 bucket2title['Experience'].append('internships')
 bucket2title['Experience'].append('course')
 
-bucket2title['Skills'].append('Skills')
+# bucket2title['Skills'].append('Skills')
 bucket2title['Skills'].append('skills')
 bucket2title['Skills'].append('specialties')
 bucket2title['Skills'].append('key skills')
@@ -74,6 +74,11 @@ bucket2title['Objective'].append('career objective')
 bucket2title['Objective'].append('aim')
 bucket2title['Objective'].append('main objectives')
 bucket2title['Objective'].append('roles')
+
+bucket2title['Language'].append('language')
+bucket2title['Language'].append('language known')
+
+
 
 title2bucket = {}
 # indexes_title={}

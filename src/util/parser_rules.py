@@ -455,10 +455,10 @@ def extract_headers(data):
     # weight_capital_letter=1000
     # weight_no_word=10000
     prob_no_word=0
-    thresh_prob1=0.09
+    thresh_prob1=0.1
     similarity_thresh_prob1=0.7
     thresh_prob2 = 0.6
-    similarity_thresh_prob2 = 0.4
+    similarity_thresh_prob2 = 0.65
 
     # print(data)
     headers={}
@@ -503,7 +503,7 @@ def extract_headers(data):
                         prob=0
                         first_word=False
                     else:
-                        prob=prob*0.4
+                        prob=prob*0.2
                 elif word.isupper():
                     continue
                 if word[0].isupper():
@@ -513,13 +513,13 @@ def extract_headers(data):
 
         if prob>thresh_prob1:
             label, similarity=get_label(line)
-            #print("--line ", line)
-            #print("--num_words ", num_words, "--prob", prob, "--label ", label, " --similarity : ", similarity)
+            print("--line ", line)
+            print("--num_words ", num_words, "--prob", prob, "--label ", label, " --similarity : ", similarity)
             if similarity>similarity_thresh_prob1:
-             #   print("--------------TITLE---------------------")
+                print("--------------TITLE---------------------")
                 headers[line]={"label":label, "similarity":similarity}
             elif prob>thresh_prob2 and similarity>similarity_thresh_prob2:
-              #  print("--------------OTHER TITLE---------------------")
+                print("--------------OTHER TITLE---------------------")
                 headers[line] = {"label": "others", "similarity": similarity}
 
             #print()
@@ -532,9 +532,9 @@ def extract_headers(data):
 
 
 def extract_buckets(data, headers):
-    lines="\n".join(data)
-    doc = nlp(lines)
-    displacy.serve(doc, style="ent")
+    # lines="\n".join(data)
+    # doc = nlp(lines)
+    # displacy.serve(doc, style="ent")
 
     # print("--------------------- Printing sentences  ----------------------------------------------------------------------")
     # print()

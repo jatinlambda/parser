@@ -1,0 +1,239 @@
+extracting text from pdf:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/Name _ Shalabh Gupta (5).pdf
+parsing file:  /home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/Name _ Shalabh Gupta (5).pdf
+--line  Software Engineer
+--num_words  2 --prob 0.6400000000000001 --label  Skills  --similarity :  0.5528989642506014
+--line  Gurgaon, India
+--num_words  2 --prob 0.6400000000000001 --label  Extra curricular  --similarity :  0.31874939245815886
+--line  13 June, 1993
+--num_words  3 --prob 0.8 --label  Extra curricular  --similarity :  0.23526483007063156
+--line  SKILLS
+--num_words  1 --prob 1 --label  Skills  --similarity :  1.0
+--------------TITLE---------------------
+--line  Angular 2+
+--num_words  3 --prob 0.8 --label  Skills  --similarity :  0.4116105615443822
+--line  Node
+--num_words  1 --prob 0.8 --label  Projects  --similarity :  0.2666620656564866
+--line  Javascript
+--num_words  1 --prob 0.8 --label  Language  --similarity :  0.27965176173209016
+--line  TypeScript
+--num_words  1 --prob 0.8 --label  Language  --similarity :  0.4007397775394976
+--line  Ionic
+--num_words  1 --prob 0.8 --label  Extra curricular  --similarity :  0.2888097663301982
+--line  Ajax
+--num_words  1 --prob 0.8 --label  Language  --similarity :  0.27965176173209016
+--line  Rest API
+--num_words  2 --prob 0.8 --label  Projects  --similarity :  0.41198449165250595
+--line  Jquery
+--num_words  1 --prob 0.8 --label  Language  --similarity :  0.27965176173209016
+--line  Html
+--num_words  1 --prob 0.8 --label  Personal Details  --similarity :  0.3150837494739592
+--line  Css
+--num_words  1 --prob 0.8 --label  Projects  --similarity :  0.22102214857486402
+--line  Sass
+--num_words  1 --prob 0.8 --label  Skills  --similarity :  0.39498947816799684
+--line  Json
+--num_words  1 --prob 0.8 --label  Language  --similarity :  0.27965176173209016
+--line  MongoDB
+--num_words  1 --prob 0.8 --label  Projects  --similarity :  0.1536496103326405
+--line  SQL
+--num_words  1 --prob 1 --label  Projects  --similarity :  0.3079808736094537
+--line  Firebase
+--num_words  1 --prob 0.8 --label  Skills  --similarity :  0.1786957970577586
+--line  Java
+--num_words  1 --prob 0.8 --label  Language  --similarity :  0.31924570353233567
+--line  Git
+--num_words  1 --prob 0.8 --label  Projects  --similarity :  0.26548871377941596
+--line  Svn
+--num_words  1 --prob 0.8 --label  Projects  --similarity :  0.26548871377941596
+--line  Agile
+--num_words  1 --prob 0.8 --label  Skills  --similarity :  0.5454724144361802
+--line  Unix
+--num_words  1 --prob 0.8 --label  Projects  --similarity :  0.3063803658772084
+--line  Software Engineering
+--num_words  2 --prob 0.6400000000000001 --label  Skills  --similarity :  0.6157613252673348
+--line  PROJECTS
+--num_words  1 --prob 1 --label  Projects  --similarity :  1.0
+--------------TITLE---------------------
+--line  LANGUAGES
+--num_words  1 --prob 1 --label  Language  --similarity :  1.0
+--------------TITLE---------------------
+--line  English
+--num_words  1 --prob 0.8 --label  Language  --similarity :  0.567954978967581
+--line  Hindi
+--num_words  1 --prob 0.8 --label  Language  --similarity :  0.27677905952247245
+--line  INTERESTS
+--num_words  1 --prob 1 --label  Hobbies  --similarity :  1.0
+--------------TITLE---------------------
+--line  Latest Technologies
+--num_words  2 --prob 0.6400000000000001 --label  Experience  --similarity :  0.569357269909312
+--line  JavaScript
+--num_words  1 --prob 0.8 --label  Language  --similarity :  0.27965176173209016
+--line  Coding
+--num_words  1 --prob 0.8 --label  Language  --similarity :  0.4280933143800862
+--line  Travelling
+--num_words  1 --prob 0.8 --label  Personal Details  --similarity :  0.4773489525087287
+--line  Adventure
+--num_words  1 --prob 0.8 --label  Experience  --similarity :  0.4716486522815556
+--line  WORK EXPERIENCE
+--num_words  2 --prob 1 --label  Experience  --similarity :  1.0
+--------------TITLE---------------------
+--line  Software Engineer
+--num_words  2 --prob 0.6400000000000001 --label  Skills  --similarity :  0.5528989642506014
+--line  Gurgaon, India
+--num_words  2 --prob 0.6400000000000001 --label  Extra curricular  --similarity :  0.31874939245815886
+--line  Responsibility
+--num_words  1 --prob 0.8 --label  Objective  --similarity :  1.0
+--------------TITLE---------------------
+--line  Associate Software Developer
+--num_words  3 --prob 0.5120000000000001 --label  Projects  --similarity :  0.5691965349406927
+--line  Gurgaon, India
+--num_words  2 --prob 0.6400000000000001 --label  Extra curricular  --similarity :  0.31874939245815886
+--line  Achievements/Tasks
+--num_words  2 --prob 0.8 --label  Qualifications  --similarity :  0.8467733486711283
+--------------TITLE---------------------
+--line  EDUCATION
+--num_words  1 --prob 1 --label  Education  --similarity :  1.0
+--------------TITLE---------------------
+--line  New Delhi
+--num_words  2 --prob 0.6400000000000001 --label  Projects  --similarity :  0.48313146389300227
+--line  New Delhi, India
+--num_words  3 --prob 0.5120000000000001 --label  Extra curricular  --similarity :  0.40213190501713486
+--line  Gurgaon, India
+--num_words  2 --prob 0.6400000000000001 --label  Extra curricular  --similarity :  0.31874939245815886
+--line  Higher Secondary
+--num_words  2 --prob 0.6400000000000001 --label  Extra curricular  --similarity :  0.6136754108653494
+--line  Gurgaon, India
+--num_words  2 --prob 0.6400000000000001 --label  Extra curricular  --similarity :  0.31874939245815886
+Personal Details 	 Sourabh Khurana
+Personal Details 	 Software Engineer
+Personal Details 	 sourabhkhurana0693@gmail.com
+Personal Details 	 +91-98108 49649
+Personal Details 	 Gurgaon, India
+Personal Details 	 13 June, 1993
+Personal Details 	 linkedin.com/in/sk0693
+Personal Details 	 sourabhkhurrana
+Personal Details 	 A self-motivated, creative, and ambitious IT professional seeks to join
+Personal Details 	 the team of highly skilled developers in the position of MEAN
+Personal Details 	 Stack Developer to make a direct impact on the company's business.
+Personal Details 	 Bringing 1.6 years work experience and knowledge of JavaScript
+Personal Details 	 technologies  Node, Angular, Ionic, JSON, AJAX, and creating Restful
+Personal Details 	 web API's.
+Skills 	 SKILLS
+Skills 	 Angular 2+
+Skills 	 Angular js
+Skills 	 Node
+Skills 	 Javascript
+Skills 	 TypeScript
+Skills 	 Ionic
+Skills 	 Ajax
+Skills 	 Rest API
+Skills 	 Jquery
+Skills 	 Html
+Skills 	 Css
+Skills 	 Sass
+Skills 	 Json
+Skills 	 MongoDB
+Skills 	 SQL
+Skills 	 Firebase
+Skills 	 Java
+Skills 	 Git
+Skills 	 Svn
+Skills 	 Agile
+Skills 	 Unix
+Skills 	 Software Engineering
+Projects 	 PROJECTS
+Projects 	 EmployeeApp (Hero Moto Corp.) (06/2018  Present)
+Projects 	 This app basically used internally and help Hero's employee in
+Projects 	 the daily task i.e. client meeting, punching attendance, Leave
+Projects 	 Management, Managing Approvals, travel requests etc.
+Projects 	 QUIVERS (Admin Panel) (11/2017  05/2018)
+Projects 	 This is an E-commerce web application, where brands and
+Projects 	 retailer easily access the admin part and control, maintain their
+Projects 	 inventory and directly respond to the queries of the client.
+Projects 	 Responsible for handling and maintaining user requirements.
+Projects 	 Improvements, bug xing and new development.
+Projects 	 Work with Manager and other developers in delivering task and
+Projects 	 project requirements.
+Projects 	 GSL (04/2017  11/2017)
+Projects 	 This web application provides the client to complete access to
+Projects 	 the system. Where they maintain the record of stones i.e.
+Projects 	 Diamonds, Gems, Pearls etc.
+Projects 	 My role is to developing and maintaining application.
+Projects 	 Binding the data on front end using Angular JS, JavaScript or
+Projects 	 jQuery.
+Projects 	 Making rest API's, dening functions that properly worked on
+Projects 	 the application according to requirement and Collaborate in
+Projects 	 teamwork.
+Language 	 LANGUAGES
+Language 	 English
+Language 	 Hindi
+Hobbies 	 INTERESTS
+Hobbies 	 Latest Technologies
+Hobbies 	 JavaScript
+Hobbies 	 Coding
+Hobbies 	 Travelling
+Hobbies 	 Adventure
+Experience 	 WORK EXPERIENCE
+Experience 	 Software Engineer
+Experience 	 BluePi Consulting Pvt. Ltd.
+Experience 	 05/2018  Present
+Experience 	 Gurgaon, India
+Objective 	 Responsibility
+Objective 	 As a Mean stack developer I am responsible for end to
+Objective 	 end delivery of project i.e front end as well as back end.
+Objective 	 Address and improve any technical issues.
+Objective 	 Design robust solutions to hard problems that also take
+Objective 	 into account scale, security, reliability, and cost.
+Objective 	 Contribute new software or modify existing software to
+Objective 	 meet projects and program goals.
+Objective 	 Working on the version controlling tool such as GIT.
+Objective 	 Ensure to complete the task within given time.
+Objective 	 Understand the process of software development well
+Objective 	 enough to mentor and guide others when necessary.
+Objective 	 Associate Software Developer
+Objective 	 Crazy Learners Pvt. Ltd.
+Objective 	 02/2017  04/2018
+Objective 	 Gurgaon, India
+Qualifications 	 Achievements/Tasks
+Qualifications 	 Working on the version controlling tool i.e. GIT.
+Qualifications 	 Implementing visual elements that users see and
+Qualifications 	 interact with the application.
+Qualifications 	 Cooperate with the back-end developer in the process of
+Qualifications 	 building the RESTful API.
+Qualifications 	 Developing and maintaining the whole requirement.
+Qualifications 	 Ensure that all user inputs are validate before
+Qualifications 	 submitting to back-end.
+Education 	 EDUCATION
+Education 	 Master of Computer Application
+Education 	 Management Education of Research Institute,
+Education 	 New Delhi
+Education 	 08/2014  06/2017
+Education 	 New Delhi, India
+Education 	 Bachelor in Computer Application
+Education 	 Dronacharya Govt. College, Gurgaon
+Education 	 08/2011  06/2014
+Education 	 Gurgaon, India
+Education 	 Higher Secondary
+Education 	 D.A.V. Sr. Sec. School, Gurgaon
+Education 	 04/2010  03/2011
+Education 	 Gurgaon, India
+Sourabh Khurana
+Software Engineer
+sourabhkhurana0693@gmail.com
++91-98108 49649
+Gurgaon, India
+13 June, 1993
+linkedin.com/in/sk0693
+sourabhkhurrana
+A self-motivated, creative, and ambitious IT professional seeks to join
+the team of highly skilled developers in the position of MEAN
+Stack Developer to make a direct impact on the company's business.
+Bringing 1.6 years work experience and knowledge of JavaScript
+technologies  Node, Angular, Ionic, JSON, AJAX, and creating Restful
+web API's.
+ ---name :  Sourabh Khurana
+ ---email :  sourabhkhurana0693@gmail.com
+ ---mobile :  None
+{'Resume_Parser': {'ResumeFileName': '/home/jatin/iitb/flexiele/parser/src/demo/../../dataset/samplecv/Name _ Shalabh Gupta (5).pdf', 'FullName': 'Sourabh Khurana', 'Email': 'sourabhkhurana0693@gmail.com', 'Phone': '', 'Links': '', 'Address': '', 'Education_full': 'EDUCATION\nMaster of Computer Application\nManagement Education of Research Institute,\nNew Delhi\n08/2014  06/2017\nNew Delhi, India\nBachelor in Computer Application\nDronacharya Govt. College, Gurgaon\n08/2011  06/2014\nGurgaon, India\nHigher Secondary\nD.A.V. Sr. Sec. School, Gurgaon\n04/2010  03/2011\nGurgaon, India', 'Education': ['Management Education of Research Institute'], 'SkillSet': 'SKILLS\nAngular 2+\nAngular js\nNode\nJavascript\nTypeScript\nIonic\nAjax\nRest API\nJquery\nHtml\nCss\nSass\nJson\nMongoDB\nSQL\nFirebase\nJava\nGit\nSvn\nAgile\nUnix\nSoftware Engineering', 'Skills': ['Javascript', 'JavaScript', 'Jquery', 'jQuery'], 'Experience': 'WORK EXPERIENCE\nSoftware Engineer\nBluePi Consulting Pvt. Ltd.\n05/2018  Present\nGurgaon, India', 'Projects': ['PROJECTS', 'EmployeeApp (Hero Moto Corp.) (06/2018  Present)', "This app basically used internally and help Hero's employee in", 'the daily task i.e. client meeting, punching attendance, Leave', 'Management, Managing Approvals, travel requests etc.', 'QUIVERS (Admin Panel) (11/2017  05/2018)', 'This is an E-commerce web application, where brands and', 'retailer easily access the admin part and control, maintain their', 'inventory and directly respond to the queries of the client.', 'Responsible for handling and maintaining user requirements.', 'Improvements, bug xing and new development.', 'Work with Manager and other developers in delivering task and', 'project requirements.', 'GSL (04/2017  11/2017)', 'This web application provides the client to complete access to', 'the system. Where they maintain the record of stones i.e.', 'Diamonds, Gems, Pearls etc.', 'My role is to developing and maintaining application.', 'Binding the data on front end using Angular JS, JavaScript or', 'jQuery.', "Making rest API's, dening functions that properly worked on", 'the application according to requirement and Collaborate in', 'teamwork.'], 'Hobbies': 'INTERESTS\nLatest Technologies\nJavaScript\nCoding\nTravelling\nAdventure', 'Objective': 'Responsibility\nAs a Mean stack developer I am responsible for end to\nend delivery of project i.e front end as well as back end.\nAddress and improve any technical issues.\nDesign robust solutions to hard problems that also take\ninto account scale, security, reliability, and cost.\nContribute new software or modify existing software to\nmeet projects and program goals.\nWorking on the version controlling tool such as GIT.\nEnsure to complete the task within given time.\nUnderstand the process of software development well\nenough to mentor and guide others when necessary.\nAssociate Software Developer\nCrazy Learners Pvt. Ltd.\n02/2017  04/2018\nGurgaon, India', 'Extracurricular_Activities': '', 'Personal Details': "Sourabh Khurana\nSoftware Engineer\nsourabhkhurana0693@gmail.com\n+91-98108 49649\nGurgaon, India\n13 June, 1993\nlinkedin.com/in/sk0693\nsourabhkhurrana\nA self-motivated, creative, and ambitious IT professional seeks to join\nthe team of highly skilled developers in the position of MEAN\nStack Developer to make a direct impact on the company's business.\nBringing 1.6 years work experience and knowledge of JavaScript\ntechnologies  Node, Angular, Ionic, JSON, AJAX, and creating Restful\nweb API's.", 'phone': None}}
+++++++++++++++++++++++++++++++++++++++++++
+count:  1
