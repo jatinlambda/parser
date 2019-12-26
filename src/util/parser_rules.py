@@ -1,6 +1,8 @@
 import re
+import os
 import nltk  #used in extract insti function
 from spacy.matcher import Matcher
+from . import constants as cs
 from spacy import displacy
 from src.util.tokenizer_utils import word_tokenize
 import spacy
@@ -8,6 +10,9 @@ import numpy as np
 from src.util.headers_dict import bucket2title, title2bucket, line2feature
 import string
 from src.util.entity_extractor import group_extractor
+import pandas as pd
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import stopwords 
 
 
 
@@ -260,7 +265,89 @@ def extract_degree(lines):
                 degree.append(x)
 
     return degree
+def extract_skills(nlp_text, noun_chunks):
+    '''
+    Helper function to extract skills from spacy nlp text
+    :param nlp_text: object of `spacy.tokens.doc.Doc`
+    :param noun_chunks: noun chunks extracted from nlp text
+    :return: list of skills extracted
+    '''
+    tokens = [token.text for token in nlp_text if not token.is_stop]
+    data = pd.read_csv(os.path.join(os.path.dirname(__file__), 'skills.csv')) 
+    skills = list(data.columns.values)
+    skillset = []
+    # check for one-grams
+    for token in tokens:
+        if token.lower() in skills:
+            skillset.append(token)
+    
+    # check for bi-grams and tri-grams
+    for token in noun_chunks:
+        token = token.text.lower().strip()
+        if token in skills:
+            skillset.append(token)
+    return [i.capitalize() for i in set([i.lower() for i in skillset])]
 
+def cleanup(token, lower = True):
+    if lower:
+       token = token.lower()
+    return token.strip()
+
+def extract_education(nlp_text):
+    '''
+    Helper function to extract education from spacy nlp text
+    :param nlp_text: object of `spacy.tokens.doc.Doc`
+    :return: tuple of education degree and year if year if found else only returns education degree
+    '''
+    edu = {}
+    # Extract education degree
+    for index, text in enumerate(nlp_text):
+        for tex in text.split():
+            tex = re.sub(r'[?|$|.|!|,]', r'', tex)
+            if tex.upper() in cs.EDUCATION and tex not in cs.STOPWORDS:
+                edu[tex] = text + nlp_text[index + 1]
+
+    # Extract year
+    education = []
+    for key in edu.keys():
+        year = re.search(re.compile(cs.YEAR), edu[key])
+        if year:
+            education.append((key, ''.join(year.group(0))))
+        else:
+            education.append(key)
+    return education
+
+def extract_experience(resume_text):
+    '''
+    Helper function to extract experience from resume text
+    :param resume_text: Plain resume text
+    :return: list of experience
+    '''
+    wordnet_lemmatizer = WordNetLemmatizer()
+    stop_words = set(stopwords.words('english'))
+
+    # word tokenization 
+    word_tokens = nltk.word_tokenize(resume_text)
+
+    # remove stop words and lemmatize  
+    filtered_sentence = [w for w in word_tokens if not w in stop_words and wordnet_lemmatizer.lemmatize(w) not in stop_words] 
+    sent = nltk.pos_tag(filtered_sentence)
+
+    # parse regex
+    cp = nltk.RegexpParser('P: {<NNP>+}')
+    cs = cp.parse(sent)
+    
+    # for i in cs.subtrees(filter=lambda x: x.label() == 'P'):
+    #     print(i)
+    
+    test = []
+    
+    for vp in list(cs.subtrees(filter=lambda x: x.label()=='P')):
+        test.append(" ".join([i[0] for i in vp.leaves() if len(vp.leaves()) >= 2]))
+
+    # Search the word 'experience' in the chunk and then print out the text after it
+    x = [x[x.lower().index('experience') + 10:] for i, x in enumerate(test) if x and 'experience' in x.lower()]
+    return x
 
 def extract_insti(lines):
     """
@@ -299,7 +386,6 @@ def extract_insti(lines):
     return insti, degrees
     """
 
-
     insti = []
     indianColleges = open('../util/indianColleges.txt','r').read().lower()
     indianColleges = set(indianColleges.split())
@@ -307,7 +393,6 @@ def extract_insti(lines):
     indianDegrees = open('../util/indianColleges.txt', 'r').read().lower()
     indianDegrees = set(indianDegrees.split())
 
-    # degree_location=None
 
 
     lst_of_groups = group_extractor(lines)
@@ -318,12 +403,14 @@ def extract_insti(lines):
                 insti.append(l)
                 break;
 
-    # entries = []
-    # for line in lines:
-    #     entries = entries + re.split('\t|\s\s+', line)
+     #entries = []
+     #for line in lines:
+      #   entries = entries + re.split('\t|\s\s+', line)
     # print(entries)
 
     return insti
+
+    """
 
 def extract_skills(text):
     skills_list = open('../util/new_file.txt','r').read().lower()
@@ -345,8 +432,10 @@ def extract_skills(text):
             final_skill.append(word)
 
     return final_skill
-
+"""
 def extract_date(text):
+   # print(text)
+   # print(nlp(text).ents)
     return [en.text for en in nlp(text).ents if en.label_ == 'DATE']
 
 # def extract_insti_degree(lines):
@@ -517,13 +606,13 @@ def extract_headers(data):
 
         if prob>thresh_prob1:
             label, similarity=get_label(line)
-            print("--line ", line)
-            print("--num_words ", num_words, "--prob", prob, "--label ", label, " --similarity : ", similarity)
+           # print("--line ", line)
+           # print("--num_words ", num_words, "--prob", prob, "--label ", label, " --similarity : ", similarity)
             if similarity>similarity_thresh_prob1:
-                print("--------------TITLE---------------------")
+            #    print("--------------TITLE---------------------")
                 headers[line]={"label":label, "similarity":similarity}
             elif prob>thresh_prob2 and similarity>similarity_thresh_prob2:
-                print("--------------OTHER TITLE---------------------")
+             #   print("--------------OTHER TITLE---------------------")
                 headers[line] = {"label": "others", "similarity": similarity}
 
             #print()
@@ -555,7 +644,7 @@ def extract_buckets(data, headers):
         if headers.get(line, None) is not None:
             last_label=headers[line]["label"]
         buckets.append({"line":line, "label":last_label})
-        print(last_label, '\t', line)
+       # print(last_label, '\t', line)
 
     return buckets
 

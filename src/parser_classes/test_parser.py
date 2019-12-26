@@ -87,6 +87,7 @@ class ResumeParser(object):
 
         insti_list = []
         for line in self.education_lines:
+            print(line)
             insti = extract_insti(line)
             for i in insti:
                 insti_list.append(i)                      #insti_list extracted
@@ -94,25 +95,33 @@ class ResumeParser(object):
         #print(self.education_lines)
         #print(self.skills_lines)
         dict1["Resume_Parser"]["Education"] = insti_list
+        text = ' '.join(('\n'.join(self.raw)).split())
+        print(text)
 
-
+        edu = extract_education([sent.string.strip() for sent in nlp(text).sents])
+        skills = extract_skills(nlp('\n'.join(self.skills_lines + self.project_lines + self.experience_lines)),nlp('\n'.join(self.skills_lines)).noun_chunks)
+        experience = extract_experience(text)
         #Skills extraction from skills and projects, then merging into one list and removing duplicates
-        final_skill_list = extract_skills('\n'.join(self.skills_lines))
-        final_skill_list2 = extract_skills('\n'.join(self.project_lines))
+        #final_skill_list = extract_skills('\n'.join(self.skills_lines))
+        #final_skill_list2 = extract_skills('\n'.join(self.project_lines))
       #  print(final_skill_list)
        # print(final_skill_list2)
-        res_list = final_skill_list + final_skill_list2
+        #res_list = final_skill_list + final_skill_list2
         #flat_list = [item for sublist in res_list for item in sublist]
         #print(flat_list)
-        flat_list = list(dict.fromkeys(res_list))
-        dict1["Resume_Parser"]["Skills"] = flat_list 
-
+        #flat_list = list(dict.fromkeys(res_list))
+        #dict1["Resume_Parser"]["Skills"] = flat_list 
+        print(edu)
+        print(skills)
+        print(experience)
+        print(insti_list)
 
         #date_list extracted but not added to dictionary
         date_list = extract_date('\n'.join(self.education_lines))
+        #print(date_list)
 
         #print(extract_insti('\n'.join(education_lines)))
-        print(dict1)
+        #print(dict1)
         #for k,v in dict1["Resume_Parser"].items():
          #   print(k,":")
           #  print(v)

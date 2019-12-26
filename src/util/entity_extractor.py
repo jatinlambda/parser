@@ -4,6 +4,7 @@ lang_code = "en"
 
 def group_extractor(text):
 	response = paralleldots.ner(text,lang_code)
+	print(response)	
 	l = [el['name'] for el in response['entities'] if el['category'] == 'group' or el['category'] == 'place']
 
 	return l
