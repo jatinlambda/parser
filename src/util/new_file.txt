@@ -1,4 +1,9 @@
 ABAP
+Angular 2+
+Angular js
+Angular
+Node
+Ajax
 ActionScript
 Ada
 ALGOL
@@ -11,6 +16,7 @@ BBC Basic
 C
 C++
 C#
+CSS
 COBOL
 Cascading Style Sheets
 D

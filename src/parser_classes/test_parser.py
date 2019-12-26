@@ -99,9 +99,12 @@ class ResumeParser(object):
         #Skills extraction from skills and projects, then merging into one list and removing duplicates
         final_skill_list = extract_skills('\n'.join(self.skills_lines))
         final_skill_list2 = extract_skills('\n'.join(self.project_lines))
-        res_list = [[i1,i2] for (i1,i2) in zip(final_skill_list, final_skill_list2)] 
-        flat_list = [item for sublist in res_list for item in sublist]
-        flat_list = list(dict.fromkeys(flat_list))
+      #  print(final_skill_list)
+       # print(final_skill_list2)
+        res_list = final_skill_list + final_skill_list2
+        #flat_list = [item for sublist in res_list for item in sublist]
+        #print(flat_list)
+        flat_list = list(dict.fromkeys(res_list))
         dict1["Resume_Parser"]["Skills"] = flat_list 
 
 

@@ -327,7 +327,9 @@ def extract_insti(lines):
 
 def extract_skills(text):
     skills_list = open('../util/new_file.txt','r').read().lower()
+    
     skills_list = list(skills_list.split("\n"))
+    #print(skills_list)
 
     #word_list = re.split('<space> | \n', text)
     word_list = nltk.word_tokenize(text)
@@ -336,8 +338,10 @@ def extract_skills(text):
 
     for word in word_list:
         #print(word.lower())
+        #print(word.lower())
         #print(skills_list[-3])
         if word.lower() in skills_list:
+           # print(word)
             final_skill.append(word)
 
     return final_skill
