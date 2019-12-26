@@ -3,37 +3,46 @@ from pdfminer.converter import PDFPageAggregator
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.pdfpage import PDFPage
 from pdfminer.layout import LTTextBoxHorizontal
-from shapely.geometry import Polygon
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
+import time
 
-import tabula
-import json
+# import tabula
+# import json
+
+# rsrcmgr = PDFResourceManager()
+laparams = LAParams(line_overlap=0.1,
+                 char_margin=2.0,
+                 line_margin=0.0001,
+                 word_margin=0.1,
+                 boxes_flow=0.5,
+                 detect_vertical=False,
+                 all_texts=False)
+# device = PDFPageAggregator(rsrcmgr, laparams=laparams)
+# interpreter = PDFPageInterpreter(rsrcmgr, device)
 
 
 def get_columns(fname):
     document = open(fname, 'rb')
 
     rsrcmgr = PDFResourceManager()
-    laparams = LAParams(line_overlap=0.1,
-                 char_margin=2.0,
-                 line_margin=0.001,
-                 word_margin=0.1,
-                 boxes_flow=0.5,
-                 detect_vertical=False,
-                 all_texts=False)
     device = PDFPageAggregator(rsrcmgr, laparams=laparams)
     interpreter = PDFPageInterpreter(rsrcmgr, device)
-    num_pages=sum(1 for _ in PDFPage.get_pages(document))
-    pages = PDFPage.get_pages(document)
+
+    pages = []
+    for page in PDFPage.get_pages(document):
+        pages.append(page)
+    num_pages=len(pages)
 
     def overlap(rect1, rect2):
-        try:
-            p1 = Polygon([(rect1[0], rect1[1]), (rect1[2], rect1[1]), (rect1[2], rect1[3]), (rect1[0], rect1[3])])
-            p2 = Polygon([(rect2[0], rect2[1]), (rect2[2], rect2[1]), (rect2[2], rect2[3]), (rect2[0], rect2[3])])
-            return (p1.intersects(p2))
-        except:
-            return True
+        # If one rectangle is on left side of other
+        if (rect1[0] > rect2[2] or rect2[0] > rect1[2]):
+            return False
+        # If one rectangle is above other
+        if (rect1[3] < rect2[1] or rect2[3] < rect1[1]):
+            return False
+        return True
+
 
     doc_part_rects=[]
     doc_text_boxes=[]
@@ -42,35 +51,41 @@ def get_columns(fname):
     fig, ax = plt.subplots(1)
 
     leftmost_x = 150
-    rightmost_x = 400
-    minimum_height = 100
+    rightmost_x = 350
+    minimum_height_top = 150
+    minimum_height_bottom = 500
+    minimum_height = 500
+
     round_up=4
 
     page_num=0
     for page in pages:
+        # start = time.process_time()
+
         interpreter.process_page(page)
         layout = device.get_result()
+
+        # print("before element time", time.process_time() - start)
 
         topmost_y=900*(num_pages-page_num)
         bottommost_y=900*(num_pages-page_num-1)
 
         part_rects = [(leftmost_x, bottommost_y, rightmost_x, topmost_y)]
-        layout=sorted(layout, key=lambda element : (element.bbox[2]-element.bbox[1]))
+        # layout = sorted(layout, key=lambda element: (element.bbox[3] - element.bbox[1]))
+        layout=sorted(layout, key=lambda element : (element.bbox[2]-element.bbox[0]))
+        # print("len layout: ", len(layout))
 
+
+        start = time.process_time()
         for element in layout:
             if isinstance(element, LTTextBoxHorizontal):
                 element.bbox=list(element.bbox)
-                for key in range(4):
-                    element.bbox[key]=int(element.bbox[key]/round_up)*round_up
-                element.bbox[1]=element.bbox[1]+900*(num_pages-page_num-1)
-                element.bbox[3] = element.bbox[3] +900*(num_pages-page_num-1)
+                element.bbox[1]=(int(element.bbox[1])/round_up)*round_up+bottommost_y
+                element.bbox[3] =(int(element.bbox[3])/round_up)*round_up +bottommost_y
 
                 doc_text_boxes.append(element)
-                # data.append({'x0': element.bbox[0], 'y0':element.bbox[1], 'text':element.get_text()})
                 rect = patches.Rectangle((element.bbox[0], element.bbox[1]), element.bbox[2]-element.bbox[0], element.bbox[3]-element.bbox[1], linewidth=1, edgecolor='r', facecolor='none')
                 ax.add_patch(rect)
-                # print(element.bbox)
-
 
                 new_part_rects=[]
                 for part_rect in part_rects:
@@ -79,20 +94,21 @@ def get_columns(fname):
                     else:
                         if element.bbox[0]<=part_rect[0] and element.bbox[2]>=part_rect[2]:
 
-                            if (part_rect[3]-element.bbox[3])>minimum_height:
+                            if (part_rect[3]-element.bbox[3])>minimum_height_top:
                                 new_part_rects.append((part_rect[0], element.bbox[3], part_rect[2], part_rect[3]))
 
-                            if (element.bbox[1]-part_rect[1])>minimum_height:
+                            if (element.bbox[1]-part_rect[1])>minimum_height_bottom:
                                 new_part_rects.append((part_rect[0], part_rect[1], part_rect[2], element.bbox[1]))
 
                         elif element.bbox[0]<=part_rect[0] and element.bbox[2]>part_rect[0]:
 
                             new_part_rects.append((element.bbox[2], part_rect[1], part_rect[2], part_rect[3]))
 
-                            if (part_rect[3]-element.bbox[3])>minimum_height:
+                            if part_rect[3]==topmost_y and (part_rect[3]-element.bbox[3])>minimum_height_top:
                                 new_part_rects.append((part_rect[0], element.bbox[3], part_rect[2], part_rect[3]))
 
-                            if (element.bbox[1]-part_rect[1])>minimum_height:
+
+                            if part_rect[1]==bottommost_y and (element.bbox[1]-part_rect[1])>minimum_height_bottom:
                                 new_part_rects.append((part_rect[0], part_rect[1], part_rect[2], element.bbox[1]))
 
                         elif element.bbox[0]<part_rect[2] and element.bbox[2]>=part_rect[2]:
@@ -126,12 +142,18 @@ def get_columns(fname):
 
                 part_rects=new_part_rects
 
+        # print("element time", time.process_time() - start)
+
+
         largest_lower_rect_height=0
         largest_upper_rect_height = 0
         largest_lower_rect=None
         largest_upper_rect=None
         single_largest_rect_present=False
         single_largest_rect=None
+
+        # part_rects.sort(key=lambda rect : rect[3]-rect[1])
+        # print("len part rect : ", len(part_rects))
 
         for part_rect in part_rects:
             if part_rect[1]==bottommost_y and part_rect[3]==topmost_y:
@@ -150,7 +172,7 @@ def get_columns(fname):
             rect = patches.Rectangle((part_rect[0], part_rect[1]), part_rect[2] - part_rect[0],
                                      part_rect[3] - part_rect[1], linewidth=1, edgecolor='b', facecolor='none')
             ax.add_patch(rect)
-            doc_part_rects.append(part_rect)
+            doc_part_rects.append(single_largest_rect)
 
         else:
             if largest_lower_rect:
@@ -158,37 +180,38 @@ def get_columns(fname):
                 rect = patches.Rectangle((part_rect[0], part_rect[1]), part_rect[2] - part_rect[0],
                                                                       part_rect[3] - part_rect[1], linewidth=1, edgecolor='b', facecolor='none')
                 ax.add_patch(rect)
-                doc_part_rects.append(part_rect)
+                doc_part_rects.append(largest_lower_rect)
 
             if largest_upper_rect:
                 part_rect=largest_upper_rect
                 rect = patches.Rectangle((part_rect[0], part_rect[1]), part_rect[2] - part_rect[0],
                                          part_rect[3] - part_rect[1], linewidth=1, edgecolor='b', facecolor='none')
                 ax.add_patch(rect)
-                doc_part_rects.append(part_rect)
+                doc_part_rects.append(largest_upper_rect)
 
         page_num += 1
 
-        tabula.convert_into(fname, ".temp.json", output_format="json", pages=str(page_num))
-        tables = None
-        with open('.temp.json') as json_file:
-            tables = json.load(json_file)
-        for key in range(len(tables)):
-            # print(key)
-            part_rect=[tables[key]['left'], 900*(num_pages-page_num+1)-tables[key]['bottom'], tables[key]['right'], 900*(num_pages-page_num+1)-tables[key]['top']]
-
-            rect = patches.Rectangle((part_rect[0], part_rect[1]), part_rect[2] - part_rect[0],
-                                     part_rect[3] - part_rect[1], linewidth=1, edgecolor='y', facecolor='none')
-            ax.add_patch(rect)
+        # tabula.convert_into(fname, ".temp.json", output_format="json", pages=str(page_num))
+        # tables = None
+        # with open('.temp.json') as json_file:
+        #     tables = json.load(json_file)
+        # for key in range(len(tables)):
+        #     # print(key)
+        #     part_rect=[tables[key]['left'], 900*(num_pages-page_num+1)-tables[key]['bottom'], tables[key]['right'], 900*(num_pages-page_num+1)-tables[key]['top']]
+        #
+        #     rect = patches.Rectangle((part_rect[0], part_rect[1]), part_rect[2] - part_rect[0],
+        #                              part_rect[3] - part_rect[1], linewidth=1, edgecolor='y', facecolor='none')
+        #     ax.add_patch(rect)
 
 
     # print(tables)
     # print()
-    df = tabula.read_pdf(fname, multiple_tables=True, pages='all')
-    print(df)
+    # df = tabula.read_pdf(fname, multiple_tables=True, pages='all')
+    # print(df)
 
     plt.axis([0, 700, 0, 900*num_pages])
     plt.show()
+    # print(time.process_time() - start)
     return doc_text_boxes, doc_part_rects
 
 
@@ -200,8 +223,6 @@ def get_text(fname):
 
     doc_text_boxes.sort(key=lambda element: element.bbox[0])
     doc_text_boxes.sort(key=lambda element: element.bbox[1], reverse=True)
-    # for element in doc_text_boxes:
-    #     print(element.bbox,"  ->  ",element.get_text())
 
     doc_part_rects.sort(key=lambda rect: rect[1], reverse=True)
 
@@ -261,28 +282,53 @@ def get_text(fname):
     #     print(box)
 
     new_ordered_text_boxes=[item for sublist in ordered_text_boxes for item in sublist]
-    # new_ordered_text_boxes.sort(key=lambda element : element[])
-    for element in new_ordered_text_boxes:
-        print(element.get_text())
-
-    print("----------------------------------------------------")
-    return new_ordered_text_boxes
+    text=[element.get_text() for element in new_ordered_text_boxes]
+    for line in text:
+        print(line)
+    return text, new_ordered_text_boxes
 
 
 if __name__ == "__main__":
-    # fname='/home/jatin/iitb/flexiele/parser/dataset/samplecv/5 Sourabh.pdf'
-    # text = get_text(fname)
-    fname='/home/jatin/iitb/flexiele/parser/dataset/samplecv/3 Bhirgu Sharma.pdf'
-    text=get_text(fname)
+    # start = time.process_time()
+    # fname='/home/jatin/iitb/flexiele/parser/dataset/samplecv/3 Bhirgu Sharma.pdf'
+    # text, layout=get_text(fname)
+    # print("time", time.process_time() - start)
+    # print("------------")
+    #
+    start = time.process_time()
+    fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/5 Sourabh.pdf'
+    text, layout = get_text(fname)
+    print("time", time.process_time() - start)
+    print("------------")
+    #
+    # start = time.process_time()
     # fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/6 Sujeet.pdf'
-    # text = get_text(fname)
+    # text, layout = get_text(fname)
+    # print("time", time.process_time() - start)
+    # print("------------")
+    #
+    # start = time.process_time()
     # fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/iimjobs_Gaurav_Suman.pdf'
-    # text = get_text(fname)
-    fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/iimjobs_Swostik_Rout.pdf'
-    # text = get_text(fname)
-    fname = '/home/jatin/iitb/flexiele/dataset/more/Copy of IIITN_AMAN_SONI_CV.pdf'
-    text = get_text(fname)
-    # fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/sdarunkataria@gmail.com.pdf'
-    text = get_text(fname)
+    # text, layout = get_text(fname)
+    # print("time", time.process_time() - start)
+    # print("------------")
+    #
+    # start = time.process_time()
+    # fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/iimjobs_Swostik_Rout.pdf'
+    # text, layout = get_text(fname)
+    # print("time", time.process_time() - start)
+    # print("------------")
+    #
+    # start = time.process_time()
+    # fname = '/home/jatin/iitb/flexiele/dataset/more/Copy of IIITN_AMAN_SONI_CV.pdf'
+    # text, layout = get_text(fname)
+    # print("time", time.process_time() - start)
+    # print("------------")
+
+    start = time.process_time()
+    fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/5 yrs Sameer.Sinha.pdf'
+    text, layout = get_text(fname)
+    print("time", time.process_time() - start)
+    print("------------")
 
 

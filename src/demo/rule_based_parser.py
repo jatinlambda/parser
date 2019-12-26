@@ -4,11 +4,11 @@ import os
 
 def main():
     sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '../..'))
+    current_dir = os.path.dirname(os.path.abspath(__file__))
 
     from src.parser_classes.test_parser import ResumeParser
     from src.util.io_utils import read_pdf_and_docx
 
-    current_dir = os.path.dirname(os.path.abspath(__file__))
 
     data_dir_path = current_dir + '/../../dataset/samplecv' # directory to scan for any pdf and docx files
 

@@ -21,6 +21,8 @@ bucket2title['Experience'].append('expertise')
 bucket2title['Experience'].append('professional experience')
 bucket2title['Experience'].append('internships')
 bucket2title['Experience'].append('course')
+bucket2title['Experience'].append('employment details')
+bucket2title['Experience'].append('employment history')
 
 # bucket2title['Skills'].append('Skills')
 bucket2title['Skills'].append('skills')
