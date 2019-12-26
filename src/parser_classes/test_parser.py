@@ -1,5 +1,5 @@
 from src.util.parser_rules import *
-from src.util.tokenizer_utils import word_tokenize
+# from src.util.tokenizer_utils import word_tokenize
 from src.util.headers_dict import bucket2title, title2bucket, headers_dict_init
 
 dict1 = {}
@@ -17,7 +17,8 @@ class ResumeParser(object):
 
     def parse(self, texts, print_line=False):
         headers_dict_init()
-        self.raw = texts
+        self.raw = texts['text']
+        self.layout = texts['layout']
         headers = extract_headers(self.raw)
         buckets = extract_buckets(self.raw, headers)
 

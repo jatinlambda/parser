@@ -1,6 +1,6 @@
 # from keras.preprocessing.text import Tokenizer
 # from keras.preprocessing.sequence import pad_sequences
-import nltk
+# import nltk
 
 
 # def create_tokenizer(lines):
@@ -14,8 +14,8 @@ import nltk
 #     return max([len(s.split()) for s in lines])
 
 
-def word_tokenize(text):
-    return nltk.word_tokenize(text)
+# def word_tokenize(text):
+    # return nltk.word_tokenize(text)
 
 
 # # encode a list of lines
