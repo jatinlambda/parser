@@ -33,42 +33,12 @@ matcher2 = Matcher(nlp.vocab)
 def extract_email(s, line):
     line = [x["text"] for x in line]
     line = '\n'.join(line)
-    email = re.findall("[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.{0,})+[a-zA-Z]+", line)
+    email = re.findall("[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.{0,})+[a-zA-Z]+", line)            #regex to match email in text
     if email:
         try:
             return email[0].split()[0].strip(';')
         except IndexError:
             return None
-
-
-def extract_sex(parts, line):
-    sex_found = False
-    sex = None
-    for w in parts:
-        if 'sex' in w:
-            sex_found = True
-            continue
-        if sex_found and ':' not in w:
-            if w == 'male':
-                sex = 'male'
-            else:
-                sex = 'female'
-            break
-    return sex
-
-
-def extract_education(parts, line):
-    found = False
-    education = None
-    for w in parts:
-        if 'education' in w:
-            found = True
-            continue
-        if found and ':' not in w:
-            education = w
-            break
-    return education
-
 
 def extract_mobile(parts, line):
     line = [x["text"] for x in line]
@@ -82,63 +52,6 @@ def extract_mobile(parts, line):
         else:
             return number
 
-
-def extract_experience(parts, line):
-    found = False
-    result = None
-    for w in parts:
-        if w.find('experience') != -1:
-            found = True
-            continue
-        if found and ':' not in w:
-            result = w
-            break
-    return result
-
-
-def extract_expertise(parts, line):
-    length = 4
-    line = line.lower()
-    index = line.find('know')
-    if index == -1:
-        length = 2
-        index = line.find('familiar')
-    if index == -1:
-        length = 2
-        index = line.find('use')
-    if index == -1:
-        length = 2
-        index = line.find('master')
-    if index == -1:
-        length = 4
-        index = line.find('understand')
-    if index == -1:
-        length = 4
-        index = line.find('develop')
-
-    result = None
-    if index == -1:
-        return None
-    else:
-        result = line[index + length:].replace(':', '').strip()
-        if result == '':
-            return None
-    return result
-
-
-def extract_ethnicity(parts, line):
-    race_found = False
-    race = None
-    for w in parts:
-        if w.find('race') != -1:
-            race_found = True
-            continue
-        if race_found and w.find(':') == -1:
-            race = w
-            break
-    return race
-
-
 def extract_name(parts, line):
     line = [x["text"] for x in line]
     line = '\n'.join(line)
@@ -146,10 +59,10 @@ def extract_name(parts, line):
     nlp_text = nlp(line)
 
     # First name and Last name are always Proper Nouns
-    pattern = [{'POS': 'PROPN'}, {'POS': 'PROPN'}]
+    pattern = [{'POS': 'PROPN'}, {'POS': 'PROPN'}]             
 
     matcher.add('NAME', None, pattern)
-    pattern2 = [{'POS': 'PROPN'}, {'POS': 'PROPN'}, {'POS': 'PROPN'}]
+    pattern2 = [{'POS': 'PROPN'}, {'POS': 'PROPN'}, {'POS': 'PROPN'}]        #second matcher object : to match names having length 3 instead of 2.
     matcher2.add('NAME', None, pattern2)
 
     matches = matcher(nlp_text)
@@ -174,105 +87,6 @@ def extract_name(parts, line):
             return span.text
 
 
-    
-
-
-
-# def extract_duration(personal_info_line):
-# 	nlp = spacy.load("en_core_web_sm")
-# 	doc = nlp(personal_info_line)
-# 	for ent in doc.ents:
-# 		if ent.label_ is "DATE":
-# 			return ent.text
-#
-# def extract_objective(parts, line):
-#     found = False
-#     result = None
-#     for w in parts:
-#         if w.find('objective') != -1:
-#             found = True
-#             continue
-#         if found and ':' not in w:
-#             result = w
-#             break
-#     return result
-
-# def extract_insti(lines):
-#
-#     #text is assumed to be sentences after sentence tokenisation of text.
-#     lines = [nltk.word_tokenize(el) for el in lines]
-#     lines = [nltk.pos_tag(el) for el in lines]
-#
-#     indianColleges = open('indianColleges.txt','r').read().lower()
-#     indianColleges = set(indianColleges.split())
-#     indianDegrees = open('indianDegrees.txt','r').read().lower()
-#     indianDegrees = set(indianDegrees.split())
-#     print(indianDegrees)
-#     #instiregex = r'INSTI: {<DT.>?<NNP.*>+<IN.*>?<NNP.*>+}'
-#     instiregex = r'INSTI: {<JJ.>?<NN.>?<IN.>?<DT.>?<NNP.*>+<IN.>?<NNP.*>+}'
-#     chunkParser = nltk.RegexpParser(instiregex)
-#
-#     insti = []
-#     degrees = []
-#     for tagged_tokens in lines:
-# 		print(tagged_tokens)
-# 		chunked_tokens = chunkParser.parse(tagged_tokens)
-# 		for subtree in chunked_tokens.subtrees():
-# 			#print(subtree)
-# 			if subtree.label() == 'INSTI':
-# 				for ind,leaf in enumerate(subtree.leaves()):
-# 					#print(ind,leaf)
-# 					if leaf[0].lower() in indianColleges and 'NNP' in leaf[1]:
-# 					#	print(leaf)
-# 						hit = " ".join([el[0] for el in tagged_tokens])
-# 						insti.append(hit)
-# 			else:
-# 				for ind,leaf in enumerate(subtree.leaves()):
-# 					if leaf[0].lower() in indianDegrees:
-# 						#print(leaf[0].lower())
-# 						new_hit = " ".join([el[0] for el in tagged_tokens])
-# 						degrees.append(new_hit)
-#     return insti,degrees
-#
-#     """
-#     insti = []
-#     indianColleges = open('indianColleges.txt','r').read().lower()
-#     indianColleges = set(indianColleges.split())
-#     lst_of_groups = group_extractor(lines)
-#     for l in lst_of_groups:
-#         a = l.split(" ")
-#         for x in a:
-#             if(x in indianColleges):
-#                 insti.append(l)
-#                 break;
-#
-#     return insti
-#     """
-#     # insti = []
-#     # indianColleges = open('file.csv','r').read.lower()
-#     # indianColleges = list(indianColleges.split(",,,,\n"))
-#     #
-#     # for college in indianColleges:
-#     #     if(college[1:-1] in lines.lower()):
-#     #         insti.append(college)
-#
-#     return insti
-
-# def extract_degree(lines):
-#     indianDegrees = open('../util/indianDegrees.txt', 'r').read().lower()
-#     indianDegrees = list(indianDegrees.split())
-#     degree = []
-#     for line in lines:
-#         for punct in punctuation_list:
-#             line_without_punct = line.replace(punct," ")
-#
-#         words = line_without_punct.lower().split(" ")
-#         for x in words:
-#            # print(x)
-#             if(x in indianDegrees):
-#                 degree.append(x)
-#
-#     return degree
 def extract_skills(nlp_text, noun_chunks):
     '''
     Helper function to extract skills from spacy nlp text
@@ -358,42 +172,6 @@ def extract_experience(resume_text):
     return x
 
 def extract_insti(lines):
-    """
-    # text is assumed to be sentences after sentence tokenisation of text.
-    lines = [nltk.word_tokenize(el) for el in lines]
-    lines = [nltk.pos_tag(el) for el in lines]
-
-    indianColleges = open('indianColleges.txt', 'r').read().lower()
-    indianColleges = set(indianColleges.split())
-
-    print(indianDegrees)
-    # instiregex = r'INSTI: {<DT.>?<NNP.*>+<IN.*>?<NNP.*>+}'
-    instiregex = r'INSTI: {<JJ.>?<NN.>?<IN.>?<DT.>?<NNP.*>+<IN.>?<NNP.*>+}'
-    chunkParser = nltk.RegexpParser(instiregex)
-
-    insti = []
-    degrees = []
-    for tagged_tokens in lines:
-        print(tagged_tokens)
-        chunked_tokens = chunkParser.parse(tagged_tokens)
-        for subtree in chunked_tokens.subtrees():
-            # print(subtree)
-            if subtree.label() == 'INSTI':
-                for ind, leaf in enumerate(subtree.leaves()):
-                    # print(ind,leaf)
-                    if leaf[0].lower() in indianColleges and 'NNP' in leaf[1]:
-                        #	print(leaf)
-                        hit = " ".join([el[0] for el in tagged_tokens])
-                        insti.append(hit)
-            else:
-                for ind, leaf in enumerate(subtree.leaves()):
-                    if leaf[0].lower() in indianDegrees:
-                        # print(leaf[0].lower())
-                        new_hit = " ".join([el[0] for el in tagged_tokens])
-                        degrees.append(new_hit)
-    return insti, degrees
-    """
-
     insti = []
     indianColleges = open('../util/indianColleges.txt','r').read().lower()
     indianColleges = set(indianColleges.split())
@@ -411,62 +189,8 @@ def extract_insti(lines):
                 insti.append(l)
                 break
 
-
     return insti
 
-#     """
-#
-# def extract_skills(text):
-#     skills_list = open('../util/new_file.txt','r').read().lower()
-#
-#     skills_list = list(skills_list.split("\n"))
-#     #print(skills_list)
-#
-#     #word_list = re.split('<space> | \n', text)
-#     word_list = nltk.word_tokenize(text)
-#     #print(word_list)
-#     final_skill = []
-#
-#     for word in word_list:
-#         #print(word.lower())
-#         #print(word.lower())
-#         #print(skills_list[-3])
-#         if word.lower() in skills_list:
-#            # print(word)
-#             final_skill.append(word)
-#
-#     return final_skill
-# """
-# def extract_date(text):
-#    # print(text)
-#    # print(nlp(text).ents)
-#     return [en.text for en in nlp(text).ents if en.label_ == 'DATE']
-#
-# # def extract_insti_degree(lines):
-# #
-# #     insti = []
-# #     degree = []
-# #     indianColleges = open('../util/indianColleges.txt', 'r').read().lower()
-# #     indianColleges = set(indianColleges.split())
-# #
-# #     indianDegrees = open('../util/indianColleges.txt', 'r').read().lower()
-# #     indianDegrees = set(indianDegrees.split())
-# #
-# #     entries = []
-# #     for line in lines:
-# #         entries = entries + re.split('\t|\s\s+', line)
-# #
-# #     print(entries)
-# #
-# #     lst_of_groups = group_extractor('\n'.join(lines))
-# #     for l in lst_of_groups:
-# #         a = l.split(" ")
-# #         for x in a:
-# #             if x.lower() in indianColleges:
-# #                 insti.append(l)
-# #                 break;
-# #     return insti
-#
 
 
 # get the label/title of a possible header line using spacy similarity with possible header lines
