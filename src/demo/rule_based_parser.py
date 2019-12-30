@@ -21,7 +21,7 @@ def main():
     for file_path, file_content in collected.items():
         print('parsing file: ', file_path)
         parser = ResumeParser(file_path)
-        parser.parse(file_content)
+        parser.parse(file_content, print_line=False)
 
         if parser.unknown is False:
             print(parser.summary())

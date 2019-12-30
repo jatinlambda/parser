@@ -3,20 +3,14 @@ import os
 import nltk  #used in extract insti function
 from spacy.matcher import Matcher
 from . import constants as cs
-#from spacy import displacy
-#from src.util.tokenizer_utils import word_tokenize
-import spacy
-from src.util.nlp_tools import nlp, calculate_similarity_with_processing, process_main_text1
+from src.util.nlp_tools import nlp, calculate_similarity_with_processing
 import numpy as np
-from src.util.headers_dict import bucket2title, title2bucket
-from src.util.other_util import overlap_rects
+from src.util.headers_dict import title2bucket
 import string
 from src.util.entity_extractor import group_extractor
 import pandas as pd
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
-
-
 
 
 
@@ -176,12 +170,6 @@ def extract_insti(lines):
     insti = []
     indianColleges = open('../util/indianColleges.txt','r').read().lower()
     indianColleges = set(indianColleges.split())
-
-    indianDegrees = open('../util/indianColleges.txt', 'r').read().lower()
-    indianDegrees = set(indianDegrees.split())
-
-
-
     lst_of_groups = group_extractor(lines)
     for l in lst_of_groups:
         a = l.split(" ")

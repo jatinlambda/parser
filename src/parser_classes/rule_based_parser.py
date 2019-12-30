@@ -1,7 +1,7 @@
 from src.util.parser_rules import *
 from src.util.other_util import preprocess_text
 import json, os
-# from src.util.headers_dict import bucket2title, title2bucket
+
 
 class ResumeParser(object):
 
@@ -121,16 +121,12 @@ class ResumeParser(object):
 
         insti_list = []
         for line in self.education_lines:
-            # print(line)
             insti = extract_insti(line["text"])
             for i in insti:
                 insti_list.append(i)  # insti_list extracted
-                # print(degree)
         self.parsedDict["Resume"]["Education"] = insti_list
         text = [x["text"] for x in self.texts]
         text = ' '.join(text)
-
-        # print(text)
 
         edu = extract_education([sent.string.strip() for sent in nlp(text).sents])
         self.parsedDict["Resume"]["Education"]=edu
