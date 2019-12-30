@@ -4,6 +4,10 @@ import nltk  #used in extract insti function
 from spacy.matcher import Matcher
 from . import constants as cs
 from src.util.nlp_tools import nlp, calculate_similarity_with_processing
+#from spacy import displacy
+#from src.util.tokenizer_utils import word_tokenize
+import spacy
+from src.util.nlp_tools import nlp, calculate_similarity_with_processing, process_main_text1, process_main_text0
 import numpy as np
 from src.util.headers_dict import title2bucket
 import string
@@ -11,9 +15,6 @@ from src.util.entity_extractor import group_extractor
 import pandas as pd
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
-
-
-
 result = string.punctuation
 result = result.replace(" ","")
 punctuation_list = []
@@ -179,6 +180,55 @@ def extract_insti(lines):
                 break
 
     return insti
+
+def extract_company(text):
+	AllCompanies = open('../util/AllCompanies.txt', 'r').read().lower()
+	AllCompanies = AllCompanies.split("\n")
+	s = text.split("\n")
+	#print(s)
+	companiesList = []
+	for x in s:
+		a,b = process_main_text0(x)                                    #a is a list of tokens. We need token.text
+
+		words = a
+
+		#print(words)
+
+		for i in range(len(words)):
+			word = words[i]
+			candidates = []
+			for company in AllCompanies:
+				keyw = company.split(" ")
+				#print(keyw[0],word)
+				if keyw[0] == word.lower():
+					candidates.append(company)
+
+			if len(candidates) == 0:
+				continue
+
+			max_sim = -1
+			
+			#print(candidates)
+			candidate_best = ""
+			for candidate in candidates:
+				length = len(candidate.split(" "))
+				#print(length)
+				#print(company)
+				comp = nlp(candidate)
+				cand = nlp(' '.join(words[i:i+length]))
+
+				sim = comp.similarity(cand)
+				print(sim)
+				if sim > 0.7 and sim > max_sim:
+					max_sim = sim
+					#print(sim,candidate,words[i:i+length])
+					candidate_best = ' '.join(words[i:i+length]) 
+			
+			companiesList.append(candidate_best)		
+
+	companiesList = list(dict.fromkeys(companiesList))		
+	return companiesList
+
 
 
 

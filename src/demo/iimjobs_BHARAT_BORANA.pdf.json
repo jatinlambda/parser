@@ -11,16 +11,16 @@
         "Education": [],
         "Skills Raw": "",
         "Skills": [
+            "Mobile",
+            "Apis",
+            "Design",
             "Cms",
-            "Coding",
             "Finance",
             "Certification",
-            "Pelican",
             "Process",
-            "Apis",
+            "Pelican",
             "Database",
-            "Design",
-            "Mobile"
+            "Coding"
         ],
         "Experience Raw": "Work Experience:\n1.  Senior Software Engineer\n2016/12 - Present\n\u27a2  Appster LLC, Gurugram\n\u27a2  Developing  restful  apis  using  Laravel  framework  for  mobile  team.  Live  chat  implementation  using  NodeJs\nsocket and Express.\n\u27a2  Database design process in sprint-0, Code review process for assigned projects\n\u27a2  Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.\n\u27a2  Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI\n2 certification.\n2.  Senior Software Engineer\n2014/12 - 2016/11\n\u27a2  Xicom Technologies, New Delhi\n\u27a2  Lead a team of two junior developers where my roles are to check if proper coding standard is followed.\n\u27a2  My roles are developing restful apis, developing web applications with high scalability.\n3.  Software Engineer - Level I\n2012/10 - 2014/11\n\u27a2  C.G.Technosoft, Jodhpur\n\u27a2  Started  my  career  as  trainee  at  this  organization.  My  roles  is  to  understand  web  application  development\nusing Cakephp 2.0 framework.",
         "Experience": [],

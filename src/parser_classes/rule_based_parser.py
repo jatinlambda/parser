@@ -142,6 +142,9 @@ class ResumeParser(object):
 
         self.parsedDict["Resume"]['All Text']='\n'.join([line['text'] for line in self.texts])
         self.parsedDict["Resume"]['Raw Parsed']=[dict([(key, val) for key, val in line.items() if key!='doc' and key!='tokens']) for line in self.texts]
+
+        line = [x["text"] for x in self.experience_lines]
+        self.parsedDict["Resume"]["Experience"] = self.parsedDict["Resume"]["Experience"] + extract_company('\n'.join(line)) 
         
     def summary(self):
         print("Skiping Summary")

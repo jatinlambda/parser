@@ -14,20 +14,21 @@
         ],
         "Skills Raw": "Skills\nSkills\nDescription\nLanguage\nC, C++, Java (Basic), Python (Basic)\nRDBMS\nMySQL, MSSQL\nOperating System\nOS Concepts and Windows\nOthers\nData Structure, Algorithm, DBMS concepts, OOP",
         "Skills": [
-            "Engineering",
-            "Python",
             "Mysql",
+            "Windows",
+            "Python",
+            "Os",
+            "Engineering",
+            "C++",
             "Java",
             "System",
             "C",
-            "C++",
-            "Research",
-            "Os",
-            "Windows"
+            "Research"
         ],
         "Experience Raw": "Experience\nSamsung Research Institute, Noida \u2013 Software Engineering Intern\nJAN 2018 \u2013 PRESENT (5 months Internship Program)\n\u2022  Currently working as Software Engineering Intern on IOT Based Project.",
         "Experience": [
-            " Samsung Research Institute"
+            " Samsung Research Institute",
+            "samsung research"
         ],
         "Projects Raw": "Academic Projects\nFEB2016\nAn online quiz web application\n\u2022  Developed a website platform for conducting online MCQ Quiz in which has three interfaces: Admin,\nTeacher and Student.\nAdmin has all the exclusive rights to add/delete teachers and students. Authorized teachers by the admin\nhas rights to create new tests and add the students who can take up the MCQ test.\nStudents can attend the tests by entering their valid login credentials.\nThe responses entered are recorded, displayed to students and stored in database for teachers to view.\nTechnology Used: Django(Framework), Python, SQLite\nMAY2017\nDesign of Spam filter using Machine Learning and Text Classification\n\u2022  The project is designed to distinguish spam and ham emails from a corpus. The classifier is trained with the\nhelp of enron dataset containing 3571 ham and 1500 spam emails. Natural Language Processing is used for\ntext tokenization and conversion of document into document matrix along with TF-IDF as a factor for\nimportant information retrieval. Na\u00efve Bayes classifier is used for classification of new email with an\naccuracy of 87%.\nTechnology Used: Python, Natural Language Processing, Machine Learning\nNOV2017\nImage Management API\n\u2022  This is a Django based RESTful service that can be used to store, update, retrieve and delete images. The\nimage will be stored on the file-system where this service lives.\nTechnology Used: Django(Framework), Python, REST-API\nDEC2016\nA tool for performing basic operations on PDF files\n\u2022  Developed a tool which can provide information about PDF files such as pages, author, layout, encryption\netc., merge pdf documents, bookmark pages, rotate, overlay, extract pages and generate new document,\nwatermark pages etc.\nTechnology Used: Python\nCoding / Technical Activities\n\u2022  Qualified till the Elimination round in Snackdown Event in the year 2017 and 2016. (Handle- ninja_blade)\n\u2022  O(logn) rating in hackerrank. (Handle- gauravsuman8)\n\u2022  Solved 150+ problems on SPOJ. (Handle- gauravsuman8)\n\u2022  Participated in various coding competitions at CodeChef and Codeforces.\n(CodeChef Handle \u2013 grvsmn, Codeforces Handle- gauravsuman8).\n\u2022  Qualified till round 1 of Facebook Hacker Cup\n\u2022  Secured rank 692 in ACM-ICPC Qualifier Round 2017. (Handle- THREE_IDIOTS)",
         "Projects": [],
