@@ -9,7 +9,7 @@ import matplotlib.patches as patches
 from src.util.other_util import overlap_rects
 import time
 import os
-from tika import parser
+#from tika import parser
 
 laparams = LAParams(line_overlap=0.1,
                         char_margin=2.0,

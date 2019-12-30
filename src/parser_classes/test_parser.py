@@ -24,89 +24,100 @@ class ResumeParser(object):
             self.texts.append(preprocess_text(line, layout))
             # print(self.texts[-1]['text'])
 
-        headers = extract_headers(self.texts)
-        buckets = extract_buckets(self.texts, headers)
+        extract_headers(self.texts)
+        extract_buckets(self.texts)
 
-        # dict1["Resume_Parser"]["ResumeFileName"] = self.file
-        #
-        # self.education_lines=[]
-        # self.personal_lines=[]
-        # self.experience_lines=[]
-        # self.skills_lines=[]
-        # self.other_lines=[]
-        # self.project_lines=[]
-        # self.qualification_lines=[]
-        # self.hobbies_lines=[]
-        # self.extra_curricular_lines=[]
-        # self.objective_lines=[]
-        #
-        # for entry in buckets:
-        #     if entry['label']=='Personal Details':
-        #         self.personal_lines.append(entry['line'])
-        #     elif entry['label']=='Experience':
-        #         self.experience_lines.append(entry['line'])
-        #     elif entry['label']=='Skills':
-        #         self.skills_lines.append(entry['line'])
-        #     elif entry['label']=='Projects':
-        #         self.project_lines.append(entry['line'])
-        #     elif entry['label']=='Qualifications':
-        #         self.qualification_lines.append(entry['line'])
-        #     elif entry['label']=='Education':
-        #         self.education_lines.append(entry['line'])
-        #     elif entry['label']=='Hobbies':
-        #         self.hobbies_lines.append(entry['line'])
-        #     elif entry['label']=='Extra curricular':
-        #         self.extra_curricular_lines.append(entry['line'])
-        #     elif entry['label']=='Objective':
-        #         self.objective_lines.append(entry['line'])
-        #
-        # name = extract_name([],'\n'.join(self.personal_lines))
-        # print(" ---name : ", name)
-        # dict1["Resume_Parser"]["FullName"] = name;
-        #
-        # email = extract_email([],'\n'.join(self.personal_lines))
-        # print(" ---email : ", email)
-        # dict1["Resume_Parser"]["Email"] = email
-        #
-        # phone = extract_mobile([],'\n'.join(self.personal_lines))
-        # print(" ---mobile : ", phone)
-        # dict1["Resume_Parser"]["phone"] = phone
-        #
-        # dict1["Resume_Parser"]["Education_full"] = '\n'.join(self.education_lines)
-        #
-        #
-        # dict1["Resume_Parser"]["SkillSet"] = '\n'.join(self.skills_lines)
-        #
-        # dict1["Resume_Parser"]["Experience"] = '\n'.join(self.experience_lines)
-        #
-        # dict1["Resume_Parser"]["Hobbies"] = '\n'.join(self.hobbies_lines)
-        #
-        # dict1["Resume_Parser"]["Objective"] = '\n'.join(self.objective_lines)
-        #
-        # dict1["Resume_Parser"]["Projects"] = self.project_lines
-        #
-        # dict1["Resume_Parser"]["Personal Details"] = '\n'.join(self.personal_lines)
-        #
-        # dict1["Resume_Parser"]["Extracurricular_Activities"] = '\n'.join(self.extra_curricular_lines)
+        dict1["Resume_Parser"]["ResumeFileName"] = self.file
+        
+        self.education_lines=[]
+        self.personal_lines=[]
+        self.experience_lines=[]
+        self.skills_lines=[]
+        self.other_lines=[]
+        self.project_lines=[]
+        self.qualification_lines=[]
+        self.hobbies_lines=[]
+        self.extra_curricular_lines=[]
+        self.objective_lines=[]
+        
+        for entry in self.texts:
+            if entry['bucket']=='Personal Details':
+                self.personal_lines.append(entry)
+            elif entry['bucket']=='Experience':
+                self.experience_lines.append(entry)
+            elif entry['bucket']=='Skills':
+                self.skills_lines.append(entry)
+            elif entry['bucket']=='Projects':
+                self.project_lines.append(entry)
+            elif entry['bucket']=='Qualifications':
+                self.qualification_lines.append(entry)
+            elif entry['bucket']=='Education':
+                self.education_lines.append(entry)
+            elif entry['bucket']=='Hobbies':
+                self.hobbies_lines.append(entry)
+            elif entry['bucket']=='Extra curricular':
+                self.extra_curricular_lines.append(entry)
+            elif entry['bucket']=='Objective':
+                self.objective_lines.append(entry)
+        
+        name = extract_name([],self.personal_lines)
+        print(" ---name : ", name)
+        dict1["Resume_Parser"]["FullName"] = name;
+        
+        email = extract_email([],self.personal_lines)
+        print(" ---email : ", email)
+        dict1["Resume_Parser"]["Email"] = email
+        
+        phone = extract_mobile([],self.personal_lines)
+        print(" ---mobile : ", phone)
+        dict1["Resume_Parser"]["phone"] = phone
+        
+        line = [x["text"] for x in self.education_lines]
+        dict1["Resume_Parser"]["Education_full"] = '\n'.join(line)
+        
+        
+        line = [x["text"] for x in self.skills_lines]
+        dict1["Resume_Parser"]["SkillSet"] = '\n'.join(line)
+        
+        line = [x["text"] for x in self.experience_lines]
+        dict1["Resume_Parser"]["Experience"] = '\n'.join(line)
+        
+        line = [x["text"] for x in self.hobbies_lines]
+        dict1["Resume_Parser"]["Hobbies"] = '\n'.join(line)
+        
+        line = [x["text"] for x in self.objective_lines]
+        dict1["Resume_Parser"]["Objective"] = '\n'.join(line)
+        
+        line = [x["text"] for x in self.project_lines]
+        dict1["Resume_Parser"]["Projects"] = line
+        
+        line = [x["text"] for x in self.personal_lines]
+        dict1["Resume_Parser"]["Personal Details"] = '\n'.join(line)
 
-        # degree = extract_degree(self.education_lines)     #degrees extracted as a list. Currently not added in the dictionary
 
-        # insti_list = []
-        # for line in self.education_lines:
-        #     print(line)
-        #     insti = extract_insti(line)
-        #     for i in insti:
-        #         insti_list.append(i)                      #insti_list extracted
-        #print(degree)
+        line = [x["text"] for x in self.extra_curricular_lines]
+        dict1["Resume_Parser"]["Extracurricular_Activities"] = '\n'.join(line)
+
+       # degree = extract_degree(self.education_lines)     #degrees extracted as a list. Currently not added in the dictionary
+
+        insti_list = []
+        for line in self.education_lines:
+           # print(line)
+            insti = extract_insti(line["text"])
+            for i in insti:
+                insti_list.append(i)                      #insti_list extracted
+       # print(degree)
         #print(self.education_lines)
         #print(self.skills_lines)
-        # dict1["Resume_Parser"]["Education"] = insti_list
-        # text = ' '.join(('\n'.join(self.raw)).split())
-        # print(text)
+        dict1["Resume_Parser"]["Education"] = insti_list
+        text = [x["text"] for x in self.texts]
+        text = ' '.join(text)
 
-        # edu = extract_education([sent.string.strip() for sent in nlp(text).sents])
-        # skills = extract_skills(nlp('\n'.join(self.skills_lines + self.project_lines + self.experience_lines)),nlp('\n'.join(self.skills_lines)).noun_chunks)
-        # experience = extract_experience(text)
+        #print(text)
+
+        edu = extract_education([sent.string.strip() for sent in nlp(text).sents])
+        skills = extract_skills(nlp(dict1["Resume_Parser"]["SkillSet"] + dict1["Resume_Parser"]["Experience"] + '\n'.join(dict1["Resume_Parser"]["Projects"])),nlp(dict1["Resume_Parser"]["SkillSet"]).noun_chunks)
+        experience = extract_experience(text)
         #Skills extraction from skills and projects, then merging into one list and removing duplicates
         #final_skill_list = extract_skills('\n'.join(self.skills_lines))
         #final_skill_list2 = extract_skills('\n'.join(self.project_lines))
@@ -117,10 +128,10 @@ class ResumeParser(object):
         #print(flat_list)
         #flat_list = list(dict.fromkeys(res_list))
         #dict1["Resume_Parser"]["Skills"] = flat_list 
-        # print(edu)
-        # print(skills)
-        # print(experience)
-        # print(insti_list)
+        print(edu)
+        print(skills)
+        print(experience)
+        print(insti_list)
         #
         # #date_list extracted but not added to dictionary
         # date_list = extract_date('\n'.join(self.education_lines))
