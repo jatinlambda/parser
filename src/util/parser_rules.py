@@ -411,10 +411,6 @@ def extract_insti(lines):
                 insti.append(l)
                 break
 
-     #entries = []
-     #for line in lines:
-      #   entries = entries + re.split('\t|\s\s+', line)
-    # print(entries)
 
     return insti
 
@@ -496,6 +492,7 @@ def extract_headers(texts):
     # iterate over each line
     for index, line in enumerate(texts):
         prob=1
+        line['isHeader'] = False
 
         # check if there is any word which doesn't exist in spacy model vocabulary
         for token in line['doc']:
@@ -544,8 +541,8 @@ def extract_headers(texts):
                    line['isHeader']=True
                    line['bucket']=label
                    line['similarity']=similarity
-                else:
-                    line['isHeader'] = False
+
+
 
 
 
@@ -558,7 +555,6 @@ def extract_buckets(data):
             last_label=line['bucket']
         else:
             line['bucket']=last_label
-        print(last_label, '\t', line['text'])
 
 
 

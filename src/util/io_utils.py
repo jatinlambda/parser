@@ -15,7 +15,7 @@ def read_pdf_and_docx(dir_path, collected=None, command_logging=False, callback=
             if f.lower().endswith('.docx'):
                 if command_logging:
                     print('extracting text from docx: ', file_path)
-                txt = docx_to_text(file_path)
+                txt, layout = docx_to_text(file_path)
             elif f.lower().endswith('.pdf'):
                 if command_logging:
                     print('extracting text from pdf: ', file_path)

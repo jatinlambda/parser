@@ -13,4 +13,7 @@ def overlap_rects(rect1, rect2):
 # preprocess a line to return a dictionary of line, location, its tokens and spacy nlp object
 def preprocess_text(text, layout):
     tokens, doc=nlp_process_text_foo(text)
-    return {'text':text, 'tokens': tokens, 'doc':doc, 'bbox':layout.bbox}
+    if layout:
+        return {'text':text, 'tokens': tokens, 'doc':doc, 'bbox':layout.bbox}
+    else:
+        return {'text': text, 'tokens': tokens, 'doc': doc, 'bbox': None}

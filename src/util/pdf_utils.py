@@ -290,7 +290,8 @@ def pdf_to_text_tika(fname):
         if line2 != '':
             result_text.append(line2)
 
-    return result_text, None
+    layout = [None for _ in result_text]
+    return result_text, layout
 
 
 # pdf to text using pdftotext bash tool (xpdf tool)
@@ -305,7 +306,8 @@ def pdf_to_text_pdftotext(fname):
         line=line.strip()
         if line!='':
             result.append(line)
-    return result, None
+    layout = [None for _ in result]
+    return result, layout
 
 
 # set this the pdf to text parsing tool

@@ -17,4 +17,5 @@ def docx_to_text(file_path):
         if txt != '':
             txt = preprocess_text(txt)
             result.append(txt)
-    return result
+    layout = [None for _ in result]
+    return result, layout

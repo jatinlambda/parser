@@ -18,13 +18,19 @@ class ResumeParser(object):
         self.raw = None
         self.layouts = None
 
-    def parse(self, texts, print_line=False):
+    def parse(self, texts, print_line=True):
         for line, layout in zip(texts['text'], texts['layout']):
             self.texts.append(preprocess_text(line, layout))
-            # print(self.texts[-1]['text'])
 
         extract_headers(self.texts)
         extract_buckets(self.texts)
+
+        if print_line:
+            for line in self.texts:
+                if line['isHeader']:
+                    print(line['bucket'], '**', '\t', line['text'])
+                else:
+                    print(line['bucket'], '\t', line['text'])
 
         parsedDict["Resume_Parser"]["ResumeFileName"] = self.file
 
