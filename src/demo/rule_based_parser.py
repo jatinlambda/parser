@@ -26,6 +26,8 @@ def main():
         if parser.unknown is False:
             print(parser.summary())
 
+        parser.save_json()
+
         print('++++++++++++++++++++++++++++++++++++++++++')
 
     print('count: ', len(collected))

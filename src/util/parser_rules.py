@@ -273,7 +273,7 @@ def extract_name(parts, line):
 #                 degree.append(x)
 #
 #     return degree
-def extract_skills(nlp_text, noun_chunks):
+def extract_skills(nlp_text):
     '''
     Helper function to extract skills from spacy nlp text
     :param nlp_text: object of `spacy.tokens.doc.Doc`
@@ -290,6 +290,7 @@ def extract_skills(nlp_text, noun_chunks):
             skillset.append(token)
 
     # check for bi-grams and tri-grams
+    noun_chunks=nlp_text.noun_chunks
     for token in noun_chunks:
         token = token.text.lower().strip()
         if token in skills:
