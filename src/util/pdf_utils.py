@@ -4,7 +4,6 @@ from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.pdfpage import PDFPage
 from pdfminer.layout import LTTextBoxHorizontal
 import os, sys
-from tika import parser
 
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '../..'))
 from src.util.other_util import overlap_rects

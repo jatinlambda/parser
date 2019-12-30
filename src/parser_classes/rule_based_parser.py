@@ -35,7 +35,7 @@ class ResumeParser(object):
                                             "All Text":'',
                                             "Raw Parsed":[]}
 
-    def parse(self, texts, print_line=True):
+    def parse(self, texts, print_line=False):
         for line, layout in zip(texts['text'], texts['layout']):
             self.texts.append(preprocess_text(line, layout))
 
@@ -161,10 +161,10 @@ class ResumeParser(object):
         # # print(flat_list)
         # # flat_list = list(dict.fromkeys(res_list))
         # # dict1["Resume"]["Skills"] = flat_list
-        print(edu)
-        print(skills)
-        print(experience)
-        print(insti_list)
+        # print(edu)
+        # print(skills)
+        # print(experience)
+        # print(insti_list)
         #
         # #date_list extracted but not added to dictionary
         # date_list = extract_date('\n'.join(self.education_lines))
@@ -181,7 +181,6 @@ class ResumeParser(object):
         return ""
 
     def save_json(self):
-        print(os.path.basename(self.file_path))
         with open(os.path.basename(self.file_path)+".json", "w") as write_file:
             json.dump(self.parsedDict, write_file, indent=4)
 

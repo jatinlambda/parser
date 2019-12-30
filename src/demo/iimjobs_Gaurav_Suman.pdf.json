@@ -1,0 +1,996 @@
+{
+    "Resume": {
+        "ResumeFileName": "iimjobs_Gaurav_Suman.pdf",
+        "FullName": "Gaurav Suman",
+        "Email": "gauravsuman8@gmail.com",
+        "Phone": "9546347055",
+        "Links": "",
+        "Address": "",
+        "Personal Details": "Gaurav Suman                                          Shanti Niketan, Gudri Bazar,\nBE- Computer Science 4th Year\nLohardaga, Jharkhand\nBirla Institute of Technology, Mesra                                                                   Pin-835302\nDOB: 15th Feb 1996                                                                                               Mobile No.: (+91)9546347055\nFather\u2019s Name: Shiva Kumar Gupta\nEmail: gauravsuman8@gmail.com",
+        "Education Raw": "Education\n1.  BE \u2013 Computer Science (8th sem)\nBIT Mesra, Ranchi Jharkhand\nCurrently Pursuing BE-Computer Science from BIT MESRA with CGPA of 7.86\n2.  12th\nBS College Lohardaga Jharkhand\nSecured 78.8% marks in the 12th Board Exams\n3.  10th\nDAV Public School Lohardaga Jharkhand\nSecured 10 CGPA in the 10th Board Exams\nAchievements and Awards\n\u2022  Topped the Class 10th Board (AISSE) exam in the Lohardaga City. School topper in Class 10th.\n\u2022  Secured 2nd Position in City in 12th Board Exam \u2013 Jharkhand Academic Council.\n\u2022  Qualified JEE-Mains 2014 and secured a rank of 13533 (More than 14 lakhs appeared).",
+        "Education": [
+            "BE",
+            "BS"
+        ],
+        "Skills Raw": "Skills\nSkills\nDescription\nLanguage\nC, C++, Java (Basic), Python (Basic)\nRDBMS\nMySQL, MSSQL\nOperating System\nOS Concepts and Windows\nOthers\nData Structure, Algorithm, DBMS concepts, OOP",
+        "Skills": [
+            "Engineering",
+            "Python",
+            "Mysql",
+            "Java",
+            "System",
+            "C",
+            "C++",
+            "Research",
+            "Os",
+            "Windows"
+        ],
+        "Experience Raw": "Experience\nSamsung Research Institute, Noida \u2013 Software Engineering Intern\nJAN 2018 \u2013 PRESENT (5 months Internship Program)\n\u2022  Currently working as Software Engineering Intern on IOT Based Project.",
+        "Experience": [
+            " Samsung Research Institute"
+        ],
+        "Projects Raw": "Academic Projects\nFEB2016\nAn online quiz web application\n\u2022  Developed a website platform for conducting online MCQ Quiz in which has three interfaces: Admin,\nTeacher and Student.\nAdmin has all the exclusive rights to add/delete teachers and students. Authorized teachers by the admin\nhas rights to create new tests and add the students who can take up the MCQ test.\nStudents can attend the tests by entering their valid login credentials.\nThe responses entered are recorded, displayed to students and stored in database for teachers to view.\nTechnology Used: Django(Framework), Python, SQLite\nMAY2017\nDesign of Spam filter using Machine Learning and Text Classification\n\u2022  The project is designed to distinguish spam and ham emails from a corpus. The classifier is trained with the\nhelp of enron dataset containing 3571 ham and 1500 spam emails. Natural Language Processing is used for\ntext tokenization and conversion of document into document matrix along with TF-IDF as a factor for\nimportant information retrieval. Na\u00efve Bayes classifier is used for classification of new email with an\naccuracy of 87%.\nTechnology Used: Python, Natural Language Processing, Machine Learning\nNOV2017\nImage Management API\n\u2022  This is a Django based RESTful service that can be used to store, update, retrieve and delete images. The\nimage will be stored on the file-system where this service lives.\nTechnology Used: Django(Framework), Python, REST-API\nDEC2016\nA tool for performing basic operations on PDF files\n\u2022  Developed a tool which can provide information about PDF files such as pages, author, layout, encryption\netc., merge pdf documents, bookmark pages, rotate, overlay, extract pages and generate new document,\nwatermark pages etc.\nTechnology Used: Python\nCoding / Technical Activities\n\u2022  Qualified till the Elimination round in Snackdown Event in the year 2017 and 2016. (Handle- ninja_blade)\n\u2022  O(logn) rating in hackerrank. (Handle- gauravsuman8)\n\u2022  Solved 150+ problems on SPOJ. (Handle- gauravsuman8)\n\u2022  Participated in various coding competitions at CodeChef and Codeforces.\n(CodeChef Handle \u2013 grvsmn, Codeforces Handle- gauravsuman8).\n\u2022  Qualified till round 1 of Facebook Hacker Cup\n\u2022  Secured rank 692 in ACM-ICPC Qualifier Round 2017. (Handle- THREE_IDIOTS)",
+        "Projects": [],
+        "Hobbies": [],
+        "Hobbies Raw": "",
+        "Objective": "Objective\nSeeking an opportunity to be a part of an organization that will recognize and utilize my skills fully and offer me a\nposition requiring innovative and creative ideas with a base of Computer Science, where continuous growth and\nlearning can be optimized for the better development and growth of institution, myself and society, at large. Coding\nand development are my field of interest and can be utilized for benefit of organization.",
+        "Extracurricular Activities": "Extra-Curricular Activities\n\u2022  Participated in inter school cricket tournament.\n\u2022  First Position in Group Maths Quiz held in school.\n\u2022  Participated in poker tournament in Bitotsav, the annual cultural fest of BIT Mesra.\nDeclaration:\nI enjoy challenges and work hard to attain my goals in any part of world.\nI hereby solemnly declare that all the above information is correct to best of my knowledge and faith.\nDate: 30th January, 2018                                                                                                                      Gaurav Suman",
+        "All Text": "Gaurav Suman                                          Shanti Niketan, Gudri Bazar,\nBE- Computer Science 4th Year\nLohardaga, Jharkhand\nBirla Institute of Technology, Mesra                                                                   Pin-835302\nDOB: 15th Feb 1996                                                                                               Mobile No.: (+91)9546347055\nFather\u2019s Name: Shiva Kumar Gupta\nEmail: gauravsuman8@gmail.com\nObjective\nSeeking an opportunity to be a part of an organization that will recognize and utilize my skills fully and offer me a\nposition requiring innovative and creative ideas with a base of Computer Science, where continuous growth and\nlearning can be optimized for the better development and growth of institution, myself and society, at large. Coding\nand development are my field of interest and can be utilized for benefit of organization.\nSkills\nSkills\nDescription\nLanguage\nC, C++, Java (Basic), Python (Basic)\nRDBMS\nMySQL, MSSQL\nOperating System\nOS Concepts and Windows\nOthers\nData Structure, Algorithm, DBMS concepts, OOP\nExperience\nSamsung Research Institute, Noida \u2013 Software Engineering Intern\nJAN 2018 \u2013 PRESENT (5 months Internship Program)\n\u2022  Currently working as Software Engineering Intern on IOT Based Project.\nAcademic Projects\nFEB2016\nAn online quiz web application\n\u2022  Developed a website platform for conducting online MCQ Quiz in which has three interfaces: Admin,\nTeacher and Student.\nAdmin has all the exclusive rights to add/delete teachers and students. Authorized teachers by the admin\nhas rights to create new tests and add the students who can take up the MCQ test.\nStudents can attend the tests by entering their valid login credentials.\nThe responses entered are recorded, displayed to students and stored in database for teachers to view.\nTechnology Used: Django(Framework), Python, SQLite\nMAY2017\nDesign of Spam filter using Machine Learning and Text Classification\n\u2022  The project is designed to distinguish spam and ham emails from a corpus. The classifier is trained with the\nhelp of enron dataset containing 3571 ham and 1500 spam emails. Natural Language Processing is used for\ntext tokenization and conversion of document into document matrix along with TF-IDF as a factor for\nimportant information retrieval. Na\u00efve Bayes classifier is used for classification of new email with an\naccuracy of 87%.\nTechnology Used: Python, Natural Language Processing, Machine Learning\nNOV2017\nImage Management API\n\u2022  This is a Django based RESTful service that can be used to store, update, retrieve and delete images. The\nimage will be stored on the file-system where this service lives.\nTechnology Used: Django(Framework), Python, REST-API\nDEC2016\nA tool for performing basic operations on PDF files\n\u2022  Developed a tool which can provide information about PDF files such as pages, author, layout, encryption\netc., merge pdf documents, bookmark pages, rotate, overlay, extract pages and generate new document,\nwatermark pages etc.\nTechnology Used: Python\nEducation\n1.  BE \u2013 Computer Science (8th sem)\nBIT Mesra, Ranchi Jharkhand\nCurrently Pursuing BE-Computer Science from BIT MESRA with CGPA of 7.86\n2.  12th\nBS College Lohardaga Jharkhand\nSecured 78.8% marks in the 12th Board Exams\n3.  10th\nDAV Public School Lohardaga Jharkhand\nSecured 10 CGPA in the 10th Board Exams\nAchievements and Awards\n\u2022  Topped the Class 10th Board (AISSE) exam in the Lohardaga City. School topper in Class 10th.\n\u2022  Secured 2nd Position in City in 12th Board Exam \u2013 Jharkhand Academic Council.\n\u2022  Qualified JEE-Mains 2014 and secured a rank of 13533 (More than 14 lakhs appeared).\nCoding / Technical Activities\n\u2022  Qualified till the Elimination round in Snackdown Event in the year 2017 and 2016. (Handle- ninja_blade)\n\u2022  O(logn) rating in hackerrank. (Handle- gauravsuman8)\n\u2022  Solved 150+ problems on SPOJ. (Handle- gauravsuman8)\n\u2022  Participated in various coding competitions at CodeChef and Codeforces.\n(CodeChef Handle \u2013 grvsmn, Codeforces Handle- gauravsuman8).\n\u2022  Qualified till round 1 of Facebook Hacker Cup\n\u2022  Secured rank 692 in ACM-ICPC Qualifier Round 2017. (Handle- THREE_IDIOTS)\nExtra-Curricular Activities\n\u2022  Participated in inter school cricket tournament.\n\u2022  First Position in Group Maths Quiz held in school.\n\u2022  Participated in poker tournament in Bitotsav, the annual cultural fest of BIT Mesra.\nDeclaration:\nI enjoy challenges and work hard to attain my goals in any part of world.\nI hereby solemnly declare that all the above information is correct to best of my knowledge and faith.\nDate: 30th January, 2018                                                                                                                      Gaurav Suman",
+        "Raw Parsed": [
+            {
+                "text": "Gaurav Suman                                          Shanti Niketan, Gudri Bazar,",
+                "bbox": [
+                    72.024,
+                    1598.0,
+                    734.75,
+                    1616.0
+                ],
+                "isHeader": false,
+                "bucket": "Personal Details"
+            },
+            {
+                "text": "BE- Computer Science 4th Year",
+                "bbox": [
+                    72.024,
+                    1587.0,
+                    208.70000000000002,
+                    1597.0
+                ],
+                "isHeader": false,
+                "bucket": "Personal Details"
+            },
+            {
+                "text": "Lohardaga, Jharkhand",
+                "bbox": [
+                    360.07,
+                    1587.0,
+                    487.39,
+                    1596.0
+                ],
+                "isHeader": false,
+                "bucket": "Personal Details"
+            },
+            {
+                "text": "Birla Institute of Technology, Mesra                                                                   Pin-835302",
+                "bbox": [
+                    72.024,
+                    1576.0,
+                    800.15,
+                    1585.0
+                ],
+                "isHeader": false,
+                "bucket": "Personal Details"
+            },
+            {
+                "text": "DOB: 15th Feb 1996                                                                                               Mobile No.: (+91)9546347055",
+                "bbox": [
+                    72.024,
+                    1564.0,
+                    522.4300000000001,
+                    1574.0
+                ],
+                "isHeader": false,
+                "bucket": "Personal Details"
+            },
+            {
+                "text": "Father\u2019s Name: Shiva Kumar Gupta",
+                "bbox": [
+                    72.024,
+                    1553.0,
+                    226.22,
+                    1562.0
+                ],
+                "isHeader": false,
+                "bucket": "Personal Details"
+            },
+            {
+                "text": "Email: gauravsuman8@gmail.com",
+                "bbox": [
+                    252.05,
+                    1553.0,
+                    537.67,
+                    1562.0
+                ],
+                "isHeader": false,
+                "bucket": "Personal Details"
+            },
+            {
+                "text": "Objective",
+                "bbox": [
+                    72.024,
+                    1516.0,
+                    124.34,
+                    1526.0
+                ],
+                "isHeader": true,
+                "bucket": "Objective",
+                "similarity": 1.0
+            },
+            {
+                "text": "Seeking an opportunity to be a part of an organization that will recognize and utilize my skills fully and offer me a",
+                "bbox": [
+                    72.024,
+                    1494.0,
+                    532.0666400000001,
+                    1503.0
+                ],
+                "isHeader": false,
+                "bucket": "Objective"
+            },
+            {
+                "text": "position requiring innovative and creative ideas with a base of Computer Science, where continuous growth and",
+                "bbox": [
+                    72.024,
+                    1483.0,
+                    522.2359200000008,
+                    1492.0
+                ],
+                "isHeader": false,
+                "bucket": "Objective"
+            },
+            {
+                "text": "learning can be optimized for the better development and growth of institution, myself and society, at large. Coding",
+                "bbox": [
+                    72.024,
+                    1471.0,
+                    536.86196,
+                    1480.0
+                ],
+                "isHeader": false,
+                "bucket": "Objective"
+            },
+            {
+                "text": "and development are my field of interest and can be utilized for benefit of organization.",
+                "bbox": [
+                    72.024,
+                    1459.0,
+                    425.23,
+                    1470.0
+                ],
+                "isHeader": false,
+                "bucket": "Objective"
+            },
+            {
+                "text": "Skills",
+                "bbox": [
+                    72.024,
+                    1436.0,
+                    103.1,
+                    1446.0
+                ],
+                "isHeader": true,
+                "bucket": "Skills",
+                "similarity": 1.0
+            },
+            {
+                "text": "Skills",
+                "bbox": [
+                    77.664,
+                    1412.0,
+                    100.45800000000001,
+                    1421.0
+                ],
+                "isHeader": true,
+                "bucket": "Skills",
+                "similarity": 1.0
+            },
+            {
+                "text": "Description",
+                "bbox": [
+                    308.69,
+                    1412.0,
+                    353.104,
+                    1421.0
+                ],
+                "isHeader": false,
+                "bucket": "Skills"
+            },
+            {
+                "text": "Language",
+                "bbox": [
+                    77.664,
+                    1390.0,
+                    115.09400000000001,
+                    1399.0
+                ],
+                "isHeader": false,
+                "bucket": "Skills"
+            },
+            {
+                "text": "C, C++, Java (Basic), Python (Basic)",
+                "bbox": [
+                    308.69,
+                    1390.0,
+                    435.904,
+                    1399.0
+                ],
+                "isHeader": false,
+                "bucket": "Skills"
+            },
+            {
+                "text": "RDBMS",
+                "bbox": [
+                    77.664,
+                    1378.0,
+                    107.65400000000001,
+                    1387.0
+                ],
+                "isHeader": false,
+                "bucket": "Skills"
+            },
+            {
+                "text": "MySQL, MSSQL",
+                "bbox": [
+                    308.69,
+                    1378.0,
+                    366.544,
+                    1387.0
+                ],
+                "isHeader": false,
+                "bucket": "Skills"
+            },
+            {
+                "text": "Operating System",
+                "bbox": [
+                    77.664,
+                    1367.0,
+                    146.29399999999998,
+                    1376.0
+                ],
+                "isHeader": false,
+                "bucket": "Skills"
+            },
+            {
+                "text": "OS Concepts and Windows",
+                "bbox": [
+                    308.69,
+                    1367.0,
+                    408.784,
+                    1376.0
+                ],
+                "isHeader": false,
+                "bucket": "Skills"
+            },
+            {
+                "text": "Others",
+                "bbox": [
+                    77.664,
+                    1355.0,
+                    105.01400000000001,
+                    1364.0
+                ],
+                "isHeader": false,
+                "bucket": "Skills"
+            },
+            {
+                "text": "Data Structure, Algorithm, DBMS concepts, OOP",
+                "bbox": [
+                    308.69,
+                    1355.0,
+                    487.054,
+                    1364.0
+                ],
+                "isHeader": false,
+                "bucket": "Skills"
+            },
+            {
+                "text": "Experience",
+                "bbox": [
+                    72.024,
+                    1325.0,
+                    132.38,
+                    1335.0
+                ],
+                "isHeader": true,
+                "bucket": "Experience",
+                "similarity": 1.0
+            },
+            {
+                "text": "Samsung Research Institute, Noida \u2013 Software Engineering Intern",
+                "bbox": [
+                    72.024,
+                    1299.0,
+                    338.56,
+                    1308.0
+                ],
+                "isHeader": false,
+                "bucket": "Experience"
+            },
+            {
+                "text": "JAN 2018 \u2013 PRESENT (5 months Internship Program)",
+                "bbox": [
+                    72.024,
+                    1289.0,
+                    272.54,
+                    1297.0
+                ],
+                "isHeader": false,
+                "bucket": "Experience"
+            },
+            {
+                "text": "\u2022  Currently working as Software Engineering Intern on IOT Based Project.",
+                "bbox": [
+                    90.024,
+                    1267.0,
+                    403.84000000000003,
+                    1276.0
+                ],
+                "isHeader": false,
+                "bucket": "Experience"
+            },
+            {
+                "text": "Academic Projects",
+                "bbox": [
+                    72.024,
+                    1237.0,
+                    170.66,
+                    1248.0
+                ],
+                "isHeader": true,
+                "bucket": "Projects",
+                "similarity": 1.0
+            },
+            {
+                "text": "FEB2016",
+                "bbox": [
+                    72.024,
+                    1213.0,
+                    108.83,
+                    1221.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "An online quiz web application",
+                "bbox": [
+                    72.024,
+                    1201.0,
+                    206.78,
+                    1210.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "\u2022  Developed a website platform for conducting online MCQ Quiz in which has three interfaces: Admin,",
+                "bbox": [
+                    90.024,
+                    1189.0,
+                    518.5811600000003,
+                    1199.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "Teacher and Student.",
+                "bbox": [
+                    108.02,
+                    1178.0,
+                    195.26000000000002,
+                    1187.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "Admin has all the exclusive rights to add/delete teachers and students. Authorized teachers by the admin",
+                "bbox": [
+                    108.02,
+                    1166.0,
+                    528.01936,
+                    1175.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "has rights to create new tests and add the students who can take up the MCQ test.",
+                "bbox": [
+                    108.02,
+                    1155.0,
+                    435.88,
+                    1164.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "Students can attend the tests by entering their valid login credentials.",
+                "bbox": [
+                    108.02,
+                    1143.0,
+                    388.24,
+                    1152.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "The responses entered are recorded, displayed to students and stored in database for teachers to view.",
+                "bbox": [
+                    108.02,
+                    1132.0,
+                    515.83,
+                    1141.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "Technology Used: Django(Framework), Python, SQLite",
+                "bbox": [
+                    108.02,
+                    1120.0,
+                    346.12,
+                    1129.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "MAY2017",
+                "bbox": [
+                    72.024,
+                    1087.0,
+                    113.27,
+                    1095.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "Design of Spam filter using Machine Learning and Text Classification",
+                "bbox": [
+                    72.024,
+                    1075.0,
+                    372.76,
+                    1084.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "\u2022  The project is designed to distinguish spam and ham emails from a corpus. The classifier is trained with the",
+                "bbox": [
+                    89.304,
+                    1060.0,
+                    539.4046400000005,
+                    1071.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "help of enron dataset containing 3571 ham and 1500 spam emails. Natural Language Processing is used for",
+                "bbox": [
+                    107.3,
+                    1049.0,
+                    538.2791600000005,
+                    1058.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "text tokenization and conversion of document into document matrix along with TF-IDF as a factor for",
+                "bbox": [
+                    107.3,
+                    1038.0,
+                    517.72312,
+                    1047.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "important information retrieval. Na\u00efve Bayes classifier is used for classification of new email with an",
+                "bbox": [
+                    107.3,
+                    1026.0,
+                    514.4847200000003,
+                    1035.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "accuracy of 87%.",
+                "bbox": [
+                    107.3,
+                    1015.0,
+                    179.27,
+                    1024.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "Technology Used: Python, Natural Language Processing, Machine Learning",
+                "bbox": [
+                    107.3,
+                    1003.0,
+                    434.32,
+                    1012.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "NOV2017",
+                "bbox": [
+                    72.024,
+                    709.0,
+                    112.07,
+                    718.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "Image Management API",
+                "bbox": [
+                    72.024,
+                    698.0,
+                    184.55,
+                    707.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "\u2022  This is a Django based RESTful service that can be used to store, update, retrieve and delete images. The",
+                "bbox": [
+                    90.024,
+                    685.0,
+                    530.8120400000004,
+                    695.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "image will be stored on the file-system where this service lives.",
+                "bbox": [
+                    108.02,
+                    674.0,
+                    364.72,
+                    683.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "Technology Used: Django(Framework), Python, REST-API",
+                "bbox": [
+                    108.02,
+                    662.0,
+                    362.2,
+                    671.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "DEC2016",
+                "bbox": [
+                    72.024,
+                    641.0,
+                    110.27,
+                    649.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "A tool for performing basic operations on PDF files",
+                "bbox": [
+                    72.024,
+                    629.0,
+                    293.42,
+                    638.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "\u2022  Developed a tool which can provide information about PDF files such as pages, author, layout, encryption",
+                "bbox": [
+                    89.304,
+                    614.0,
+                    534.2852000000005,
+                    626.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "etc., merge pdf documents, bookmark pages, rotate, overlay, extract pages and generate new document,",
+                "bbox": [
+                    107.3,
+                    603.0,
+                    523.57156,
+                    612.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "watermark pages etc.",
+                "bbox": [
+                    107.3,
+                    592.0,
+                    194.54000000000002,
+                    601.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "Technology Used: Python",
+                "bbox": [
+                    107.3,
+                    580.0,
+                    216.5,
+                    589.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "Education",
+                "bbox": [
+                    72.024,
+                    550.0,
+                    127.412,
+                    562.0
+                ],
+                "isHeader": true,
+                "bucket": "Education",
+                "similarity": 1.0
+            },
+            {
+                "text": "1.  BE \u2013 Computer Science (8th sem)",
+                "bbox": [
+                    71.304,
+                    530.0,
+                    218.06,
+                    539.0
+                ],
+                "isHeader": false,
+                "bucket": "Education"
+            },
+            {
+                "text": "BIT Mesra, Ranchi Jharkhand",
+                "bbox": [
+                    72.024,
+                    518.0,
+                    222.98000000000002,
+                    527.0
+                ],
+                "isHeader": false,
+                "bucket": "Education"
+            },
+            {
+                "text": "Currently Pursuing BE-Computer Science from BIT MESRA with CGPA of 7.86",
+                "bbox": [
+                    108.02,
+                    507.0,
+                    436.84000000000003,
+                    516.0
+                ],
+                "isHeader": false,
+                "bucket": "Education"
+            },
+            {
+                "text": "2.  12th",
+                "bbox": [
+                    71.304,
+                    483.0,
+                    107.63,
+                    493.0
+                ],
+                "isHeader": false,
+                "bucket": "Education"
+            },
+            {
+                "text": "BS College Lohardaga Jharkhand",
+                "bbox": [
+                    89.304,
+                    471.0,
+                    239.9,
+                    480.0
+                ],
+                "isHeader": false,
+                "bucket": "Education"
+            },
+            {
+                "text": "Secured 78.8% marks in the 12th Board Exams",
+                "bbox": [
+                    108.02,
+                    460.0,
+                    297.26,
+                    470.0
+                ],
+                "isHeader": false,
+                "bucket": "Education"
+            },
+            {
+                "text": "3.  10th",
+                "bbox": [
+                    71.304,
+                    448.0,
+                    110.03,
+                    458.0
+                ],
+                "isHeader": false,
+                "bucket": "Education"
+            },
+            {
+                "text": "DAV Public School Lohardaga Jharkhand",
+                "bbox": [
+                    89.304,
+                    437.0,
+                    273.5,
+                    446.0
+                ],
+                "isHeader": false,
+                "bucket": "Education"
+            },
+            {
+                "text": "Secured 10 CGPA in the 10th Board Exams",
+                "bbox": [
+                    108.02,
+                    425.0,
+                    283.58,
+                    435.0
+                ],
+                "isHeader": false,
+                "bucket": "Education"
+            },
+            {
+                "text": "Achievements and Awards",
+                "bbox": [
+                    71.304,
+                    399.0,
+                    211.01,
+                    409.0
+                ],
+                "isHeader": false,
+                "bucket": "Education"
+            },
+            {
+                "text": "\u2022  Topped the Class 10th Board (AISSE) exam in the Lohardaga City. School topper in Class 10th.",
+                "bbox": [
+                    90.024,
+                    377.0,
+                    493.63,
+                    387.0
+                ],
+                "isHeader": false,
+                "bucket": "Education"
+            },
+            {
+                "text": "\u2022  Secured 2nd Position in City in 12th Board Exam \u2013 Jharkhand Academic Council.",
+                "bbox": [
+                    90.024,
+                    365.0,
+                    436.24,
+                    375.0
+                ],
+                "isHeader": false,
+                "bucket": "Education"
+            },
+            {
+                "text": "\u2022  Qualified JEE-Mains 2014 and secured a rank of 13533 (More than 14 lakhs appeared).",
+                "bbox": [
+                    90.024,
+                    353.0,
+                    461.11,
+                    362.0
+                ],
+                "isHeader": false,
+                "bucket": "Education"
+            },
+            {
+                "text": "Coding / Technical Activities",
+                "bbox": [
+                    72.024,
+                    328.0,
+                    222.65,
+                    338.0
+                ],
+                "isHeader": true,
+                "bucket": "Projects",
+                "similarity": 0.8504866183512286
+            },
+            {
+                "text": "\u2022  Qualified till the Elimination round in Snackdown Event in the year 2017 and 2016. (Handle- ninja_blade)",
+                "bbox": [
+                    90.024,
+                    305.0,
+                    540.07,
+                    315.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "\u2022  O(logn) rating in hackerrank. (Handle- gauravsuman8)",
+                "bbox": [
+                    90.024,
+                    293.0,
+                    329.92,
+                    302.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "\u2022  Solved 150+ problems on SPOJ. (Handle- gauravsuman8)",
+                "bbox": [
+                    90.024,
+                    281.0,
+                    345.40000000000003,
+                    290.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "\u2022  Participated in various coding competitions at CodeChef and Codeforces.",
+                "bbox": [
+                    90.024,
+                    269.0,
+                    409.0,
+                    278.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "(CodeChef Handle \u2013 grvsmn, Codeforces Handle- gauravsuman8).",
+                "bbox": [
+                    108.02,
+                    257.0,
+                    377.68,
+                    266.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "\u2022  Qualified till round 1 of Facebook Hacker Cup",
+                "bbox": [
+                    90.024,
+                    245.0,
+                    297.98,
+                    254.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "\u2022  Secured rank 692 in ACM-ICPC Qualifier Round 2017. (Handle- THREE_IDIOTS)",
+                "bbox": [
+                    90.024,
+                    233.0,
+                    448.36,
+                    242.0
+                ],
+                "isHeader": false,
+                "bucket": "Projects"
+            },
+            {
+                "text": "Extra-Curricular Activities",
+                "bbox": [
+                    71.304,
+                    208.0,
+                    214.61,
+                    218.0
+                ],
+                "isHeader": true,
+                "bucket": "Extra curricular",
+                "similarity": 1.0
+            },
+            {
+                "text": "\u2022  Participated in inter school cricket tournament.",
+                "bbox": [
+                    90.024,
+                    181.0,
+                    298.22,
+                    191.0
+                ],
+                "isHeader": false,
+                "bucket": "Extra curricular"
+            },
+            {
+                "text": "\u2022  First Position in Group Maths Quiz held in school.",
+                "bbox": [
+                    90.024,
+                    169.0,
+                    312.98,
+                    179.0
+                ],
+                "isHeader": false,
+                "bucket": "Extra curricular"
+            },
+            {
+                "text": "\u2022  Participated in poker tournament in Bitotsav, the annual cultural fest of BIT Mesra.",
+                "bbox": [
+                    90.024,
+                    157.0,
+                    443.8,
+                    166.0
+                ],
+                "isHeader": false,
+                "bucket": "Extra curricular"
+            },
+            {
+                "text": "Declaration:",
+                "bbox": [
+                    72.024,
+                    132.0,
+                    138.98,
+                    142.0
+                ],
+                "isHeader": false,
+                "bucket": "Extra curricular"
+            },
+            {
+                "text": "I enjoy challenges and work hard to attain my goals in any part of world.",
+                "bbox": [
+                    71.304,
+                    106.0,
+                    365.08,
+                    116.0
+                ],
+                "isHeader": false,
+                "bucket": "Extra curricular"
+            },
+            {
+                "text": "I hereby solemnly declare that all the above information is correct to best of my knowledge and faith.",
+                "bbox": [
+                    72.024,
+                    95.0,
+                    480.07,
+                    104.0
+                ],
+                "isHeader": false,
+                "bucket": "Extra curricular"
+            },
+            {
+                "text": "Date: 30th January, 2018                                                                                                                      Gaurav Suman",
+                "bbox": [
+                    72.024,
+                    71.0,
+                    525.1,
+                    82.0
+                ],
+                "isHeader": false,
+                "bucket": "Extra curricular"
+            }
+        ]
+    }
+}

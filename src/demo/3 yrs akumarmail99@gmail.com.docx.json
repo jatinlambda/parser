@@ -11,14 +11,14 @@
         "Education": [],
         "Skills Raw": "TECHNICAL SKILLS\nFramework: Angular 5, NodeJs, Ionic\nLanguage: Typescript, JavaScript\nFrontend: HTML5, CSS3, Bootstrap 3.\nDatabases: MongoDB, SQL Server\nOperating System: Windows 10, MAC.\nOthers: jQuery, Adobe Photoshop, Angular CLI",
         "Skills": [
-            "System",
-            "Photoshop",
-            "Adobe",
-            "Html5",
-            "Technical",
             "Windows",
             "Javascript",
-            "Sql"
+            "System",
+            "Technical",
+            "Sql",
+            "Html5",
+            "Photoshop",
+            "Adobe"
         ],
         "Experience Raw": "",
         "Experience": [],
