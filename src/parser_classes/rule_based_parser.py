@@ -119,9 +119,6 @@ class ResumeParser(object):
         self.parsedDict["Resume"]["Extracurricular Activities"] = '\n'.join(line)
 
 
-
-        # degree = extract_degree(self.education_lines)     degrees extracted as a list. Currently not added in the dictionary
-
         insti_list = []
         for line in self.education_lines:
             # print(line)
@@ -149,33 +146,7 @@ class ResumeParser(object):
 
         self.parsedDict["Resume"]['All Text']='\n'.join([line['text'] for line in self.texts])
         self.parsedDict["Resume"]['Raw Parsed']=[dict([(key, val) for key, val in line.items() if key!='doc' and key!='tokens']) for line in self.texts]
-        #
-        #
-        # # Skills extraction from skills and projects, then merging into one list and removing duplicates
-        # # final_skill_list = extract_skills('\n'.join(self.skills_lines))
-        # # final_skill_list2 = extract_skills('\n'.join(self.project_lines))
-        # #  print(final_skill_list)
-        # # print(final_skill_list2)
-        # # res_list = final_skill_list + final_skill_list2
-        # # flat_list = [item for sublist in res_list for item in sublist]
-        # # print(flat_list)
-        # # flat_list = list(dict.fromkeys(res_list))
-        # # dict1["Resume"]["Skills"] = flat_list
-        # print(edu)
-        # print(skills)
-        # print(experience)
-        # print(insti_list)
-        #
-        # #date_list extracted but not added to dictionary
-        # date_list = extract_date('\n'.join(self.education_lines))
-        # #print(date_list)
-
-        # print(extract_insti('\n'.join(education_lines)))
-        # print(dict1)
-        # for k,v in dict1["Resume"].items():
-        #   print(k,":")
-        #  print(v)
-
+        
     def summary(self):
         print("Skiping Summary")
         return ""
@@ -183,15 +154,6 @@ class ResumeParser(object):
     def save_json(self):
         with open(os.path.basename(self.file_path)+".json", "w") as write_file:
             json.dump(self.parsedDict, write_file, indent=4)
-
-
-
-
-# print(" ---mobile : ", extract_mobile(self.personal_lines))
-# print(" ---email : ", extract_email(self.personal_lines))
-# print(" ---address : ", extract_address(self.personal_lines))
-
-# print(extract_insti(self.education_lines))
 
 
 

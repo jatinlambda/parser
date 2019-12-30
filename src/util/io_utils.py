@@ -3,7 +3,7 @@ from src.util.pdf_utils import pdf_to_text_tool
 from src.util.docx_utils import docx_to_text
 
 
-
+#converts pdf and docx files to text format and returns a dictionary
 def read_pdf_and_docx(dir_path, collected=None, command_logging=False, callback=None):
     if collected is None:
         collected = dict()
