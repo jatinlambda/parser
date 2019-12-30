@@ -1,19 +1,22 @@
 import re
-import os
+# import os
 # import nltk  #used in extract insti function
 from spacy.matcher import Matcher
-from . import constants as cs
-from spacy import displacy
+# from . import constants as cs
+# from spacy import displacy
 # from src.util.tokenizer_utils import word_tokenize
-import spacy
+# import spacy
+from src.util.nlp_tools import nlp, calculate_similarity_with_processing, process_main_text1
 import numpy as np
-from src.util.headers_dict import bucket2title, title2bucket, line2feature
+from src.util.headers_dict import bucket2title, title2bucket
 from src.util.other_util import overlap_rects
 import string
-from src.util.entity_extractor import group_extractor
-import pandas as pd
+# from src.util.entity_extractor import group_extractor
+# import pandas as pd
 # from nltk.stem import WordNetLemmatizer
 # from nltk.corpus import stopwords
+
+
 
 
 
@@ -24,7 +27,7 @@ for x in result:
     punctuation_list.append(x)
 # load pre-trained model
 # nlp = spacy.load('en_core_web_md')
-nlp = spacy.load('en_core_web_md')
+# nlp = spacy.load('en_core_web_md')
 # initialize matcher with a vocab
 matcher = Matcher(nlp.vocab)
 matcher2 = Matcher(nlp.vocab)
@@ -478,102 +481,50 @@ def extract_name(parts, line):
 #         result.append(token.lemma_)
 #     return result
 
-def process_main_text1(text):
-    doc = nlp(text.lower())
-    result = []
-    for token in doc:
-        if token.is_punct:
-            continue
-        if token.lemma_ == '-PRON-':
-            continue
-        result.append(token.lemma_)
-    return result
-
-
-def process_main_text0(text):
-    doc = nlp(text.lower())
-    result = []
-    for token in doc:
-        if token.is_punct:
-            continue
-        result.append(token.text)
-    return result
-
-
-def calculate_similarity_with_processing(title, line, process_main_tex_foo=process_main_text1):
-    # print(title, line)
-    # process_main_tex_foo=process_main_text1
-    title = nlp(' '.join(process_main_tex_foo(title)))
-    line = nlp(' '.join(process_main_tex_foo(line)))
-    for token in line:
-        token_id=nlp.vocab.strings[token.text]
-        if token_id not in nlp.vocab:
-            return 0
-    return title.similarity(line)
-
 
 def get_label(line):
-    # print("Line : ", line)
     global_max_bucket=0
     global_max_bucket_name="other"
-    # mean_bucket=np.zeros([len(bucket2title), 1])
-    # std_bucket=np.zeros([len(bucket2title), 1])
 
-    for index, bucket in enumerate(bucket2title):
-        scores = np.zeros([len(bucket2title[bucket]), 1])
-        for count, title in enumerate(bucket2title[bucket]):
-            scores[count]=calculate_similarity_with_processing(title, line)
-        # mean_bucket[index]=np.mean(scores)
-        # std_bucket[index]=np.std(scores)
-        max_bucket=np.amax(scores)
-        # print("--bucket : ", bucket, "  --mean : ", np.mean(scores), "  --max local bucket : ", max_bucket)
+    # print("line ", line)
 
-        if global_max_bucket<max_bucket:
-            global_max_bucket=max_bucket
-            global_max_bucket_name=bucket
-
-
-    # prob=np.exp(-(global_max_bucket-mean_bucket)*(global_max_bucket-mean_bucket)/(2*std_bucket))
-    # print("Max Bucket : ", global_max_bucket_name, global_max_bucket, max(mean_bucket))
-    # print()
-    # print()
-
-    # print()
+    for title in title2bucket:
+        # print("title ", title)
+        score=calculate_similarity_with_processing(title2bucket[title]['doc'], line['doc'])
+        if global_max_bucket<score:
+            global_max_bucket=score
+            global_max_bucket_name=title2bucket[title]['bucket']
     return global_max_bucket_name, global_max_bucket
 
 
-def extract_headers(texts, layouts=None):
+def extract_headers(texts):
     max_words_in_header=3
     prob_no_word=0
     thresh_prob1=0.09
     similarity_thresh_prob1=0.7
-    thresh_prob2 = 0.6
-    similarity_thresh_prob2 = 0.65
+    thresh_prob2 = 1
+    similarity_thresh_prob2 = 0.8
 
     headers={}
     for index, line in enumerate(texts):
-        # if layouts and index>0 and index<(len(texts)-1):
         prob=1
-        doc =nlp(line)
 
-        for token in doc:
+        for token in line['doc']:
             token_id = nlp.vocab.strings[token.text]
             if token_id not in nlp.vocab:
                 prob=prob*0.1
 
-        main_text=process_main_text1(line)
-
-        num_words=len(main_text)
+        num_words=len(line['tokens'])
         if num_words==0:
-            prob=0
+            prob=prob_no_word
             continue
         elif num_words>max_words_in_header:
             prob=prob*np.exp(-2*(num_words-max_words_in_header))
 
-        if doc[-1].text=='.':
+        if line['doc'][-1].text=='.':
             continue
 
-        words=re.findall("[A-Za-z][^ ]*", line)
+        words=re.findall("[A-Za-z][^ ]*", line['text'])
         if words:
             first_word=True
             for word in words:
@@ -591,15 +542,24 @@ def extract_headers(texts, layouts=None):
             continue
 
         if prob>thresh_prob1:
-            label, similarity=get_label(line)
-           # print("--line ", line)
-           # print("--num_words ", num_words, "--prob", prob, "--label ", label, " --similarity : ", similarity)
-            if similarity>similarity_thresh_prob1:
-            #    print("--------------TITLE---------------------")
-                headers[line]={"label":label, "similarity":similarity}
-            elif prob>thresh_prob2 and similarity>similarity_thresh_prob2:
-             #   print("--------------OTHER TITLE---------------------")
-                headers[line] = {"label": "others", "similarity": similarity}
+                label, similarity=get_label(line)
+                # print("--line ", line['text'])
+                # print("--num_words ", num_words, "--prob", prob, "--label ", label, " --similarity : ", similarity)
+                if similarity>similarity_thresh_prob1:
+                   # print("--------------TITLE---------------------")
+                   headers[line['text']]={"label":label, "similarity":similarity}
+                   line['isHeader']=True
+                   line['bucket']=label
+                   line['similarity']=similarity
+
+                elif prob>thresh_prob2 and similarity>similarity_thresh_prob2:
+                   # print("--------------OTHER TITLE---------------------")
+                    headers[line['text']] = {"label": "others", "similarity": similarity}
+                    line['isHeader'] = True
+                    line['bucket'] = "others"
+                    line['similarity'] = similarity
+                else:
+                    line['isHeader'] = False
 
     return headers
 
@@ -619,14 +579,23 @@ def extract_buckets(data, headers):
     # print()
     # print()
 
-    last_label='Personal Details'
-    buckets=[]
-    for line in data:
-        if headers.get(line, None) is not None:
-            last_label=headers[line]["label"]
-        buckets.append({"line":line, "label":last_label})
-       # print(last_label, '\t', line)
+    # last_label='Personal Details'
+    # buckets=[]
+    # for line in data:
+    #     if headers.get(line['text'], None) is not None:
+    #         last_label=headers[line]["label"]
+    #     buckets.append({"line":line, "label":last_label})
+    #     print(last_label, '\t', line['text'])
+    # return buckets
 
+    last_label = 'Personal Details'
+    buckets = []
+    for line in data:
+        if line.get('isHeader', None):
+            last_label=line['bucket']
+        else:
+            line['bucket']=last_label
+        print(last_label, '\t', line['text'])
     return buckets
 
 

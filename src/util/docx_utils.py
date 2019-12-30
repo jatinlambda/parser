@@ -1,5 +1,4 @@
 import docx
-
 from src.util.text_utils import preprocess_text
 
 

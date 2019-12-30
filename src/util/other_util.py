@@ -1,3 +1,5 @@
+from src.util.nlp_tools import nlp_process_text_foo
+
 def overlap_rects(rect1, rect2):
     # If one rectangle is on left side of other
     if (rect1[0] > rect2[2] or rect2[0] > rect1[2]):
@@ -14,4 +16,6 @@ def multiple_rects_in_line(rect1, rect2, rect3):
         return True
     return False
 
-# def preprocess_text(text, layout):
+def preprocess_text(text, layout):
+    tokens, doc=nlp_process_text_foo(text)
+    return {'text':text, 'tokens': tokens, 'doc':doc, 'bbox':layout.bbox}
