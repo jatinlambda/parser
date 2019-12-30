@@ -1,16 +1,15 @@
-# from io import StringIO
 from pdfminer.layout import LAParams
 from pdfminer.converter import PDFPageAggregator
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.pdfpage import PDFPage
 from pdfminer.layout import LTTextBoxHorizontal
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
-from src.util.other_util import overlap_rects
-import time
-import os
-#from tika import parser
+import os, sys
+from tika import parser
 
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '../..'))
+from src.util.other_util import overlap_rects
+
+# set layout analysis parameters to be used by pdf_to_text_pdfminer tool
 laparams = LAParams(line_overlap=0.1,
                         char_margin=2.0,
                         line_margin=0.000001,
@@ -19,32 +18,12 @@ laparams = LAParams(line_overlap=0.1,
                         detect_vertical=False,
                         all_texts=False)
 
-# def pdf_to_text_pdfminer(fname, pages=None):
-#     if not pages:
-#         pagenums = set()
-#     else:
-#         pagenums = set(pages)
-#
-#     output = StringIO()
-#     manager = PDFResourceManager()
-#     converter = TextConverter(manager, output, laparams=LAParams())
-#     interpreter = PDFPageInterpreter(manager, converter)
-#
-#     infile = open(fname, 'rb')
-#     for page in PDFPage.get_pages(infile, pagenums):
-#         interpreter.process_page(page)
-#     infile.close()
-#     converter.close()
-#     text = output.getvalue()
-#     output.close()
-#     result = []
-#     for line in text.split('\n'):
-#         line2 = line.strip()
-#         if line2 != '':
-#             result.append(line2)
-#     return result
 
-def pdf_to_text_pdfminer(fname, pages=None):
+# pdf to text using custom tool using pdfminer
+# return list of lines in pdf file along with its position as layout
+def pdf_to_text_pdfminer(fname):
+
+    # extract if there are any columns along with text boxes
     def get_columns(fname):
         document = open(fname, 'rb')
 
@@ -57,20 +36,8 @@ def pdf_to_text_pdfminer(fname, pages=None):
             pages.append(page)
         num_pages = len(pages)
 
-        def overlap(rect1, rect2):
-            # If one rectangle is on left side of other
-            if (rect1[0] > rect2[2] or rect2[0] > rect1[2]):
-                return False
-            # If one rectangle is above other
-            if (rect1[3] < rect2[1] or rect2[3] < rect1[1]):
-                return False
-            return True
-
         doc_part_rects = []
         doc_text_boxes = []
-
-        # Create figure and axes
-        # fig, ax = plt.subplots(1)
 
         leftmost_x = 150
         rightmost_x = 350
@@ -81,7 +48,6 @@ def pdf_to_text_pdfminer(fname, pages=None):
 
         page_num = 0
         for page in pages:
-            # start = time.process_time()
 
             interpreter.process_page(page)
             layout = device.get_result()
@@ -89,19 +55,15 @@ def pdf_to_text_pdfminer(fname, pages=None):
             doc_text_boxes.append([])
             doc_part_rects.append([])
 
-            # print("before element time", time.process_time() - start)
-
             topmost_y = 900 * (num_pages - page_num)
             bottommost_y = 900 * (num_pages - page_num - 1)
 
+            # assume there is a single rectangle that partions the page into 2 sections
+
             part_rects = [(leftmost_x, bottommost_y, rightmost_x, topmost_y)]
-            # layout = sorted(layout, key=lambda element: (element.bbox[3] - element.bbox[1]))
             layout = sorted(layout, key=lambda element: (element.bbox[2] - element.bbox[0]))
 
-            # print("len layout: ", len(layout))
-
-
-            # start = time.process_time()
+            # for each text box eliminate possibility of possible partion rectangles
             for element in layout:
                 if isinstance(element, LTTextBoxHorizontal):
                     element.bbox = list(element.bbox)
@@ -112,7 +74,7 @@ def pdf_to_text_pdfminer(fname, pages=None):
 
                     new_part_rects = []
                     for part_rect in part_rects:
-                        if not overlap(part_rect, element.bbox):
+                        if not overlap_rects(part_rect, element.bbox):
                             new_part_rects.append(part_rect)
                         else:
                             if element.bbox[0] <= part_rect[0] and element.bbox[2] >= part_rect[2]:
@@ -167,18 +129,12 @@ def pdf_to_text_pdfminer(fname, pages=None):
 
                     part_rects = new_part_rects
 
-            # print("element time", time.process_time() - start)
-
-
             largest_lower_rect_height = 0
             largest_upper_rect_height = 0
             largest_lower_rect = None
             largest_upper_rect = None
             single_largest_rect_present = False
             single_largest_rect = None
-
-            # part_rects.sort(key=lambda rect : rect[3]-rect[1])
-            # print("len part rect : ", len(part_rects))
 
             for part_rect in part_rects:
                 if part_rect[1] == bottommost_y and part_rect[3] == topmost_y:
@@ -208,7 +164,6 @@ def pdf_to_text_pdfminer(fname, pages=None):
 
         column_score = 0
         for i in range(num_pages):
-            # print(len(doc_text_boxes[i]))
             text_section_height_score = (max(doc_text_boxes[i], key=lambda element: element.bbox[3]).bbox[3] -
                                          min(doc_text_boxes[i], key=lambda element: element.bbox[1]).bbox[1]) / 900
             for part_rect in doc_part_rects[i]:
@@ -218,35 +173,35 @@ def pdf_to_text_pdfminer(fname, pages=None):
                 flat_doc_text_boxes.append(element)
 
         column_score = column_score / (900 * num_pages)
-        # print(column_score)
-        # print(len(flat_doc_part_rects))
         if column_score < 0.4:
             flat_doc_part_rects = [flat_doc_part_rects[0]]
 
         return flat_doc_text_boxes, flat_doc_part_rects, num_pages
 
-    # def split_column(text_boxes, part_rect, side_first=None):
-
 
     def get_text(fname):
         doc_text_boxes, doc_part_rects, num_pages = get_columns(fname)
-        # print(len(doc_part_rects))
 
-        # fig, ax = plt.subplots(1)
-        #
-        # for element in doc_text_boxes:
-        #     rect = patches.Rectangle((element.bbox[0], element.bbox[1]), element.bbox[2] - element.bbox[0],
-        #                              element.bbox[3] - element.bbox[1], linewidth=1, edgecolor='r', facecolor='none')
-        #     ax.add_patch(rect)
-        #
-        # for part_rect in doc_part_rects:
-        #     rect = patches.Rectangle((part_rect[0], part_rect[1]), part_rect[2] - part_rect[0],
-        #                              part_rect[3] - part_rect[1], linewidth=1, edgecolor='b', facecolor='none')
-        #     ax.add_patch(rect)
-        #
-        # plt.axis([0, 700, 0, 900 * num_pages])
-        # plt.show()
+        ## uncomment if willing to see partion into columns and text boxes visually
+        """
+        import matplotlib.pyplot as plt
+        import matplotlib.patches as patches
 
+        fig, ax = plt.subplots(1)
+
+        for element in doc_text_boxes:
+            rect = patches.Rectangle((element.bbox[0], element.bbox[1]), element.bbox[2] - element.bbox[0],
+                                     element.bbox[3] - element.bbox[1], linewidth=1, edgecolor='r', facecolor='none')
+            ax.add_patch(rect)
+
+        for part_rect in doc_part_rects:
+            rect = patches.Rectangle((part_rect[0], part_rect[1]), part_rect[2] - part_rect[0],
+                                     part_rect[3] - part_rect[1], linewidth=1, edgecolor='b', facecolor='none')
+            ax.add_patch(rect)
+
+        plt.axis([0, 700, 0, 900 * num_pages])
+        plt.show()
+        """
 
         doc_text_boxes.sort(key=lambda element: element.bbox[0])
         doc_text_boxes.sort(key=lambda element: element.bbox[1], reverse=True)
@@ -309,10 +264,6 @@ def pdf_to_text_pdfminer(fname, pages=None):
         elif right_column:
             ordered_text_boxes.append(right_column)
 
-        # print(ordered_text_boxes)
-        # for box in ordered_text_boxes:
-        #     print(box)
-
         result_text = []
         result_layout = []
         for sublist in ordered_text_boxes:
@@ -328,6 +279,9 @@ def pdf_to_text_pdfminer(fname, pages=None):
 
     return get_text(fname)
 
+
+# pdf to text using tika tool
+# return list of lines in pdf file
 def pdf_to_text_tika(fname):
     parsedPDF = parser.from_file(fname)
     result_text=[]
@@ -339,15 +293,33 @@ def pdf_to_text_tika(fname):
     return result_text, None
 
 
-def pdf_to_text_pdftotext(fname, pages=None):
+# pdf to text using pdftotext bash tool (xpdf tool)
+# return list of lines in pdf file
+def pdf_to_text_pdftotext(fname):
     os.system('pdftotext -layout "' + fname + '" .temp.txt')
     with open(".temp.txt" ,'r', errors='ignore') as file:
         lines=file.readlines()
+    os.remove(".temp.txt")
     result=[]
     for line in lines:
         line=line.strip()
         if line!='':
             result.append(line)
-    # print("************************")
-    # print(result)
     return result, None
+
+
+# set this the pdf to text parsing tool
+pdf_to_text_tool=pdf_to_text_pdfminer
+
+if __name__ == "__main__":
+
+    import time
+
+    start = time.process_time()
+    fname = '/home/jatin/iitb/flexiele/parser/dataset/samplecv/3 Bhirgu Sharma.pdf'  # sample resume file
+    print(fname)
+    text, layout = pdf_to_text_tool(fname)
+    for line in text:
+        print(line)
+    print("time", time.process_time() - start)
+    print("------------")

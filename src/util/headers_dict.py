@@ -2,6 +2,7 @@ from src.util.nlp_tools import nlp_process_text_foo
 
 bucket2title = {}
 
+# possible titles of headers or possible buckets
 titles = ['Experience','Skills','Projects','Qualifications','Education','Hobbies','Extra curricular','Personal Details','Objective']
 
 for title in titles:
@@ -77,9 +78,6 @@ bucket2title['Objective'].append('aim')
 bucket2title['Objective'].append('main objectives')
 bucket2title['Objective'].append('roles')
 
-# bucket2title['Language'].append('language')
-# bucket2title['Language'].append('language known')
-
 for bucket in bucket2title:
     for i in range(len(bucket2title[bucket])):
         tokens, doc=nlp_process_text_foo(bucket2title[bucket][i])
@@ -87,24 +85,8 @@ for bucket in bucket2title:
 
 title2bucket = {}
 
-
-# features=['address']
-# line2feature={}
-#
-# for feature in features:
-#     line2feature[feature]=[]
-#
-#
-# line2feature['address'].append("Address")
-# line2feature['address'].append("Location")
-# line2feature['address'].append("Current Address")
-# line2feature['address'].append("Permanent Address")
-
-
 # def headers_dict_init():
 for k,v in bucket2title.items():
     for m in v:
         title2bucket[m['title']] = m
 
-# print(bucket2title)
-# print(title2bucket)

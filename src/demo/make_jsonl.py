@@ -1,8 +1,3 @@
-"""
-Run this code to test the parser
-It takes resumes in dataset/samplecv folder, make resume parser object for each resume, converts to text and extract buckets
-"""
-
 import sys
 import os
 
@@ -15,13 +10,24 @@ def main():
     from src.util.io_utils import read_pdf_and_docx
 
 
-    data_dir_path = current_dir + '/../../dataset/samplecv' # directory to scan for any pdf and docx files
+    data_dir_path = current_dir + '/../../dataset/samplecv'
+
     collected = read_pdf_and_docx(data_dir_path, command_logging=True)
 
     for file_path, file_content in collected.items():
+
         print('parsing file: ', file_path)
+
         parser = ResumeParser(file_path)
         parser.parse(file_content)
+
+        lines=[]
+        for line in parser.texts:
+            if line['bucket']=='Skills' or line['bucket']=='Experience' or line['bucket']=='Projects':
+                lines.append(line)
+
+
+
 
         if parser.unknown is False:
             print(parser.summary())

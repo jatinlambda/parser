@@ -25,9 +25,7 @@ result = result.replace(" ","")
 punctuation_list = []
 for x in result:
     punctuation_list.append(x)
-# load pre-trained model
-# nlp = spacy.load('en_core_web_md')
-# nlp = spacy.load('en_core_web_md')
+
 # initialize matcher with a vocab
 matcher = Matcher(nlp.vocab)
 matcher2 = Matcher(nlp.vocab)
@@ -411,7 +409,7 @@ def extract_insti(lines):
         for x in a:
             if x.lower() in indianColleges:
                 insti.append(l)
-                break;
+                break
 
      #entries = []
      #for line in lines:
@@ -473,29 +471,15 @@ def extract_insti(lines):
 # #                 break;
 # #     return insti
 #
-#
-# def process_main_text2(text):
-#     doc = nlp(text.lower())
-#     result = []
-#     for token in doc:
-#         if token.text in nlp.Defaults.stop_words:
-#             continue
-#         if token.is_punct:
-#             continue
-#         if token.lemma_ == '-PRON-':
-#             continue
-#         result.append(token.lemma_)
-#     return result
 
 
+# get the label/title of a possible header line using spacy similarity with possible header lines
+# line belong to that bucket or title which have maximum similarity with possible headers
 def get_label(line):
     global_max_bucket=0
     global_max_bucket_name="other"
 
-    # print("line ", line)
-
     for title in title2bucket:
-        # print("title ", title)
         score=calculate_similarity_with_processing(title2bucket[title]['doc'], line['doc'])
         if global_max_bucket<score:
             global_max_bucket=score
@@ -503,34 +487,37 @@ def get_label(line):
     return global_max_bucket_name, global_max_bucket
 
 
+# get lines which are headers and the bucket they belong to
 def extract_headers(texts):
-    max_words_in_header=3
-    prob_no_word=0
-    thresh_prob1=0.09
-    similarity_thresh_prob1=0.7
-    thresh_prob2 = 1
-    similarity_thresh_prob2 = 0.8
+    max_words_in_header=3   # assumption a header will have only these many words
+    thresh_prob1=0.09       # thresh hold probability to say a line is a header
+    similarity_thresh_prob1=0.7    # thresh hold similarity to say line belongs to a bucket
 
-    headers={}
+    # iterate over each line
     for index, line in enumerate(texts):
         prob=1
 
+        # check if there is any word which doesn't exist in spacy model vocabulary
         for token in line['doc']:
             token_id = nlp.vocab.strings[token.text]
             if token_id not in nlp.vocab:
                 prob=prob*0.1
 
+        # modify prob using number of tokens after stripping punctuations in line
         num_words=len(line['tokens'])
+        # header can't have 0 words
         if num_words==0:
-            prob=prob_no_word
             continue
         elif num_words>max_words_in_header:
             prob=prob*np.exp(-2*(num_words-max_words_in_header))
 
+        # a header doesn't end with a full stop
         if line['doc'][-1].text=='.':
             continue
 
+        # get words stating with alphabetic character
         words=re.findall("[A-Za-z][^ ]*", line['text'])
+        # a header will have either all upper case characters or words starting with upper case character
         if words:
             first_word=True
             for word in words:
@@ -547,78 +534,33 @@ def extract_headers(texts):
         else:
             continue
 
+        # check similarity only if probabilty of being header line > thresh hold
         if prob>thresh_prob1:
                 label, similarity=get_label(line)
                 # print("--line ", line['text'])
                 # print("--num_words ", num_words, "--prob", prob, "--label ", label, " --similarity : ", similarity)
                 if similarity>similarity_thresh_prob1:
                    # print("--------------TITLE---------------------")
-                   headers[line['text']]={"label":label, "similarity":similarity}
                    line['isHeader']=True
                    line['bucket']=label
                    line['similarity']=similarity
-
-                elif prob>thresh_prob2 and similarity>similarity_thresh_prob2:
-                   # print("--------------OTHER TITLE---------------------")
-                    headers[line['text']] = {"label": "others", "similarity": similarity}
-                    line['isHeader'] = True
-                    line['bucket'] = "others"
-                    line['similarity'] = similarity
                 else:
                     line['isHeader'] = False
 
-    return headers
 
 
-
+# classify the lines into buckets using headers obtained from extract headers
+# logic is to classify the line according to last seen header
 def extract_buckets(data):
-    # lines="\n".join(data)
-    # doc = nlp(lines)
-    # displacy.serve(doc, style="ent")
-
-    # print("--------------------- Printing sentences  ----------------------------------------------------------------------")
-    # print()
-    # lines = " ".join(data)
-    # doc = nlp(lines)
-    # for sent in doc.sents:
-    #     print(sent.text)
-    # print()
-    # print()
-
-    # last_label='Personal Details'
-    # buckets=[]
-    # for line in data:
-    #     if headers.get(line['text'], None) is not None:
-    #         last_label=headers[line]["label"]
-    #     buckets.append({"line":line, "label":last_label})
-    #     print(last_label, '\t', line['text'])
-    # return buckets
-
     last_label = 'Personal Details'
-    buckets = []
     for line in data:
         if line.get('isHeader', None):
             last_label=line['bucket']
         else:
             line['bucket']=last_label
         print(last_label, '\t', line['text'])
-    return buckets
 
 
-
-
-# def extract_address(lines):
-#     method1=False
-#
-#     max_score=-1
-#     max_score_line=''
-#     for line in lines:
-#         for feature in line2feature:
-#             score=calculate_similarity_with_processing(line, feature, process_main_text0)
-#             #print("address score : ",score, line)
-#             if score>max_score:
-#                 max_score=score
-#                 max_score_line=line
 
 
 
