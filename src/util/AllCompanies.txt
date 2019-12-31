@@ -9,4 +9,7 @@ Samsung Research
 Siemens Ltd
 Persistent Systems
 bluepi services pvt ltd
+appster llc
+microsoft research
+
 

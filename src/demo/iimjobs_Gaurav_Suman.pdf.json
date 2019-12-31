@@ -14,16 +14,16 @@
         ],
         "Skills Raw": "Skills\nSkills\nDescription\nLanguage\nC, C++, Java (Basic), Python (Basic)\nRDBMS\nMySQL, MSSQL\nOperating System\nOS Concepts and Windows\nOthers\nData Structure, Algorithm, DBMS concepts, OOP",
         "Skills": [
-            "Mysql",
-            "Windows",
-            "Python",
-            "Os",
-            "Engineering",
+            "Research",
             "C++",
-            "Java",
-            "System",
             "C",
-            "Research"
+            "Mysql",
+            "Python",
+            "Windows",
+            "Engineering",
+            "Os",
+            "Java",
+            "System"
         ],
         "Experience Raw": "Experience\nSamsung Research Institute, Noida \u2013 Software Engineering Intern\nJAN 2018 \u2013 PRESENT (5 months Internship Program)\n\u2022  Currently working as Software Engineering Intern on IOT Based Project.",
         "Experience": [

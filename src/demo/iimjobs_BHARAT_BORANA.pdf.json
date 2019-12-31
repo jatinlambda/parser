@@ -11,19 +11,21 @@
         "Education": [],
         "Skills Raw": "",
         "Skills": [
-            "Mobile",
-            "Apis",
-            "Design",
-            "Cms",
-            "Finance",
-            "Certification",
-            "Process",
             "Pelican",
             "Database",
-            "Coding"
+            "Apis",
+            "Cms",
+            "Coding",
+            "Process",
+            "Certification",
+            "Design",
+            "Finance",
+            "Mobile"
         ],
         "Experience Raw": "Work Experience:\n1.  Senior Software Engineer\n2016/12 - Present\n\u27a2  Appster LLC, Gurugram\n\u27a2  Developing  restful  apis  using  Laravel  framework  for  mobile  team.  Live  chat  implementation  using  NodeJs\nsocket and Express.\n\u27a2  Database design process in sprint-0, Code review process for assigned projects\n\u27a2  Design and develop template admin panel CMS using AngularJs 2 which is later on reused in other projects.\n\u27a2  Worked for one of the enterprise client Pelican Auto Finance. We have developed Payment gateway with PCI\n2 certification.\n2.  Senior Software Engineer\n2014/12 - 2016/11\n\u27a2  Xicom Technologies, New Delhi\n\u27a2  Lead a team of two junior developers where my roles are to check if proper coding standard is followed.\n\u27a2  My roles are developing restful apis, developing web applications with high scalability.\n3.  Software Engineer - Level I\n2012/10 - 2014/11\n\u27a2  C.G.Technosoft, Jodhpur\n\u27a2  Started  my  career  as  trainee  at  this  organization.  My  roles  is  to  understand  web  application  development\nusing Cakephp 2.0 framework.",
-        "Experience": [],
+        "Experience": [
+            "appster llc"
+        ],
         "Projects Raw": "Key Projects:\n1.  Pelican Auto Finance Powered by Payix\n\u27a2  Payix provides state-of-the-art collections tools, payment processing resources and business intelligence\nsolutions to U.S. lenders and auto dealers. Offering real-time loan management system (LMS) integration.\n\u27a2  Pelican  Auto  Finance,  LLC\u2019s  senior  management  team  has  over  100  years  of  experience  collectively  in\nautomotive and consumer lending.\n\u27a2  Technology stack: Laravel 5 framework\n2.  BlockPartee\n\u27a2  Blockpartee is an app that allows you to host a virtual party following your favourite sports teams, centered\naround the squares/blocks game played by thousands of fans for years during the Super Bowl. This app makes\nit easier to set-up and play the game, invite friends and fans, and has added features like live chat.\n\u27a2  Technology stack: Laravel 5 framework for API development and NodeJs for Chat Server\n3.  Fitfix.co.uk\n\u27a2  Fitfix is a revolutionary platform for Personal Trainers to help them manage, train and increase their clients. It\nprovides  comprehensive  cloud  based  business  management,  physical  training  and  nutrition  tools  in  a  very\nfriendly way.\n\u27a2  Technology stack: Cakephp 3.0 framework",
         "Projects": [],
         "Hobbies": [],
